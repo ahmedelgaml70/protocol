@@ -42,3 +42,6 @@ A high event count does not imply a valuable/public reward pool. Superfluid Base
 
 ## Source-version trap
 Do not assume same-named event across old repositories uses same ABI. Legacy PoolTogether/v5-prize-pool defines ClaimedPrize with uint16 drawId whereas the newer docs-pinned GenerationSoftware/pt-v5-prize-pool defines uint24 drawId, changing topic0. Only count current deployed contract reward and validated recipient; never call aggregate protocol fee revenue keeper income.
+
+## Automated GitHub Actions safety policy
+Actions only run public read-only research scripts. PR workflows get read-only contents permission, and only the post-radar workflow has issues:write. The alert stage consumes untrusted workflow artifacts as **data only** and must never execute downloaded code. Alerts mean historical research evidence, not current executable opportunity or profit; wallet execution must remain separately and explicitly user-approved. Ripe integration is not yet implemented. See docs/GITHUB_ACTIONS.md.

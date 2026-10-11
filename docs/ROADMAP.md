@@ -107,3 +107,13 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Resolve Ripe Teller-to-AuctionHouse caller/keeper authorization and GREEN mint reward conditions in source.
 - [ ] Find a successful recent Ripe Teller liquidation receipt showing GREEN minted to external caller; otherwise hold.
 - [ ] Obtain current Base PrizePool ClaimedPrize receipts, actual prizeToken() value, and current Claimer tx.to before profit assertions.
+
+## Automation operations
+- [x] Add tests.yml for Python syntax and offline unit tests on repository updates.
+- [x] Add protocol-radar.yml to run PoolTogether and Superfluid read-only scanners approximately every 30 minutes.
+- [x] Add opportunity-alert.yml with a strict, deduplicated and **research-only** issue-writing gate.
+- [x] Add scripts/run_radar.py, assess_radar.py, publish_alerts.py and offline tests.
+- [ ] Inspect GitHub Actions run outcome and fix initial CI/configuration problems.
+- [ ] Audit whether Base RPC serves 6-hour pool prize-claim logs without key or rate issues.
+- [ ] Verify future alerts correspond to actual fee accrual and are never represented as currently collectible.
+- [ ] Design Ripe evidence discovery once a deployed contract and payout receipt are independently established.

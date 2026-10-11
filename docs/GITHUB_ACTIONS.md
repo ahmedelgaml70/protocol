@@ -1,0 +1,40 @@
+# GitHub Actions operating guide — protocol
+
+## Workflows (automatic after commit to main)
+
+| Workflow | Trigger | Permissions | Purpose |
+| --- | --- | --- | --- |
+| [Protocol Tests](../.github/workflows/tests.yml) | Push/PR/manual | contents:read | Standard-library Python syntax and unit tests |
+| [Protocol Radar](../.github/workflows/protocol-radar.yml) | 17 and 47 minutes of every hour UTC/manual | contents:read | Read-only 6h PoolTogether Base reward logs and 3d Superfluid Base indexed liquidations |
+| [Protocol Opportunity Alert](../.github/workflows/opportunity-alert.yml) | After completed successful Radar runs | actions:read + issues:write | Validate JSON and create/update one deduplicated research issue ONLY on evidence from current PoolTogether Claimer |
+
+## Manual control
+
+On GitHub, open **Actions → Protocol Radar → Run workflow** to start an immediate scan. The scheduled scan runs approximately every 30 minutes, but GitHub may delay or drop runs under load. Reports appear on the run's page as a downloadable **protocol-radar-report** artifact; retention is 7 days. Scan output is never committed to the repository. No secrets or wallets are needed.
+
+## What each scan really proves
+
+- **PoolTogether:** Current Base PrizePool `ClaimedPrize` events in a recent 6-hour window; receipt samples show accrued claimReward, actual fee recipient and whether tx.to is the current published Claimer. It does NOT identify an unclaimed prize, prove fee withdrawal, or measure USD net profit. Empty 6h log sample is INSUFFICIENT to claim no activity.
+- **Superfluid:** Recent Base liquidation subgraph events and contract/event routing. No unclaimed streams, complete 30-day census, or operator profit are proven; historical liquidation events are already taken.
+- **Ripe:** NOT IMPLEMENTED for automated monitoring. Source-only reward mechanism is logged as an open research task, not an observed opportunity.
+- **Alerts:** Current-claimer receipt + nonzero accrued payout is labeled a **historical research signal**, NEVER `execution ready`. No alerts from unavailable scanner data or Superfluid event counts alone. Any incomplete scan is explicitly labeled incomplete, not zero activity.
+
+## Budget and security
+
+Runs on public-repository standard GitHub-hosted runners; GitHub's standard hosted runner usage for public repositories is generally free subject to current platform terms, quotas and availability. No paid RPC plan, GitHub-hosted runner upgrade or service subscription is configured. Reports may contain public on-chain addresses, transaction hashes and public RPC metadata. Never set wallet/seed/private keys or paid API credentials in GitHub. The Alert workflow is deliberately privileged only for issues, does not execute untrusted source from pull requests, and parses downloaded artifacts strictly as JSON.
+
+**There is absolutely no chain transaction/signing/broadcast path** in the workflows. The repo's existing scanners are restricted to read-only calls. No balance or wallet approval is involved. The full capital budget remains $10, never automatically spent.
+
+## On failure
+
+Read Protocol Radar's `manifest.json` for individual statuses. Network timeout, DNS errors, remote RPC rate limits, or missing data appear as `incomplete` or `timeout`; a scan with 0 events is distinct from failed data access. If the alert workflow fails due to GitHub permissions, inspect repository Settings → Actions → General and verify workflow permissions, or check whether organization rules restrict issue writing. Do not grant broader permissions or secrets without necessity.
+
+## Disable
+
+GitHub → Actions → Protocol Radar → ... → Disable workflow. This stops scheduled scans and downstream alert triggers. Tests remain independent. Workflow schedules do not guarantee second-level execution and are unsuitable for competitive liquidations.
+
+## Sources
+
+- https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
+- https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions
+- https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts

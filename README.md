@@ -172,3 +172,11 @@ make superfluid-all
 Official current Base contracts pay fee recipients for permissionless prize claims. Recent current-deployment reward receipts must still be proven; older claimer is deprecated. Run `make pooltogether-check` (read-only, 6h) for a first current event sample. See [research and ABI warnings](docs/KEEPER_ALTERNATIVES_2026_10_12.md). No wallet or funds needed.
 
 **POOL token valuation warning:** the PoolTogether claim reward is denominated in the PrizePool's own prizeToken() (looked up via read-only eth_call), not automatically in POOL governance-token units. The historical scanner also flags transactions whose destination is the current documented Claimer versus another address.
+
+## Automatic GitHub Actions — read-only radar
+
+Configured three GitHub Actions workflows: **Protocol Tests** (push/PR), **Protocol Radar** (roughly twice hourly at :17 and :47 UTC, plus manual trigger), and **Protocol Opportunity Alert** (runs after completed valid radar run, with issue-only write permission). No private keys, wallets, signing or transaction sending.
+
+Radar collects a 6-hour recent **PoolTogether Base** ClaimedPrize sample (on-chain accrued fee/receipt evidence) and a 3-day **Superfluid Base** liquidation activity sample. Ripe is explicitly not implemented until deployment and real-payout proof. Network errors are recorded as **incomplete**, never as zero payout; every run stores read-only JSON reports as GitHub artifacts for 7 days. Alerts are strictly **research-only**, deduplicated and suppressed without verified current-claimer fee receipts. They are not buy/sell instructions or execution-ready signals.
+
+Read [automation operations and limitations](docs/GITHUB_ACTIONS.md). To run now: GitHub **Actions → Protocol Radar → Run workflow**. Scheduled runs may be delayed; they are unsuitable for winning sub-second liquidations.
