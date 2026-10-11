@@ -74,7 +74,8 @@ class JSONRPC:
         # Never permit transaction submission methods through this client.
         if method not in {
             "eth_chainId", "eth_blockNumber", "eth_getCode", "eth_call",
-            "eth_gasPrice", "eth_estimateGas", "eth_getLogs", "eth_getBlockByNumber"
+            "eth_gasPrice", "eth_estimateGas", "eth_getLogs", "eth_getBlockByNumber",
+            "eth_getTransactionByHash", "eth_getTransactionReceipt"
         }:
             raise RPCError(f"Disallowed RPC method: {method}")
         self.sequence += 1

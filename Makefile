@@ -46,3 +46,7 @@ superfluid-recent:
 .PHONY: superfluid-all
 superfluid-all:
 	$(PYTHON) superfluid_recent_receipts.py --activity evidence/superfluid-base-2026-10-11-activity-full.json --limit 35 --output superfluid_recent_receipts.json
+
+.PHONY: pooltogether-check
+pooltogether-check:
+	$(PYTHON) pooltogether_claim_history.py --lookback-hours 6 --max-sample-receipts 10 --output pooltogether_claim_history.json

@@ -96,3 +96,10 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Search fresh, higher-value successful public-caller payout transactions on low-fee networks **before building a new bot**.
 - [ ] Require evidence that operator profit > costs under conservative exit liquidity assumptions and is plausibly accessible with a $10 budget.
 - [ ] Check a second asset/network before investing further in Superfluid; early pivot if prize pool is small/priority-locked.
+
+## New reward evidence gate
+- [x] Check current PoolTogether Base contract deployment and event ABI versus deprecated version.
+- [x] Add no-key read-only ClaimedPrize / accrued fee recipient + gas audit.
+- [ ] Run the latest GitHub test suite and PoolTogether 6h RPC scan.
+- [ ] If fresh positive rewards appear, verify who receives fees, whether POOL reward is withdrawable/liquid, and competitive gas net.
+- [ ] Then only identify an actually UNCLAIMED eligible action, with simulation; no spending yet.

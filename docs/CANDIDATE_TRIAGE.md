@@ -59,3 +59,6 @@ Classification **historically profitable for some existing executors**, **NOT re
 **Current missing gates:** no unclaimed stream; no proof that a newcomer can reliably beat entrenched keepers; no failure-attempt dataset; no redeemability-adjusted P&L. Do not risk $10 or build live executor yet.
 
 See [receipt analysis](../evidence/superfluid-base-2026-10-receipt-analysis.json) and [decision](OCT_2026_DECISION.md).
+
+## 2026-10-12 added candidates
+PoolTogether V5 Base **#1** for read-only Gate 0 of the **current** claimer; Ripe Protocol Base **#2** pending real keeper payout proof. Deprecated Synthetix Perps Base/Arbitrum, superseded GBLIN contracts, unverified fillr and mostly-zero lolpad fallback bounty are not execution candidates. Details: docs/KEEPER_ALTERNATIVES_2026_10_12.md.

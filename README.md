@@ -166,3 +166,7 @@ Optional full-sample audit (no wallet, 35 historical ETHx transaction receipts; 
 ```sh
 make superfluid-all
 ```
+
+## Next read-only Gate-0 candidate: PoolTogether V5 Base
+
+Official current Base contracts pay fee recipients for permissionless prize claims. Recent current-deployment reward receipts must still be proven; older claimer is deprecated. Run `make pooltogether-check` (read-only, 6h) for a first current event sample. See [research and ABI warnings](docs/KEEPER_ALTERNATIVES_2026_10_12.md). No wallet or funds needed.

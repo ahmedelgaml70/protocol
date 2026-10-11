@@ -39,3 +39,6 @@ The October 11 Superfluid subgraph returns **300 liquidation events but only 270
 
 ## New stop rule (Superfluid audit, October 12)
 A high event count does not imply a valuable/public reward pool. Superfluid Base activity yielded priority-locked USDCx payouts and ETHx rewards concentrated in one successful keeper. Six of 12 **successful** selected ETHx calls were economically negative versus gas under parity. Do NOT automate live liquidation on the user's budget until we verify a current eligibility window, realistic competitive fill probability, and conservative expected net that accounts for failed calls. Document decisions before adding bots. Original user receipts and full report must remain in `evidence/`.
+
+## Source-version trap
+Do not assume same-named event across old repositories uses same ABI. Legacy PoolTogether/v5-prize-pool defines ClaimedPrize with uint16 drawId whereas the newer docs-pinned GenerationSoftware/pt-v5-prize-pool defines uint24 drawId, changing topic0. Only count current deployed contract reward and validated recipient; never call aggregate protocol fee revenue keeper income.

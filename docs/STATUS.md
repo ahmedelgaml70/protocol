@@ -93,3 +93,6 @@ Original 300-event dataset: USDCx 52 events (33 priority Patrician/19 Pleb), **1
 - Direct Internet access from the container remains blocked (DNS lookup failure for Base RPC and Superfluid GraphQL); uploaded user read-only data remain our verified local on-chain inputs.
 - Specific next executable research is **external payout discovery** (issue #3), not a real transaction. No need for user wallet/API credentials.
 - With purely illustrative ETH price $2,000–$3,000, the selected 12-call +0.0300853374 ETH-equivalent gas-only proxy corresponds to about $60.17–$90.26 before exchange, operational and failed-attempt costs. These are *scenario prices*, not actual market quotes or new earnings.
+
+## 2026-10-12 keeper pivot
+PoolTogether Base PrizePool/Claimer (current) and deprecated Claimer identified from official docs; current pinned source event ABI verified; old PoolTogether repo ABI differs (uint16 vs uint24 drawId). Added a read-only 6-hour event/receipt scanner plus 4 synthetic test cases, **not executed in the exact GitHub revision**. Current positive rewards NOT verified. Ripe is secondary pending real payout proof; discarded obsolete Synthetix Base, superseded GBLIN, and unverified small/upcoming mechanisms. See docs/KEEPER_ALTERNATIVES_2026_10_12.md.
