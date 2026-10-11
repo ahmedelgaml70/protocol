@@ -20,3 +20,13 @@ This file is a snapshot, not a live performance claim.
 - **Not yet independently verified:** compiled-bytecode match, actual event activity, active fillable orders, realized token value, profitable outsider execution.
 - Earlier local scanner package: 5 offline tests passed on the predecessor version. The re-authored GitHub repository version has unit tests committed but was **not executed through this GitHub connector session**. Do not claim its test suite passed until it is run.
 - Do not enable GitHub Actions by default; run offline tests locally and store only sanitized result summaries.
+
+## Continued session — 2026-10-11
+
+- Verified the published source's `RangeOrders` ten-field struct, permissionless `fill`, event formats, 1% output-bounty, and the 4663 deployment manifest claim.
+- Independently checked all existing manually coded function selectors and `Placed`/`Filled`/`Cancelled` event topics against Ethereum Keccak-256; they agree with the signatures.
+- Discovered three further bounty classes in the *same published contract repo*: PositionKeeper harvest (0–3% of fees), LPVault harvest (0.5%), PreMarketPerp undercollateralized position liquidation (1% of positive remaining margin subject to available funds).
+- Added `kerf_multi_history.py` and six offline unit tests. **These new tests are written but NOT EXECUTED in this repository environment.**
+- Found official Blockscout free API information; account-generated API key required. This does not resolve RPC access by itself.
+- We have **zero verified open, positive-net, execution-ready bounties**, zero wallet transactions, zero project expenditure.
+- The accessible earlier **original ZIP's** five legacy offline tests were executed in the current session and passed; this is not a test result for the modified GitHub repo.
