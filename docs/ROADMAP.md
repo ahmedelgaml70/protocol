@@ -137,3 +137,8 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Identify Beefy native-token caller incentive, in-house Cowllector competition and historical gas-negative Base receipt.
 - [ ] Prove recent *third-party* Beefy harvest with actual native/wrapped native fee payment net-positive on a low-fee chain.
 - [ ] Verify the `workflow_run` research alert pipeline consumes a trusted smoke artifact successfully and exits without issue creation on zero signals.
+
+- [x] End-to-end downstream read-only artifact download → research signal evaluation → no-issue branch tested with trusted default-branch push, 41 tests passed.
+- [ ] Wait for actual qualifying on-chain evidence before verifying positive issue-create path; **do not fabricate evidence** for production alert testing.
+- [x] Close idle PoolTogether Base Claiming issue #4 and shift research priority to Beefy public harvest issue #6.
+- [ ] Investigate whether Beefy has actual current independent caller net-positive harvest receipts and a practical native-token payout versus gas.

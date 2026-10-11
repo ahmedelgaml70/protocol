@@ -1,0 +1,48 @@
+{
+  "captured_at_utc": "2026-10-11T21:50:30Z",
+  "project": "permissionless onchain bounty research, no signing/spending",
+  "latest_smoke": {
+    "code_commit": "d530955a60db08177c9b70645d420223f0f4dfc3",
+    "tests": {
+      "run_url": "https://github.com/ahmedelgaml70/protocol/actions/runs/38177985661",
+      "status": "success",
+      "passed": 41
+    },
+    "radar": {
+      "run_url": "https://github.com/ahmedelgaml70/protocol/actions/runs/38177985561",
+      "status": "success",
+      "scanners": [
+        "pooltogether-base",
+        "superfluid-base"
+      ],
+      "note": "Both had previously returned valid JSON; 30d PoolTogether zero, 3d Superfluid 52. Reports are historical read-only observations."
+    },
+    "alert_gate": {
+      "run_url": "https://github.com/ahmedelgaml70/protocol/actions/runs/38177999974",
+      "steps": {
+        "artifact_download": "success",
+        "research_signal_assessment": "success",
+        "issue_publisher": "success"
+      },
+      "research_signals": 0,
+      "issues_written": 0,
+      "positive_issue_creation_path_tested": false,
+      "interpretation": "The no-signal/skip path is verified, but actual issue creation must await legitimate evidence."
+    }
+  },
+  "candidate_state": {
+    "pooltogether_base": "DEPRIORITIZED: no indexed PrizeClaim entities observed in trailing 30d on near-tip subgraph; issue #4 closed not planned",
+    "superfluid_base": "MONITOR ONLY: activity verified, independent rewards sometimes positive but sample small and concentrated",
+    "ripe_base": "HOLD: GREEN reward only conditionally mintable and current public-caller receipt absent; official keeper activation blocker pertains to deleveraging Pool-1 only",
+    "beefy_harvest": "NEW RESEARCH: permissionless source mechanism, company Cowllector competition, historical Base event cost more gas than assumed fee value; no recent profitable third-party receipt verified"
+  },
+  "no_wallet_transaction": true,
+  "capital_spent_usd": 0,
+  "profit_realized_usd": 0,
+  "citations": [
+    "https://github.com/Ripe-Foundation/ripe-protocol/issues/236",
+    "https://docs.beefy.finance/developer-documentation/strategy-contract",
+    "https://docs.beefy.finance/dao/treasury",
+    "https://basescan.org/tx/0xe4e186d7f12205829e5db06fe7b641e64e0acea9e904bf012f8e6315984ebec8"
+  ]
+}
