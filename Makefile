@@ -21,3 +21,10 @@ history:
 .PHONY: multi-history
 multi-history:
 	$(PYTHON) kerf_multi_history.py --lookback-blocks 30000 --output multi_bounty_history.json
+
+# Free, keyless read-only endpoint supports eth_call, eth_getCode, eth_estimateGas.
+# It intentionally DOES NOT support eth_getLogs. Scan the 10 newest order IDs
+# to remain well below the endpoint's shared 60-requests/minute ceiling.
+.PHONY: scan-free
+scan-free:
+	$(PYTHON) kerf_radar.py --rpc https://triport.io/rpc/robinhood/public --max-orders 10 --output report.json

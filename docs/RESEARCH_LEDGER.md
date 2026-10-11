@@ -67,3 +67,14 @@ Source (original security council): https://forum.superfluid.org/t/security-coun
 Superfluid's official Sentinel provides `/nextliquidations` on *a running instance*, not automatically as a public hosted web API. Its normal startup expects a funded signer and RPC; do not run it in signing mode. Documentation: https://github.com/superfluid-org/superfluid-sentinel
 
 **Subgraph lead:** Superfluid's documented public schema/SKD subgraph queries can help enumerate stream state, but no live stream-subgraph endpoint has been confirmed accessible in this tool session. Real solvency remains an on-chain calculation rather than just a stale subgraph snapshot.
+
+## Competition and free infrastructure details
+
+Kerf explicitly states that its own off-chain keeper scans open RangeOrders with Multicall3 and tries to fill an eligible order when the bounty is at least `GAS_BOUNTY_MULTIPLE = 3` times its estimated gas cost. This makes a 1% theoretical bounty an **actively contested** payout; the 1–3× gas segment may still be net positive but is small and not proven accessible to us. Source: https://www.kerf.finance/docs/range-orders .
+
+Robinhood Chain's ~100ms block rate means historical inspection windows must be defined in timestamps, not guessed from block counts. The `30,000` block default is likely roughly 50 minutes, which risks a false 'no activity' inference. Source: https://www.ankr.com/docs/changelog/robinhood-chain/ (published Oct 1, 2026).
+
+New zero-key observation source: Triport public keyless RPC `https://triport.io/rpc/robinhood/public`, 60 calls/minute, `eth_call`, `eth_getCode`, `eth_estimateGas` available, `eth_getLogs` unavailable. Use for **current contract state only**, not historical payout measurement. Source: https://triport.io/docs/robinhood/public .
+
+### Decision note
+**Kerf current classification: RESEARCH, lower priority until actual paid transactions / current eligible order evidence are observed.** The official bot raises the effective entry difficulty. Continue scanning, but do not equate the repo's 4 bounty mechanisms with actual available revenue. No new positive-net claim has been made.

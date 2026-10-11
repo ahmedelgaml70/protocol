@@ -30,3 +30,11 @@ This file is a snapshot, not a live performance claim.
 - Found official Blockscout free API information; account-generated API key required. This does not resolve RPC access by itself.
 - We have **zero verified open, positive-net, execution-ready bounties**, zero wallet transactions, zero project expenditure.
 - The accessible earlier **original ZIP's** five legacy offline tests were executed in the current session and passed; this is not a test result for the modified GitHub repo.
+
+## Free RPC discovery / coverage correction (2026-10-11)
+- Found and documented a **keyless no-wallet live read-only source**: `https://triport.io/rpc/robinhood/public`, up to 60 calls per minute per IP (shared and best-effort). It supports `eth_call`, `eth_getCode`, `eth_estimateGas`, and other light reads; **not `eth_getLogs`**. The repository now exposes `make scan-free` (last ten order IDs).
+- Source: https://triport.io/docs/robinhood/public
+- `make history` and `make multi-history` must continue using the official RPC or a provider with log access.
+- Corrected interpretation: approximately 0.1-second blocks means a 30,000-block lookback is roughly 50 minutes and cannot support claims about daily keeper opportunities. See https://www.ankr.com/docs/changelog/robinhood-chain/ .
+- Kerf's own bot reportedly sweeps all open orders and only fills when its estimated bounty is at least **3x gas**, so independent profits may be unusually competitive. Source: https://www.kerf.finance/docs/range-orders .
+- In this session, local predecessor v0.1 offline tests were rerun and **all 5 passed**. The latest GitHub-revision tests remain unexecuted in this environment; do not equate the two.

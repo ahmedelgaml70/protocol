@@ -41,3 +41,10 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Enumerate **all** VaultFactory vaults if six seed vaults show paid activity.
 - [ ] Confirm all deployed source/bytecode and token payout transfer events on Blockscout.
 - [ ] Assess eligible actions with truly positive **net** realized-value rewards.
+
+## Low-friction on-chain evidence
+- [x] Identify keyless read-only RPC with current `eth_call`, `eth_getCode` and gas estimation.
+- [x] Add `make scan-free` to check the 10 newest published Kerf orders without credentials.
+- [ ] Run this command from a network-accessible machine and preserve the report block number, results and errors.
+- [ ] Measure **timestamp coverage** for each historical scan; do not assume 30k blocks = a day.
+- [ ] Use historical events from official RPC/provider supporting `eth_getLogs`, to quantify keeper profits rather than assuming gross bounty is profit.

@@ -71,3 +71,22 @@ The extended observer reads **six seed vaults only**, plus one keeper and one pe
 
 **API fallback:** Blockscout documents a free PRO API for Robinhood Chain (up to 5 requests/sec and 100,000 credits/day), but a user-created API key is required. Free access does not guarantee unlimited `eth_getLogs` volume: https://github.com/blockscout/docs/blob/main/robinhood-api.mdx
 
+
+## Fastest free live test (no wallet or API key)
+
+Run `make scan-free` on a normal Internet-connected computer. This checks a small recent window of **10 Kerf order IDs** on a documented, keyless, **read-only** Robinhood Chain RPC endpoint operated by Triport. Its free endpoint supports `eth_call`, `eth_getCode`, and `eth_estimateGas`, but explicitly blocks `eth_getLogs`; historical event scanners must use the official Robinhood Chain RPC (or an RPC key that allows logs).
+
+```bash
+git pull
+make test
+make scan-free
+```
+
+If the endpoint is unreachable, the scan returns an explicit error. If it returns zero fillable orders, it only proves **none in the last 10 order IDs at the scanned block**, and does not prove that the protocol or older orders have none. A positive result is not execution-ready: bounty amount uses simplified V3 range math; the `fillable` view can become stale. None of this sends transactions.
+
+Triport free RPC rules: https://triport.io/docs/robinhood/public
+Official Robinhood Chain RPC: https://docs.robinhood.com/chain/connecting/
+
+### Activity window caveat
+
+Robinhood Chain is described as an approximately **100 ms** block-time chain (actual timing varies). A default `--lookback-blocks 30000` history audit may cover only approximately **50 minutes**, not a day. For ~24 hours of *nominal* chain time, roughly 864000 blocks are needed; the actual wall-clock span must be measured using on-chain block timestamps. Increase the history lookback and choose a provider that supports `eth_getLogs`, mindful of rate limits and log-range caps. Never describe a 30k-block scan as a full-day audit.
