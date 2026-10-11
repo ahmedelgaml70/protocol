@@ -57,3 +57,13 @@ Sources: [LPVault.sol](https://github.com/KerfFinance/kerf-contracts/blob/main/s
 **Verification limits:** Direct explorer address/API requests were not accessible in the available browsing environment and direct RPC DNS was previously unavailable locally. The publicly published deployment manifest has not been verified against deployed bytecode. Do not extrapolate profitability or claim real payouts.
 
 Blockscout reports Robinhood Chain public explorer and a free PRO API key tier; see https://github.com/blockscout/docs/blob/main/robinhood-api.mdx and https://www.blog.blockscout.com/build-on-robinhood-chain-with-the-blockscout-pro-api/ .
+
+## Superfluid security status (2026-10-11 review)
+
+Superfluid DAO's Security Council reported a September 2026 Celo-only incident involving insolvency / broken stream liquidations. According to its October 2 technical report, a September 4 hotfix restored liquidation; it stated other supported networks were unaffected. We will **exclude Celo from the initial legitimate-bounty search** until new deployment conditions and liquidator economics are independently verified, and we will not attempt or automate any security exploit.
+
+Source (original security council): https://forum.superfluid.org/t/security-council-preliminary-disclosure-of-a-security-incident-that-impacted-g-liquidity-on-celo-network/1743
+
+Superfluid's official Sentinel provides `/nextliquidations` on *a running instance*, not automatically as a public hosted web API. Its normal startup expects a funded signer and RPC; do not run it in signing mode. Documentation: https://github.com/superfluid-org/superfluid-sentinel
+
+**Subgraph lead:** Superfluid's documented public schema/SKD subgraph queries can help enumerate stream state, but no live stream-subgraph endpoint has been confirmed accessible in this tool session. Real solvency remains an on-chain calculation rather than just a stale subgraph snapshot.
