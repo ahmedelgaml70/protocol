@@ -30,3 +30,14 @@ Pivot if there are no paid events in a meaningful window, rewards are entirely c
 
 ## Why this is not an autonomous money printer
 Read-only code doesn't make money; contracts don't reserve public rewards; the profitability of historically paid bounties does not show a new entrant can win. This project searches for evidence first.
+
+## Added investigations
+
+- [x] Inspect three extra published reward mechanisms in Kerf.
+- [x] Create read-only event history census for PositionKeeper, LPVault and PreMarketPerp.
+- [x] Check selectors/topics against local Ethereum Keccak reference implementation.
+- [ ] Run `make test` on the committed GitHub revision; fix any failures.
+- [ ] Run `make multi-history` from a machine with RPC access; record block range, raw events and keeper concentration.
+- [ ] Enumerate **all** VaultFactory vaults if six seed vaults show paid activity.
+- [ ] Confirm all deployed source/bytecode and token payout transfer events on Blockscout.
+- [ ] Assess eligible actions with truly positive **net** realized-value rewards.
