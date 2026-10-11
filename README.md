@@ -112,3 +112,16 @@ make superfluid-receipts
 ```
 
 `superfluid_receipts.py` reads Base chain ID and two existing transactions via `eth_getTransactionByHash` and `eth_getTransactionReceipt`, extracts ERC20 ETHx transfers to the submitting caller and reported gas/L1 fee. It **never broadcasts**. It intentionally does not calculate profits from unverifiable token prices. For missing L1 fee, it flags an incomplete fee assessment. Use a third-party RPC only if it supports these methods; shared public RPCs may be rate limited.
+
+## Check recent Superfluid liquidation activity (no wallet)
+
+Superfluid's official `AgreementLiquidatedV2Event` subgraph schema includes transaction hashes, caller and reward receiver addresses, token addresses, timestamps, and raw reward amounts. A new standard-library Python observer queries the **last 30 days**, samples the most recent events and reports caller concentration:
+
+```sh
+make superfluid-activity
+# or: python3 superfluid_activity.py --network base-mainnet --days 30 --limit 300
+```
+
+The output is `superfluid_activity.json`; it is gitignored. A saturated sample is flagged (`sample_may_be_truncated`). The subgraph has only indexed event history: it **does not** establish any live stream insolvency or an opportunity to claim; receipt-level token transfers and current chain state must still be checked. The endpoint is public but availability and freshness are unverified here.
+
+Additional networks: `--network arbitrum-one`, `--network optimism-mainnet`, `--network polygon-mainnet`. Celo remains excluded from the initial security-sensitive investigation.

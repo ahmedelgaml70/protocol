@@ -58,3 +58,9 @@ Cross-check: DefiLlama's published income statement reports Q3 2026 **$0 gas com
 Found two **successfully executed** Superfluid Base batch-liquidator transactions from May 2026 with actual ETHx transfers to the initiator. First has positive illustrative transfer value relative to gas, **+$0.6348** under ETHx≈ETH price-parity assumption before additional costs; second **-$0.0294** on same assumptions. Data source: BaseScan receipts, not independently queried via RPC in this environment. New `superfluid_receipts.py` can repeat the audit read-only; a local implementation passed four synthetic offline tests, committed code may require its own test run. Evidence and citations in `docs/RESEARCH_LEDGER.md`.
 
 **Research status:** Superfluid Base now passes Gate 0 *historical paid caller*, but still lacks confirmed current October 2026 eligible Pleb/Pirate liquidation, front-running/competition assessment and actual exchange liquidity. No funding or wallet actions.
+
+## Subgraph activity observer — 2026-10-11
+
+Added `superfluid_activity.py` to obtain recent indexed `AgreementLiquidatedV2Event` data without RPC block-range scanning. Official subgraph schema was inspected for these field names. The result records timestamps, transaction hashes, raw reward amounts, receiver addresses, and caller concentration (not profits). Equivalent local summary implementation was tested with three offline synthetic tests; the committed exact checkout requires full suite verification. External endpoint is **not reachable by our current tool environment**, so September–October 2026 activity has **not yet been observed**.
+
+Run `make superfluid-activity` from a network-enabled terminal, then inspect sanitized `superfluid_activity.json`. Do not assume a stream is currently liquidatable based on this index.

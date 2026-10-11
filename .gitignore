@@ -24,3 +24,5 @@ venv/
 multi_bounty_history.json
 
 superfluid_receipts.json
+
+superfluid_activity.json

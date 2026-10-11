@@ -65,3 +65,12 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Obtain **recent** event counts and payee concentration by month, especially September–October 2026.
 - [ ] Determine which independent callers receive rewards vs designated TOGA Patrician in each phase.
 - [ ] Verify token exit liquidity, gas, caller competition, and **currently eligible** Pleb/Pirate opportunity.
+
+## Recent activity verification without full-node indexing
+
+- [x] Inspect upstream Superfluid GraphQL schema for `AgreementLiquidatedV2Event` fields.
+- [x] Add read-only 30-day liquidation event sample script and offline validation.
+- [ ] Obtain current, timestamped last-30-days sample via `make superfluid-activity`.
+- [ ] Verify **successful receipts and actual reward transfers** for recent event candidates.
+- [ ] Determine which payout receivers are protected/preferred TOGA participants versus independent Pleb/Pirate callers.
+- [ ] Check observable positive-net frequency; reject if absent before building executors.

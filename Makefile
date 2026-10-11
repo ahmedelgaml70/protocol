@@ -32,3 +32,7 @@ scan-free:
 .PHONY: superfluid-receipts
 superfluid-receipts:
 	$(PYTHON) superfluid_receipts.py --output superfluid_receipts.json
+
+.PHONY: superfluid-activity
+superfluid-activity:
+	$(PYTHON) superfluid_activity.py --network base-mainnet --days 30 --limit 300 --output superfluid_activity.json

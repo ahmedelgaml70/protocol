@@ -101,3 +101,11 @@ DeFiLlama's aggregated Q3 2026 gas compensation for Liquity V2 is shown as **$0*
 Evidence snapshot: [historical Base receipts](../evidence/superfluid-base-2026-05-samples.json). Local read-only RPC confirmation script: [superfluid_receipts.py](../superfluid_receipts.py). Its logic was exercised with four offline synthetic tests locally; the version committed to GitHub should also be verified with `make test`.
 
 Superfluid Pleb/Pirate caller rules: https://medium.com/superfluid-blog/introducing-sentinels-the-keepers-of-superfluid-protocol-4eadca384cbf . The presence of liquidations does not prove rewards are accessible to a new operator.
+
+## Superfluid official indexed event source (candidate for freshness test)
+
+Official upstream `AgreementLiquidatedV2Event` subgraph schema declares `transactionHash`, `timestamp`, `token`, `liquidatorAccount`, `rewardAmountReceiver`, `rewardAmount`, `liquidationType`. Source: https://github.com/superfluid-org/protocol-monorepo/blob/dev/packages/subgraph/schema.graphql
+
+Known endpoint pattern: `https://subgraph-endpoints.superfluid.dev/base-mainnet/protocol-v1`. The newly committed `superfluid_activity.py` queries this over POST for up to 300 recent events, reports frequency and caller concentration. The output **must not be treated as a live list of unclaimed targets**: Superfluid streams update continuously and the subgraph does not automatically represent current balances. The endpoint's availability in the user's network is untested.
+
+The script performs no signing or broadcasts. It must be run from an internet-connected environment; an error result is not evidence of zero liquidations.
