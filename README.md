@@ -55,3 +55,19 @@ Only after all six checks may a candidate be described as execution-ready. See d
 - Superfluid Sentinel: https://github.com/superfluid-org/superfluid-sentinel
 
 This is not financial advice or a promise of returns. The default operating mode is **read-only observation**.
+
+## Extended read-only historical bounty census
+
+The 1% range-order bounty is not Kerf's only published permissionless reward. The source also exposes PositionKeeper harvesting (caller share up to 3% of collected fees), LPVault harvesting (0.5% of collected fees), and PreMarketPerp liquidations (1% of remaining positive margin, capped by available funds). These apply only when their respective conditions are satisfied.
+
+```sh
+make multi-history
+# or: python3 kerf_multi_history.py --lookback-blocks 30000
+```
+
+The extended observer reads **six seed vaults only**, plus one keeper and one perp contract. It records raw event amounts, not USD, and does **not** discover all factory-created vaults. It does not forecast currently claimable rewards. Zero events in its output mean zero *observed in that range*, not zero opportunity across the ecosystem.
+
+**Test status:** the original local v0.1 package passed five offline tests. The revised GitHub modules and expanded tests are committed, but have **not** been executed in a network-capable local copy during this session. Run `make test` before trusting output.
+
+**API fallback:** Blockscout documents a free PRO API for Robinhood Chain (up to 5 requests/sec and 100,000 credits/day), but a user-created API key is required. Free access does not guarantee unlimited `eth_getLogs` volume: https://github.com/blockscout/docs/blob/main/robinhood-api.mdx
+
