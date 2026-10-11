@@ -1,0 +1,50 @@
+{
+  "chain_id": 8453,
+  "source": "read-only RPC receipts",
+  "rows": [
+    {
+      "tx_hash": "0x4688d1709a06a8adde20328eb9e71e3955ff1e54e64234073515bfff8b75668b",
+      "block_number": 45764677,
+      "status": "SUCCESS",
+      "sender": "0xc20a5455035ab593682cf9b9916b9407cc9e47f3",
+      "ethx_token": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "liquidation_events": 1,
+      "ethx_received_raw": "277410573088982",
+      "ethx_received_tokens": "0.000277410573088982",
+      "inbound_transfers": [
+        {
+          "from": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+          "amount_raw": "277410573088982"
+        }
+      ],
+      "l2_fee_wei": "4535042400000",
+      "l1_fee_wei": "1962147885",
+      "full_fee_wei": "4537004547885",
+      "completeness": "full_fee_available",
+      "warning": "Inbound transfer is not proof of exclusive liquidation reward. No sale proceeds, swap costs or realized profits checked."
+    },
+    {
+      "tx_hash": "0x8cf34f65aea1f5743fadd59e91036444744263a6ecd75e9b719c04a35bb7a709",
+      "block_number": 45813997,
+      "status": "SUCCESS",
+      "sender": "0xc20a5455035ab593682cf9b9916b9407cc9e47f3",
+      "ethx_token": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "liquidation_events": 1,
+      "ethx_received_raw": "465912049232",
+      "ethx_received_tokens": "4.65912049232E-7",
+      "inbound_transfers": [
+        {
+          "from": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+          "amount_raw": "465912049232"
+        }
+      ],
+      "l2_fee_wei": "12832034400000",
+      "l1_fee_wei": "15623566968",
+      "full_fee_wei": "12847657966968",
+      "completeness": "full_fee_available",
+      "warning": "Inbound transfer is not proof of exclusive liquidation reward. No sale proceeds, swap costs or realized profits checked."
+    }
+  ],
+  "transactions_sent": 0,
+  "profit_usd_verified": false
+}
