@@ -121,3 +121,8 @@ The 2026-10-11 21:39 UTC smoke run confirmed 52 recent Superfluid events and Poo
 PoolTogether 3-day activity was zero from a near-tip official index, so the scheduled read-only GraphQL discovery was expanded to **30 days** (max 500 indexed claims; up to 10 receipt checks). This is more meaningful for deciding whether the current Base prize claimer is active. Any nonzero accrued reward still must pass receipt and withdrawal/economic checks.
 
 Ripe's own GitHub [issue #236](https://github.com/Ripe-Foundation/ripe-protocol/issues/236) opened Sep 20 2026 is labeled `activation-blocker` for **retained Pool-1 deleverage keeper preflight/integration**, still open. This does not say public `Teller.liquidateUser` is disabled, but proves key keeper operations have unresolved production-integration concerns. Directly paying *external* liquidation receipts are not yet confirmed; Ripe remains source-only / HOLD.
+
+### First 30-day PoolTogether index (2026-10-11 21:47 UTC)
+[Actions #38177834708](https://github.com/ahmedelgaml70/protocol/actions/runs/38177834708) completed successfully. Current official Base PoolTogether Graph index near tip returned **zero prizeClaims in full trailing 30-day requested window**, `indexed_may_be_truncated=false`, zero receipt samples/error, WETH prize token. No public caller fees recorded **by this index in this window**, subject to index correctness; do not assert the protocol is inactive globally. Superfluid Base 52 liquidation events in trailing three days, no claimability. **PoolTogether Base downgraded from active high priority to low-frequency observation.**
+
+Added a safe end-to-end alert pipeline smoke gate for trusted default-branch push radar runs; will record CI result when run completes.

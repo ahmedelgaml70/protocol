@@ -132,3 +132,8 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Read official Ripe September 2026 open production keeper activation blocker #236; separate its deleveraging scope from liquidation public ABI.
 - [ ] Record what the 30-day PoolTogether Base index actually returns and whether ANY current-claimer fee recipient earned rewards in validated receipts.
 - [ ] Make alert workflow's first eligible scheduled run observable; don't mislabel skipped push-triggered runs.
+
+- [x] Verify 30-day official PoolTogether Base index snapshot was not truncated and had 0 prize claims; downgrade Base claiming.
+- [x] Identify Beefy native-token caller incentive, in-house Cowllector competition and historical gas-negative Base receipt.
+- [ ] Prove recent *third-party* Beefy harvest with actual native/wrapped native fee payment net-positive on a low-fee chain.
+- [ ] Verify the `workflow_run` research alert pipeline consumes a trusted smoke artifact successfully and exits without issue creation on zero signals.

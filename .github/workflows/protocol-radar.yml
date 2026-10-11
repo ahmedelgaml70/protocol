@@ -45,3 +45,5 @@ jobs:
 # PoolTogether discovery: official indexed GraphQL, followed by Base receipt verification.
 
 # One-time smoke trigger: expanding PoolTogether indexed lookback from 3d to 30d.
+
+# Validate post-run research alerts end-to-end on safe default-branch push smoke.

@@ -1,0 +1,30 @@
+{
+  "observed_at_utc": "2026-10-11T21:47:55Z",
+  "source": "GitHub Actions run #38177834708 report artifact; independently parsed from downloaded workflow ZIP",
+  "actions_url": "https://github.com/ahmedelgaml70/protocol/actions/runs/38177834708",
+  "artifact_url": "https://github.com/ahmedelgaml70/protocol/actions/runs/38177834708/artifacts/11717250161",
+  "network": "Base",
+  "chain_id": 8453,
+  "pooltogether": {
+    "status": "ok",
+    "window_days": 30,
+    "source": "PoolTogether official Base Graph Studio subgraph + read-only RPC",
+    "indexed_claim_events": 0,
+    "indexed_may_be_truncated": false,
+    "unique_transaction_hashes": 0,
+    "receipt_errors": [],
+    "prize_token_onchain": "0x4200000000000000000000000000000000000006",
+    "chain_tip": 52482963,
+    "index_head": 52482961
+  },
+  "superfluid": {
+    "status": "ok",
+    "window_utc_start": "2026-10-08T21:47:55Z",
+    "window_utc_end": "2026-10-11T21:47:55Z",
+    "liquidation_events": 52,
+    "sample_truncated": false
+  },
+  "decision": "Deprioritize PoolTogether Base claims; future scans cannot claim profitability from events alone.",
+  "user_funds_spent_usd": 0,
+  "realized_user_profit_usd": 0
+}
