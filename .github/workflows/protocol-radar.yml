@@ -42,3 +42,4 @@ jobs:
           if-no-files-found: warn
 # PoolTogether uses the keyless PublicNode Base RPC to permit read-only eth_getLogs.
 # Exponential block-window search avoids requesting pruned genesis on public RPCs.
+# PoolTogether discovery: official indexed GraphQL, followed by Base receipt verification.

@@ -10,8 +10,8 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 CHECKS = (
     ("pooltogether-base", "pooltogether_claim_history.json",
-     ["pooltogether_claim_history.py", "--rpc", "https://base-rpc.publicnode.com", "--lookback-hours", "6",
-      "--chunk", "1000", "--max-sample-receipts", "10"], 240),
+     ["pooltogether_subgraph.py", "--rpc", "https://base-rpc.publicnode.com",
+      "--days", "3", "--limit", "150", "--receipts", "10"], 180),
     ("superfluid-base", "superfluid_activity.json",
      ["superfluid_activity.py", "--network", "base-mainnet",
       "--days", "3", "--limit", "300"], 90),

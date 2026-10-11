@@ -117,3 +117,7 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Audit whether Base RPC serves 6-hour pool prize-claim logs without key or rate issues.
 - [ ] Verify future alerts correspond to actual fee accrual and are never represented as currently collectible.
 - [ ] Design Ripe evidence discovery once a deployed contract and payout receipt are independently established.
+
+- [x] Identify a published PoolTogether Base GraphQL index and cross-check its schema against the current PrizePool source.
+- [x] Integrate zero-key indexed prize claim discovery with independently read-only Base receipt validation.
+- [ ] Verify official Graph Studio public endpoint works in GitHub Actions; if not, mark PoolTogether incomplete and pivot provider without fake zero results.

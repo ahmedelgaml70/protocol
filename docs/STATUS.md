@@ -110,3 +110,6 @@ Workflows added under `.github/workflows/`: tests on push/PR; twice-hourly read-
 
 ### PublicNode follow-up and pruned-history fix
 PublicNode accepted PoolTogether RPC queries but returned RPC error 4444 on old block 1 (pruned; oldest available block around 51,000,000). Root cause was our timestamp-search helper querying genesis for a recent 6-hour window. Fixed `block_range.py` to exponential-backtrack from latest and binary-search a recent bracket; old history is never requested unless it is truly needed. Offline equivalence tests passed for normal and pruned histories. New smoke run triggered.
+
+### Third smoke and subgraph alternative (2026-10-12)
+The 2026-10-11 21:39 UTC smoke run confirmed 52 recent Superfluid events and PoolTogether `eth_getLogs` still received HTTPError even after improving time-window selection (PublicNode pruned history fixed). A new PoolTogether official subgraph + independently verified Base receipt scanner has been added. The scheduler now runs it rather than repeatedly querying an unsupported free RPC log method. New smoke run required to confirm Graph Studio public endpoint responsiveness. No user funds spent.
