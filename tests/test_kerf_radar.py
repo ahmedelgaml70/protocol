@@ -62,7 +62,6 @@ class TestRadar(unittest.TestCase):
         self.assertEqual(result["orders"][0]["status_label"], "WATCH_ONLY_NOT_EXECUTION_READY")
 
     def test_bad_prices_rejected(self):
-        self.assertRaises(ValueError, r.read_prices, "prices.example.json") if False else None
         self.assertRaises(ValueError, r.calldata, "eth_sendTransaction")
 
 
