@@ -94,3 +94,9 @@ Robinhood Chain is described as an approximately **100 ms** block-time chain (ac
 ## Time-accurate event history
 
 As of this revision, `make history` and `make multi-history` scan the last **24 hours**, computed using actual on-chain block timestamps. You may override with `--lookback-hours N` (up to 720) or a manual `--lookback-blocks N`; those are not equivalent and the latter does not imply any particular elapsed time. This prevents accidental undercounting on Robinhood Chain's very short block cadence. A provider with `eth_getLogs` access is still required for historical auditing. The separate `block_range.py` module uses only `eth_getBlockByNumber` and has standalone offline tests.
+
+## Evidence-driven pivot: Kerf RangeOrders inactive at sampled block
+
+The user ran the first live read-only scan. At Robinhood Chain block **86,104,491**, `next_order_id = 1`, zero orders and zero errors. Given Kerf's documented monotonically increasing order IDs starting at 1, the contract appears unused for placing range orders as of that block. **Do not keep attempting to harvest its nonexistent orders.** This is evidence from a user-provided report, not an independently repeated RPC verification; see [saved input](evidence/kerf-rangeorders-4663-block-86104491.json). The scan took no actions and spent nothing.
+
+Further research is prioritized in [candidate triage](docs/CANDIDATE_TRIAGE.md). No verified real income exists yet. Other Kerf contract mechanisms are **not** disproved by RangeOrders' empty counter.

@@ -78,3 +78,9 @@ New zero-key observation source: Triport public keyless RPC `https://triport.io/
 
 ### Decision note
 **Kerf current classification: RESEARCH, lower priority until actual paid transactions / current eligible order evidence are observed.** The official bot raises the effective entry difficulty. Continue scanning, but do not equate the repo's 4 bounty mechanisms with actual available revenue. No new positive-net claim has been made.
+
+## User-supplied live Kerf RangeOrders countercheck (2026-10-11)
+
+Observed block 86,104,491: `nextOrderId=1`, 0 orders scanned, 0 errors. This shows no placed RangeOrders under the source's monotonically increasing order numbering, subject to validating deployed code. **PIVOT:** deprioritize the RangeOrders target; do not continue writing a keeper for it without a subsequent observed `Placed` event or `nextOrderId>1`. Other Kerf keeper harvest and perp contracts are separate and still lack activity proof. See [saved user input](../evidence/kerf-rangeorders-4663-block-86104491.json).
+
+New candidate cross-check: Velocity docs describe 1-cent flat order trigger/cancel incentives and typically cent-scale fill incentives. The documented mechanism is real as *a published protocol claim*, but independent deployment and payouts were not confirmed here and the unit economics would require substantial volume. Another candidate, Atomic Green, appears in DeFiLlama with an Aug 2026 signature replay exploit; treat its keeper documentation as inadequate without incident remediation confirmation. Liquity V2 is prioritized for review of transaction *success and actual compensation*; mere method-call listings or old txs are insufficient. Details in [docs/CANDIDATE_TRIAGE.md](CANDIDATE_TRIAGE.md).

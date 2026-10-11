@@ -28,3 +28,7 @@ Discover candidate → verify primary source/deployed address → inspect histor
 
 ## Explicit permission policy
 The user authorizes commits of the requested repository project. This does **not** constitute approval to transfer crypto, expose secrets, purchase services, enable unattended financial execution, or spend funds. Ask before any such action.
+
+## Learned failure — unused contract
+
+The first user-supplied live scan of Kerf RangeOrders showed `nextOrderId=1` (contract's initial ID), zero orders and no errors. Do not create another full bot just because documentation mentions a caller bounty. **Gate 0: find a recent successful on-chain payout first.** Evidence: `evidence/kerf-rangeorders-4663-block-86104491.json`. User-provided reports are labeled as such, not represented as independently reproduced.

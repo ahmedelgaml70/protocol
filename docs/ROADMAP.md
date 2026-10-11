@@ -48,3 +48,11 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Run this command from a network-accessible machine and preserve the report block number, results and errors.
 - [ ] Measure **timestamp coverage** for each historical scan; do not assume 30k blocks = a day.
 - [ ] Use historical events from official RPC/provider supporting `eth_getLogs`, to quantify keeper profits rather than assuming gross bounty is profit.
+
+## Evidence-first pivot after live report
+
+- [x] Receive first user RPC report for Kerf RangeOrders (block 86,104,491): `nextOrderId=1`, zero orders and errors.
+- [x] Archive sanitized report and deprioritize this contract.
+- [ ] Identify **one deployed protocol with receipt-verified historical positive caller payouts** before building another scanner.
+- [ ] Verify actual *current* eligible opportunities separately; don't infer from historic activity.
+- [ ] Compare true net after gas, priority, exit liquidity, token sale and failed attempts; risk budget ≤$10.

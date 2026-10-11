@@ -31,3 +31,7 @@ The available budget is $10. Do not even submit a potentially reverting transact
 - **READY_FOR_USER_REVIEW**: full evidence package and proven authorized simulation; still cannot execute without specific approval.
 
 Never use 'guaranteed', 'risk-free', or 'execution-ready' for a contract merely because `fillable()` returns true.
+
+## Mandatory gate 0 — active protocol before coding
+
+Before implementing a custom observer, verify **at least one historical successful payout** to an external caller with a transaction hash and token transfer, and confirm activity is recent enough to matter. A source formula, announcement, automated code skeleton or attempted/reverted call does not pass. If a read-only state counter shows zero ever-created work items, mark that route `STOP` and divert resources; do not mistake zero `eth_getLogs` events from a short block window for definitive zero activity.

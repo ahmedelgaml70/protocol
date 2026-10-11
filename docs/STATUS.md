@@ -42,3 +42,9 @@ This file is a snapshot, not a live performance claim.
 ## Scan-window fix (2026-10-11, follow-up)
 
 Committed `block_range.py` with logarithmic timestamp-based block lookup and integrated `--lookback-hours` (24h default) into both Kerf historical scanners. Added three offline unit tests for range selection. The standalone algorithm was independently exercised locally using a synthetic timestamped chain: **3/3 tests passed**. The full GitHub repository test suite still needs execution on an Internet-enabled local checkout. No live payout results are established.
+
+## First user-returned live report (2026-10-11)
+
+Received `report.json` generated via the read-only RangeOrders scanner; archived as [evidence/kerf-rangeorders-4663-block-86104491.json](../evidence/kerf-rangeorders-4663-block-86104491.json). Raw report: chain 4663; reported contract `0xfE368De9fB4b0Ce845a7546B4261d4D15dC87C0C`; block **86,104,491**; nextOrderId **1**; 0 orders scanned, 0 open, 0 fillable, 0 errors, 0 transactions sent, 0 spent. The source documents order IDs starting at 1, so **no orders seem to have been created in the published contract by this block**, assuming deployed behavior matches source. The report was provided by the user and not independently reproduced here; treat as a trustworthy provisional observation, not cryptographic verification.
+
+**Decision:** stop development focused only on Kerf RangeOrders. Investigate different deployed protocols by first establishing actual historical paid events (receipts/token transfers). Keep Kerf's other independent mechanisms as unverified, not disproven. Research triage: [docs/CANDIDATE_TRIAGE.md](CANDIDATE_TRIAGE.md). Net confirmed realized income remains **$0**, project expenditure **$0**.

@@ -1,0 +1,23 @@
+{
+  "source": "read-only on-chain RPC",
+  "chain_id": 4663,
+  "network": "Robinhood Chain",
+  "contract": "0xfE368De9fB4b0Ce845a7546B4261d4D15dC87C0C",
+  "block_number": 86104491,
+  "next_order_id": 1,
+  "scan_window": [
+    1,
+    1
+  ],
+  "scan_is_full_history": true,
+  "gas_price_gwei": "0.02004",
+  "orders_scanned": 0,
+  "open_orders": 0,
+  "fillable_orders": 0,
+  "errors": [],
+  "orders": [],
+  "transactions_sent": 0,
+  "funds_spent_usd": 0,
+  "status": "WATCH_ONLY_NOT_EXECUTION_READY",
+  "disclaimer": "All rewards indicative; prices manually supplied; no sale or priority costs included."
+}
