@@ -17,3 +17,7 @@ scan:
 
 history:
 	$(PYTHON) kerf_history.py --lookback-blocks 30000 --output history.json
+
+.PHONY: multi-history
+multi-history:
+	$(PYTHON) kerf_multi_history.py --lookback-blocks 30000 --output multi_bounty_history.json
