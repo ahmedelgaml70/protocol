@@ -127,3 +127,21 @@ The output is `superfluid_activity.json`; it is gitignored. A saturated sample i
 Additional networks: `--network arbitrum-one`, `--network optimism-mainnet`, `--network polygon-mainnet`. Celo remains excluded from the initial security-sensitive investigation.
 
 **Critical interpretation rule:** the indexed event's `liquidatorAccount` can be the Superfluid **Batch Liquidator contract**, rather than the externally owned submitting wallet. This is proven in the May 9 Base transaction: indexed `liquidatorAccount=0x6b008BAc...`, but tx sender and actual ETHx recipient is `0xC20a5455...`. Treat indexed account concentration as *contract/event routing*, **not** executor competition. The script labels this explicitly; to measure human/bot-initiator concentration, enumerate transaction hashes and inspect `tx.from`, `eth_getTransactionReceipt`, and actual token transfers.
+
+## Second user-returned evidence (October 11, 2026)
+
+The 30-day query captured its **maximum 300 indexed Base Superfluid liquidation events**, from September 26 to October 11. They correspond to **270 unique transaction hashes**. Period codes map to 40 Patrician (reward intended for priority recipient), 231 Pleb, and 29 Pirate events. Indexing the Batch Liquidator as `liquidatorAccount` is **not** a count of competing transaction submitters.
+
+ETHx accounts for **46 indexed events**, **35 unique transactions** and **0.031339692062159336 ETHx indexed rewards** in the *captured sample* before gas and conversion. Two October 8 events contribute **90.26%** of that ETHx total; their actual ERC20 transfers to submitters still need receipt verification. Do not confuse this with the full 30 days or with realizable USD proceeds.
+
+Evidence: [full activity](evidence/superfluid-base-2026-10-11-activity-full.json), [user's RPC receipts](evidence/superfluid-base-2026-05-receipts-rpc.json), [derived summary](evidence/superfluid-base-2026-10-11-analysis.json).
+
+**Follow-up read-only receipt cross-check** for the largest and most recent ETHx liquidations:
+
+```sh
+git pull
+make test
+make superfluid-recent
+```
+
+This checks up to 12 deduplicated Base transactions, prioritizing the biggest observed ETHx reward amounts and recency. The resulting local `superfluid_recent_receipts.json` is ignored by git. It explicitly reports transferred token units, gas and a *hypothetical* ETH-parity proxy—**not earnings or live claimability**.

@@ -111,3 +111,18 @@ Known endpoint pattern: `https://subgraph-endpoints.superfluid.dev/base-mainnet/
 The script performs no signing or broadcasts. It must be run from an internet-connected environment; an error result is not evidence of zero liquidations.
 
 **Critical interpretation rule:** the indexed event's `liquidatorAccount` can be the Superfluid **Batch Liquidator contract**, rather than the externally owned submitting wallet. This is proven in the May 9 Base transaction: indexed `liquidatorAccount=0x6b008BAc...`, but tx sender and actual ETHx recipient is `0xC20a5455...`. Treat indexed account concentration as *contract/event routing*, **not** executor competition. The script labels this explicitly; to measure human/bot-initiator concentration, enumerate transaction hashes and inspect `tx.from`, `eth_getTransactionReceipt`, and actual token transfers.
+
+## October 11 submitted Superfluid reports: full data audit
+
+Archive: [full October Base indexed activity](../evidence/superfluid-base-2026-10-11-activity-full.json), [actual May Base RPC receipts](../evidence/superfluid-base-2026-05-receipts-rpc.json), [summary](../evidence/superfluid-base-2026-10-11-analysis.json).
+
+- 300 indexed events in the user's sample, **270 distinct tx hashes**, 15 days 19 hours 51 minutes covered despite asking for 30 days (sample cap reached). No overclaim of monthly census.
+- Event type 0 (Patrician priority) 40; type 1 (Pleb) 231; type 2 (Pirate) 29. Mapping grounded in official Superfluid token liquidation type source and protocol docs: https://github.com/superfluid-org/protocol-monorepo/wiki/About-Buffer ; https://superfluid.gitbook.io/superfluid/sentinels/liquidations-and-toga . A Pleb/Pirate **event** was eventually executed; that event is no longer available to newcomers.
+- Indexed `liquidatorAccount` is Batch Liquidator for all 300, and receiver is Batch Liquidator for 260; remaining 40 indexed reward receiver `0xa87f76e99f6c8ff8996d14f550cef47f193d9a09`. Only `tx.from` + receipt transfers can identify actual submitting-wallet winners.
+- 46 events for Base ETHx `0x46fd5cfb4c12d87acd3a13e92baa53240c661d93`, 35 distinct tx, sum **0.031339692062159336 ETHx indexed event amounts**, not verified sales. **90.26%** is concentrated in 2 Oct 8 events (`0.014155765965924920` and `0.014130982209939863` ETHx).
+- Of the latest 24 hours ending 20:47:30 UTC Oct 11, there were 19 indexed events, 14 transactions, 4 ETHx events; not 19 accessible reward openings.
+- User-supplied May RPC receipts confirm 2 old successful transactions, ERC20 transfers to caller and complete gas breakdown. First rough parity-based net **0.000272873568541097 ETH equivalent** before conversion and other costs; second **−0.000012381745917736 ETH equivalent**. **Not actual realized profits**.
+
+**Decision:** Superfluid clears *historical usage* gate and merits one tightly scoped receipt audit, **not** deploying a keeper. The tiny and concentrated ETHx raw incentives do not substantiate a plausible rapid $1,000 return. Other token amounts can be very large in raw base units but may be worth little or be illiquid. Reject unpriced rewards.
+
+Relevant baseline evidence: https://basescan.org/tx/0x4688d1709a06a8adde20328eb9e71e3955ff1e54e64234073515bfff8b75668b and https://basescan.org/tx/0x8cf34f65aea1f5743fadd59e91036444744263a6ecd75e9b719c04a35bb7a709 .

@@ -32,3 +32,7 @@ The user authorizes commits of the requested repository project. This does **not
 ## Learned failure — unused contract
 
 The first user-supplied live scan of Kerf RangeOrders showed `nextOrderId=1` (contract's initial ID), zero orders and no errors. Do not create another full bot just because documentation mentions a caller bounty. **Gate 0: find a recent successful on-chain payout first.** Evidence: `evidence/kerf-rangeorders-4663-block-86104491.json`. User-provided reports are labeled as such, not represented as independently reproduced.
+
+## Learned lesson — read event types and deduplicate by transaction
+
+The October 11 Superfluid subgraph returns **300 liquidation events but only 270 unique tx hashes**. Some transactions batch multiple stream liquidations. Period codes are 0 Patrician, 1 Pleb, 2 Pirate. Patrician reward receiver is priority-designated; 1/2 have permissionless rewards but recorded historical events are already collected. Do **not** treat the Batch Liquidator intermediate address as an actual distinct bot, or price arbitrary raw token amounts as USD. Match `tx.from` to actual ERC20 `Transfer` recipients, calculate Base L1+L2 gas, and deduplicate. Count attempts that fail in any realistic profitability model.

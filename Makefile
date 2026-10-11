@@ -36,3 +36,7 @@ superfluid-receipts:
 .PHONY: superfluid-activity
 superfluid-activity:
 	$(PYTHON) superfluid_activity.py --network base-mainnet --days 30 --limit 300 --output superfluid_activity.json
+
+.PHONY: superfluid-recent
+superfluid-recent:
+	$(PYTHON) superfluid_recent_receipts.py --activity evidence/superfluid-base-2026-10-11-activity-full.json --limit 12 --output superfluid_recent_receipts.json

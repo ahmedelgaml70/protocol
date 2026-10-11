@@ -1,0 +1,66 @@
+{
+  "evaluated_at_utc": "2026-10-11",
+  "original_window_utc": {
+    "from": "2026-09-11T20:47:30Z",
+    "to": "2026-10-11T20:47:30Z"
+  },
+  "observed_sample": {
+    "sample_limit": 300,
+    "event_count": 300,
+    "truncated": true,
+    "first_event": "2026-10-11T20:39:51Z",
+    "oldest_event": "2026-09-26T00:48:15Z",
+    "unique_transaction_hashes": 270,
+    "positive_indexed_raw_rewards": 300
+  },
+  "period_types": {
+    "patrician_priority": 40,
+    "pleb_public_caller_period": 231,
+    "pirate_public_caller_period": 29
+  },
+  "reward_receivers": {
+    "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9": 260,
+    "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09": 40
+  },
+  "interpretation": "Indexed liquidatorAccount for all 300 is Batch Liquidator 0x6b..., NOT evidence of one submitting operator; 260 events have indexed receiver batch contract, 40 priority receiver 0xa87...",
+  "ethx": {
+    "contract": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+    "events": 46,
+    "unique_transaction_hashes": 35,
+    "indexed_reward_total_ethx": "0.031339692062159336",
+    "top_two_events_total_ethx": "0.028286748175864783",
+    "share_of_ethx_indexed_rewards_pct": "90.25853897913443",
+    "top_two": [
+      {
+        "utc": "2026-10-08T18:21:15Z",
+        "tx": "0x27198a46eb7406122fb467b7e5471620c1def01e616683f0b876ba6335ecfe13",
+        "indexed_reward_ethx": "0.014155765965924920"
+      },
+      {
+        "utc": "2026-10-08T18:21:07Z",
+        "tx": "0x24ee18cfbf018d556687efcbeb17a94a9206063025bfad1f6093c32260edf629",
+        "indexed_reward_ethx": "0.014130982209939863"
+      }
+    ]
+  },
+  "last_24h_utc": {
+    "indexed_events": 19,
+    "unique_transaction_hashes": 14,
+    "ethx_events": 4
+  },
+  "historical_rpc_receipts": {
+    "successful_transactions": 2,
+    "btc_or_token_conversion_verified": false,
+    "gas_fee_wei_included": true
+  },
+  "actual_new_wallet_profit_usd": 0,
+  "spend_usd": 0,
+  "limitations": [
+    "Indexed events are not externally reproduced receipts for September–October 2026",
+    "The 300-event report truncates a 30-day request after approximately 15 days 20 hours",
+    "Rewards for other token contracts must not be assigned market value from raw units",
+    "The 35 ETHx transaction submitters/actual transfers and gas have not yet been audited",
+    "Real-time eligible Pleb/Pirate stream has not been identified",
+    "Currency parity and historical dollar conversions are assumptions, not realized proceeds"
+  ]
+}

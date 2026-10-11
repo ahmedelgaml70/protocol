@@ -46,3 +46,6 @@ Example of the danger of counting attempts as income: https://etherscan.io/tx/0x
 ## Superfluid historical paid-caller evidence update (May 2026 transactions reviewed 2026-10-11)
 
 **Gate 0 PASSED historically:** BaseScan records Base Superfluid batch liquidator paying ETHx to the external submitting caller in successful transactions on May 9 and May 10, 2026; see [evidence snapshot](../evidence/superfluid-base-2026-05-samples.json). One illustrative payout yielded +$0.63 vs gas before exit fees under assumed ETHx=ETH; another lost about $0.03. **No proof that non-designated callers can compete profitably now.** This is a *RESEARCH* category, not WATCH/READY. No live 2026-10 event has been authenticated.
+
+## Updated Superfluid assessment (full October user sample)
+**Priority: verify just a sample of recent receipt winners, then decide.** 300 events / 270 transactions in truncated ~16 days, but only 46 ETHx events (35 tx) and **0.03134 ETHx indexed rewards in total**. 90.26% arose in just two Oct 8 events. Large raw amounts of arbitrary tokens cannot be considered USD earnings without pricing and liquidity. Confirm successful ERC20 payouts to transaction sender, gas and competition before committing further development. A single indexed liquidator account corresponds to a Batch Liquidator contract; it is **not** evidence of just one bot.

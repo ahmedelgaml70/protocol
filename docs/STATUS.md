@@ -66,3 +66,11 @@ Added `superfluid_activity.py` to obtain recent indexed `AgreementLiquidatedV2Ev
 Run `make superfluid-activity` from a network-enabled terminal, then inspect sanitized `superfluid_activity.json`. Do not assume a stream is currently liquidatable based on this index.
 
 **Critical interpretation rule:** the indexed event's `liquidatorAccount` can be the Superfluid **Batch Liquidator contract**, rather than the externally owned submitting wallet. This is proven in the May 9 Base transaction: indexed `liquidatorAccount=0x6b008BAc...`, but tx sender and actual ETHx recipient is `0xC20a5455...`. Treat indexed account concentration as *contract/event routing*, **not** executor competition. The script labels this explicitly; to measure human/bot-initiator concentration, enumerate transaction hashes and inspect `tx.from`, `eth_getTransactionReceipt`, and actual token transfers.
+
+## Uploaded activity and receipt evidence — 2026-10-11
+
+Validated both user-supplied files programmatically and archived them to `evidence/`. Current Base indexed activity is **real**, unlike Kerf RangeOrders: 300 events in a capped sample (270 transactions), spanning Sept 26 to Oct 11; 40 priority Patrician events (code 0), 231 Pleb (1), 29 Pirate (2). Their single indexed `liquidatorAccount` is the Batch Liquidator contract, not proof of an exclusive submitting operator. All 300 indexed reward amounts are >0 but values/prices and actual transfers are not established for these current transactions.
+
+46 ETHx events across 35 txs sum to **0.031339692062159336 ETHx indexed rewards** in the sample, ~90.26% in two Oct 8 events (hashes in `evidence/superfluid-base-2026-10-11-analysis.json`). **This is historical event data, not money that can still be claimed.** The two old May RPC receipts confirm token transfer/gas, but they do not validate Oct winners. No real user profit, no spending, no signed calls.
+
+New `superfluid_recent_receipts.py` and 3 offline tests cover a limited Base ETHx receipt sample. An equivalent implementation passed 3 synthetic local tests; complete GitHub checkout test suite still needs execution. Next run `make superfluid-recent`, then independently verify actual recipients, net *before swap* and caller concentration for Oct 8/Oct 11.

@@ -76,3 +76,14 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Check observable positive-net frequency; reject if absent before building executors.
 
 **Critical interpretation rule:** the indexed event's `liquidatorAccount` can be the Superfluid **Batch Liquidator contract**, rather than the externally owned submitting wallet. This is proven in the May 9 Base transaction: indexed `liquidatorAccount=0x6b008BAc...`, but tx sender and actual ETHx recipient is `0xC20a5455...`. Treat indexed account concentration as *contract/event routing*, **not** executor competition. The script labels this explicitly; to measure human/bot-initiator concentration, enumerate transaction hashes and inspect `tx.from`, `eth_getTransactionReceipt`, and actual token transfers.
+
+## October activity validated from user-uploaded report
+- [x] Archive both uploaded read-only reports in GitHub.
+- [x] Compute 300 capped indexed events, 270 distinct transaction hashes and actual 3-period split.
+- [x] Isolate ETHx 46 events / 35 transactions, identifying high-value historical Oct 8 outliers.
+- [x] Add next-phase read-only receipt sampler (largest+latest ETHx).
+- [ ] Run `make superfluid-recent` and validate actual submitting-wallet transfers and full Base gas.
+- [ ] Separate reward-receiver routing, transaction winners and token sale liquidity for major payout tokens.
+- [ ] Make 30-day index complete using safe pagination; currently sample truncated to ~16 days.
+- [ ] Find an *open, payable, permissionless* liquidation at a pinned block if economically warranted.
+- [ ] If economic upside is too small or dominated by keeper competition, pivot rather than expanding code indefinitely.
