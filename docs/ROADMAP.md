@@ -103,3 +103,7 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Run the latest GitHub test suite and PoolTogether 6h RPC scan.
 - [ ] If fresh positive rewards appear, verify who receives fees, whether POOL reward is withdrawable/liquid, and competitive gas net.
 - [ ] Then only identify an actually UNCLAIMED eligible action, with simulation; no spending yet.
+
+- [x] Resolve Ripe Teller-to-AuctionHouse caller/keeper authorization and GREEN mint reward conditions in source.
+- [ ] Find a successful recent Ripe Teller liquidation receipt showing GREEN minted to external caller; otherwise hold.
+- [ ] Obtain current Base PrizePool ClaimedPrize receipts, actual prizeToken() value, and current Claimer tx.to before profit assertions.

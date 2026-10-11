@@ -170,3 +170,5 @@ make superfluid-all
 ## Next read-only Gate-0 candidate: PoolTogether V5 Base
 
 Official current Base contracts pay fee recipients for permissionless prize claims. Recent current-deployment reward receipts must still be proven; older claimer is deprecated. Run `make pooltogether-check` (read-only, 6h) for a first current event sample. See [research and ABI warnings](docs/KEEPER_ALTERNATIVES_2026_10_12.md). No wallet or funds needed.
+
+**POOL token valuation warning:** the PoolTogether claim reward is denominated in the PrizePool's own prizeToken() (looked up via read-only eth_call), not automatically in POOL governance-token units. The historical scanner also flags transactions whose destination is the current documented Claimer versus another address.

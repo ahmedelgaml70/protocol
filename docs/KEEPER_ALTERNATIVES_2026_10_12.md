@@ -16,7 +16,7 @@ Official Base deployment addresses:
 
 New script: python3 pooltogether_claim_history.py --lookback-hours 6. It only uses public read-only Base RPC to verify the contract exists, scan recent ClaimedPrize event rewards, and inspect up to 10 transaction submitters and gas receipts. It does NOT find unclaimed winning accounts or execute claims. A short empty window is not definitive inactivity. The full GitHub revision's tests are not yet executed.
 
-POOL token has nontrivial liquidity and conversion risks; price screenshots/quotes must be verified at execution time. DeFiLlama's protocol yield fees and token-holder revenues are NOT keeper claimReward income. Old 2026 claims from the deprecated contract do not pass our freshness proof.
+Reward asset must be queried from deployed PrizePool.prizeToken(); do not assume POOL governance token. DeFiLlama's protocol yield fees and token-holder revenues are NOT keeper claimReward income. Old 2026 claims from the deprecated contract do not pass our freshness proof.
 
 ## Other candidates and elimination
 
@@ -56,3 +56,13 @@ POOL token has nontrivial liquidity and conversion risks; price screenshots/quot
 - https://blog.synthetix.io/l2s-are-dead-long-live-ethereum/
 
 **Profit actually realized by us:** $0. **Capital used:** $0. $10 remains untouched.
+
+## Source verification update — Ripe and PoolTogether
+
+Ripe is not a direct call to AuctionHouse: Teller.vy external liquidateUser/liquidateManyUsers passes msg.sender as keeper, while AuctionHouse.vy requires its caller be the authorized Teller (assert msg.sender == _getTellerAddr()). GREEN/sGREEN rewards are minted through _handleGreenForUser only if totalKeeperRewards > 0.
+Actual keeper reward is conditionally derived in AuctionHouse._calcLiqFees as max(minKeeperFee, debt*keeperFeeRatio/HUNDRED_PERCENT), possibly capped by maxKeeperFee and by collateral surplus minus base liquidation fee. Existing liquidation episodes and recovery-free cases can pay ZERO. Merely calling the function, or finding an unhealthy account, does not guarantee payment.
+Ripe current source: https://github.com/Ripe-Foundation/ripe-protocol/blob/master/contracts/core/Teller.vy (liquidateUser lines 619-641) and https://github.com/Ripe-Foundation/ripe-protocol/blob/master/contracts/core/AuctionHouse.vy (routing lines 240-284, fees lines 1393-1412).
+
+PoolTogether correction: the reward is denominated in PrizePool.prizeToken(), NOT necessarily the separately documented POOL governance token. The scanner reads deployed prizeToken() (selector 0xd0ef024a, independently checked against Ethereum Keccak), decimals() on that token, and labels tx.to as matching the currently published Claimer or not. Real conversion values cannot be calculated until the reward token is identified on-chain.
+
+Current evidence status: neither Ripe nor the current PoolTogether Base Claimer has a successfully verified recent external-caller net-positive payout in this investigation. No wallet activity authorized.
