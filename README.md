@@ -1,0 +1,57 @@
+# Protocol — permissionless opportunity research
+
+**Status:** research only · **Budget:** $10 reserved · **Verified collectible net profit:** none · **Real transactions:** disabled.
+
+This repository is the working source of truth for the $10 → $1,000 challenge: finding lawful, permissionless rewards that can be captured through on-chain operations **without clients, jobs, promotional campaigns, or airdrop speculation**.
+
+The $1,000 target is an aspiration, **not a forecast or guarantee**. A 100× return in a short period is highly unlikely. We will spend nothing until a verifiable, repeatable, positive-net opportunity has survived independent on-chain checks.
+
+## Quick start
+
+Install Python 3.10+; the observation tools use only the Python standard library.
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 kerf_radar.py --max-orders 100 --output report.json
+python3 kerf_history.py --lookback-blocks 30000 --output history.json
+```
+
+These commands do not require a wallet. Live scans require a working Robinhood Chain RPC endpoint; an unreachable RPC is reported as an error, never converted to a claim that no opportunities exist.
+
+## Project map
+
+- [Original user prompts](docs/ORIGINAL_PROMPTS.md) — the exact motivation, constraints, and operating request.
+- [Project charter](docs/CHARTER.md) — scope, $10 budget, disallowed approaches, and success criteria.
+- [Research ledger](docs/RESEARCH_LEDGER.md) — checked protocols, source documentation, unresolved questions and false-positive risks.
+- [Opportunity evaluation](docs/EVALUATION.md) — net payout, competition, proof requirements, and go/no-go gates.
+- [Plan](docs/ROADMAP.md) — steps from detection to independent verification.
+- [Agent instructions](AGENTS.md) — rules for anyone (human or AI) continuing this project.
+- `kerf_radar.py`, `kerf_history.py` — read-only Kerf RangeOrders monitors.
+- `tests/` — offline tests. `prices.example.json` — empty by design.
+- `.gitignore` — protects local settings, keys, outputs and bytecode caches.
+
+## What is already established
+
+Official protocol documentation describes rewards for external callers (including qualified liquidations and keeper calls). **A published reward formula is not a verified opportunity.** No candidate has yet been demonstrated to be profitable, claimable, and executable with only $10 including gas, conversion costs and competition.
+
+**No signing keys, seed phrases, private wallet data or RPC API credentials belong in this repo.** The repository is public. No automated money-moving software should be enabled by default.
+
+## Core questions
+
+1. Does the exact deployed contract authorize **anyone** to claim the reward?
+2. Is a qualifying on-chain opportunity **currently open**, with a traceable event or view-call proof?
+3. Is the output actually transferable/liquid and worth more than the full gas + priority + conversion costs?
+4. Can a $10 wallet afford **all** necessary inputs and failed-call risk?
+5. Is execution allowed under the protocol's rules and local law, without exploiting private data or systems?
+6. Can we substantiate the answer with fresh, reproducible data?
+
+Only after all six checks may a candidate be described as execution-ready. See docs/EVALUATION.md.
+
+## References
+
+- Kerf published code: https://github.com/KerfFinance/kerf-contracts
+- Kerf explanation: https://www.kerf.finance/docs/range-orders
+- Robinhood Chain network docs: https://docs.robinhood.com/chain/connecting/
+- Superfluid Sentinel: https://github.com/superfluid-org/superfluid-sentinel
+
+This is not financial advice or a promise of returns. The default operating mode is **read-only observation**.
