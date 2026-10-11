@@ -20,3 +20,5 @@ __pycache__/
 .venv/
 venv/
 .DS_Store
+
+multi_bounty_history.json
