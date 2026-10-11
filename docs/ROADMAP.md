@@ -56,3 +56,12 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Identify **one deployed protocol with receipt-verified historical positive caller payouts** before building another scanner.
 - [ ] Verify actual *current* eligible opportunities separately; don't infer from historic activity.
 - [ ] Compare true net after gas, priority, exit liquidity, token sale and failed attempts; risk budget ≤$10.
+
+## Superfluid receipt-first progress
+- [x] Find publicly inspectable successful historical third-party token transfers (Base May 9–10, 2026).
+- [x] Capture raw token inflow and ETH gas data with explorer provenance.
+- [x] Add read-only reproducible `superfluid_receipts.py` and offline test fixtures.
+- [ ] Run full GitHub checkout's unit tests and receipt RPC audit from a connected machine.
+- [ ] Obtain **recent** event counts and payee concentration by month, especially September–October 2026.
+- [ ] Determine which independent callers receive rewards vs designated TOGA Patrician in each phase.
+- [ ] Verify token exit liquidity, gas, caller competition, and **currently eligible** Pleb/Pirate opportunity.

@@ -22,3 +22,5 @@ venv/
 .DS_Store
 
 multi_bounty_history.json
+
+superfluid_receipts.json

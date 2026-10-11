@@ -28,3 +28,7 @@ multi-history:
 .PHONY: scan-free
 scan-free:
 	$(PYTHON) kerf_radar.py --rpc https://triport.io/rpc/robinhood/public --max-orders 10 --output report.json
+
+.PHONY: superfluid-receipts
+superfluid-receipts:
+	$(PYTHON) superfluid_receipts.py --output superfluid_receipts.json

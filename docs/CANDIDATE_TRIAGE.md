@@ -42,3 +42,7 @@ DeFiLlama's [Liquity V2 income statement](https://defillama.com/protocol/liquity
 Example of the danger of counting attempts as income: https://etherscan.io/tx/0x9c06addedd2b7f86a7e69271712c54fb74a0f7a73163f045aa6897ee49a2643c shows **reverted** `NothingToLiquidate()` and a nonrefundable gas fee. The transaction is dated Feb 5, 2026.
 
 **Generalized research priority:** look for *successfully paid* receipts and transfer logs in mature deployments on inexpensive networks, then verify publicly callable interfaces. Reject stale dashboard payouts and theoretical permissionless functions as standalone evidence.
+
+## Superfluid historical paid-caller evidence update (May 2026 transactions reviewed 2026-10-11)
+
+**Gate 0 PASSED historically:** BaseScan records Base Superfluid batch liquidator paying ETHx to the external submitting caller in successful transactions on May 9 and May 10, 2026; see [evidence snapshot](../evidence/superfluid-base-2026-05-samples.json). One illustrative payout yielded +$0.63 vs gas before exit fees under assumed ETHx=ETH; another lost about $0.03. **No proof that non-designated callers can compete profitably now.** This is a *RESEARCH* category, not WATCH/READY. No live 2026-10 event has been authenticated.

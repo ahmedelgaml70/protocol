@@ -52,3 +52,9 @@ Received `report.json` generated via the read-only RangeOrders scanner; archived
 ### DeFiLlama Liquity V2 screen (2026-10-11)
 
 Cross-check: DefiLlama's published income statement reports Q3 2026 **$0 gas compensation**, versus Q2 **$1.13K**. This reporting may not capture every liquidation transfer and does not establish zero actual liquidations; it **does** defeat any assumption that there's currently an abundant verified opportunity. Priority reduced pending current on-chain payout proof. Also found an Etherscan historical liquidation call that reverted `NothingToLiquidate()` with gas paid. Source: https://defillama.com/protocol/liquity-v2 and https://etherscan.io/tx/0x9c06addedd2b7f86a7e69271712c54fb74a0f7a73163f045aa6897ee49a2643c .
+
+## Read-only Superfluid receipts — October 11, 2026
+
+Found two **successfully executed** Superfluid Base batch-liquidator transactions from May 2026 with actual ETHx transfers to the initiator. First has positive illustrative transfer value relative to gas, **+$0.6348** under ETHx≈ETH price-parity assumption before additional costs; second **-$0.0294** on same assumptions. Data source: BaseScan receipts, not independently queried via RPC in this environment. New `superfluid_receipts.py` can repeat the audit read-only; a local implementation passed four synthetic offline tests, committed code may require its own test run. Evidence and citations in `docs/RESEARCH_LEDGER.md`.
+
+**Research status:** Superfluid Base now passes Gate 0 *historical paid caller*, but still lacks confirmed current October 2026 eligible Pleb/Pirate liquidation, front-running/competition assessment and actual exchange liquidity. No funding or wallet actions.

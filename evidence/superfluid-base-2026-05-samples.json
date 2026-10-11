@@ -1,0 +1,44 @@
+{
+  "as_of": "2026-10-11",
+  "type": "explorer-derived historical receipt evidence, NOT independently repeated via RPC",
+  "chain": "Base",
+  "chain_id": 8453,
+  "ethx_token": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+  "price_assumption": "ETHx equals 1 ETH at historical ETH/USD explorer quote; redeemability / actual sales unverified",
+  "sample": [
+    {
+      "date_utc": "2026-05-09T09:25:01Z",
+      "tx_hash": "0x4688d1709a06a8adde20328eb9e71e3955ff1e54e64234073515bfff8b75668b",
+      "explorer_url": "https://basescan.org/tx/0x4688d1709a06a8adde20328eb9e71e3955ff1e54e64234073515bfff8b75668b",
+      "status": "Success",
+      "initiator": "0xC20a5455035Ab593682Cf9b9916b9407cc9e47f3",
+      "recipient": "0xC20a5455035Ab593682Cf9b9916b9407cc9e47f3",
+      "token_inbound_to_initiator": "0.000277410573088982",
+      "token": "ETHx",
+      "fee_in_ETH": "0.000004537004547885",
+      "eth_usd_historical": "2326.24",
+      "estimated_gross_usd_if_ethx_parity": "0.6453235715425135",
+      "estimated_gas_usd": "0.0105541614594720",
+      "estimated_net_before_swap_withdrawal_or_extra_costs_usd": "0.6347694100830415",
+      "warning": "Event rewardAmount for a constituent liquidation may differ from aggregate ERC20 transfer amount; do not treat all inflows as a single agreement's bounty"
+    },
+    {
+      "date_utc": "2026-05-10T12:49:01Z",
+      "tx_hash": "0x8cf34f65aea1f5743fadd59e91036444744263a6ecd75e9b719c04a35bb7a709",
+      "explorer_url": "https://basescan.org/tx/0x8cf34f65aea1f5743fadd59e91036444744263a6ecd75e9b719c04a35bb7a709",
+      "status": "Success",
+      "initiator": "0xC20a5455035Ab593682Cf9b9916b9407cc9e47f3",
+      "recipient": "0xC20a5455035Ab593682Cf9b9916b9407cc9e47f3",
+      "token_inbound_to_initiator": "0.000000465912049232",
+      "token": "ETHx",
+      "fee_in_ETH": "0.000012847657966968",
+      "eth_usd_historical": "2370.83",
+      "estimated_gross_usd_if_ethx_parity": "0.0011045982636807",
+      "estimated_gas_usd": "0.0304596129378267",
+      "estimated_net_before_swap_withdrawal_or_extra_costs_usd": "-0.0293550146741460"
+    }
+  ],
+  "confirmed_2026_october_current_opportunity": false,
+  "measured_user_profit_usd": "0",
+  "funds_spent_usd": "0"
+}

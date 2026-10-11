@@ -100,3 +100,15 @@ As of this revision, `make history` and `make multi-history` scan the last **24 
 The user ran the first live read-only scan. At Robinhood Chain block **86,104,491**, `next_order_id = 1`, zero orders and zero errors. Given Kerf's documented monotonically increasing order IDs starting at 1, the contract appears unused for placing range orders as of that block. **Do not keep attempting to harvest its nonexistent orders.** This is evidence from a user-provided report, not an independently repeated RPC verification; see [saved input](evidence/kerf-rangeorders-4663-block-86104491.json). The scan took no actions and spent nothing.
 
 Further research is prioritized in [candidate triage](docs/CANDIDATE_TRIAGE.md). No verified real income exists yet. Other Kerf contract mechanisms are **not** disproved by RangeOrders' empty counter.
+
+## First verified caller payout receipts: Superfluid on Base
+
+We found successful *historical* transfers from Superfluid's Base batch-liquidator to an external submitting caller, on **May 9–10, 2026**. One was economically promising before token conversion; a second lost money versus gas alone. These are **not** proof of an open bounty now. See [receipts evidence](evidence/superfluid-base-2026-05-samples.json) and [research notes](docs/RESEARCH_LEDGER.md).
+
+Read-only receipt verification (no wallet or keys):
+```sh
+make test
+make superfluid-receipts
+```
+
+`superfluid_receipts.py` reads Base chain ID and two existing transactions via `eth_getTransactionByHash` and `eth_getTransactionReceipt`, extracts ERC20 ETHx transfers to the submitting caller and reported gas/L1 fee. It **never broadcasts**. It intentionally does not calculate profits from unverifiable token prices. For missing L1 fee, it flags an incomplete fee assessment. Use a third-party RPC only if it supports these methods; shared public RPCs may be rate limited.

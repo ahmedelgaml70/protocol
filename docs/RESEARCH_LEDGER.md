@@ -88,3 +88,16 @@ New candidate cross-check: Velocity docs describe 1-cent flat order trigger/canc
 ### Liquity V2 latest screen: economic activity matters
 
 DeFiLlama's aggregated Q3 2026 gas compensation for Liquity V2 is shown as **$0**, despite the documented `0.0375 WETH + collateral` reward formula. This may be a metric/reporting limitation and needs independent confirmation; it is evidence **against** assuming an accessible active reward market. A historical Feb 5, 2026 liquidation attempt at an Etherscan-labeled TroveManager reverted, demonstrating real gas-loss risk. Sources: https://defillama.com/protocol/liquity-v2 ; https://etherscan.io/tx/0x9c06addedd2b7f86a7e69271712c54fb74a0f7a73163f045aa6897ee49a2643c .
+
+## Explorer-verified successful Superfluid Base payouts (historical, May 2026)
+
+**This clears our Gate 0 (successful transfer to caller) for the *protocol mechanism*, not Gate 1 for a current collectible payout.** Primary transaction explorer pages:
+
+- May 9, 2026 [tx 0x4688d170...](https://basescan.org/tx/0x4688d1709a06a8adde20328eb9e71e3955ff1e54e64234073515bfff8b75668b): Status **Success**, ETHx transfer to submitting caller `0xC20a5455...7cc9e47f3` of **0.000277410573088982 ETHx**, transaction fee **0.000004537004547885 ETH**. At explorer's historical ETH=$2,326.24, and ONLY if ETHx ≈ ETH in redeemable value, this is about **+$0.6348** after gas but before conversion/withdrawal/overhead. This is **not verified realized profit**, and the sender may be a preferred/automated keeper.
+- May 10, 2026 [tx 0x8cf34f65...](https://basescan.org/tx/0x8cf34f65aea1f5743fadd59e91036444744263a6ecd75e9b719c04a35bb7a709): Status **Success**, ETHx transferred to the same caller **0.000000465912049232 ETHx**; gas **0.000012847657966968 ETH**. With historical ETH=$2,370.83 and hypothetical ETHx/ETH parity, approximately **-$0.02936** after gas alone.
+
+**Key lesson:** An `AgreementLiquidatedV2` event indicates liquidation, but its `rewardAmount` is not necessarily the same as the net ERC20 amount transferred to a transaction caller from a batch; count actual token `Transfer` logs and gas and still distinguish transfer receipts from realized cash. Both transactions date from May, not October. No unclaimed job, Pleb eligibility, solvency state, caller priority, or current liquidity has been established.
+
+Evidence snapshot: [historical Base receipts](../evidence/superfluid-base-2026-05-samples.json). Local read-only RPC confirmation script: [superfluid_receipts.py](../superfluid_receipts.py). Its logic was exercised with four offline synthetic tests locally; the version committed to GitHub should also be verified with `make test`.
+
+Superfluid Pleb/Pirate caller rules: https://medium.com/superfluid-blog/introducing-sentinels-the-keepers-of-superfluid-protocol-4eadca384cbf . The presence of liquidations does not prove rewards are accessible to a new operator.
