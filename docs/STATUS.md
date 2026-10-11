@@ -102,3 +102,8 @@ PoolTogether Base PrizePool/Claimer (current) and deprecated Claimer identified 
 ## GitHub Actions — automation installed (2026-10-12)
 
 Workflows added under `.github/workflows/`: tests on push/PR; twice-hourly read-only radar; post-radar deduplicated GitHub issue alerts. Only the third workflow has `issues: write` (plus actions read). No keys or transactions; public repository hosted-runner standard tier. PoolTogether Base and Superfluid Base observers enabled. Ripe observation **unimplemented** until source-to-deployment and historical payout evidence passes Gate 0. Reports are transient artifacts with 7-day retention, not committed or falsely interpreted as zero on RPC errors. This commit does **not yet prove Actions has executed successfully**; verify run status under the repository Actions tab.
+
+### Actions initial smoke (2026-10-12)
+- GitHub Actions tests run successful, 36 offline tests passed.
+- Radar smoke run #38177006035 completed, artifact archived: Superfluid Base 3-day subgraph success 52 indexed events; PoolTogether Base default RPC denied `eth_getLogs` via HTTPError (status incomplete).
+- Alert pipeline skipped the push-triggered smoke scan by design, avoiding unapproved issue creation. Radar now uses keyless PublicNode endpoint for PoolTogether; fresh smoke test triggered to determine whether it serves actual event filter.

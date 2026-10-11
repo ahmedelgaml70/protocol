@@ -40,3 +40,7 @@ GitHub → Actions → Protocol Radar → ... → Disable workflow. This stops s
 - https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts
 
 Initial-smoke-test behavior: changes to the radar workflow YAML itself on the default branch also start a read-only scan. The issue-writer explicitly ignores push-triggered scans, so this helps verify infrastructure without publishing any alert. Ordinary code pushes still run only the test workflow.
+
+## First smoke-test result and data provider fix (2026-10-12)
+
+Initial read-only smoke run [#38177006035](https://github.com/ahmedelgaml70/protocol/actions/runs/38177006035) succeeded at the workflow level and uploaded a 7-day report artifact. Superfluid Base's indexed 3-day sample succeeded (52 recent events). PoolTogether failed **eth_getLogs with HTTPError** at Base's default public RPC, so it was recorded as `incomplete`, NOT no claim rewards. The PoolTogether scanner in the scheduled runner was changed to the free, keyless PublicNode Base RPC (`https://base-rpc.publicnode.com`) whose public dashboard reports current `eth_getLogs` operations. This fallback still must be empirically tested for our filter and retention window; failures are never turned into success. Source: https://base.publicnode.com/

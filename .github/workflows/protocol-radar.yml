@@ -40,3 +40,4 @@ jobs:
           path: reports/
           retention-days: 7
           if-no-files-found: warn
+# PoolTogether uses the keyless PublicNode Base RPC to permit read-only eth_getLogs.
