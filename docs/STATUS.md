@@ -87,3 +87,9 @@ Per submitter: 0xa4dd...fc41 had 5 positive (+0.02937230077 ETH-eq), 0x4ead...92
 Original 300-event dataset: USDCx 52 events (33 priority Patrician/19 Pleb), **127.7738 USDCx priority** vs **0.06926 public-phase** rewards. SUP 14 events, 923.9782 tokens whose market value must be independently checked. This makes the number of 'events' a weak income proxy.
 
 **Decision:** No execution; pause development of a live Superfluid Base keeper. Shift to evidence of larger paid public-caller transactions across several other mature protocols/networks, while optionally auditing the remaining 23 ETHx receipts only if a reason emerges. Details in `docs/OCT_2026_DECISION.md`. User profit $0, spending $0, budget $10 retained.
+
+### Testing and infrastructure status (2026-10-12)
+- Locally executed ten synthetic tests of equivalent Superfluid activity/receipt audit modules in `/mnt/data/protocol_audit`; all 10 passed. **This does not claim the complete, exact GitHub checkout's tests were executed.**
+- Direct Internet access from the container remains blocked (DNS lookup failure for Base RPC and Superfluid GraphQL); uploaded user read-only data remain our verified local on-chain inputs.
+- Specific next executable research is **external payout discovery** (issue #3), not a real transaction. No need for user wallet/API credentials.
+- With purely illustrative ETH price $2,000–$3,000, the selected 12-call +0.0300853374 ETH-equivalent gas-only proxy corresponds to about $60.17–$90.26 before exchange, operational and failed-attempt costs. These are *scenario prices*, not actual market quotes or new earnings.
