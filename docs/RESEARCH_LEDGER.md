@@ -126,3 +126,5 @@ Archive: [full October Base indexed activity](../evidence/superfluid-base-2026-1
 **Decision:** Superfluid clears *historical usage* gate and merits one tightly scoped receipt audit, **not** deploying a keeper. The tiny and concentrated ETHx raw incentives do not substantiate a plausible rapid $1,000 return. Other token amounts can be very large in raw base units but may be worth little or be illiquid. Reject unpriced rewards.
 
 Relevant baseline evidence: https://basescan.org/tx/0x4688d1709a06a8adde20328eb9e71e3955ff1e54e64234073515bfff8b75668b and https://basescan.org/tx/0x8cf34f65aea1f5743fadd59e91036444744263a6ecd75e9b719c04a35bb7a709 .
+
+**Additional computed observation from saved input:** 184 unique token addresses, of which 180 appear once. The remaining 4 tokens appear 52, 46, 14 and 8 times respectively. This underscores why reward amounts must be converted to *realizable* values only with verified liquidity; singleton tokens are not by themselves suspicious or worthless.
