@@ -121,3 +121,9 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Identify a published PoolTogether Base GraphQL index and cross-check its schema against the current PrizePool source.
 - [x] Integrate zero-key indexed prize claim discovery with independently read-only Base receipt validation.
 - [ ] Verify official Graph Studio public endpoint works in GitHub Actions; if not, mark PoolTogether incomplete and pivot provider without fake zero results.
+
+- [x] Verify initial GitHub Tests: 41 unit tests passed.
+- [x] Verify full read-only Radar workflow: both indexed PoolTogether and Superfluid results succeeded; artifact stored and read back.
+- [x] Fix public RPC historical-log and pruned-genesis limitations using the official PoolTogether indexed API + independent receipt verification.
+- [ ] Observe a first **scheduled** radar run and ensuing workflow_run alert gate; do not create manual financial alerts.
+- [ ] If PoolTogether indexed claims remain zero for a meaningful time span, pivot to other active protocols before building a keeper.

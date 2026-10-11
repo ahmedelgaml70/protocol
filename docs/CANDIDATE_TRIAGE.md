@@ -62,3 +62,6 @@ See [receipt analysis](../evidence/superfluid-base-2026-10-receipt-analysis.json
 
 ## 2026-10-12 added candidates
 PoolTogether V5 Base **#1** for read-only Gate 0 of the **current** claimer; Ripe Protocol Base **#2** pending real keeper payout proof. Deprecated Synthetix Perps Base/Arbitrum, superseded GBLIN contracts, unverified fillr and mostly-zero lolpad fallback bounty are not execution candidates. Details: docs/KEEPER_ALTERNATIVES_2026_10_12.md.
+
+## Automation evidence update (Oct 11 2026)
+PoolTogether Base live official prize-claim index, synced within 1 block of chain tip, showed **zero indexed claims in the previous three days**. This is an actual bounded negative observation, not an RPC failure; its present prize token is WETH. Lower near-term claiming research priority until new positive non-deprecated receipts appear. Superfluid had 52 recent liquidation events in three days, but prior P&L study showed low and concentrated rewards; remains observe only. No open claimable target or repeatable positive net found.

@@ -1,0 +1,47 @@
+{
+  "observed_at_utc": "2026-10-11T21:42:26Z",
+  "source": "User-authorized GitHub Actions automated smoke run and artifact",
+  "workflow_run": "https://github.com/ahmedelgaml70/protocol/actions/runs/38177465238",
+  "artifact_url": "https://github.com/ahmedelgaml70/protocol/actions/runs/38177465238/artifacts/11716470961",
+  "workflow_status": "success",
+  "checks": [
+    {
+      "name": "pooltogether-base",
+      "status": "ok",
+      "source": "official PoolTogether Base GraphQL index plus read-only Base RPC validation",
+      "window_days": 3,
+      "indexed_claim_events": 0,
+      "claim_receipts_checked": 0,
+      "prize_token_address": "0x4200000000000000000000000000000000000006",
+      "observed_chain_tip_block": 52482798,
+      "indexed_head_block": 52482797,
+      "note": "Zero indexed PrizeClaim entities in bounded three-day query; no payout activity inferred outside this window."
+    },
+    {
+      "name": "superfluid-base",
+      "status": "ok",
+      "source": "official Superfluid Base subgraph",
+      "window_utc": {
+        "start": "2026-10-08T21:42:24Z",
+        "end": "2026-10-11T21:42:24Z"
+      },
+      "indexed_liquidation_events": 52,
+      "sample_truncated": false,
+      "note": "Historical executed liquidations only, not unclaimed rewards or wallet opportunity."
+    },
+    {
+      "name": "ripe-base",
+      "status": "not_implemented",
+      "note": "Awaiting actual proven mainnet keeper payout and trustworthy discovery method."
+    }
+  ],
+  "offline_tests": {
+    "workflow_run": "https://github.com/ahmedelgaml70/protocol/actions/runs/38177465230",
+    "passed": 41
+  },
+  "alert_workflow_status": "configured; push smoke was intentionally skipped; scheduled/dispatch trigger not yet verified end-to-end",
+  "wallet_transactions_sent": 0,
+  "actual_profit_usd_verified": 0,
+  "capital_spent_usd": 0,
+  "interpretation": "Automation functions and captures real research data; no currently available positive-net operation established."
+}
