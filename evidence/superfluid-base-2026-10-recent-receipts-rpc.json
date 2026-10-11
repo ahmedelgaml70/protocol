@@ -1,0 +1,204 @@
+{
+  "network": "base-mainnet",
+  "chain_id": 8453,
+  "method": "subgraph discovery + read-only RPC receipt checks",
+  "distinct_ethx_transactions_in_input_sample": 35,
+  "receipts_checked": 12,
+  "all_ethx_transactions_checked": false,
+  "rows": [
+    {
+      "transaction_hash": "0x27198a46eb7406122fb467b7e5471620c1def01e616683f0b876ba6335ecfe13",
+      "indexed_timestamp_utc": "2026-10-08T18:21:15+00:00",
+      "indexed_ethx_reward_raw": "14155765965924920",
+      "indexed_events_in_tx": 1,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xa4ddac803117c6da2931fc40d2977c566896fc41",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "14155765965924920",
+      "reported_full_gas_fee_wei": "30175842180372",
+      "ethx_to_eth_parity_proxy_after_gas": "0.014125590123744548",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0x24ee18cfbf018d556687efcbeb17a94a9206063025bfad1f6093c32260edf629",
+      "indexed_timestamp_utc": "2026-10-08T18:21:07+00:00",
+      "indexed_ethx_reward_raw": "14130982209939863",
+      "indexed_events_in_tx": 1,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xa4ddac803117c6da2931fc40d2977c566896fc41",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "14130982209939863",
+      "reported_full_gas_fee_wei": "29897081242596",
+      "ethx_to_eth_parity_proxy_after_gas": "0.014101085128697267",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0xc36bb967bb1f6a00c470d5fac3e94d052810a8bb8f54c67cce2bdf20d0bf3307",
+      "indexed_timestamp_utc": "2026-09-27T09:09:07+00:00",
+      "indexed_ethx_reward_raw": "766798949183325",
+      "indexed_events_in_tx": 1,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0x4ead40da807fa1ccaa8be38f8dbc5be346a39239",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "766798949183325",
+      "reported_full_gas_fee_wei": "17682569196788",
+      "ethx_to_eth_parity_proxy_after_gas": "0.000749116379986537",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0x2ab2016faca9ebe718a9aabb77b2d31943e2e172526f77083bdb6e36d2cef231",
+      "indexed_timestamp_utc": "2026-10-09T00:24:05+00:00",
+      "indexed_ethx_reward_raw": "486070707369363",
+      "indexed_events_in_tx": 1,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xa4ddac803117c6da2931fc40d2977c566896fc41",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "486070707369363",
+      "reported_full_gas_fee_wei": "27314525823750",
+      "ethx_to_eth_parity_proxy_after_gas": "0.000458756181545613",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0x6760452eea5d96e115f65cadf3e91910e785f54dd9cd3875d1d69afccbb8d76f",
+      "indexed_timestamp_utc": "2026-09-30T22:03:47+00:00",
+      "indexed_ethx_reward_raw": "455302020392957",
+      "indexed_events_in_tx": 1,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xa4ddac803117c6da2931fc40d2977c566896fc41",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "455302020392957",
+      "reported_full_gas_fee_wei": "27321459798865",
+      "ethx_to_eth_parity_proxy_after_gas": "0.000427980560594092",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0xf8c81a61623c6f5d937b0ee49687f35db92e261a9183d9add9e181f59d8248de",
+      "indexed_timestamp_utc": "2026-10-08T11:36:23+00:00",
+      "indexed_ethx_reward_raw": "287561756561450",
+      "indexed_events_in_tx": 1,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xa4ddac803117c6da2931fc40d2977c566896fc41",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "287561756561450",
+      "reported_full_gas_fee_wei": "28672981584516",
+      "ethx_to_eth_parity_proxy_after_gas": "0.000258888774976934",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0x3544642ecce4518058b0c65d09640530b5c93557ed50d073d0a25f8cd31ed078",
+      "indexed_timestamp_utc": "2026-10-11T12:36:57+00:00",
+      "indexed_ethx_reward_raw": "6876078901253",
+      "indexed_events_in_tx": 2,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xc20a5455035ab593682cf9b9916b9407cc9e47f3",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "6876078901253",
+      "reported_full_gas_fee_wei": "7352460433817",
+      "ethx_to_eth_parity_proxy_after_gas": "-4.76381532564E-7",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0x0ba163608c4ec46ae90697d49155016f1dfcd46a3efc78c7f0bf8807e943bdca",
+      "indexed_timestamp_utc": "2026-10-10T22:24:59+00:00",
+      "indexed_ethx_reward_raw": "5410467263471",
+      "indexed_events_in_tx": 2,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xc20a5455035ab593682cf9b9916b9407cc9e47f3",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "5410467263471",
+      "reported_full_gas_fee_wei": "15818114640709",
+      "ethx_to_eth_parity_proxy_after_gas": "-0.000010407647377238",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0x770c2e84328b6b8da006cdcad0898c06b3967d9d13bf66e62fb7a9e8a70f1e5d",
+      "indexed_timestamp_utc": "2026-10-10T15:12:59+00:00",
+      "indexed_ethx_reward_raw": "10247241052308",
+      "indexed_events_in_tx": 3,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xc20a5455035ab593682cf9b9916b9407cc9e47f3",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "10247241052308",
+      "reported_full_gas_fee_wei": "16697034176103",
+      "ethx_to_eth_parity_proxy_after_gas": "-0.000006449793123795",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0x4b30d130e755fd822142eb1da41e8f48d3f9f93318ecb985b894a25ac0f4381e",
+      "indexed_timestamp_utc": "2026-10-10T14:36:59+00:00",
+      "indexed_ethx_reward_raw": "18348819136",
+      "indexed_events_in_tx": 1,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xc20a5455035ab593682cf9b9916b9407cc9e47f3",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "18348819136",
+      "reported_full_gas_fee_wei": "6005282595209",
+      "ethx_to_eth_parity_proxy_after_gas": "-0.000005986933776073",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0x6f3373f5ea196658a65aa60f1c0e49936e33c000e03aa55818ad548f4ff8a5ef",
+      "indexed_timestamp_utc": "2026-10-09T21:12:57+00:00",
+      "indexed_ethx_reward_raw": "18159170234748",
+      "indexed_events_in_tx": 1,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xc20a5455035ab593682cf9b9916b9407cc9e47f3",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "0",
+      "reported_full_gas_fee_wei": "4055823529725",
+      "ethx_to_eth_parity_proxy_after_gas": "-0.000004055823529725",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    },
+    {
+      "transaction_hash": "0x6cacf8c48f5fe49c299a492244a116779f57da08432850edf7e78b2fb96878d5",
+      "indexed_timestamp_utc": "2026-10-09T03:00:53+00:00",
+      "indexed_ethx_reward_raw": "4285475926074",
+      "indexed_events_in_tx": 1,
+      "indexed_types": [
+        "pleb"
+      ],
+      "submitting_address": "0xc20a5455035ab593682cf9b9916b9407cc9e47f3",
+      "receipt_status": "SUCCESS",
+      "ethx_transferred_batch_to_submitter_raw": "4285475926074",
+      "reported_full_gas_fee_wei": "12988637986893",
+      "ethx_to_eth_parity_proxy_after_gas": "-0.000008703162060819",
+      "parity_proxy_computable": true,
+      "warning": "1 ETHx=1 ETH is an assumption; this is NOT actual profit. Token exit liquidity, swap costs, missed opportunities, failed-call losses, and future competition excluded."
+    }
+  ],
+  "transactions_sent": 0,
+  "verified_realized_profit_usd": null
+}
