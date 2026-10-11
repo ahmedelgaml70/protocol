@@ -1,4 +1,4 @@
-"""Find a wall-clock EVM block range with read-only timestamp binary search."""
+"""Select an on-chain time window without querying pruned early-history blocks."""
 
 
 def block_timestamp(rpc, number):
@@ -9,24 +9,34 @@ def block_timestamp(rpc, number):
 
 
 def start_block_for_hours(rpc, latest, earliest, hours):
-    """First block >= tip_timestamp minus requested hours, capped at deployment.
+    """First block >= tip timestamp - hours, respecting earliest eligible block.
 
-    Assumes canonical EVM block timestamps are nondecreasing across block number.
-    Executes O(log(blocks)) read-only eth_getBlockByNumber requests.
+    Start at the tip and grow the backward search exponentially. This avoids
+    querying genesis (which free RPC endpoints may have pruned), and then
+    binary-searches the *recent* bracket. Works with fast and slower EVM chains.
+    Explicitly fails when even the requested recent range is unavailable.
     """
-    if not (0 < hours <= 24 * 30):
+    if not (0 < hours <= 720):
         raise ValueError("hours must be > 0 and <= 720")
-    if earliest > latest:
-        raise ValueError("earliest block after tip")
-    latest_time = block_timestamp(rpc, latest)
-    cutoff = latest_time - int(hours * 3600)
-    lo, hi = earliest, latest
-    if block_timestamp(rpc, lo) >= cutoff:
-        return lo
-    while lo < hi:
-        mid = (lo + hi) // 2
-        if block_timestamp(rpc, mid) < cutoff:
-            lo = mid + 1
+    if earliest < 0 or earliest > latest:
+        raise ValueError("invalid earliest/latest block")
+    cutoff = block_timestamp(rpc, latest) - int(hours * 3600)
+    if earliest == latest:
+        return earliest
+    high = latest
+    step = 1
+    while True:
+        candidate = max(earliest, latest - step)
+        if block_timestamp(rpc, candidate) < cutoff:
+            low = candidate
+            break
+        if candidate == earliest:
+            return earliest
+        step *= 2
+    while low < high:
+        middle = (low + high) // 2
+        if block_timestamp(rpc, middle) < cutoff:
+            low = middle + 1
         else:
-            hi = mid
-    return lo
+            high = middle
+    return low

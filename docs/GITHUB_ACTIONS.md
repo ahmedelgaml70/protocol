@@ -44,3 +44,5 @@ Initial-smoke-test behavior: changes to the radar workflow YAML itself on the de
 ## First smoke-test result and data provider fix (2026-10-12)
 
 Initial read-only smoke run [#38177006035](https://github.com/ahmedelgaml70/protocol/actions/runs/38177006035) succeeded at the workflow level and uploaded a 7-day report artifact. Superfluid Base's indexed 3-day sample succeeded (52 recent events). PoolTogether failed **eth_getLogs with HTTPError** at Base's default public RPC, so it was recorded as `incomplete`, NOT no claim rewards. The PoolTogether scanner in the scheduled runner was changed to the free, keyless PublicNode Base RPC (`https://base-rpc.publicnode.com`) whose public dashboard reports current `eth_getLogs` operations. This fallback still must be empirically tested for our filter and retention window; failures are never turned into success. Source: https://base.publicnode.com/
+
+PublicNode response in second smoke run: `eth_getBlockByNumber` for genesis rejected due to pruning, not an `eth_getLogs` failure. Time window lookup fixed to start from chain tip. See `block_range.py`. Reports still fail safely if even required recent history is missing.

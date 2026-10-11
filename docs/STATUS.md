@@ -107,3 +107,6 @@ Workflows added under `.github/workflows/`: tests on push/PR; twice-hourly read-
 - GitHub Actions tests run successful, 36 offline tests passed.
 - Radar smoke run #38177006035 completed, artifact archived: Superfluid Base 3-day subgraph success 52 indexed events; PoolTogether Base default RPC denied `eth_getLogs` via HTTPError (status incomplete).
 - Alert pipeline skipped the push-triggered smoke scan by design, avoiding unapproved issue creation. Radar now uses keyless PublicNode endpoint for PoolTogether; fresh smoke test triggered to determine whether it serves actual event filter.
+
+### PublicNode follow-up and pruned-history fix
+PublicNode accepted PoolTogether RPC queries but returned RPC error 4444 on old block 1 (pruned; oldest available block around 51,000,000). Root cause was our timestamp-search helper querying genesis for a recent 6-hour window. Fixed `block_range.py` to exponential-backtrack from latest and binary-search a recent bracket; old history is never requested unless it is truly needed. Offline equivalence tests passed for normal and pruned histories. New smoke run triggered.
