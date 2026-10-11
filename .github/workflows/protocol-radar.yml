@@ -1,6 +1,10 @@
 name: Protocol Radar
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/protocol-radar.yml'
   schedule:
     - cron: '17,47 * * * *'
   workflow_dispatch:

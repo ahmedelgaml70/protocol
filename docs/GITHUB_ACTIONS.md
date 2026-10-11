@@ -38,3 +38,5 @@ GitHub → Actions → Protocol Radar → ... → Disable workflow. This stops s
 - https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
 - https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions
 - https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts
+
+Initial-smoke-test behavior: changes to the radar workflow YAML itself on the default branch also start a read-only scan. The issue-writer explicitly ignores push-triggered scans, so this helps verify infrastructure without publishing any alert. Ordinary code pushes still run only the test workflow.
