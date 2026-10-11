@@ -49,3 +49,5 @@ Example of the danger of counting attempts as income: https://etherscan.io/tx/0x
 
 ## Updated Superfluid assessment (full October user sample)
 **Priority: verify just a sample of recent receipt winners, then decide.** 300 events / 270 transactions in truncated ~16 days, but only 46 ETHx events (35 tx) and **0.03134 ETHx indexed rewards in total**. 90.26% arose in just two Oct 8 events. Large raw amounts of arbitrary tokens cannot be considered USD earnings without pricing and liquidity. Confirm successful ERC20 payouts to transaction sender, gas and competition before committing further development. A single indexed liquidator account corresponds to a Batch Liquidator contract; it is **not** evidence of just one bot.
+
+**Asset-quality gate:** 184 token addresses across 300 events, with 180 singleton token addresses. Do not attribute stable/USD value to singleton rewards until contract, DEX liquidity, redemption and spread are verified. The large number of distinct tokens inflates apparent activity relative to easily liquidated earnings opportunities.
