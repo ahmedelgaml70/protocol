@@ -74,3 +74,5 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Verify **successful receipts and actual reward transfers** for recent event candidates.
 - [ ] Determine which payout receivers are protected/preferred TOGA participants versus independent Pleb/Pirate callers.
 - [ ] Check observable positive-net frequency; reject if absent before building executors.
+
+**Critical interpretation rule:** the indexed event's `liquidatorAccount` can be the Superfluid **Batch Liquidator contract**, rather than the externally owned submitting wallet. This is proven in the May 9 Base transaction: indexed `liquidatorAccount=0x6b008BAc...`, but tx sender and actual ETHx recipient is `0xC20a5455...`. Treat indexed account concentration as *contract/event routing*, **not** executor competition. The script labels this explicitly; to measure human/bot-initiator concentration, enumerate transaction hashes and inspect `tx.from`, `eth_getTransactionReceipt`, and actual token transfers.

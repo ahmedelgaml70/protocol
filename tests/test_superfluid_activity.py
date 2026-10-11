@@ -16,7 +16,7 @@ class TestActivity(unittest.TestCase):
     def test_one_successful_indexed_event(self):
         result = summarize([sample()], 1778310000, 1778320000, 10)
         self.assertEqual(result["events_sampled"], 1)
-        self.assertEqual(result["unique_caller_addresses"], 1)
+        self.assertEqual(result["unique_indexed_liquidator_addresses"], 1)
         self.assertFalse(result["sample_may_be_truncated"])
         self.assertFalse(result["profit_usd_verified"])
 

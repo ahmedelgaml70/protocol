@@ -30,7 +30,7 @@ def summarize(events, since, until, limit):
     """Summarize raw event counts, not incomparable cross-token reward totals."""
     if not isinstance(events, list):
         raise ValueError("Invalid subgraph data")
-    rows, callers, tokens = [], Counter(), Counter()
+    rows, liquidator_accounts, tokens = [], Counter(), Counter()
     for e in events:
         ts = int(e["timestamp"])
         if ts < since or ts > until + 600:
@@ -44,22 +44,22 @@ def summarize(events, since, until, limit):
         rows.append({
             "timestamp_utc": datetime.fromtimestamp(ts, timezone.utc).isoformat(),
             "transaction_hash": e["transactionHash"], "token_address": token,
-            "caller": caller, "reward_receiver": receiver,
+            "indexed_liquidator_account": caller, "indexed_reward_receiver": receiver,
             "reward_raw": str(amount), "liquidation_type_code": e.get("liquidationType")
         })
-        callers[caller] += 1
+        liquidator_accounts[caller] += 1
         tokens[token] += 1
     return {
         "window_since_utc": datetime.fromtimestamp(since, timezone.utc).isoformat(),
         "window_until_utc": datetime.fromtimestamp(until, timezone.utc).isoformat(),
         "events_sampled": len(rows), "sample_limit": limit,
         "sample_may_be_truncated": len(rows) == limit,
-        "unique_caller_addresses": len(callers),
-        "top_caller_event_share": max(callers.values())/len(rows) if rows else None,
-        "caller_event_counts": callers.most_common(25),
+        "unique_indexed_liquidator_addresses": len(liquidator_accounts),
+        "top_indexed_liquidator_account_share": max(liquidator_accounts.values())/len(rows) if rows else None,
+        "indexed_liquidator_account_counts": liquidator_accounts.most_common(25),
         "event_counts_by_token_address": dict(tokens),
         "events": rows, "profit_usd_verified": False,
-        "notice": "Indexed events only, not independently verified receipts; no live eligibility, token price, or realized profit."
+        "notice": "Indexed events only. liquidatorAccount may be an intermediate batch contract, NOT the submitting wallet. For actual payee concentration, inspect transaction receipts and ERC20 transfers. No live eligibility or profit."
     }
 
 
@@ -92,7 +92,7 @@ def main(argv=None):
     data["data_source"] = ENDPOINTS[args.network]
     Path(args.output).write_text(json.dumps(data, indent=2)+"\n", encoding="utf-8")
     print("Indexed events:", data["events_sampled"],
-          "unique callers:", data["unique_caller_addresses"],
+          "unique indexed liquidator accounts:", data["unique_indexed_liquidator_addresses"],
           "potentially truncated:", data["sample_may_be_truncated"])
     print("READ ONLY. Output:", args.output)
     return 0
