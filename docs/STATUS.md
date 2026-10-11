@@ -74,3 +74,6 @@ Validated both user-supplied files programmatically and archived them to `eviden
 46 ETHx events across 35 txs sum to **0.031339692062159336 ETHx indexed rewards** in the sample, ~90.26% in two Oct 8 events (hashes in `evidence/superfluid-base-2026-10-11-analysis.json`). **This is historical event data, not money that can still be claimed.** The two old May RPC receipts confirm token transfer/gas, but they do not validate Oct winners. No real user profit, no spending, no signed calls.
 
 New `superfluid_recent_receipts.py` and 3 offline tests cover a limited Base ETHx receipt sample. An equivalent implementation passed 3 synthetic local tests; complete GitHub checkout test suite still needs execution. Next run `make superfluid-recent`, then independently verify actual recipients, net *before swap* and caller concentration for Oct 8/Oct 11.
+
+### Token concentration correction
+The sample has **184 unique reward token contract addresses**, **180 appearing exactly once**. This does NOT mean those tokens are scams, but it makes a raw event-count or raw reward-amount headline poor evidence of liquid USD rewards. Focus next receipt audit on ETHx before spending time pricing other tokens.
