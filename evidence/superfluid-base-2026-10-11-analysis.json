@@ -11,7 +11,9 @@
     "first_event": "2026-10-11T20:39:51Z",
     "oldest_event": "2026-09-26T00:48:15Z",
     "unique_transaction_hashes": 270,
-    "positive_indexed_raw_rewards": 300
+    "positive_indexed_raw_rewards": 300,
+    "unique_token_contracts": 184,
+    "token_contracts_with_exactly_one_event": 180
   },
   "period_types": {
     "patrician_priority": 40,
