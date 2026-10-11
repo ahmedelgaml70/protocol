@@ -1,0 +1,2907 @@
+{
+  "window_since_utc": "2026-09-11T20:47:30+00:00",
+  "window_until_utc": "2026-10-11T20:47:30+00:00",
+  "events_sampled": 300,
+  "sample_limit": 300,
+  "sample_may_be_truncated": true,
+  "unique_indexed_liquidator_addresses": 1,
+  "top_indexed_liquidator_account_share": 1,
+  "indexed_liquidator_account_counts": [
+    [
+      "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      300
+    ]
+  ],
+  "event_counts_by_token_address": {
+    "0x2dbc919ca97fbbaa5bcc43a6be94494735fc96c7": 1,
+    "0x1413189a9c104c7ac6e75e0b40c5133df8e65bfb": 1,
+    "0x1eff3dd78f4a14abfa9fa66579bd3ce9e1b30529": 1,
+    "0x402f006acd99238e88cf0714dc381e64f3866560": 1,
+    "0x174682bd59715d72e4e06e98d064b287db4c0be4": 1,
+    "0xa69f80524381275a7ffdb3ae01c54150644c8792": 14,
+    "0xd04383398dd2426297da660f9cca3d439af9ce1b": 52,
+    "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93": 46,
+    "0x254a7eca0b3165619bd0663992c3609fa6dd1ca5": 1,
+    "0x40823c63ad25ef8cb34c189ffec36ba8e5249d20": 1,
+    "0x22b80d2e552facc3760aac71ffd130882058f294": 1,
+    "0x2f37e6e2596b1545bf0d4fa7c870ebe22cb941bf": 1,
+    "0x268fb437bff132c3207316819ca327d887c6d50a": 1,
+    "0x3bffbb3763a7a2bfc34178cce6328e97d3df948f": 1,
+    "0x3123236b1634f93317f8d8ed148e5eefbc7f077f": 1,
+    "0x22eee77f1fece175ab5f2825d1234d7e38326716": 1,
+    "0x29707f1833ea65d5e38ac3c4ba08d021047ce0ec": 1,
+    "0x3e7e99c5a40475dbd072ed80b9ef5b606ff36b5a": 1,
+    "0x339d1b97653bc1ca9e6b74ad6d7fa9d8603b1934": 1,
+    "0x3596b4969ebe856273548ea2112c19119a09e91b": 1,
+    "0x0a16302543ed27fbdb5abebee2d600b673847faf": 1,
+    "0x0a12db1108f583c1ada197f6fba0df925c8900a7": 1,
+    "0x058b5dc41e29f46687d80cd6104eef2444142b74": 1,
+    "0x0c32c9039c901d0df69d46f95aa58b49df48bf13": 1,
+    "0x2f4204419d5bb46f6de241089dc556017e06e657": 1,
+    "0x22a4517ddf52ed367458abf69ad513dbaccd053c": 1,
+    "0x13b51783ed3366725df47de2e30ea1b80d755e3d": 1,
+    "0x3759fbc470d42eb95409b6e28104b08a79e1c1c4": 1,
+    "0x12434397368861e27e0072fd4c715ac28765eece": 1,
+    "0x8b8c7b77767a30e698e32293d2b55b164d463bd1": 1,
+    "0x2e0387979c3d27b7065d429fa3c4def2f94c9642": 1,
+    "0x0e94cffec94d57e04eb91d72d01fad6298c3404b": 1,
+    "0x3880ec7750c2895c6a62f94ac53b9f94cd566daf": 1,
+    "0x1f69b5f4c88061bcd1deef8c99f6c44a27352fc0": 1,
+    "0x1fd6bd1ee097f51a44cd6ec9a5c1c6d9ba6f074c": 1,
+    "0x397146920d35aa99c31c3b7e9865513ffa2db429": 1,
+    "0x21d14ff25b24664bed4e4a646149bfa08820294e": 1,
+    "0x3c81f3d732940b22a85e089d75e58fc4ad491755": 1,
+    "0x3450abf396edc0a1101441d2665b7faae485bde9": 1,
+    "0x10e97ebc31e03e09e77ac73ed9119b2356d043d2": 1,
+    "0x343fcd3dc9a0d9e57913cd1f46793da79afe66b6": 1,
+    "0x38f86efe35b62ffef4ea0eebea0f3c992885e475": 1,
+    "0x222e05bbe92952dedc7433ce3794a29601433cea": 1,
+    "0x341e200e83b3d156b4392179ba99401386eb6f37": 1,
+    "0x1a9eb20a0bfc867795c2809f4ffab81127d29bfc": 1,
+    "0x363466c73217dcbc039b2709aaa6a608d714b954": 1,
+    "0x1b2424b32638063e74e9a939da371aa7e4096928": 1,
+    "0x18d0e7195cb95c4d0189a9b11ca00637464c8d49": 1,
+    "0x13684c59495872a062826dd5d6047a96126f2b29": 1,
+    "0x106e49eb8b1aeec6b127c4f68405305974422d46": 1,
+    "0x0588593d79ae30270a67180ad5c5234091743696": 1,
+    "0x412abe65bab1a2baef133d27fb6ce4cadc95735e": 1,
+    "0x3010173b97d8f8af04c9deb288202cf7f56bfc9c": 1,
+    "0x2fd302697e27d1a2cdca2b11e92c654a2949ef70": 1,
+    "0x11fa10c8751ef51aea79d7db7ad9fa31221c5ee4": 1,
+    "0x098fdf41c15c43c3e3945f04a6e20249b0d5dcd0": 1,
+    "0x01b23de0eecdc6304f5a9b16fb0bc2e05785f348": 1,
+    "0x37289154b08474c339a34028ab52d65cad67ca0c": 1,
+    "0x2476bf6c91b0be166d53a3d8bdd1914ec2bc8f85": 1,
+    "0x1fceb7c738ddf3bd499e8d85687935a06d5cdb27": 1,
+    "0x1e2ec2cb25fdec65c37bfe50b07eec6689b54d04": 1,
+    "0x1c32350f163664649ac2338e8b4c0cf5adf12975": 1,
+    "0x0d190c231748a55f46fbd381357a33854bd87919": 1,
+    "0x0af77c7a2d0cb7fc7d36b277abc55a4a21e9f6e5": 1,
+    "0x1ecc1d0f770350e30c7cb767579e546d90d1a5e4": 1,
+    "0x3f5c6422f941c5aeb23be062fca59ebcfdf520a8": 1,
+    "0x310102bb12144306d3f35dc751dc6b266b6bdf72": 1,
+    "0x24cc26ec9334eca106b10e94c69896c043c3a391": 1,
+    "0x21698127b10e3d88b64c75cb833093bd11d0d084": 1,
+    "0x7ef392131c3ab326016cf7b560f96c91f4f9d4fa": 1,
+    "0x413fc4cf90371e678d0c27eaf5a6b05467d5b3ce": 1,
+    "0x2e3fe882702fd0de6ead08068f1bafbe4c054084": 1,
+    "0x2cfb16dbda80c995e9f58460651f7807444055e8": 1,
+    "0x39b7808f50ea377ece04699590a239f7bacc2f4c": 1,
+    "0x382112f80db7e79f2c3bde7113c8e0aded19006b": 1,
+    "0x26bf21780336d9144e326f45ec95b71982baf34b": 1,
+    "0x2196ff30b30a9b35fea3be77dae871200ec64101": 1,
+    "0x3e1fe6459a1d570a444acab3680b85fc047ff44d": 1,
+    "0x3961b36427f4daef77532db4ac81b01923e03181": 1,
+    "0x3675179bc9607818340b779e7fbc0943e2e5f443": 1,
+    "0x3050a6bcca4cbe4e2ea19ea13386e00081589977": 1,
+    "0x26a0ec1d7f940c0221735f8be7a3c1a308c2e8be": 1,
+    "0x149f6b33507cf017869cffd8776b75b1f3ad3d91": 1,
+    "0x31657e22487ddd14b5d6191c69e7bf3fca9e5571": 1,
+    "0x25150cfd0f947075f1adbabf6a207176cb0c624e": 1,
+    "0x1a9aa43c5f3db90540aefc5518fff19990c958bf": 1,
+    "0x390d128d303f7409dda2831b1159e5b828049f22": 1,
+    "0x25d415ab0a1ae2ecb240edc52278478e86620726": 1,
+    "0x2378a777176bdde626abd610ee77f2423e00b033": 1,
+    "0x0972fb55431dd5111e44d503ac5761e1afcddc04": 1,
+    "0x0d3e7d5314bae57c1c19fb0ae73bad71ac6a2488": 1,
+    "0x3ab30a07dc062005f262126c757855bf11e38473": 1,
+    "0x20db8d665100b209708565124a49f0d109984373": 1,
+    "0x0ed02eea1a692a56b7eb0d148a45a67364a2028a": 1,
+    "0x212285f0aa6ebcfe1f399c8c01ad2c6e8c41fc39": 1,
+    "0x1f3dd65987076ab51843bef92f53471db76d5682": 1,
+    "0x02e77452fc9a99bc620d24cd57d6209fe6b1c5c4": 1,
+    "0x09b1ad979d093377e201d804fa9ac0a9a07cfb0b": 1,
+    "0x3138594bd76c61ec0b56a77cd7683643630b3b32": 1,
+    "0x301e986f50ac2e4e00a45118a219990a02e80e53": 1,
+    "0x00a15180daba3a52e172a9a6fb4c0e8a64c19ad2": 1,
+    "0x41ee0162c19537fc746cabab33fb464a46fbf412": 1,
+    "0x340ad0dbf99df8f6e87398001bbcce63f264f2fe": 1,
+    "0x2bc1e6e19f82cc5fb064dc77de71dec37a0ca886": 1,
+    "0x27630bbf05e7885b35e6af4fa74a6041c058b766": 1,
+    "0x3566eac34cd7915df2f43499aa9b3e42a35ac36d": 1,
+    "0x22b72f13763a57284293ae456a0de5338b4b8f12": 1,
+    "0x1750b021558e723f70c1fd4fbb30abe3ef0e5567": 1,
+    "0x08ccc2c380b380ea16ed281a4d910619c7fe501e": 1,
+    "0x403063eab71f6ae90ac3b3aebd7b58f1e46a81bf": 1,
+    "0x114a405713efe8b2c843067dbcd48a11a710d3d3": 1,
+    "0x09ea36e6524662632b8a72377debda40fb7b4e0d": 1,
+    "0x38ab215c83f2c8ddd01aa094fc04e8ead306b7a7": 1,
+    "0x29e91529cae9231170a24db62817b60b2bdeb817": 1,
+    "0x3576d3d8f2402aaca3fda36b21933c82d0c17903": 1,
+    "0x26a7d6a8ffd1462d839676732f04ee0d6e41c16e": 1,
+    "0x304989da2adc80a6568170567d477af5e48dbaae": 8,
+    "0x381e8284050e48ab6d06d27b22b298e7f55480ac": 1,
+    "0x36828f6dd3185ea31f25c6fff8629e89b927b453": 1,
+    "0x1dadbe380e3fea6b38e4ca4aff1230539a8112b4": 1,
+    "0x1203aceb342214f5cd960c3e7a62967ec49fb691": 1,
+    "0x117cb07db10867573ee88306d14f3979932c943f": 1,
+    "0x10e01c8c5d1b839a296bbce2d188fbb679916470": 1,
+    "0x0b8f3690ed167f5b1ac1005456ad61bc45f603e8": 1,
+    "0x048c033754eafa808d837274ba1eec854fd4ee96": 1,
+    "0x0398857fcdf4c4aec96360cdad9aa6df213010e8": 1,
+    "0x001368f1a7e5305944a5d229fb9f55fd9b850ada": 1,
+    "0x0b8d195e560549782962dc3b7fdff8b3f54ff4e8": 1,
+    "0x05fcb1b59784d6ebe94268e4d4495aceaea15416": 1,
+    "0x00a2c949658423de26d37c79b3469aa435a38608": 1,
+    "0x20144fbeaca638ae29ec40ff051bc7c38d33d9b8": 1,
+    "0x1a5f70f7f2b17f1e616de0a2c451401e0980876c": 1,
+    "0x0ed849dbb6be2d1e03f592701f9ef4720978f2b9": 1,
+    "0x07b32b6ae1814b69e453b73424fbdac0f7b7e15e": 1,
+    "0x068c4ae02f5e3dd98caf54f04f70ae6592ecab67": 1,
+    "0x14577cf4bbf1146deca56892330850df14fc5625": 1,
+    "0x1ee6ee5989e62a37cc68106168a5abef1e9e2f0b": 1,
+    "0x3904946720dfb5d14caa04d5ce2bdb5d52109732": 1,
+    "0x36f1e40462de97eacb4cb7e2eae8bc3b0e48db60": 1,
+    "0x355977b16045540c976d71d0825fa2a4470e3eb0": 1,
+    "0x30ab13a90bf3b65c1acc2adee8a08d423319353c": 1,
+    "0x28d95f34c5abfc86d354f1b14e1b1626ee6e2ff2": 1,
+    "0x14006b9994ef460ee768fe2441aa34c06a56b4aa": 1,
+    "0x0f4d5ebd29343fce709d4a016ab33612275b4f6b": 1,
+    "0x0e056de2bab66f7825c50a265c4a7ce84b6d6bf7": 1,
+    "0x011216c4dd3d4056dac3e54d1428878d05cd6fd7": 1,
+    "0x004d43b29e1dc013492f15977c03be4f72983eb1": 1,
+    "0x33d909df955eb61f1e2e7d4770827897db3b7496": 1,
+    "0x3087aca7ec1edb06e0f4d5e4444371648a6818df": 1,
+    "0x2d2d6c993485f6524cb97e4f2eb50bb64a33c3e7": 1,
+    "0x2c1a197efeb9f3db96d4ef8bb37aecef33e93169": 1,
+    "0x2c0105802de70f6efc6401e8b67cd45e2d1cb733": 1,
+    "0x0b2d735ec3cfd20fb32416eb6893e9efdc6f552c": 1,
+    "0x3088534487c4c8ec0d6aa92a5c6ee6a19f8c1e6e": 1,
+    "0x190cc61a86e1ea80f4647e1669f899a600a8e602": 1,
+    "0x3b3cd21242ba44e9865b066e5ef5d1cc1030cc58": 1,
+    "0x15d4868b490bae6cd910bc00242837854d108c29": 1,
+    "0x0c2bf16b1e2b55a47a856e8f4f52043a3fcc91ae": 1,
+    "0x3c7bc6897dff7f4a81ff72ba14d34682d183745e": 1,
+    "0x34870f97659ab321f9a0ad55132d6d005525b1d1": 1,
+    "0x241a63b5ffbec0fec6726b1d9194e95fa4926257": 1,
+    "0x21d2203f4e769af375a3380266bb8d9ae6a69b41": 1,
+    "0x179e42663cb367a683a7fb57fc0557ed9ca9681a": 1,
+    "0x128e1078df80015eb812dc620f48434d2a2de42e": 1,
+    "0x0faf244572f49060ae24b0b0fbf23492db7e1ea4": 1,
+    "0x0fab2c3ae8b7a4f8fcf61011acdce984a6bd4874": 1,
+    "0x0dd75d07032166bd584193e247b63f3fea6a1335": 1,
+    "0x0a4663cd5f1a64a9ef98fd892632c51a1f8d2fc7": 1,
+    "0x0223bee0bb775196f24c1f3c5d33dd7bcd3e8897": 1,
+    "0x409223dae028c5334d00a186b63d3c6af4b26b98": 1,
+    "0x3d5de9e7ed67fe8f0e2f3c8bd5a2b452f94895b4": 1,
+    "0x3d43eeedc5479c74da536dc793047ea3ece04cc4": 1,
+    "0x22e7d93d79bfc2bb8eda67f36a01d29fdd2fbb59": 1,
+    "0x0b6e986a184dde73f8e07373ef4a9ae2019aa668": 1,
+    "0x34e4b682c38d2769c32a3cd11d110a2820ab5888": 1,
+    "0x12bdc50cc585c1630be7aa3020df6b3da956cbed": 1,
+    "0x41a1d31f6e3d63856474c350a6da80009d0c75af": 1,
+    "0x2fe1ef143f901919aaea4c94a507b82598b108d2": 1,
+    "0x047b0ad7d87b92f842c2a2199ee047658d84901f": 1,
+    "0x121863835e6d914383e7e35240526d820dd727ef": 1,
+    "0x0bf144c74cc7c1dbd5ed5cd7b0ab8b7ced2d713f": 1,
+    "0x0e468de82352a9c53491f67795dccf47bfa88b91": 1,
+    "0x2c6d749a5b65a6f90952f033cfee453bdfb9d13d": 1,
+    "0x38e1d54369dc795bf610a614cb300c26c2b9f750": 1
+  },
+  "events": [
+    {
+      "timestamp_utc": "2026-10-11T20:39:51+00:00",
+      "transaction_hash": "0x80bced7128163ba11e0b3947fb06f1ae30eb6d7a70367012f792a482b751b972",
+      "token_address": "0x2dbc919ca97fbbaa5bcc43a6be94494735fc96c7",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7379502790461694579184696",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T20:21:19+00:00",
+      "transaction_hash": "0x1effe1f8aaba6860ad4c57f3712374ca40ab44c4b15f58b82ef9423c21cc2ce8",
+      "token_address": "0x1413189a9c104c7ac6e75e0b40c5133df8e65bfb",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4094368340943683417339216",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T18:00:25+00:00",
+      "transaction_hash": "0x94847be96287be0d406487951c8bf4194ab083722f42062cc680e099b65d33ed",
+      "token_address": "0x1eff3dd78f4a14abfa9fa66579bd3ce9e1b30529",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "450734752245337618",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T16:54:11+00:00",
+      "transaction_hash": "0xd8b225f69a15d8cdda5d0d796394e5b30f32b2c7b77e773b243453a79d2c7283",
+      "token_address": "0x402f006acd99238e88cf0714dc381e64f3866560",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7186707255200405893238552",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T16:24:39+00:00",
+      "transaction_hash": "0x2df9ee2a8bd2ec7ef615c84d6e90fdc49993e7d6db114b13c2459691076d8682",
+      "token_address": "0x174682bd59715d72e4e06e98d064b287db4c0be4",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1935565702688990368126472",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T15:37:15+00:00",
+      "transaction_hash": "0x265c64df688b3d7aaa092be8aea54e74c5414c3f6657971c3b118620cefcdfe1",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "740905712323345683",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T14:30:49+00:00",
+      "transaction_hash": "0x5ae79dd1f70a57c53f960233f5a846a25cb2515ee6b7b8dca645745cc96d0dd5",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "1884789777813041580",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-11T14:30:49+00:00",
+      "transaction_hash": "0x5ae79dd1f70a57c53f960233f5a846a25cb2515ee6b7b8dca645745cc96d0dd5",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "5385113640643351395",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-11T14:30:49+00:00",
+      "transaction_hash": "0x5ae79dd1f70a57c53f960233f5a846a25cb2515ee6b7b8dca645745cc96d0dd5",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "8077670463075538029",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-11T14:30:49+00:00",
+      "transaction_hash": "0x5ae79dd1f70a57c53f960233f5a846a25cb2515ee6b7b8dca645745cc96d0dd5",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "26925568198995735104",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-11T12:36:57+00:00",
+      "transaction_hash": "0x3544642ecce4518058b0c65d09640530b5c93557ed50d073d0a25f8cd31ed078",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4640473998848",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T12:36:57+00:00",
+      "transaction_hash": "0x3544642ecce4518058b0c65d09640530b5c93557ed50d073d0a25f8cd31ed078",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2235604902405",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T12:34:53+00:00",
+      "transaction_hash": "0x4829117173dded73cafae13748a4e82638ccdb18699bbb70afe4bb3582661f9c",
+      "token_address": "0x254a7eca0b3165619bd0663992c3609fa6dd1ca5",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6717402333840690012974912",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T08:55:35+00:00",
+      "transaction_hash": "0x1edc5c262d5e8115d6376a259638ee164d680c4d8e660f4973808abc4d995147",
+      "token_address": "0x40823c63ad25ef8cb34c189ffec36ba8e5249d20",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "339928970065956375230096",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-11T08:33:47+00:00",
+      "transaction_hash": "0x14ae16e45943d9b91424413e76990c30c2f211fccf23b9546a1fb343466c61b0",
+      "token_address": "0x22b80d2e552facc3760aac71ffd130882058f294",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-11T05:00:51+00:00",
+      "transaction_hash": "0x83834af9c5abee7655bc67a0c91d1517853d2ab49fe818a93f21b1351e808064",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "107806075324025506",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-11T04:42:47+00:00",
+      "transaction_hash": "0xb9544011ac0e93a348849ab4bb4ce039c2eb9b04d4d7c1eb6733658f458176a6",
+      "token_address": "0x2f37e6e2596b1545bf0d4fa7c870ebe22cb941bf",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5474378488077118222006352",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T22:24:59+00:00",
+      "transaction_hash": "0x0ba163608c4ec46ae90697d49155016f1dfcd46a3efc78c7f0bf8807e943bdca",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "904098968308",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T22:24:59+00:00",
+      "transaction_hash": "0x0ba163608c4ec46ae90697d49155016f1dfcd46a3efc78c7f0bf8807e943bdca",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4506368295163",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T16:36:19+00:00",
+      "transaction_hash": "0x28ea8adb0e1e063f0bcea34aab5b18b36cb865b1470175fdb78abc7d0082892e",
+      "token_address": "0x268fb437bff132c3207316819ca327d887c6d50a",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-10T15:12:59+00:00",
+      "transaction_hash": "0x770c2e84328b6b8da006cdcad0898c06b3967d9d13bf66e62fb7a9e8a70f1e5d",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2050874906049",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T15:12:59+00:00",
+      "transaction_hash": "0x770c2e84328b6b8da006cdcad0898c06b3967d9d13bf66e62fb7a9e8a70f1e5d",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4098183073130",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T15:12:59+00:00",
+      "transaction_hash": "0x770c2e84328b6b8da006cdcad0898c06b3967d9d13bf66e62fb7a9e8a70f1e5d",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4098183073129",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T14:36:59+00:00",
+      "transaction_hash": "0x4b30d130e755fd822142eb1da41e8f48d3f9f93318ecb985b894a25ac0f4381e",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "18348819136",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T09:30:49+00:00",
+      "transaction_hash": "0xed86c790fb8469d164d6bfee59ca2cb899b0141357f2798ee67fe8ca46568802",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "203632756635617432",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-10T08:50:11+00:00",
+      "transaction_hash": "0xef3c484e0982a14645e9ad58246e2d9f2447ee24b4c41bfd2948ff7055cf769b",
+      "token_address": "0x3bffbb3763a7a2bfc34178cce6328e97d3df948f",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "948756976154236436112656",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T08:42:21+00:00",
+      "transaction_hash": "0x33c7b43c267e806a38d284043060faf0ac08318900c40fe2dca413371b7fdf90",
+      "token_address": "0x3123236b1634f93317f8d8ed148e5eefbc7f077f",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5722983257229832580200064",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T08:32:19+00:00",
+      "transaction_hash": "0x3ca6d3bca4a67d0fe47f618377242c98e28bddddf57fff0171195c028382da23",
+      "token_address": "0x22eee77f1fece175ab5f2825d1234d7e38326716",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7610350076103508665032",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T08:13:11+00:00",
+      "transaction_hash": "0x02323b1f407ad9966c92a18d3751045d0cc31d3495569313e8925466f0a2791d",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "31743284915880069824",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T07:00:55+00:00",
+      "transaction_hash": "0xbc86ff7baea74f19be8b1ccc160692208d1363aede80e4f2ccf44d89fe54ee5e",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "54106945800112955",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-10T06:15:49+00:00",
+      "transaction_hash": "0xa03af2f15849dc987229a58cb7e3fb4e48a6c2c5423dc27936c5409b36d27a91",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "26896851691978794",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-10T05:15:49+00:00",
+      "transaction_hash": "0x211230d532585559cc9d29ed918cb06a983ce05b967248778680ce5ce072507f",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "26771660686362828",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-10T00:38:07+00:00",
+      "transaction_hash": "0x29fbf72cb426c62870ce3b4c9a0de49139b6f4d67f48f00e195180b22d61e80a",
+      "token_address": "0x29707f1833ea65d5e38ac3c4ba08d021047ce0ec",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "474378488077118222008328",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-10T00:30:49+00:00",
+      "transaction_hash": "0x7810a5ed5406a9fc20002d92e0da98d8da75f916117e094a36733ad362157fbd",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "1072346725237826488",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-09T21:12:57+00:00",
+      "transaction_hash": "0x6f3373f5ea196658a65aa60f1c0e49936e33c000e03aa55818ad548f4ff8a5ef",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "18159170234748",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T20:53:19+00:00",
+      "transaction_hash": "0x7d68409ffd66613d997447a26a97ffd7594a5ad8784ad10e980d39c608ac2f40",
+      "token_address": "0x3e7e99c5a40475dbd072ed80b9ef5b606ff36b5a",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2300862506341958404656008",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T20:45:27+00:00",
+      "transaction_hash": "0x05db6ce20f1652a775e8b22ad713306b23109c31918a33194ce8b6562c0913ba",
+      "token_address": "0x339d1b97653bc1ca9e6b74ad6d7fa9d8603b1934",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3151953323186199906431420",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T16:47:37+00:00",
+      "transaction_hash": "0xc2e23e71da30eae1292ce82f4607b20ee777b98245a51cdd0f0362a1f65b02cb",
+      "token_address": "0x3596b4969ebe856273548ea2112c19119a09e91b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-09T16:14:51+00:00",
+      "transaction_hash": "0xc2c47942aa2f174d93fbb7820a4d0790043f590e5191a8165ba39864a472fe6c",
+      "token_address": "0x0a16302543ed27fbdb5abebee2d600b673847faf",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3206494165398274995218816",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T16:14:41+00:00",
+      "transaction_hash": "0x3c4f67bdca52981c7c9d645bac66ed594b66a60f094b67b17234965c1638faad",
+      "token_address": "0x0a12db1108f583c1ada197f6fba0df925c8900a7",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7374429223744292245344008",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T16:11:23+00:00",
+      "transaction_hash": "0xa7750092a47a62b3095baef6f871f5a320adbefe27a9e6daed4268d9c19ca3af",
+      "token_address": "0x058b5dc41e29f46687d80cd6104eef2444142b74",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6636225266362252671523904",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T08:15:49+00:00",
+      "transaction_hash": "0xa9b6c0748adf8f3018094043b26bdbe4ff440c49b82509714a8f93e2c51e34b9",
+      "token_address": "0x0c32c9039c901d0df69d46f95aa58b49df48bf13",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4337899543378995441692240",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T04:42:15+00:00",
+      "transaction_hash": "0x483f6c3d49457222385f4e24999cbddb74c9fa37707120bdbf154e7abeb7903e",
+      "token_address": "0x2f4204419d5bb46f6de241089dc556017e06e657",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "847285641806189759298896",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T04:32:53+00:00",
+      "transaction_hash": "0x1b8ee05aa859a8b3e33504d14fa90da9f94a7050699d3dad8a8c52f55caead7f",
+      "token_address": "0x22a4517ddf52ed367458abf69ad513dbaccd053c",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "747082699137493665945308",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T04:21:27+00:00",
+      "transaction_hash": "0x39c1a90365069dc0ea7a2ce22bc00f7ab016ecbbc54fd19e6027a3d3833ad637",
+      "token_address": "0x13b51783ed3366725df47de2e30ea1b80d755e3d",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3805175038051758284516",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T03:01:13+00:00",
+      "transaction_hash": "0x340cd86ac75a6355567a4e8ec65b03a5bd0fba3142cb7790a157f328b4c84b43",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2291929794352143",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T03:00:53+00:00",
+      "transaction_hash": "0x6cacf8c48f5fe49c299a492244a116779f57da08432850edf7e78b2fb96878d5",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4285475926074",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T00:46:01+00:00",
+      "transaction_hash": "0x22da820627bd583bf95ee16400a57e91eb46d3e0a6b1cc5261857a03a0305558",
+      "token_address": "0x3759fbc470d42eb95409b6e28104b08a79e1c1c4",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1580416032470826999278312",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T00:24:05+00:00",
+      "transaction_hash": "0x2ab2016faca9ebe718a9aabb77b2d31943e2e172526f77083bdb6e36d2cef231",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "486070707369363",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-09T00:20:01+00:00",
+      "transaction_hash": "0x0022bddf2d5013d60408697c126dfb44ffd361f747d7a8842c596b6b42b921b5",
+      "token_address": "0x12434397368861e27e0072fd4c715ac28765eece",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3242009132420091332103632",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T23:12:59+00:00",
+      "transaction_hash": "0xa46f8399fbe008aeeabd17607b15775de8e5ea66b8c5c59267755dd153f02666",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3694405880029",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T21:30:55+00:00",
+      "transaction_hash": "0x2b3231f615983c5ca8ed05820d240364de6765212790b4dc0e566d0c263a95e3",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "430480722673934458",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-08T19:01:21+00:00",
+      "transaction_hash": "0xe2cf85ac4cd9757755f78d5813a3ee7f08fe1616855f1e49fb15a7e5b98a5147",
+      "token_address": "0x8b8c7b77767a30e698e32293d2b55b164d463bd1",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "889944444781323860",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T18:21:15+00:00",
+      "transaction_hash": "0x27198a46eb7406122fb467b7e5471620c1def01e616683f0b876ba6335ecfe13",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "14155765965924920",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T18:21:07+00:00",
+      "transaction_hash": "0x24ee18cfbf018d556687efcbeb17a94a9206063025bfad1f6093c32260edf629",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "14130982209939863",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T16:15:47+00:00",
+      "transaction_hash": "0x6ab9e286dec37eebaaf1d34863278e5459b45768aeee73f2600711b112da12a7",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "35565492349808478100",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-08T16:15:47+00:00",
+      "transaction_hash": "0x6ab9e286dec37eebaaf1d34863278e5459b45768aeee73f2600711b112da12a7",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "35525837006846353241",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-08T11:36:23+00:00",
+      "transaction_hash": "0xf8c81a61623c6f5d937b0ee49687f35db92e261a9183d9add9e181f59d8248de",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "287561756561450",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T11:01:25+00:00",
+      "transaction_hash": "0xd57c6879cc11966b77e9c9813b7b391197c0624514422000cb4e85f56785505a",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1236774321279776",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T10:14:59+00:00",
+      "transaction_hash": "0xf0c5b190a6a6770115d0552cd6a70011ddb185f18b0f4f65892f673bafa19acb",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "143787042661488",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T10:14:59+00:00",
+      "transaction_hash": "0xf0c5b190a6a6770115d0552cd6a70011ddb185f18b0f4f65892f673bafa19acb",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9587305556568",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T09:00:51+00:00",
+      "transaction_hash": "0x01627cc75564cc9967b7380a43fd4630d857293a88aac232d23b084ca6f2e16e",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "2025782878220812727",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-08T08:15:51+00:00",
+      "transaction_hash": "0xb76ec3c2d46f5c489122097491fdca92aa31639869e1e53448d8969381259772",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "261567054154269417",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-08T08:15:51+00:00",
+      "transaction_hash": "0xb76ec3c2d46f5c489122097491fdca92aa31639869e1e53448d8969381259772",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "731826347797561272",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-08T07:45:51+00:00",
+      "transaction_hash": "0x4b128fb1c6518027dacd36631682cd544f1c101906824ac00905452697900c02",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "531864653768886627",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-08T04:24:59+00:00",
+      "transaction_hash": "0xd5f2bf1f0740080e0d5364fc028e8ae94053c3ecc124a4de91d5f10f0e168e6d",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2270678583169",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T04:24:59+00:00",
+      "transaction_hash": "0xd5f2bf1f0740080e0d5364fc028e8ae94053c3ecc124a4de91d5f10f0e168e6d",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2257603859925",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T00:41:29+00:00",
+      "transaction_hash": "0xe70fbbd0023558a363c07375de215eb1908ff88ea9adbcbd2661871542e0349d",
+      "token_address": "0x2e0387979c3d27b7065d429fa3c4def2f94c9642",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2555809233891425680150580",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-08T00:17:41+00:00",
+      "transaction_hash": "0x81d9150e21884d9ee93c098e0cd630148085deefd65d1d68e5943b3fe67f2a38",
+      "token_address": "0x0e94cffec94d57e04eb91d72d01fad6298c3404b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-07T20:49:17+00:00",
+      "transaction_hash": "0x6cfbca1b87769fb6705a84317e6c3372188d1b81d4625dbd0c11e30a305327c4",
+      "token_address": "0x3880ec7750c2895c6a62f94ac53b9f94cd566daf",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4543378995433789962240104",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-07T20:30:27+00:00",
+      "transaction_hash": "0x69f56771d4bcdd7c5df88fe6795c742e02f1f35ea10620c7e8c4e2a179b41af5",
+      "token_address": "0x1f69b5f4c88061bcd1deef8c99f6c44a27352fc0",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6898782343987823447779508",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-07T19:24:59+00:00",
+      "transaction_hash": "0xd75b02f4726212f815bf8fb0d285985e5a71d671407c3d081004599da29306d3",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "18167870453832",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-07T17:54:21+00:00",
+      "transaction_hash": "0x8ee2a111a7b11a63536c54cdc792dd3a86351351a650f5594d5a6a8a93811e33",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "263617206989314",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-07T16:29:43+00:00",
+      "transaction_hash": "0x6005e1e0d4037b43ee017af4f74b7255a0581d1694ed0d6408693752e75c41b2",
+      "token_address": "0x1fd6bd1ee097f51a44cd6ec9a5c1c6d9ba6f074c",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7227295788939624563964056",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-07T08:46:47+00:00",
+      "transaction_hash": "0xaa0df9929bc9b32b18c7d7d828a60dfb6de81b879dc7af86a2a0ea7b3e7b8ee3",
+      "token_address": "0x397146920d35aa99c31c3b7e9865513ffa2db429",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6433282597666159317896384",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-07T08:30:39+00:00",
+      "transaction_hash": "0x0dd8ae3a07820c673446a0e2e2b158e5ec4c2f614d27a81ae8c03a6c40196644",
+      "token_address": "0x21d14ff25b24664bed4e4a646149bfa08820294e",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2606544901065449018557460",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-07T04:48:03+00:00",
+      "transaction_hash": "0xbe266758871ec1db428cc34d564c1b8fc789c88f9a15462deed27534fd152ec8",
+      "token_address": "0x3c81f3d732940b22a85e089d75e58fc4ad491755",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-07T04:42:33+00:00",
+      "transaction_hash": "0xbd9e30061c7a5c2f16d678366287272fd79b9940abac97957e5818e3edc851bd",
+      "token_address": "0x3450abf396edc0a1101441d2665b7faae485bde9",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7477168949771689505617940",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-06T20:18:45+00:00",
+      "transaction_hash": "0x5d456b923a01bf9b9049e93c365b7a1ba8e36c98835b32d0024d3b97f544a6a7",
+      "token_address": "0x10e97ebc31e03e09e77ac73ed9119b2356d043d2",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-06T16:43:59+00:00",
+      "transaction_hash": "0x1ea6b3e5bef25c36a02bf5b53912575700c95bc6353963d98b75570b5421b947",
+      "token_address": "0x343fcd3dc9a0d9e57913cd1f46793da79afe66b6",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6415525114155251149453976",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-06T09:01:19+00:00",
+      "transaction_hash": "0x2b711ce72e0488d09b3eeffa890a4782778b2673559b5a4dfefa3aee851adc9e",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4113394216874863",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-06T08:45:27+00:00",
+      "transaction_hash": "0x92a97219dfb7bfa4352157837649f111bf41bf10f82cca3518a40fe5cba00e95",
+      "token_address": "0x38f86efe35b62ffef4ea0eebea0f3c992885e475",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6434550989345509901356556",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-06T08:00:51+00:00",
+      "transaction_hash": "0x8cdf91a4853c52b1d2fb4282ab182fd95bdad02b0e2535447063d103ec6b2596",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "165597928290051136",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-06T04:30:19+00:00",
+      "transaction_hash": "0x86e8ab9780d8f4d0692c28cf2ba1300b4862daf45553c1683a7b7d84301c6857",
+      "token_address": "0x222e05bbe92952dedc7433ce3794a29601433cea",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2786656519533231869901884",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-06T03:49:13+00:00",
+      "transaction_hash": "0x81b5b495099a11ec1af6294e92eb7a98a96c9b0ba07538796ea3b99415dac0e7",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "22619244107507012517",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-06T00:42:31+00:00",
+      "transaction_hash": "0x53858ca2a3a53a9073c9c0ba5e61c73f03aad7b4dbb440b997f1751f08152659",
+      "token_address": "0x341e200e83b3d156b4392179ba99401386eb6f37",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6013444951801116192579452",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T20:25:11+00:00",
+      "transaction_hash": "0x1267e95cf6cdea9c743cf9d9fd293b2597de1c5c303f55280457500d9b6868e9",
+      "token_address": "0x1a9eb20a0bfc867795c2809f4ffab81127d29bfc",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1647640791476407922667428",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T12:46:13+00:00",
+      "transaction_hash": "0x9f4cb2b7acd702f58f2cdc9378f0f738282454d7310aaab1bc8e9cb2124f9b5e",
+      "token_address": "0x363466c73217dcbc039b2709aaa6a608d714b954",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6634956874682902088063732",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T12:26:51+00:00",
+      "transaction_hash": "0x018956d4384d2aeb2d395de3aeb7bb5165def8abd0a31edc08bc9b57a296127d",
+      "token_address": "0x1b2424b32638063e74e9a939da371aa7e4096928",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6459918822932521570559996",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T12:25:05+00:00",
+      "transaction_hash": "0x293dca412c0a97abd700e9ce02566fa5dc51f08cd9ea41ac60ff3fb6f2830176",
+      "token_address": "0x18d0e7195cb95c4d0189a9b11ca00637464c8d49",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1471334348046676821703520",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T12:20:59+00:00",
+      "transaction_hash": "0x0cd28b6e9221858381dd4debf14ff599dfb2d263bfbfc7c18e6dfd5e12146a70",
+      "token_address": "0x13684c59495872a062826dd5d6047a96126f2b29",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2898274987316083214397020",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T12:18:49+00:00",
+      "transaction_hash": "0x3ca1d48524337f0f80364dc722b57b6e75165b304f74f8538d25b595802321c7",
+      "token_address": "0x106e49eb8b1aeec6b127c4f68405305974422d46",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3020040588533739226573532",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T12:11:07+00:00",
+      "transaction_hash": "0x76338866a0253df9fdf9dabb57c30e6521c236e321ce774f192c6796e7fc46f4",
+      "token_address": "0x0588593d79ae30270a67180ad5c5234091743696",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3475393201420598688775280",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T11:45:49+00:00",
+      "transaction_hash": "0xeee4bc3ea7223cfb2daccf203ec4e4e85e52b93a83e380e505db2853b7e415bd",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "272903532402646562",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-05T08:53:27+00:00",
+      "transaction_hash": "0x1a64e1527f12501a6784fa6051d9cd42a2d96b788c1be9492dc55a9410ccd317",
+      "token_address": "0x412abe65bab1a2baef133d27fb6ce4cadc95735e",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5669710806697108074872840",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T08:41:31+00:00",
+      "transaction_hash": "0x36c54e8585f634988ba6e2efa43772f4dc8a74b29ac9aa5e92c275ab38366db9",
+      "token_address": "0x3010173b97d8f8af04c9deb288202cf7f56bfc9c",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "724251648909183163662212",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T08:41:15+00:00",
+      "transaction_hash": "0xae8216060d052a8a003e516f217928dc4aa983875b6351e2a61b16c2ab9a92d6",
+      "token_address": "0x2fd302697e27d1a2cdca2b11e92c654a2949ef70",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "447742262810755969344716",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T08:19:55+00:00",
+      "transaction_hash": "0x77035cb860db4b9e314155929b1a0310cd01a73b37568752c4b628578b72fb98",
+      "token_address": "0x11fa10c8751ef51aea79d7db7ad9fa31221c5ee4",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1771943176052765101764284",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T08:13:43+00:00",
+      "transaction_hash": "0xd2f1231d5b8b48420c77d2bff2bbafe074d3a3c78a68e2a3135cd4263c9cbfd0",
+      "token_address": "0x098fdf41c15c43c3e3945f04a6e20249b0d5dcd0",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1906392694063926948542516",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T08:08:13+00:00",
+      "transaction_hash": "0xf6e06210257124aabdbd6f0cf31e2538bd42771823238c7f3aac28c45ad4a979",
+      "token_address": "0x01b23de0eecdc6304f5a9b16fb0bc2e05785f348",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1613394216133942169242784",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T06:25:25+00:00",
+      "transaction_hash": "0x68a7cbea5d043dddb2a5fbede2d9c50de3a74606dd6e13d8cc85017fdd3fec68",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "463040895132312",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T06:00:53+00:00",
+      "transaction_hash": "0x330b39cf232b9aa1c86d6d7c4a10f3cd51231416bef2a34853a43ee8dbaa2921",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "524785300529838899",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-05T04:45:53+00:00",
+      "transaction_hash": "0xd5c56426cf4035fd477feb046003c19c0c22a028e5e778c6d8536b39d9731bb7",
+      "token_address": "0x37289154b08474c339a34028ab52d65cad67ca0c",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2629375951293759520840556",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T04:32:53+00:00",
+      "transaction_hash": "0xc55f43c09c03efa4575fc0df2a52e1ce76780ee9cbe2db7d1ece23d5f2ded6b0",
+      "token_address": "0x2476bf6c91b0be166d53a3d8bdd1914ec2bc8f85",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3195078640284119744077268",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T04:29:27+00:00",
+      "transaction_hash": "0xe3cb64df5687bbf49abb238b77e76046b967a3bc6c5db229f87a09397e34f239",
+      "token_address": "0x1fceb7c738ddf3bd499e8d85687935a06d5cdb27",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4109589041095890418861280",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T04:28:17+00:00",
+      "transaction_hash": "0x1df167c2243c178acbb7c4b077fc592be17e4ef0ae9b141018abb9de3f30aed2",
+      "token_address": "0x1e2ec2cb25fdec65c37bfe50b07eec6689b54d04",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3311770674784373422413092",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T04:26:49+00:00",
+      "transaction_hash": "0xbb78bc79d87ccd07113e78383f19488264bc8c52ae6c334629b02a7da6fee0e2",
+      "token_address": "0x1c32350f163664649ac2338e8b4c0cf5adf12975",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3294013191273465253970684",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T04:15:53+00:00",
+      "transaction_hash": "0x6c07ca7d85cafe26204c8f48702643807755f136ce3e852d5d19e70c6ee3ce0f",
+      "token_address": "0x0d190c231748a55f46fbd381357a33854bd87919",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3570522577371892448288180",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-05T04:15:51+00:00",
+      "transaction_hash": "0x74562e5e46685691fb1d5385f99e8e1399804e0508ea4036c1e77d205a84f939",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "772256992004091211",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-05T04:14:23+00:00",
+      "transaction_hash": "0x68068f42388c97b7279708d7306ef40ede4dd24bc7c2a085f45385275a4c2940",
+      "token_address": "0x0af77c7a2d0cb7fc7d36b277abc55a4a21e9f6e5",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-05T00:28:17+00:00",
+      "transaction_hash": "0x52b2963020d3129525aea4786a9f6491ba7007322da7de43dfcef7d1dc907731",
+      "token_address": "0x1ecc1d0f770350e30c7cb767579e546d90d1a5e4",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5695078640284119744076280",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T18:45:49+00:00",
+      "transaction_hash": "0xbf81b12033c06252c76715ab697982facdca898076c46761564abf42d9331aa8",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "52138606038559458",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-04T18:45:49+00:00",
+      "transaction_hash": "0xbf81b12033c06252c76715ab697982facdca898076c46761564abf42d9331aa8",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "469247437999882400",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-04T16:51:01+00:00",
+      "transaction_hash": "0xa92cc78c6f1993c3290f4ebfe2cc181d0c1d279772f65200b23aed6b46facd7d",
+      "token_address": "0x3f5c6422f941c5aeb23be062fca59ebcfdf520a8",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "668442415017757491414644",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T16:41:17+00:00",
+      "transaction_hash": "0xc1cdb26632ec827da40418df4dd91f554148f91e3ca3fe95174b03e4f03baa66",
+      "token_address": "0x310102bb12144306d3f35dc751dc6b266b6bdf72",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1051496702181633696386588",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T16:32:43+00:00",
+      "transaction_hash": "0xe0aa5e8eaefe10ade642445c68e20d68c2e7253e6da139ed8c02ec4c49efe509",
+      "token_address": "0x24cc26ec9334eca106b10e94c69896c043c3a391",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3646626078132927455898500",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T12:30:31+00:00",
+      "transaction_hash": "0xb2b98e82e338b643f51138cf7ad221f589b290ec5b123ac2b32598cce2a18419",
+      "token_address": "0x21698127b10e3d88b64c75cb833093bd11d0d084",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6802384576357179104806436",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T11:01:07+00:00",
+      "transaction_hash": "0xc6a51b4850a9615ca4015fd04070062f73096f7e3e9b1db414621a38845a7978",
+      "token_address": "0x7ef392131c3ab326016cf7b560f96c91f4f9d4fa",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4396571879859470",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T08:52:01+00:00",
+      "transaction_hash": "0xe5c2baa6afa127c2b7bca20d55b36d443698e0e938dc875456c1f6324eaec84e",
+      "token_address": "0x413fc4cf90371e678d0c27eaf5a6b05467d5b3ce",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3980213089802130905923736",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T08:45:49+00:00",
+      "transaction_hash": "0xdb405f80655fcad0d5106aa281d6f29f3f69a5b70600549384070cbec68fb6c5",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "25799772332154924",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-04T08:39:03+00:00",
+      "transaction_hash": "0xd95e145a9c73c9e68441c3f95eb98f9e17614ac9298f2d11fcb806534187bd62",
+      "token_address": "0x2e3fe882702fd0de6ead08068f1bafbe4c054084",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5431253170979198384360504",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T08:38:09+00:00",
+      "transaction_hash": "0x5208ad460f090bca2ba1c7fe769022cd3c2516a8b084f2101418863a3e76adf4",
+      "token_address": "0x2cfb16dbda80c995e9f58460651f7807444055e8",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7710553018772196862289588",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T04:46:51+00:00",
+      "transaction_hash": "0x2dfea752c67cea7f6f3038382889a040012bfc9425b2d986941446eac2c6c226",
+      "token_address": "0x39b7808f50ea377ece04699590a239f7bacc2f4c",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "258751902587519033779088",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T04:45:39+00:00",
+      "transaction_hash": "0x71951687d74fc1569fc26901f5f6d4a878be9d2eadc7a73a216156546297bcd0",
+      "token_address": "0x382112f80db7e79f2c3bde7113c8e0aded19006b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "294266869609335370663904",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T04:33:59+00:00",
+      "transaction_hash": "0x594962a3df680eeaae5b951515d866375b9fd407696a4e130dc880980abd4daf",
+      "token_address": "0x26bf21780336d9144e326f45ec95b71982baf34b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "663368848300355157573956",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-04T01:13:01+00:00",
+      "transaction_hash": "0x07e24efa7654f4a5f98ad79602f3f88ad9d6d996904fa08e2a7a00ce41b6b6b6",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "230648598786",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T21:25:25+00:00",
+      "transaction_hash": "0x4608b527149438e6bd6303168889209a51e355a4e6c54b89ec4162c9a6bcd6ae",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4581226516373700",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T16:30:59+00:00",
+      "transaction_hash": "0x391dc5585f118048a9fb126f294aaccf6dbe6414d64f4e800f4fc69b41f90543",
+      "token_address": "0x2196ff30b30a9b35fea3be77dae871200ec64101",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4851598173515981743061900",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T16:00:57+00:00",
+      "transaction_hash": "0x0cdfd28d1f33631f67263e846399133c2cd34a700f225ccecbe42293c46eb095",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7219715698525",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T16:00:57+00:00",
+      "transaction_hash": "0x0cdfd28d1f33631f67263e846399133c2cd34a700f225ccecbe42293c46eb095",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "21439097705633",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T15:25:27+00:00",
+      "transaction_hash": "0xc5665fd9f3aa35404324f33316cc89c6778a5cbf455abf1c78c33f7a8c6e3f34",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "461515840465688",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T14:13:23+00:00",
+      "transaction_hash": "0x4584b35a64b63c577a3acdd91edda8b99b92d4d6f69ea244612d070770416e04",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "463920305856404",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T12:50:19+00:00",
+      "transaction_hash": "0x791c946ceffeb4c2c7d6f17aec927e6e4d96cbf82a672719cb4bdecf5f614489",
+      "token_address": "0x3e1fe6459a1d570a444acab3680b85fc047ff44d",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3135464231354642321449184",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T12:46:57+00:00",
+      "transaction_hash": "0xc3249558396b008d3ce5f5d8fa59b81db6eaf7ad1ea6bb2df20b09bff41590f5",
+      "token_address": "0x3961b36427f4daef77532db4ac81b01923e03181",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "612633181126331819167076",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T12:44:51+00:00",
+      "transaction_hash": "0x1fff4e0e975cc8a1edc4fe4ed5f9ec15f636fe52b921e3490c5026c7a254026a",
+      "token_address": "0x3675179bc9607818340b779e7fbc0943e2e5f443",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2730847285641806197654316",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T11:49:21+00:00",
+      "transaction_hash": "0x80097dc16058108c452ce7554c955fa6b630e94f728e85ff5021fbbaef24a9ae",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "45789849413734",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T11:49:21+00:00",
+      "transaction_hash": "0x80097dc16058108c452ce7554c955fa6b630e94f728e85ff5021fbbaef24a9ae",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "45789849413733",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T11:49:21+00:00",
+      "transaction_hash": "0x80097dc16058108c452ce7554c955fa6b630e94f728e85ff5021fbbaef24a9ae",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "45789849413733",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T11:49:21+00:00",
+      "transaction_hash": "0x80097dc16058108c452ce7554c955fa6b630e94f728e85ff5021fbbaef24a9ae",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "45789849413733",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T11:49:21+00:00",
+      "transaction_hash": "0x80097dc16058108c452ce7554c955fa6b630e94f728e85ff5021fbbaef24a9ae",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "457866636635419",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T11:49:21+00:00",
+      "transaction_hash": "0x80097dc16058108c452ce7554c955fa6b630e94f728e85ff5021fbbaef24a9ae",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "457866636635418",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T11:49:21+00:00",
+      "transaction_hash": "0x80097dc16058108c452ce7554c955fa6b630e94f728e85ff5021fbbaef24a9ae",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "457866636635418",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T11:05:37+00:00",
+      "transaction_hash": "0x44564c32f4b1d15c95605d430fd5490590fd4f44bbc844f8e1f2d060f04a2242",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "68603375203807",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T11:00:45+00:00",
+      "transaction_hash": "0x4117967cb392fe61c37bcc1fb2c75f93b0681445530ad6452e200287ee0f8caa",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "582297669223744284",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-03T09:01:01+00:00",
+      "transaction_hash": "0xba1ffee31021f81afce2eaf5a329e2495a6c639ba487dcc50b588ca7d676a3d8",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4380359881616",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T09:01:01+00:00",
+      "transaction_hash": "0xba1ffee31021f81afce2eaf5a329e2495a6c639ba487dcc50b588ca7d676a3d8",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1650066487382",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T08:40:57+00:00",
+      "transaction_hash": "0xbecebf6c94390936ac5e28e39d9710d75aa019cda43076d1a1e3d42cf0887852",
+      "token_address": "0x3050a6bcca4cbe4e2ea19ea13386e00081589977",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-03T08:34:15+00:00",
+      "transaction_hash": "0xe491745cdaf34371d50044495b1e3359f25555fb1a1d3b0585feead1a7d00ace",
+      "token_address": "0x26a0ec1d7f940c0221735f8be7a3c1a308c2e8be",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-03T08:21:15+00:00",
+      "transaction_hash": "0x967f5590f354fdc1d91fea6242aa0416a577f5d1814fcc85ff24bd3ce9af9435",
+      "token_address": "0x149f6b33507cf017869cffd8776b75b1f3ad3d91",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5157280568239472356963352",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T05:05:53+00:00",
+      "transaction_hash": "0x32540574d389105814f2ce7145d362bc200b4152e98c83d37c5cbe1b557e5055",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "29256939217168169574",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T04:41:23+00:00",
+      "transaction_hash": "0x03c1584c2ef4a6bf9c4a2ef063eac7bf829ca3a13e85359c07b4d04430fddf3c",
+      "token_address": "0x31657e22487ddd14b5d6191c69e7bf3fca9e5571",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-03T04:32:51+00:00",
+      "transaction_hash": "0x90ccb38c860581e781ec195d8a04751332098a557f8809673d46ce2990a76e22",
+      "token_address": "0x25150cfd0f947075f1adbabf6a207176cb0c624e",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6515728056823947242807564",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T04:25:25+00:00",
+      "transaction_hash": "0x993290ab2702b6046ddfa6ca10fc418e9ac127637acd1177b95283a3c54f9269",
+      "token_address": "0x1a9aa43c5f3db90540aefc5518fff19990c958bf",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "616438356164383569547592",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-03T00:46:13+00:00",
+      "transaction_hash": "0x75675c54bd32e61ab61b4ef1cc5d9e9d8ba9ccb6dd2ec0b1a55cf6af62c6aacd",
+      "token_address": "0x390d128d303f7409dda2831b1159e5b828049f22",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-10-03T00:33:09+00:00",
+      "transaction_hash": "0xaaec3ec9efa9d25e21920676f7234b0d73a1d3641519aad0c8f0fd3d9003f680",
+      "token_address": "0x25d415ab0a1ae2ecb240edc52278478e86620726",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5372907153729071545192592",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T21:01:03+00:00",
+      "transaction_hash": "0xd18165786e9086041cb8c6ee23534cc0e9db398845974531199781e556188400",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7451910034002",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T19:47:29+00:00",
+      "transaction_hash": "0x979ecd3f291c5ab5ab56184ed9e18006d1d413927f453df6be8d6b1199dd71ed",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "47920668242258",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T16:32:25+00:00",
+      "transaction_hash": "0xa0507e91e7cea2d2e704d7af6ef7bf23308a0bf70124b0e138461fca33355318",
+      "token_address": "0x2378a777176bdde626abd610ee77f2423e00b033",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6754185692541856933319900",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T16:13:27+00:00",
+      "transaction_hash": "0xe6d6e2cab717f12562aed151ccfd7daa6ca5128cf41f40c7ab5bfdc27c5f1a84",
+      "token_address": "0x0972fb55431dd5111e44d503ac5761e1afcddc04",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7044647387113140545699288",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T14:45:53+00:00",
+      "transaction_hash": "0x1f179a2d4dc5d2081e4025c3ccfb11d6b65f203bb091b197526002a39721f9a4",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "250968729285600998",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-02T12:16:05+00:00",
+      "transaction_hash": "0x01a13db2dd63dc9072af23a6c5e7215d2c51b884e3f8520ef369dc73af2eda83",
+      "token_address": "0x0d3e7d5314bae57c1c19fb0ae73bad71ac6a2488",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5352612886859462209829840",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T11:15:51+00:00",
+      "transaction_hash": "0x765f6319a764b1320ba0f292bd737ea757c9815cad7808cb2cea48f33fe59605",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "79621917844085695",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-02T11:15:51+00:00",
+      "transaction_hash": "0x765f6319a764b1320ba0f292bd737ea757c9815cad7808cb2cea48f33fe59605",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "212162352695251833",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-02T08:48:23+00:00",
+      "transaction_hash": "0x360ccb3bb187b3f4ef13573a3fce077b69cc1330eabcc1478f1837a88ef599ad",
+      "token_address": "0x3ab30a07dc062005f262126c757855bf11e38473",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6073059360730593615207536",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T08:30:23+00:00",
+      "transaction_hash": "0x9bccb2a10c9f4562a11aef1e092d77a86219bbfe64827394b7a4d953f64f359e",
+      "token_address": "0x20db8d665100b209708565124a49f0d109984373",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4121004566210045670002828",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T08:17:09+00:00",
+      "transaction_hash": "0x827d110e9c1cbd08223c9c1bfa5503c89d61fbddff154b2cefa4895097384820",
+      "token_address": "0x0ed02eea1a692a56b7eb0d148a45a67364a2028a",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5574581430745814315359940",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T04:29:53+00:00",
+      "transaction_hash": "0xf122a1dd8fbad278cc1999c3fc556d8faedaae7ea35bfc5a6189542638ab1ecf",
+      "token_address": "0x212285f0aa6ebcfe1f399c8c01ad2c6e8c41fc39",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6813800101471334355947984",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-02T00:28:49+00:00",
+      "transaction_hash": "0x783dd78e072f0ccff2b741d4b3e5139a62dca857bbe005d019931c87e797572a",
+      "token_address": "0x1f3dd65987076ab51843bef92f53471db76d5682",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4917554540842212082990844",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-01T19:13:03+00:00",
+      "transaction_hash": "0x9be1d88181c5a225bfaa53baaa5aefc143a5c6217255b3cf3b9d0c6fd17842eb",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "23941976581435",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-01T10:26:39+00:00",
+      "transaction_hash": "0x023d14986f8d0d54e1bbe73c18ce6ec93bce5520027927b5b45e2133148382d3",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "78751538438486933982",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-01T08:49:21+00:00",
+      "transaction_hash": "0xf41149072f6884699a64e841d14181c552c2e72fed094cd459587107ad690a0a",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2251733368982407",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-10-01T08:30:51+00:00",
+      "transaction_hash": "0x59b6e92ca13f32c71785826ac5baee64312ca05510820424d2789c3456d52424",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "22073153536692168",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-10-01T05:13:25+00:00",
+      "transaction_hash": "0x3c9fb14787a431b0c0997d87ff541043623c0721783844ccd4a7bf68f9ced831",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "694636946910579",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T22:03:47+00:00",
+      "transaction_hash": "0x6760452eea5d96e115f65cadf3e91910e785f54dd9cd3875d1d69afccbb8d76f",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "455302020392957",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T20:09:03+00:00",
+      "transaction_hash": "0x9d8c41f2767869630a3f0515f213ebd7823ab4a9061cbf7acffa12d2505b6835",
+      "token_address": "0x02e77452fc9a99bc620d24cd57d6209fe6b1c5c4",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "169964485032978191567048",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T17:00:13+00:00",
+      "transaction_hash": "0x85aae71074772214024cb3faaab2a45f80fd63ab3617962b65b929682ff2b892",
+      "token_address": "0x09b1ad979d093377e201d804fa9ac0a9a07cfb0b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "428626335525984012",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T16:42:55+00:00",
+      "transaction_hash": "0x07f4eb97c3fc650dbedf3886aa38a51f1bce62fcd265581f7a32db4b8feb5880",
+      "token_address": "0x3138594bd76c61ec0b56a77cd7683643630b3b32",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "965246067985794021094892",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T16:41:57+00:00",
+      "transaction_hash": "0x599f7a08bd2fa3380b01591ea20f8b56320ba0d0cd4c40c0e8d8287b3c9b8476",
+      "token_address": "0x301e986f50ac2e4e00a45118a219990a02e80e53",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3144342973110096405670388",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T16:07:37+00:00",
+      "transaction_hash": "0x99df5d91a0ccf86c3239efe0ef18c0522181cd56506756e7b564fb45585fa456",
+      "token_address": "0x00a15180daba3a52e172a9a6fb4c0e8a64c19ad2",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2228564180618975147426204",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T14:00:49+00:00",
+      "transaction_hash": "0x37feac89ff737fbff274c47f535b44ab0d87df2a42a7654769f0265fad705962",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "47729853054304362",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T13:00:41+00:00",
+      "transaction_hash": "0x9610d1968950c95a821d08737718657bc6f0ef2c74f1fd0da42ebeeca33b3875",
+      "token_address": "0x41ee0162c19537fc746cabab33fb464a46fbf412",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4652460679857940139814896",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T12:49:21+00:00",
+      "transaction_hash": "0xd7447b5d9901a4fe8559046cfaeffa8d42ae27333d2582dc660236811a828d18",
+      "token_address": "0x340ad0dbf99df8f6e87398001bbcce63f264f2fe",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4897260273972602747628092",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T12:42:47+00:00",
+      "transaction_hash": "0x93ce39c1c79c8acafeedeed20d3bab1ff41ce11db4c6f09acbbd6d54b6569a75",
+      "token_address": "0x2bc1e6e19f82cc5fb064dc77de71dec37a0ca886",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5849822425164890926217264",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T12:38:55+00:00",
+      "transaction_hash": "0xd5446baee9e8e451cabd2595daa5bf3b3c703a91ced7a982ac3ebb3cb1fac0b9",
+      "token_address": "0x27630bbf05e7885b35e6af4fa74a6041c058b766",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5744545915778792499022988",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T10:01:29+00:00",
+      "transaction_hash": "0x8b849f140bc6ac8b0751e845aba2b60c44f340af69d58042597a6fdf8fa2550b",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "219857235046911291384",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T10:01:03+00:00",
+      "transaction_hash": "0xfcd23544e4c131555ec46e2e9bbb6a261399e26eeac6646acd8ebf6417eeaec5",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "679796812317",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T08:47:55+00:00",
+      "transaction_hash": "0xe2d6ba6628698c0e69b8c90f37a14617dace28ad9acf5cc7b1ede0c64c3deab1",
+      "token_address": "0x3566eac34cd7915df2f43499aa9b3e42a35ac36d",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-30T08:33:35+00:00",
+      "transaction_hash": "0xf48a45d1cdc6bdb531e4509dc5b8c8b5d5441219daf20491575c4d270f80eb4f",
+      "token_address": "0x22b72f13763a57284293ae456a0de5338b4b8f12",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1575342465753424665437624",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T05:13:01+00:00",
+      "transaction_hash": "0x759b82690de7a8f8900a96c85fca2ea0d35b898502edee7bb91a59975d0154c5",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3599582980",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T05:13:01+00:00",
+      "transaction_hash": "0x759b82690de7a8f8900a96c85fca2ea0d35b898502edee7bb91a59975d0154c5",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "10798748940",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T04:23:07+00:00",
+      "transaction_hash": "0x01d3cd77282942c02506340dde2ba6179a7e30d905ce0e1d729133d07436a6f1",
+      "token_address": "0x1750b021558e723f70c1fd4fbb30abe3ef0e5567",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7578640284119736182431700",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T04:13:05+00:00",
+      "transaction_hash": "0xf49986203160eb1184640629d0bbdfa7ec563cb851687a8ec37a534f84a1730a",
+      "token_address": "0x08ccc2c380b380ea16ed281a4d910619c7fe501e",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4441907661085743285426344",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T00:51:03+00:00",
+      "transaction_hash": "0xf648675e0501e990f68ba9b6dbd73a1decfdaa55ddbc9079d4b36d78ece6acdd",
+      "token_address": "0x403063eab71f6ae90ac3b3aebd7b58f1e46a81bf",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3758244545915778800393636",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T00:18:47+00:00",
+      "transaction_hash": "0xbdb58499c091234bb2a97521c6861e9a71de8bcd65af6435be38ba5f2a3f3199",
+      "token_address": "0x114a405713efe8b2c843067dbcd48a11a710d3d3",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3502029426686960941438892",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-30T00:13:39+00:00",
+      "transaction_hash": "0x5aee7797483eb6d473062c449e2fafb543b055f0e210c346d9e2547114fd0e83",
+      "token_address": "0x09ea36e6524662632b8a72377debda40fb7b4e0d",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1083206494165398282890888",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T16:49:21+00:00",
+      "transaction_hash": "0x9362bd6e128625fc11f6722d00ebf5988e836133e170ae7194816f435a64f72a",
+      "token_address": "0x38ab215c83f2c8ddd01aa094fc04e8ead306b7a7",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4228817858954845264117448",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T16:38:47+00:00",
+      "transaction_hash": "0xc465ff9847895f39b8885b2cceb40e74199d165833db016f5c9b1e42eea02077",
+      "token_address": "0x29e91529cae9231170a24db62817b60b2bdeb817",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5785134449518011169748492",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T08:45:13+00:00",
+      "transaction_hash": "0x6d3fbc6335bb424225230d150f1baf3473c9269c2e4fd63e1add69e254b08b4c",
+      "token_address": "0x3576d3d8f2402aaca3fda36b21933c82d0c17903",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1990106544901065456913868",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T08:34:41+00:00",
+      "transaction_hash": "0xf406d333fb72cd81875bbbb809339fa5806035392bf1edd53d007716e92cfa32",
+      "token_address": "0x26a7d6a8ffd1462d839676732f04ee0d6e41c16e",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4458396752917300870408580",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T07:15:09+00:00",
+      "transaction_hash": "0xb34ee72e8f2a03ed15f717766beac2b40daca0612dc384c0bf37c683f7b9eabd",
+      "token_address": "0x304989da2adc80a6568170567d477af5e48dbaae",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "1048084844866834",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:47:23+00:00",
+      "transaction_hash": "0xc04799a5b4ed23d72c808efc1c2a075c13ef39649cc08f08d54a5e299a09a6fd",
+      "token_address": "0x381e8284050e48ab6d06d27b22b298e7f55480ac",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4909944190766108582229812",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:46:13+00:00",
+      "transaction_hash": "0x8abd72d4f095a99fdc9e0a71f82afffd1c8468764668c5a8a429c29b7bf639ad",
+      "token_address": "0x36828f6dd3185ea31f25c6fff8629e89b927b453",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4946727549467275502574800",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:28:49+00:00",
+      "transaction_hash": "0x5a6b5e287b35a442874f26a1d681c3da79a871dc65dbf4d9294da425737b1049",
+      "token_address": "0x1dadbe380e3fea6b38e4ca4aff1230539a8112b4",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4419076610857432783143248",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:20:29+00:00",
+      "transaction_hash": "0xa82e5d21565c17ba89ce679663d6874d4287b3332e4150f98a3df4809ec92645",
+      "token_address": "0x1203aceb342214f5cd960c3e7a62967ec49fb691",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4955606291222729586796004",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:19:55+00:00",
+      "transaction_hash": "0x31dbd317c5dfa335b5bc9afc32691d98a4d0dd99d8fd1894d1796837946dfc6a",
+      "token_address": "0x117cb07db10867573ee88306d14f3979932c943f",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3787417554540842219977592",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:19:25+00:00",
+      "transaction_hash": "0x3a5f61438e4ae9fc8cf404de83f3d82e3a99b75c1ede3a7dbea459c6f7fef230",
+      "token_address": "0x10e01c8c5d1b839a296bbce2d188fbb679916470",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4852866565195332326522072",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:15:27+00:00",
+      "transaction_hash": "0xe05115c8b8e4a53c7b247e7ac375df0f2ebcfd15bf362872ed603120f883790b",
+      "token_address": "0x0b8f3690ed167f5b1ac1005456ad61bc45f603e8",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4986047691527143589840132",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:10:29+00:00",
+      "transaction_hash": "0x06c5f9042469df73c4662c46e4f883670976c702528cc71d17915acf9a7b317f",
+      "token_address": "0x048c033754eafa808d837274ba1eec854fd4ee96",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5121765601217656020078536",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:09:45+00:00",
+      "transaction_hash": "0x0e73b1b882c12ec393226319bcd37084beb54e508d401a5839307c9772b4c984",
+      "token_address": "0x0398857fcdf4c4aec96360cdad9aa6df213010e8",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6355910705225773726825892",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T04:07:15+00:00",
+      "transaction_hash": "0xbcd989d5309058614b8cae71638a85d8397c0bb519aae545d0c5ff6a48800b77",
+      "token_address": "0x001368f1a7e5305944a5d229fb9f55fd9b850ada",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6536022323693556578170316",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T00:14:57+00:00",
+      "transaction_hash": "0x0608e25c52c1159b4eb9c2ebd5d2f435797308d2be17e1b74885d6885776f98f",
+      "token_address": "0x0b8d195e560549782962dc3b7fdff8b3f54ff4e8",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-29T00:13:03+00:00",
+      "transaction_hash": "0xfc3684cb653968c3e008581b72b4fb0d17ddca3105d0975ab78c84bd762a77b8",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3560544811335",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-29T00:13:03+00:00",
+      "transaction_hash": "0xfc3684cb653968c3e008581b72b4fb0d17ddca3105d0975ab78c84bd762a77b8",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4449809186348",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T20:11:27+00:00",
+      "transaction_hash": "0x561d11769493ba584f33b047a3622e07375d65a8d58bcd48e1d48beb350a595f",
+      "token_address": "0x05fcb1b59784d6ebe94268e4d4495aceaea15416",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1834094368340943691312712",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T20:07:37+00:00",
+      "transaction_hash": "0xa0ce07fef2f586042e7b728190a03dcae1b78ef35bf01a335068559f7555ee31",
+      "token_address": "0x00a2c949658423de26d37c79b3469aa435a38608",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5895484525621511930783456",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T16:30:25+00:00",
+      "transaction_hash": "0xea8bad88b2849bf3d38f736191c9b7ed5bc769725bf6eec82f4775b7d30074d0",
+      "token_address": "0x20144fbeaca638ae29ec40ff051bc7c38d33d9b8",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1250634195839675299633592",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T16:26:09+00:00",
+      "transaction_hash": "0xc02a6c328dad08f057bc58193e9326f7d93fa73a3a6dd8f2869bfd958c92f6eb",
+      "token_address": "0x1a5f70f7f2b17f1e616de0a2c451401e0980876c",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2111872146118721469090380",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T16:17:39+00:00",
+      "transaction_hash": "0x02494ab6936c1334609bf8458655d16705e9d8d6820b4009a12d3028d5e85e2e",
+      "token_address": "0x0ed849dbb6be2d1e03f592701f9ef4720978f2b9",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3087265347539320149962648",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T16:12:41+00:00",
+      "transaction_hash": "0x13b05348ab6c6e371e3b6797317b111966c33d544eb84b0c6e321503c00621dc",
+      "token_address": "0x07b32b6ae1814b69e453b73424fbdac0f7b7e15e",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2201927955352612894762592",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T16:11:49+00:00",
+      "transaction_hash": "0x7c4b30521e6db07ab7bef3d05749e7a25cac2ab214c6c073f7dd8e34b2d1b8d3",
+      "token_address": "0x068c4ae02f5e3dd98caf54f04f70ae6592ecab67",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4518011161846778293036664",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T15:37:17+00:00",
+      "transaction_hash": "0xb883891b2a90ac78dbc871cd704d78e8a8e5e2a372e68337ba47751c3174032c",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "20736326984128753272",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T15:25:19+00:00",
+      "transaction_hash": "0x2b24c15699ce8d7b06ee2df5fd862cee3486d0b20706da22937b17acf9556d2a",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "21564216666668435538",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T15:25:19+00:00",
+      "transaction_hash": "0x2b24c15699ce8d7b06ee2df5fd862cee3486d0b20706da22937b17acf9556d2a",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "62070407142859437984",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T14:36:33+00:00",
+      "transaction_hash": "0xe0404a8310340710ff09d081804913b0bb415e2c10bb6d3044a5384b8fe40501",
+      "token_address": "0x304989da2adc80a6568170567d477af5e48dbaae",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2313291263218",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T14:15:11+00:00",
+      "transaction_hash": "0x48e76401517b430fe83a26b20f10483d72ade6147039221c144a98d0d2412e86",
+      "token_address": "0x304989da2adc80a6568170567d477af5e48dbaae",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "5114405963999",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-28T14:15:11+00:00",
+      "transaction_hash": "0x48e76401517b430fe83a26b20f10483d72ade6147039221c144a98d0d2412e86",
+      "token_address": "0x304989da2adc80a6568170567d477af5e48dbaae",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "1027823248092536",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-28T12:21:29+00:00",
+      "transaction_hash": "0xaa1186ce5a34d09e15abe2c40d4c2af67ec25ff91fd4d33066bd36261faf5b5a",
+      "token_address": "0x14577cf4bbf1146deca56892330850df14fc5625",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6896245560629122280859164",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T10:30:09+00:00",
+      "transaction_hash": "0x1c34085153f4b3d4235024be01f62802f5d8b062300e6633c640be433654d7ab",
+      "token_address": "0x304989da2adc80a6568170567d477af5e48dbaae",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "78835006758030",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-28T08:29:11+00:00",
+      "transaction_hash": "0x0180ca5d4cba7728d0c268bf6dedff87fe05567b278c4437e5629c256f331155",
+      "token_address": "0x1ee6ee5989e62a37cc68106168a5abef1e9e2f0b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6599441907661085751178916",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:48:27+00:00",
+      "transaction_hash": "0xef7cc4cebf2ab375b5a6487e9a6b9df326ddebafc73677a2f5a8cd8bdd3c30a0",
+      "token_address": "0x3904946720dfb5d14caa04d5ce2bdb5d52109732",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:46:59+00:00",
+      "transaction_hash": "0xfc56d625f5d857d3e72f6a8b6ae44795bdb9f123faef3d548c8965deeb2f5a42",
+      "token_address": "0x36f1e40462de97eacb4cb7e2eae8bc3b0e48db60",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:45:55+00:00",
+      "transaction_hash": "0xec4cc81f4c998c13cbce6465b3452a33741d7b29066649dbbc9f77af35e8d773",
+      "token_address": "0x355977b16045540c976d71d0825fa2a4470e3eb0",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:42:27+00:00",
+      "transaction_hash": "0x0742bfd21fd8efcb5b6276cb95a493eec438c5c230010831b087bca1bd7d0d78",
+      "token_address": "0x30ab13a90bf3b65c1acc2adee8a08d423319353c",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:36:53+00:00",
+      "transaction_hash": "0x6def827af305bc535048381847e0fc9eb07fbd2e1c670b975ba20c2c79408c29",
+      "token_address": "0x28d95f34c5abfc86d354f1b14e1b1626ee6e2ff2",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:21:33+00:00",
+      "transaction_hash": "0xdf2466d76f53fd40c4d9aef80a3584fd3850c9a9efc5c9d10088dd1c397f67ed",
+      "token_address": "0x14006b9994ef460ee768fe2441aa34c06a56b4aa",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:17:57+00:00",
+      "transaction_hash": "0x433a73a6ea2dda987682d06c0089f0e145305bd7d74bb5062a6ee1097aa00263",
+      "token_address": "0x0f4d5ebd29343fce709d4a016ab33612275b4f6b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:16:57+00:00",
+      "transaction_hash": "0x3a108b927470ec60bc7ae6a1893e928425b91f1d5e596a079733a8b6a91a3d39",
+      "token_address": "0x0e056de2bab66f7825c50a265c4a7ce84b6d6bf7",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:15:49+00:00",
+      "transaction_hash": "0x60e080bc4fecc6ce61bea3862cef291aab72fdb6960499db9544297e3eaab0e6",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "26046061139935852",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:15:49+00:00",
+      "transaction_hash": "0x60e080bc4fecc6ce61bea3862cef291aab72fdb6960499db9544297e3eaab0e6",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "52092122279871703",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:15:49+00:00",
+      "transaction_hash": "0x60e080bc4fecc6ce61bea3862cef291aab72fdb6960499db9544297e3eaab0e6",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "140648726889137891",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:07:55+00:00",
+      "transaction_hash": "0x30ab452635f1e8c6ed665e66990e2dc6511d44679df4855852293fe93db4d751",
+      "token_address": "0x011216c4dd3d4056dac3e54d1428878d05cd6fd7",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "990613901572805690298332",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T04:07:25+00:00",
+      "transaction_hash": "0xe0e76be77e833868967590b0c894ddf07392a6214b01494c35ab551736f8bc5d",
+      "token_address": "0x004d43b29e1dc013492f15977c03be4f72983eb1",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-28T03:24:59+00:00",
+      "transaction_hash": "0x3107e497047dbc02a505dccc881e9fc0249ab7220da7fc874891c5d48d1e91f4",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7466566478122",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T03:00:09+00:00",
+      "transaction_hash": "0xc79286ab883f75ce05b1299ce20d2a530eaa4990f3b3ce7df729ac656ddf3cd5",
+      "token_address": "0x304989da2adc80a6568170567d477af5e48dbaae",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "43723175972190",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-28T00:44:01+00:00",
+      "transaction_hash": "0x7584ffd0aa5d52f1adebf6996a09e6e1bb2c9635ef77a823cb7bcc71fa3a0ea1",
+      "token_address": "0x33d909df955eb61f1e2e7d4770827897db3b7496",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7713089802130898029209932",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T00:41:43+00:00",
+      "transaction_hash": "0xef15047196275b0522a8c787249637e5df7356fd864edae9f23240aae3f81724",
+      "token_address": "0x3087aca7ec1edb06e0f4d5e4444371648a6818df",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7754946727549467283395608",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-28T00:39:13+00:00",
+      "transaction_hash": "0x233d953626e1d8654e794249da879f64bb109357d0da438e1b13ffde427358de",
+      "token_address": "0x2d2d6c993485f6524cb97e4f2eb50bb64a33c3e7",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7714358193810248612670104",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T21:01:31+00:00",
+      "transaction_hash": "0x51285901cbf8bb48601709550f27c6b3b54f106367edb5315596a012265b1e42",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "176714734009144",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T21:01:31+00:00",
+      "transaction_hash": "0x51285901cbf8bb48601709550f27c6b3b54f106367edb5315596a012265b1e42",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "211160997811048",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T20:39:01+00:00",
+      "transaction_hash": "0xb4691c36ff961a4910f524a4f4a1510af4a8c6822e820c3ef353264cdb5a4bcc",
+      "token_address": "0x2c1a197efeb9f3db96d4ef8bb37aecef33e93169",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1045154743784880779085728",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T20:38:53+00:00",
+      "transaction_hash": "0x572b99e1dfc9cd979d110d07908f26839385e1214495b22cdf22233ff8e223de",
+      "token_address": "0x2c0105802de70f6efc6401e8b67cd45e2d1cb733",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "981735159817351606077128",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T20:14:45+00:00",
+      "transaction_hash": "0x528d02416e1d21d087b0b67b548b3ca66233abbe7925cb190deef09d346f7016",
+      "token_address": "0x0b2d735ec3cfd20fb32416eb6893e9efdc6f552c",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2009132420091324208816448",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T20:13:03+00:00",
+      "transaction_hash": "0xf51b80785d63f5d02be84f73eddb7707e6b54147af5519b2589611f438c672ec",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9275961147718",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T16:42:19+00:00",
+      "transaction_hash": "0xf4fa7fd4da7a73b65d3c0276aca08554e405fd610849cd77d0ac43e3f571820e",
+      "token_address": "0x3088534487c4c8ec0d6aa92a5c6ee6a19f8c1e6e",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7667427701674277024643740",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T16:25:09+00:00",
+      "transaction_hash": "0xbe8c31382ad84508b4bf4e30164efe335cd2c6477eff3eec7180c2786d4274c4",
+      "token_address": "0x190cc61a86e1ea80f4647e1669f899a600a8e602",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7395991882293252164166932",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T16:24:31+00:00",
+      "transaction_hash": "0x904336031bec39b8234a9cf59ad2fc60ce637dfe4b8e5da02c37a28319c68161",
+      "token_address": "0x3b3cd21242ba44e9865b066e5ef5d1cc1030cc58",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "155727751275629198",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T16:22:37+00:00",
+      "transaction_hash": "0x586799a88ead8f14aeb99463873368c05e36845d4d5d1de78ae80939cb931fb9",
+      "token_address": "0x15d4868b490bae6cd910bc00242837854d108c29",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7154997463216641306734252",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T16:15:31+00:00",
+      "transaction_hash": "0x450a69aaea82e9324d2ea6427c5cf2680b2c5e55618d4099ae4db49d75296665",
+      "token_address": "0x0c2bf16b1e2b55a47a856e8f4f52043a3fcc91ae",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5932267884322678851128444",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T15:13:01+00:00",
+      "transaction_hash": "0x6126568a21cb2e4ba68c1b6d3465da0450a69d0ab3e8141d1eb1f08b7a4af2a7",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "14569096266",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T14:15:09+00:00",
+      "transaction_hash": "0xf2860ca2e22868ccf253cdaefc304544361d888679e371e644bdb453e74ead18",
+      "token_address": "0x304989da2adc80a6568170567d477af5e48dbaae",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "25506577099020",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:51:31+00:00",
+      "transaction_hash": "0x97c9a510a7f3cf4813bc21732ac2295e3b581ccc80837fb7fc576862edfb33de",
+      "token_address": "0x3c7bc6897dff7f4a81ff72ba14d34682d183745e",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6889903602232369363558304",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:50:15+00:00",
+      "transaction_hash": "0x5f20a626ce1aff0135ee481df1b270a203d562efc75e9ee38ac463d88316ac35",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "71880495479322",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:45:51+00:00",
+      "transaction_hash": "0xeb5b54a3cc04251053efe8af127f68f046f483e25a193fd6de48ec1da75fd014",
+      "token_address": "0x34870f97659ab321f9a0ad55132d6d005525b1d1",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:33:59+00:00",
+      "transaction_hash": "0xbf86a238893ecb17b775163ddbbaa2277e11338a7bd8ea4b09e00516143e6069",
+      "token_address": "0x241a63b5ffbec0fec6726b1d9194e95fa4926257",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:32:19+00:00",
+      "transaction_hash": "0xff3315230b3b4876f5c44595075364dd3d2f35ba71a726759f2c647659477e4d",
+      "token_address": "0x21d2203f4e769af375a3380266bb8d9ae6a69b41",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4053779807204464746613712",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:24:37+00:00",
+      "transaction_hash": "0x6bc59d7ef0b60fbda01452a4c34186a5b1a037dae40ed8e28448245a3e4b6d67",
+      "token_address": "0x179e42663cb367a683a7fb57fc0557ed9ca9681a",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:20:49+00:00",
+      "transaction_hash": "0x607c69418014e5185842398e39b130823a9b085252e75e349445d6aa7e94a285",
+      "token_address": "0x128e1078df80015eb812dc620f48434d2a2de42e",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:18:41+00:00",
+      "transaction_hash": "0xdc00bf426b669c960ebaddfde8791d5bc2e9045e629fbd36e9d07a3e63a5e464",
+      "token_address": "0x0faf244572f49060ae24b0b0fbf23492db7e1ea4",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:18:31+00:00",
+      "transaction_hash": "0x1352de7c731afab6a73b11bf46f5d9c1b3baebfec02aa542b6aedb2fe04d4a4f",
+      "token_address": "0x0fab2c3ae8b7a4f8fcf61011acdce984a6bd4874",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3443683409436834102270980",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:17:03+00:00",
+      "transaction_hash": "0x3184a1e01c8a966a020e7458f1f2dfd596bebed171572a23528f372227dc8bd5",
+      "token_address": "0x0dd75d07032166bd584193e247b63f3fea6a1335",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6977422628107559622310172",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:14:23+00:00",
+      "transaction_hash": "0x99866607127ee0944549d10c6a163d15694d5bad03ab8554dec9b21855fe26b8",
+      "token_address": "0x0a4663cd5f1a64a9ef98fd892632c51a1f8d2fc7",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-27T12:08:35+00:00",
+      "transaction_hash": "0xd8f3cb5da22e0de1af0f0315012fdb52ddbcde8430812efe87e6839cb582cd8e",
+      "token_address": "0x0223bee0bb775196f24c1f3c5d33dd7bcd3e8897",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9132420091324200913238400",
+      "liquidation_type_code": 2
+    },
+    {
+      "timestamp_utc": "2026-09-27T11:01:01+00:00",
+      "transaction_hash": "0x346e12083a0cb66a15caf4975ff2d23547beebab4b1f3cd4ca2733621e7c311c",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "13231212962359",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T10:01:27+00:00",
+      "transaction_hash": "0x347976d979adb3b51de78a941dae73387e91913b3f2989f8103a4f05d4bd7429",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4911727817203056",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T10:01:27+00:00",
+      "transaction_hash": "0x347976d979adb3b51de78a941dae73387e91913b3f2989f8103a4f05d4bd7429",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4521482240938830",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T09:09:07+00:00",
+      "transaction_hash": "0xc36bb967bb1f6a00c470d5fac3e94d052810a8bb8f54c67cce2bdf20d0bf3307",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "766798949183325",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T08:53:53+00:00",
+      "transaction_hash": "0xab579d4f01f8596878958b3ed3ea1648d0101e9dc52887fa9671c6df36a5932d",
+      "token_address": "0x409223dae028c5334d00a186b63d3c6af4b26b98",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1392694063926940647172856",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T08:51:25+00:00",
+      "transaction_hash": "0x16793ef11daf45e249f871d20f430a10633885d1d7c7dc6d99163db71341f882",
+      "token_address": "0x3d5de9e7ed67fe8f0e2f3c8bd5a2b452f94895b4",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2239979705733130398567752",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T08:51:15+00:00",
+      "transaction_hash": "0x3d80f691528b94555d814620ead1e074f6d4aa2beaae486d2e166fa59aaef383",
+      "token_address": "0x3d43eeedc5479c74da536dc793047ea3ece04cc4",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "6889903602232369363558304",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T08:32:25+00:00",
+      "transaction_hash": "0xa5590b7c5b2b75a55f14efb9e9f39d907be2e91c10799ba06a3fb92808ce5a59",
+      "token_address": "0x22e7d93d79bfc2bb8eda67f36a01d29fdd2fbb59",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3621258244545915786695060",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T08:15:05+00:00",
+      "transaction_hash": "0x7104f8fd52a219d993ec01a3f0d5ab3b6a2e38006754c52af0e07f2da6b4c3ee",
+      "token_address": "0x0b6e986a184dde73f8e07373ef4a9ae2019aa668",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "7756215119228817866855780",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T04:44:39+00:00",
+      "transaction_hash": "0xf5bd91ad908479bd33f1d8f15a510956b2485ff1ec50a932b460a14ca5e4954d",
+      "token_address": "0x34e4b682c38d2769c32a3cd11d110a2820ab5888",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5813039066463724005872276",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T04:20:09+00:00",
+      "transaction_hash": "0x74e8da572059ac6b8f74e24d239dbfdde9539d0206a7b226ecc2e0bc7aa843f4",
+      "token_address": "0x12bdc50cc585c1630be7aa3020df6b3da956cbed",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4809741248097412488876224",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-27T02:15:09+00:00",
+      "transaction_hash": "0x66c246d717d5f99b6eeb51b731d076bb6bbb2d0d27bebba3c447d1e474796843",
+      "token_address": "0x304989da2adc80a6568170567d477af5e48dbaae",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "1028148805977901",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-27T02:00:57+00:00",
+      "transaction_hash": "0xf2cf1e0dd0d80ee3876554f0af4e358d993ecd73fb4df34352a98e1f57e47fcf",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "9166145610480",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T22:25:21+00:00",
+      "transaction_hash": "0x6d49c7667d52ae65786a4a3cc6d2e15742c57067f673a46feef360177f812050",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "188958876210566459542",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T21:13:13+00:00",
+      "transaction_hash": "0xe11426143b5d74bfa356ca16d154e6d67fe649f397159d2b44dfb4333f093c72",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "139356061828549391171",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T20:53:47+00:00",
+      "transaction_hash": "0x7ced742a29b536dc464146693b32d6d9c89ba904a5c97974cb84979915ad5739",
+      "token_address": "0x41a1d31f6e3d63856474c350a6da80009d0c75af",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1183409436834094376244476",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T20:41:19+00:00",
+      "transaction_hash": "0xbe9c02870eaae55152401517f357d05a4a85481b2c1f7c9ec3d94a6b3678bb12",
+      "token_address": "0x2fe1ef143f901919aaea4c94a507b82598b108d2",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1567732115677321164676592",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T20:10:17+00:00",
+      "transaction_hash": "0x541fdd58234a1ecc1be5406ef2f38fa914491e4145b06c31af41a3dabfd0c51d",
+      "token_address": "0x047b0ad7d87b92f842c2a2199ee047658d84901f",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2628107559614408937380384",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T17:37:17+00:00",
+      "transaction_hash": "0x1b127749dc75c2476ce1480ee854d56da168665abc9b47bfeacc0158109c83ff",
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "108316770209868204494",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T16:20:09+00:00",
+      "transaction_hash": "0x44402b6265d183569e64f692fbcd28c47d8a66db32525fe6bd885d284b590bd3",
+      "token_address": "0x121863835e6d914383e7e35240526d820dd727ef",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "5914510400811770682686036",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T16:15:23+00:00",
+      "transaction_hash": "0x6b1fe962b80c06e76ec7f1d00c70c21b6d79fabf111d58fb5501a23204cbb23d",
+      "token_address": "0x0bf144c74cc7c1dbd5ed5cd7b0ab8b7ced2d713f",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1339421613394216141845632",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T14:45:51+00:00",
+      "transaction_hash": "0xcc1ea36de6ce2859fbd88acf76e52929552ca0dacd5a5808164d96d34691f2d2",
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0xa87f76e99f6c8ff8996d14f550cef47f193d9a09",
+      "reward_raw": "5287606820005969138",
+      "liquidation_type_code": 0
+    },
+    {
+      "timestamp_utc": "2026-09-26T08:24:59+00:00",
+      "transaction_hash": "0x99295c04cd4a40d0d9aa2ecf3764163b351c56c92d0396779abb0edf30b83a35",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "2277517666450",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T08:24:59+00:00",
+      "transaction_hash": "0x99295c04cd4a40d0d9aa2ecf3764163b351c56c92d0396779abb0edf30b83a35",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "4555035332898",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T08:17:09+00:00",
+      "transaction_hash": "0x81974b3d67fb537864bc29d1ed15554b1d98167873cbe901bc007630fb5c857f",
+      "token_address": "0x0e468de82352a9c53491f67795dccf47bfa88b91",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3447488584474885852651496",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T08:12:01+00:00",
+      "transaction_hash": "0xa11474e9522ca5b33d5d5daba4453262c98560dbf47efa639692eba3c6c236c0",
+      "token_address": "0x46fd5cfb4c12d87acd3a13e92baa53240c661d93",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "259421685257164",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T04:39:01+00:00",
+      "transaction_hash": "0xcdb716e21a708805cf79e0f76e2c2eb1e228b5103889d1b64063af4bdfea1c4d",
+      "token_address": "0x2c6d749a5b65a6f90952f033cfee453bdfb9d13d",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "3828006088280060890703096",
+      "liquidation_type_code": 1
+    },
+    {
+      "timestamp_utc": "2026-09-26T00:48:15+00:00",
+      "transaction_hash": "0xe07e73ad49a9baa6b5025bddbeef69a1a34b498c905f8635dcee934dd04eb68f",
+      "token_address": "0x38e1d54369dc795bf610a614cb300c26c2b9f750",
+      "indexed_liquidator_account": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "indexed_reward_receiver": "0x6b008bac0e5846cb5d9ca02ca0e801fcbf88b6f9",
+      "reward_raw": "1722475900558092346817576",
+      "liquidation_type_code": 1
+    }
+  ],
+  "profit_usd_verified": false,
+  "notice": "Indexed events only. liquidatorAccount may be an intermediate batch contract, NOT the submitting wallet. For actual payee concentration, inspect transaction receipts and ERC20 transfers. No live eligibility or profit.",
+  "network": "base-mainnet",
+  "data_source": "https://subgraph-endpoints.superfluid.dev/base-mainnet/protocol-v1"
+}
