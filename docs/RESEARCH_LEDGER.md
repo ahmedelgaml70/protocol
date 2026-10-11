@@ -38,3 +38,22 @@ As of 2026-10-11. **The following are candidate mechanisms, not verified profita
 3. How many fills go to the official keeper, and at what time-to-fill?
 4. Does Superfluid have actual unclosed Pleb/Pirate-phase streams on low-cost chains?
 5. Do any reputable neglected keeper mechanisms consistently offer positive net rewards after realistic competition?
+
+## Added source review — 2026-10-11
+
+Verified **published source semantics** in KerfFinance/kerf-contracts; no live payout events independently observed in this tool session:
+
+| Contract | Exposed public action | Fee/reward formula in source | Critical qualification |
+|---|---|---|---|
+| `PositionKeeper.sol` | `harvest(uint256 tokenId)` | position policy `bountyBps` capped at 300 bps (3%) of fees collected | Position must be enrolled; interval elapsed, fees accrued; `shouldHarvest(uint256)` provided. Bounty may be zero. |
+| `LPVault.sol` (and derived seed vaults) | `harvest()` | `HARVEST_BOUNTY_BPS = 50` (0.5% of collected fees) | No guaranteed fee amount; position and minimum interval required; no general `shouldHarvest()` method in source. |
+| `PreMarketPerp.sol` | `liquidate(uint256 id)` | `LIQ_BOUNTY_BPS = 100` (1% of remaining positive margin) | Only undercollateralized open positions; margin can be zero or negative; reward capped by contract's available payout funds. |
+| `RangeOrders.sol` | `fill(uint256)` | `KEEPER_BOUNTY_BPS = 100` (1% of converted output) | Requires fully crossed range; caller competition and settlement costs. |
+
+`kerf_multi_history.py` parses `Harvest`, `Harvested`, and `Liquidated` events from the claimed six deployed seed vaults, PositionKeeper and PreMarketPerp. Source deployment manifest: https://github.com/KerfFinance/kerf-contracts/blob/main/deployments/robinhood.json . This provides *historical activity evidence* only and is incomplete for vaults created later through VaultFactory.
+
+Sources: [LPVault.sol](https://github.com/KerfFinance/kerf-contracts/blob/main/src/LPVault.sol), [PositionKeeper.sol](https://github.com/KerfFinance/kerf-contracts/blob/main/src/PositionKeeper.sol), [PreMarketPerp.sol](https://github.com/KerfFinance/kerf-contracts/blob/main/src/PreMarketPerp.sol), [RangeOrders.sol](https://github.com/KerfFinance/kerf-contracts/blob/main/src/RangeOrders.sol).
+
+**Verification limits:** Direct explorer address/API requests were not accessible in the available browsing environment and direct RPC DNS was previously unavailable locally. The publicly published deployment manifest has not been verified against deployed bytecode. Do not extrapolate profitability or claim real payouts.
+
+Blockscout reports Robinhood Chain public explorer and a free PRO API key tier; see https://github.com/blockscout/docs/blob/main/robinhood-api.mdx and https://www.blog.blockscout.com/build-on-robinhood-chain-with-the-blockscout-pro-api/ .
