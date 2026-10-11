@@ -65,3 +65,5 @@ PoolTogether V5 Base **#1** for read-only Gate 0 of the **current** claimer; Rip
 
 ## Automation evidence update (Oct 11 2026)
 PoolTogether Base live official prize-claim index, synced within 1 block of chain tip, showed **zero indexed claims in the previous three days**. This is an actual bounded negative observation, not an RPC failure; its present prize token is WETH. Lower near-term claiming research priority until new positive non-deprecated receipts appear. Superfluid had 52 recent liquidation events in three days, but prior P&L study showed low and concentrated rewards; remains observe only. No open claimable target or repeatable positive net found.
+
+Ripe production caution (Oct 12): official Ripe Foundation GitHub [issue #236](https://github.com/Ripe-Foundation/ripe-protocol/issues/236) remains open with `activation-blocker` for retaining Pool-1 keeper deleverage preflight. It concerns a separate deleveraging path and does NOT establish `Teller.liquidateUser` deployment status. However, do not turn source-level reward logic into profitability claims. Need real successful third-party GREEN payout receipts.

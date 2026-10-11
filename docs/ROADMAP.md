@@ -127,3 +127,8 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Fix public RPC historical-log and pruned-genesis limitations using the official PoolTogether indexed API + independent receipt verification.
 - [ ] Observe a first **scheduled** radar run and ensuing workflow_run alert gate; do not create manual financial alerts.
 - [ ] If PoolTogether indexed claims remain zero for a meaningful time span, pivot to other active protocols before building a keeper.
+
+- [x] Expand PoolTogether Base indexed discovery from sparse 3-day window to a 30-day bounded historical sample; retain truncation flag.
+- [x] Read official Ripe September 2026 open production keeper activation blocker #236; separate its deleveraging scope from liquidation public ABI.
+- [ ] Record what the 30-day PoolTogether Base index actually returns and whether ANY current-claimer fee recipient earned rewards in validated receipts.
+- [ ] Make alert workflow's first eligible scheduled run observable; don't mislabel skipped push-triggered runs.
