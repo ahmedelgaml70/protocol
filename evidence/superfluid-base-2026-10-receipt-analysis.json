@@ -1,0 +1,81 @@
+{
+  "as_of_utc": "2026-10-12",
+  "source_files": [
+    "superfluid-base-2026-10-recent-receipts-rpc.json",
+    "superfluid-base-2026-10-11-activity-full.json"
+  ],
+  "chain_id": 8453,
+  "selected_receipt_sample": {
+    "size": 12,
+    "population_distinct_ethx_transactions": 35,
+    "random_sample": false,
+    "sampling_method": "top indexed ETHx rewards + newest transactions; results not representative",
+    "successful_receipts": 12,
+    "positive_conditional_eth_parity": 6,
+    "negative_conditional_eth_parity": 6,
+    "gross_ethx_tokens": "0.03030931922133412",
+    "full_gas_eth": "0.000223981813189343",
+    "aggregate_conditional_eth_parity_after_gas": "0.030085337408144777",
+    "transactions_with_no_ethx_transfer_to_submitter": 1,
+    "wallets": {
+      "0xa4ddac803117c6da2931fc40d2977c566896fc41": {
+        "transactions": 5,
+        "positive": 5,
+        "negative": 0,
+        "ethx_received": "0.029515682660188553",
+        "gas_eth": "0.000143381890630099",
+        "conditional_after_gas_eth": "0.029372300769558454"
+      },
+      "0x4ead40da807fa1ccaa8be38f8dbc5be346a39239": {
+        "transactions": 1,
+        "positive": 1,
+        "negative": 0,
+        "ethx_received": "0.000766798949183325",
+        "gas_eth": "0.000017682569196788",
+        "conditional_after_gas_eth": "0.000749116379986537"
+      },
+      "0xc20a5455035ab593682cf9b9916b9407cc9e47f3": {
+        "transactions": 6,
+        "positive": 0,
+        "negative": 6,
+        "ethx_received": "0.000026837611962242",
+        "gas_eth": "0.000062917353362456",
+        "conditional_after_gas_eth": "-0.000036079741400214"
+      }
+    }
+  },
+  "original_indexed_event_sample": {
+    "events": 300,
+    "distinct_transaction_hashes": 270,
+    "token_contracts": 184,
+    "liquidation_type_event_counts": {
+      "0": 40,
+      "1": 231,
+      "2": 29
+    },
+    "usdcx": {
+      "token_address": "0xd04383398dd2426297da660f9cca3d439af9ce1b",
+      "events": 52,
+      "total_indexed_usdcx_assuming_18_decimals": "127.843061778018228599",
+      "priority_patrician_usdcx": "127.773801231671400105",
+      "public_pleb_usdcx": "0.069260546346828494"
+    },
+    "sup": {
+      "token_address": "0xa69f80524381275a7ffdb3ae01c54150644c8792",
+      "indexed_events": 14,
+      "indexed_sup_tokens_assuming_18_decimals": "923.978211804928731971"
+    }
+  },
+  "status": "HISTORICAL_PAID_EVENTS_ONLY_NOT_CURRENTLY_CLAIMABLE",
+  "verifiable_user_profit_usd": 0,
+  "caveats": [
+    "ETHx~ETH parity assumed; price and execution cost after receipt not verified",
+    "Sample oversamples large rewards and recent events; 6/12 cannot represent protocol win rate",
+    "Gas losses from unsuccessful transactions absent",
+    "Only ETHx transfers from Batch Liquidator to tx.from counted; rewards to separate beneficiary may be missed",
+    "Not all ETHx transactions (12 of 35) or all 30-day indexed events checked",
+    "USDCx value assumes underlying stability and redeemability, not checked transaction-by-transaction",
+    "SUP value requires independent market price/liquidity check",
+    "No currently unclaimed eligibility or opportunity established"
+  ]
+}
