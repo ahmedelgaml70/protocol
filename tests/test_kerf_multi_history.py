@@ -41,7 +41,7 @@ class TestBounties(unittest.TestCase):
         self.assertTrue(parsed["compounded"])
 
     def test_perp_liquidation(self):
-        msg = event(TOP_PERP, m.PERP, [hex(8), hex(0x777)], words=(500))
+        msg = event(TOP_PERP, m.PERP, [hex(8), hex(0x777)], words=(500,))
         parsed = m.decode_event(msg)
         self.assertEqual(parsed["position_id"], 8)
         self.assertEqual(parsed["bounty_usdg_raw"], "500")
