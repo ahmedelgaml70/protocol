@@ -145,3 +145,24 @@ make superfluid-recent
 ```
 
 This checks up to 12 deduplicated Base transactions, prioritizing the biggest observed ETHx reward amounts and recency. The resulting local `superfluid_recent_receipts.json` is ignored by git. It explicitly reports transferred token units, gas and a *hypothetical* ETH-parity proxy—**not earnings or live claimability**.
+
+## October 2026 payout audit: decision after receipt verification
+
+We received a read-only Base receipt audit of **12 of the 35 distinct ETHx liquidation transactions** captured in the truncated October subgraph sample. **All 12 transactions succeeded**, but the executor economic proxy splits **six positive / six negative**. The sample was intentionally selected by largest bounty and recency, so its apparent profitability is **selection-biased**.
+
+- Received by submitting wallets: **0.030309319221334120 ETHx**.
+- Full reported transaction fees: **0.000223981813189343 ETH**.
+- Net proxy at assumed 1 ETHx ≈ 1 ETH: **+0.030085337408144777 ETH-equivalent** across the selected 12 historical calls, *not* verified dollar profit.
+- Wallet `0xa4dd…fc41` submitted five positive transactions totaling **+0.029372300769558454 ETH-equivalent** after fees; `0xc20a…47f3` submitted six negative ones totaling **−0.000036079741400214**; one other wallet was positive.
+- 1 of 12 calls had indexed ETHx rewards but **no direct ETHx transfer from the batch contract to the submitting wallet**; other beneficiary routing is not excluded.
+- In the full 300-event index, 52 USDCx events account for ~127.84 USDCx, but **127.77 USDCx** were Patrician-priority rewards. Public Pleb-phase indexed rewards are only **~0.06926 USDCx**. A further 14 events totaled 923.98 SUP tokens, whose value is price/liquidity-dependent.
+
+**Conclusion:** Superfluid is legitimate, liquidations happen, and bots can collect them. This audit does **not** support a reliable rapid $1,000 path with a $10 risk budget. Treat **Base ETHx as an observational learning channel**, not an execution-ready strategy.
+
+Saved proof: [uploaded receipt report](evidence/superfluid-base-2026-10-recent-receipts-rpc.json), [reproducible derived calculations](evidence/superfluid-base-2026-10-receipt-analysis.json), [decision record](docs/OCT_2026_DECISION.md).
+
+Optional full-sample audit (no wallet, 35 historical ETHx transaction receipts; RPC rate limits may apply):
+
+```sh
+make superfluid-all
+```

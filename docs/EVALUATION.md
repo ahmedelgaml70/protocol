@@ -35,3 +35,6 @@ Never use 'guaranteed', 'risk-free', or 'execution-ready' for a contract merely 
 ## Mandatory gate 0 — active protocol before coding
 
 Before implementing a custom observer, verify **at least one historical successful payout** to an external caller with a transaction hash and token transfer, and confirm activity is recent enough to matter. A source formula, announcement, automated code skeleton or attempted/reverted call does not pass. If a read-only state counter shows zero ever-created work items, mark that route `STOP` and divert resources; do not mistake zero `eth_getLogs` events from a short block window for definitive zero activity.
+
+## Evidence quality: avoid selection bias
+A sample of successful transactions chosen for the highest indexed rewards **cannot** establish population expected profit. Measure *all* observed wins/losses where possible, including reverted gas and no-bounty attempts. Split reward receivers (priority TOGA contract vs public liquidator) and submitter addresses (batch contract is not caller). USD realizability requires a verified exit route and exchange rate; `ETHx - ETH gas` under parity is only a *conditional* proxy, never booked earnings.

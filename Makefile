@@ -40,3 +40,9 @@ superfluid-activity:
 .PHONY: superfluid-recent
 superfluid-recent:
 	$(PYTHON) superfluid_recent_receipts.py --activity evidence/superfluid-base-2026-10-11-activity-full.json --limit 12 --output superfluid_recent_receipts.json
+
+# Optional fully audited 35 ETHx transactions from the saved capped October sample
+# using Base mainnet read-only RPC. Never signs or sends.
+.PHONY: superfluid-all
+superfluid-all:
+	$(PYTHON) superfluid_recent_receipts.py --activity evidence/superfluid-base-2026-10-11-activity-full.json --limit 35 --output superfluid_recent_receipts.json

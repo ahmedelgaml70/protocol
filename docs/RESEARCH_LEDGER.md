@@ -128,3 +128,19 @@ Archive: [full October Base indexed activity](../evidence/superfluid-base-2026-1
 Relevant baseline evidence: https://basescan.org/tx/0x4688d1709a06a8adde20328eb9e71e3955ff1e54e64234073515bfff8b75668b and https://basescan.org/tx/0x8cf34f65aea1f5743fadd59e91036444744263a6ecd75e9b719c04a35bb7a709 .
 
 **Additional computed observation from saved input:** 184 unique token addresses, of which 180 appear once. The remaining 4 tokens appear 52, 46, 14 and 8 times respectively. This underscores why reward amounts must be converted to *realizable* values only with verified liquidity; singleton tokens are not by themselves suspicious or worthless.
+
+## October 12, 2026 — 12 ETHx transactions audited against Base RPC receipts
+
+From the user's uploaded `superfluid_recent_receipts.json` (archived, separate from May samples): 12 of 35 distinct ETHx transactions; 12 success, 6 positive ETH-parity proxy, 6 negative. Selected to oversample the highest rewards and newest calls, **not a representative 6/12 winning rate for independent bots**.
+
+| Submitting wallet | Receipts audited | Conditional net, ETH-equivalent |
+|---|---:|---:|
+| `0xa4ddac803117c6da2931fc40d2977c566896fc41` | 5 positive | +0.029372300769558454 |
+| `0x4ead40da807fa1ccaa8be38f8dbc5be346a39239` | 1 positive | +0.000749116379986537 |
+| `0xc20a5455035ab593682cf9b9916b9407cc9e47f3` | 6 negative | −0.000036079741400214 |
+
+Important economic caveat: a historical call's `ETHx_transferred_batch_to_submitter - (Base L1+L2 gas)` is a conditional *economic proxy*, not actual USD realized: ETHx may not be redeemed at parity, token swaps/slippage and failed keeper attempts not counted, plus possible rewards to another beneficiary. The Oct 9 `0x6f3373f5...` tx includes an indexed reward, but the receipt auditor recorded **zero direct ETHx transfer to submitting wallet**; don't silently attribute an indexed reward to the operator.
+
+**Liquid token filter:** 52 USDCx indexed events aggregate ~127.843 USDCx raw/18 decimals, but 33 priority-phase events account for ~127.774 USDCx; 19 public Pleb events account for only ~0.069261 USDCx before any gas. USDCx Base contract `0xd0438339...439af9ce1b` documented in [Superfluid x402 example](https://github.com/superfluid-org/x402-sf). SUP token `0xa69f8052...0644c8792` is identified by [official governance](https://forum.superfluid.org/t/superfluid-token-address-multisigs-official/92), 923.978 raw SUP tokens across 14 events; dollar value depends on current tradeable price and liquidity and cannot be inferred from numeric unit count. This is evidence against treating broad event volume as cash rewards.
+
+**Decision:** Do not deploy a Base liquidator on $10. Original read-only source reports and computed metrics are preserved in `evidence/`, with a separate summary in `docs/OCT_2026_DECISION.md`.

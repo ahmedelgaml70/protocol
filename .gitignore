@@ -28,3 +28,5 @@ superfluid_receipts.json
 superfluid_activity.json
 
 superfluid_recent_receipts.json
+
+*.rpc-debug.log

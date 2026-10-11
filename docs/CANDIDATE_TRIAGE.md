@@ -51,3 +51,11 @@ Example of the danger of counting attempts as income: https://etherscan.io/tx/0x
 **Priority: verify just a sample of recent receipt winners, then decide.** 300 events / 270 transactions in truncated ~16 days, but only 46 ETHx events (35 tx) and **0.03134 ETHx indexed rewards in total**. 90.26% arose in just two Oct 8 events. Large raw amounts of arbitrary tokens cannot be considered USD earnings without pricing and liquidity. Confirm successful ERC20 payouts to transaction sender, gas and competition before committing further development. A single indexed liquidator account corresponds to a Batch Liquidator contract; it is **not** evidence of just one bot.
 
 **Asset-quality gate:** 184 token addresses across 300 events, with 180 singleton token addresses. Do not attribute stable/USD value to singleton rewards until contract, DEX liquidity, redemption and spread are verified. The large number of distinct tokens inflates apparent activity relative to easily liquidated earnings opportunities.
+
+## Superfluid Base — October receipt-economics decision
+
+Classification **historically profitable for some existing executors**, **NOT ready for us**. The 12 selected successful ETHx transactions have conditional 1 ETHx=1 ETH after-gas total +0.03008534 ETH-equivalent, almost entirely won by one wallet. Another wallet's 6 sampled successful calls have negative conditional economics. Most USDCx historical reward volume (127.77 of 127.84 USDCx) belongs to the protected priority period. SUP rewards are relatively small in token quantity and require pricing.
+
+**Current missing gates:** no unclaimed stream; no proof that a newcomer can reliably beat entrenched keepers; no failure-attempt dataset; no redeemability-adjusted P&L. Do not risk $10 or build live executor yet.
+
+See [receipt analysis](../evidence/superfluid-base-2026-10-receipt-analysis.json) and [decision](OCT_2026_DECISION.md).

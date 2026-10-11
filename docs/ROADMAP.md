@@ -87,3 +87,12 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Make 30-day index complete using safe pagination; currently sample truncated to ~16 days.
 - [ ] Find an *open, payable, permissionless* liquidation at a pinned block if economically warranted.
 - [ ] If economic upside is too small or dominated by keeper competition, pivot rather than expanding code indefinitely.
+
+## Post receipt-economics pivot (October 12)
+- [x] Archive user's 12 real RPC receipts and compute exact ETHx token-inflow vs Base L1+L2 fees by submitting wallet.
+- [x] Verify successful receipts can still be gas-negative; calculate 6/12 conditional net positive, 6/12 conditional net negative in a **biased sample**.
+- [x] Separate USDCx Patrician-priority rewards from public Pleb-phase rewards.
+- [x] Add explicit **STOP / monitor only** decision on Base liquidation execution.
+- [ ] Search fresh, higher-value successful public-caller payout transactions on low-fee networks **before building a new bot**.
+- [ ] Require evidence that operator profit > costs under conservative exit liquidity assumptions and is plausibly accessible with a $10 budget.
+- [ ] Check a second asset/network before investing further in Superfluid; early pivot if prize pool is small/priority-locked.

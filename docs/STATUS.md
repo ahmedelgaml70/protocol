@@ -77,3 +77,13 @@ New `superfluid_recent_receipts.py` and 3 offline tests cover a limited Base ETH
 
 ### Token concentration correction
 The sample has **184 unique reward token contract addresses**, **180 appearing exactly once**. This does NOT mean those tokens are scams, but it makes a raw event-count or raw reward-amount headline poor evidence of liquid USD rewards. Focus next receipt audit on ETHx before spending time pricing other tokens.
+
+## 2026-10-12 — October 12-receipt RPC audit
+
+User uploaded read-only `superfluid_recent_receipts.json`; archived without secrets at `evidence/superfluid-base-2026-10-recent-receipts-rpc.json`, derived with exact base-unit arithmetic at `evidence/superfluid-base-2026-10-receipt-analysis.json`. All **12/12 receipts succeeded**; **6 conditional positive**, **6 conditional negative** based on 1 ETHx = 1 ETH transfer minus full receipt fees. Combined conditional net across intentionally selected transactions **+0.030085337408144777 ETH-eq**; **not realized profit**, nor representative of all 35 ETHx txs, nor of failed keeper attempts.
+
+Per submitter: 0xa4dd...fc41 had 5 positive (+0.02937230077 ETH-eq), 0x4ead...9239 had 1 positive (+0.00074911638), 0xc20a...47f3 had 6 negative (−0.00003607974). Another critical detail: in one Oct 9 receipt, indexed event showed reward but **direct ETHx transfer to transaction submitter was zero**; investigate transfers to other addresses before imputing total protocol reward as bot income.
+
+Original 300-event dataset: USDCx 52 events (33 priority Patrician/19 Pleb), **127.7738 USDCx priority** vs **0.06926 public-phase** rewards. SUP 14 events, 923.9782 tokens whose market value must be independently checked. This makes the number of 'events' a weak income proxy.
+
+**Decision:** No execution; pause development of a live Superfluid Base keeper. Shift to evidence of larger paid public-caller transactions across several other mature protocols/networks, while optionally auditing the remaining 23 ETHx receipts only if a reason emerges. Details in `docs/OCT_2026_DECISION.md`. User profit $0, spending $0, budget $10 retained.
