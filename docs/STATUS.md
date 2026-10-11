@@ -38,3 +38,7 @@ This file is a snapshot, not a live performance claim.
 - Corrected interpretation: approximately 0.1-second blocks means a 30,000-block lookback is roughly 50 minutes and cannot support claims about daily keeper opportunities. See https://www.ankr.com/docs/changelog/robinhood-chain/ .
 - Kerf's own bot reportedly sweeps all open orders and only fills when its estimated bounty is at least **3x gas**, so independent profits may be unusually competitive. Source: https://www.kerf.finance/docs/range-orders .
 - In this session, local predecessor v0.1 offline tests were rerun and **all 5 passed**. The latest GitHub-revision tests remain unexecuted in this environment; do not equate the two.
+
+## Scan-window fix (2026-10-11, follow-up)
+
+Committed `block_range.py` with logarithmic timestamp-based block lookup and integrated `--lookback-hours` (24h default) into both Kerf historical scanners. Added three offline unit tests for range selection. The standalone algorithm was independently exercised locally using a synthetic timestamped chain: **3/3 tests passed**. The full GitHub repository test suite still needs execution on an Internet-enabled local checkout. No live payout results are established.

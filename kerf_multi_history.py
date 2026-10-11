@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 import sys
 from kerf_radar import CHAIN_ID, DEFAULT_RPC, JSONRPC, RPCError, RANGE_ORDERS, words
+from block_range import start_block_for_hours
 
 DEPLOYMENT_BLOCK_CLAIM = 56938742
 KEEPER = "0x5D9120F45271374c7c8E185CCa121D88A250a71A"
@@ -138,12 +139,15 @@ def summarize(events, start, end):
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--rpc", default=os.environ.get("ROBINHOOD_RPC_URL", DEFAULT_RPC))
-    p.add_argument("--lookback-blocks", type=int, default=30000)
+    p.add_argument("--lookback-blocks", type=int, default=None, help="Manual block window; overrides hours")
+    p.add_argument("--lookback-hours", type=float, default=24, help="Last N hours, uses block timestamps")
     p.add_argument("--chunk", type=int, default=2000)
     p.add_argument("--output", default="multi_bounty_history.json")
     a = p.parse_args(argv)
-    if not 1 <= a.lookback_blocks <= 5000000:
+    if a.lookback_blocks is not None and not (1 <= a.lookback_blocks <= 5000000):
         p.error("--lookback-blocks must be 1..5000000")
+    if not 0 < a.lookback_hours <= 720:
+        p.error("--lookback-hours must be >0 and <=720")
     if not 1 <= a.chunk <= 5000:
         p.error("--chunk must be 1..5000")
     rpc = JSONRPC(a.rpc)
@@ -152,7 +156,9 @@ def main(argv=None):
         if chain != CHAIN_ID:
             raise RPCError(f"Unexpected chain ID {chain}")
         latest = int(rpc.rpc("eth_blockNumber", []), 16)
-        start = max(DEPLOYMENT_BLOCK_CLAIM, latest - a.lookback_blocks + 1)
+        start = (max(DEPLOYMENT_BLOCK_CLAIM, latest - a.lookback_blocks + 1)
+                 if a.lookback_blocks is not None
+                 else start_block_for_hours(rpc, latest, DEPLOYMENT_BLOCK_CLAIM, a.lookback_hours))
         if start > latest:
             raise RPCError("Deployment block later than current chain tip")
         for contract in (KEEPER, PERP, *SEED_VAULTS.values()):

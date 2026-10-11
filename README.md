@@ -90,3 +90,7 @@ Official Robinhood Chain RPC: https://docs.robinhood.com/chain/connecting/
 ### Activity window caveat
 
 Robinhood Chain is described as an approximately **100 ms** block-time chain (actual timing varies). A default `--lookback-blocks 30000` history audit may cover only approximately **50 minutes**, not a day. For ~24 hours of *nominal* chain time, roughly 864000 blocks are needed; the actual wall-clock span must be measured using on-chain block timestamps. Increase the history lookback and choose a provider that supports `eth_getLogs`, mindful of rate limits and log-range caps. Never describe a 30k-block scan as a full-day audit.
+
+## Time-accurate event history
+
+As of this revision, `make history` and `make multi-history` scan the last **24 hours**, computed using actual on-chain block timestamps. You may override with `--lookback-hours N` (up to 720) or a manual `--lookback-blocks N`; those are not equivalent and the latter does not imply any particular elapsed time. This prevents accidental undercounting on Robinhood Chain's very short block cadence. A provider with `eth_getLogs` access is still required for historical auditing. The separate `block_range.py` module uses only `eth_getBlockByNumber` and has standalone offline tests.

@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import sys
 from kerf_radar import CHAIN_ID, DEFAULT_RPC, RANGE_ORDERS, JSONRPC, RPCError, address, words
+from block_range import start_block_for_hours
 
 # Event topics derived from the published Kerf contract's event signatures.
 TOPICS = {
@@ -77,12 +78,15 @@ def summarize(events, chain_id, start, end):
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--rpc", default=DEFAULT_RPC)
-    p.add_argument("--lookback-blocks", type=int, default=30000)
+    p.add_argument("--lookback-blocks", type=int, default=None, help="Manual block window; overrides hours")
+    p.add_argument("--lookback-hours", type=float, default=24, help="Last N hours, uses block timestamps")
     p.add_argument("--chunk", type=int, default=2000)
     p.add_argument("--output", default="history.json")
     a = p.parse_args(argv)
-    if not (1 <= a.lookback_blocks <= 500000 and 1 <= a.chunk <= 10000):
-        p.error("lookback range 1..500000 and chunk 1..10000 required")
+    if a.lookback_blocks is not None and not (1 <= a.lookback_blocks <= 5000000):
+        p.error("--lookback-blocks must be 1..5000000")
+    if not 0 < a.lookback_hours <= 720 or not 1 <= a.chunk <= 10000:
+        p.error("hours range >0..720 and chunk 1..10000 required")
     rpc = JSONRPC(a.rpc)
     try:
         chain = int(rpc.rpc("eth_chainId", []), 16)
@@ -91,7 +95,9 @@ def main(argv=None):
         latest = int(rpc.rpc("eth_blockNumber", []), 16)
         if rpc.rpc("eth_getCode", [RANGE_ORDERS, hex(latest)]) in ("0x", None):
             raise RPCError("Contract bytecode absent")
-        start = max(CLAIMED_DEPLOYMENT_BLOCK, latest - a.lookback_blocks + 1)
+        start = (max(CLAIMED_DEPLOYMENT_BLOCK, latest - a.lookback_blocks + 1)
+                 if a.lookback_blocks is not None
+                 else start_block_for_hours(rpc, latest, CLAIMED_DEPLOYMENT_BLOCK, a.lookback_hours))
         events = fetch_events(rpc, start, latest, a.chunk)
         report = summarize(events, chain, start, latest)
     except (RPCError, ValueError) as exc:

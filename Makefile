@@ -16,11 +16,11 @@ scan:
 	$(PYTHON) kerf_radar.py --max-orders 100 --output report.json
 
 history:
-	$(PYTHON) kerf_history.py --lookback-blocks 30000 --output history.json
+	$(PYTHON) kerf_history.py --lookback-hours 24 --output history.json
 
 .PHONY: multi-history
 multi-history:
-	$(PYTHON) kerf_multi_history.py --lookback-blocks 30000 --output multi_bounty_history.json
+	$(PYTHON) kerf_multi_history.py --lookback-hours 24 --output multi_bounty_history.json
 
 # Free, keyless read-only endpoint supports eth_call, eth_getCode, eth_estimateGas.
 # It intentionally DOES NOT support eth_getLogs. Scan the 10 newest order IDs
