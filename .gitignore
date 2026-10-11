@@ -1,0 +1,22 @@
+# Local credentials / wallet material (never commit)
+.env
+.env.*
+*.key
+*.pem
+*.keystore
+wallet*
+secrets*
+private*
+*.sqlite
+*.db
+# Report outputs and build caches
+report.json
+history.json
+reports/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
