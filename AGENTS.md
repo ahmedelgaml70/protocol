@@ -19,10 +19,10 @@ Strong user preferences: no cold clients, sales calls, paid freelancer bids, ref
 ## Guardrails — REQUIRED
 - Do not submit transactions, sign, connect funded wallets, spend, open user accounts, apply for third-party work, submit outside PRs, send messages, purchase API access, configure subscriptions, or merge research-code branches without **user approval for the specific action**.
 - Research, read-only GitHub checks and requested documentation updates are allowed. No wallet keys, user addresses, personal identifiers, payment handles or secrets in this **public repository**. Scrub all JSON artifacts and logs.
-- Source-of-truth: \`main\` for charter, handoff, methodology, outcome ledger, older \`evidence/\`. Experimental branches **PR #8 (0xSplits)**, **PR #9 (Liquity/Sovryn)**, **PR #10 (Keep3r)** are draft/unmerged and should not be mistakenly described as merged. Preserve all previous factual evidence and user prompts.
+- Source-of-truth: `main` for charter, handoff, methodology, outcome ledger, older `evidence/`. Experimental branches **PR #8 (0xSplits)**, **PR #9 (Liquity/Sovryn)**, **PR #10 (Keep3r)** are draft/unmerged and should not be mistakenly described as merged. Preserve all previous factual evidence and user prompts.
 - **No bot before current payout proof.** Find who has escrowed funds, the exact current unclaimed action, recent actual payees, any keeper bond, country rules, deadline and net economics first. Only then build the smallest read-only simulation needed.
-- A transaction history or budget balance is not an open income opportunity. \`eth_call\` success is not a guaranteed winning transaction. A payable formula, treasury TVL, APY, points or future airdrop is not bankable cash.
-- Explicitly separate \`ZERO_IN_BOUNDED_SUCCESSFUL_SCAN\` and \`INCOMPLETE_RPC\`. Stop if blocked; do not state no opportunity exists system-wide. Timestamp on-chain scans in UTC and include block/address/chain.
+- A transaction history or budget balance is not an open income opportunity. `eth_call` success is not a guaranteed winning transaction. A payable formula, treasury TVL, APY, points or future airdrop is not bankable cash.
+- Explicitly separate `ZERO_IN_BOUNDED_SUCCESSFUL_SCAN` and `INCOMPLETE_RPC`. Stop if blocked; do not state no opportunity exists system-wide. Timestamp on-chain scans in UTC and include block/address/chain.
 - Price assets at independently grounded contemporaneous executable rates and check exit slippage; treat token rewards separately from USDC/DAI/actual settled fiat.
 - Research security/legality: no exploits, oracle manipulation, unauthorized claims, third-party refunds, nonconsensual wallet recovery, market manipulation or evasion of KYC.
 
@@ -40,6 +40,6 @@ Review and update [OPPORTUNITY_MATRIX_2026-10-12.md](docs/OPPORTUNITY_MATRIX_202
 - 0xSplits scans were narrow; 7-day Liquity and Rootstock historical RPC attempts were incomplete; no universal-negative claims.
 - Keep3r's ~19,881 DAI job-credit balance belonged to an already-retired MakerDAOUpkeep; a different active Keep3r job paid 20 historic calls to **two** keepers, and its 19 recently worked strategies all returned **workable=false** at the latest preflight. DO NOT claim large funding ≡ free reward.
 - FLOP testnet rewards locked until future mainnet, PERPTools points and Papertrade loss-for-token mechanics cannot substantiate near-term withdrawable dollars.
-- Public Github \`bounty\` labels can be unbacked, expired or synthetic. The Oct 12 candidate \`SUSU-LABS/susu-indexer#46\` offers $40 for a precise nonsecurity code task but escrow/payout pathway is unproven, and the \`NSPG13/agent-bounties#1262\` explicitly says unfunded. No approved applicant activity.
+- Public Github `bounty` labels can be unbacked, expired or synthetic. The Oct 12 candidate `SUSU-LABS/susu-indexer#46` offers $40 for a precise nonsecurity code task but escrow/payout pathway is unproven, and the `NSPG13/agent-bounties#1262` explicitly says unfunded. No approved applicant activity.
 
 At the end of every session report: **time-scoped verified claims**, active/refuted leads, direct source links, capital spent, cash actually received, files/branches updated and smallest next falsification test. Zero income is a valid result; fabricated optimism is not.
