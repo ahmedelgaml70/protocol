@@ -189,3 +189,7 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Mark Ripe Base low-priority for rapid recurring payouts; maintain only low-volume historical monitoring.
 - [ ] Audit permissionless **Morpho Blue Base** liquidation history with official GraphQL query before any automation/executor proposals.
 - [ ] Match actual repay/seize token receipts, gas, token pricing, caller concentration and capital/flash-loan requirements if sufficient recent activity is observed.
+
+- [x] Build one-shot read-only Morpho Base official GraphQL liquidation activity probe with offline input-validation tests.
+- [ ] Verify actual Morpho API query in GitHub Actions; if supported, evaluate freshness, liquidation volume and liquidator concentration.
+- [ ] Use recent verified receipts/DEX prices to test conservative net and flash-liquidity feasibility before considering any executor.

@@ -24,6 +24,8 @@ CHECKS = (
     ("ripe-base-deployment", "ripe_base_deployment.json",
      ["ripe_base.py", "--rpc", "https://mainnet.base.org",
       "--check", "deployment"], 75),
+    ("morpho-base-liquidations", "morpho_base_activity.json",
+     ["morpho_liquidations.py", "--days", "7", "--limit", "100"], 75),
 )
 
 def utc_now():

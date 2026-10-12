@@ -208,3 +208,7 @@ The repository now runs `ripe_base.py` in two separate GitHub Actions stages: **
 ## Ripe 24-hour empirical screen
 
 [Daily Ripe Keeper Evidence](https://github.com/ahmedelgaml70/protocol/actions/runs/38213678949) successfully queried **43,201 consecutive Base blocks (52,455,744–52,498,944)**, observing **0 current AuctionHouse LiquidateUser events** in 24 hours. No RPC failures or payouts in this bounded period. The mechanism was enabled (1% configured) but had no observed work. **Ripe Base downgraded for rapid-income purposes;** daily low-rate research remains optional. [Permanent evidence summary](evidence/ripe-base-2026-10-12-24h-history.json). Not a claim no payouts ever.
+
+## Morpho Base liquidation activity read-only screen
+
+Following repeated low-activity / low-profit results for smaller permissionless keeper mechanisms, `Protocol Radar` also checks **historical Morpho Blue Base liquidations** from Morpho's official free [GraphQL API](https://docs.morpho.org/developers/borrow/tutorials/get-data/) using `morpho_liquidations.py`. It records the newest up to 100 Base liquidation events and caller concentration with a seven-day filter, distinguishing a capped sample. The returned `repaidAssets` and `seizedAssets` are **in different token units**, not cash profits. No active borrower is found, no flash loan executed, and there are no Morpho research alerts until independently verified positive-net receipts. A funded liquidation requires loan-token repayment; atomic flash liquidity can sometimes help but creates technical and execution risks.

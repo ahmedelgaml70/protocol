@@ -69,3 +69,5 @@ jobs:
 # Temporary Ripe history read-only keyless SolidRPC capability smoke (bounded 6h).
 
 # Ripe longer history scan moved to dedicated daily, read-only workflow.
+
+# Smoke-test Morpho's official indexed Base liquidation feed (read-only, historical only).
