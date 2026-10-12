@@ -9,7 +9,8 @@
 5. [New study: Hyperlane, Archr, TaskMarket and x402](docs/RESEARCH_ROUND2_RELAYER_AGENT_MARKETS_2026_10_12.md)
 6. [Latest study: Convex live harvest and kick bounty audit (PR #11)](https://github.com/ahmedelgaml70/protocol/blob/research/convex-earmark-100/docs/CONVEX_KEEPER_KICK_AUDIT_2026_10_12.md)
 7. [Newest live funded-task and burn-bounty audit (PR #12)](https://github.com/ahmedelgaml70/protocol/blob/research/prefund-live-gates-100/docs/PREFUNDED_LIVE_GATE_AUDIT_2026_10_12.md)
-8. [Original user prompts](docs/ORIGINAL_PROMPTS.md) and [historical research log](docs/RESEARCH_LEDGER.md)
+8. [Booking fulfillment audit: why real customer escrows do not imply payable work](docs/BOOKING_FULFILLMENT_BRIJ_AUDIT_2026_10_12.md)
+9. [Original user prompts](docs/ORIGINAL_PROMPTS.md) and [historical research log](docs/RESEARCH_LEDGER.md)
 
 **The previous complete version of this AGENTS.md is preserved at [docs/archive/AGENTS_BEFORE_2026_10_12_HANDOFF.md](docs/archive/AGENTS_BEFORE_2026_10_12_HANDOFF.md)**. It remains useful for historic technical failure details but has outdated constraints.
 
