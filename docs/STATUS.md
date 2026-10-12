@@ -1,3 +1,10 @@
+# Current status override — 2026-10-12
+
+**Newest canonical status:** [HANDOFF_2026-10-12.md](HANDOFF_2026-10-12.md) / [OPPORTUNITY_MATRIX_2026-10-12.md](OPPORTUNITY_MATRIX_2026-10-12.md). User approved an exploratory **$100** ceiling and a **$1,000 total withdrawable target by November 12, 2026**. This supersedes the $10/seven-day target below. **$0 spent and $0 received**; no verified available positive-net claim.
+
+New experiments remain in **DRAFT PR #8 (0xSplits), #9 (Liquity/Sovryn), #10 (Keep3r)**, none merged. Keep3r registry: 42 jobs / six credited; 20 historical paid \`KeeperWork\` receipts totaling 58.9233888597 KP3R received by two incumbents; one 19,881.7 DAI-funded MakerDAOUpkeep lane retired June 8, 2026; 19/19 recently worked strategies returned \`workable=false\` in current read-only preflight. No income was earned by user. Other protocols did not produce a present executable profitable action. Next direction is **payer-first funded/unclaimed opportunities across domains**, not building more unverified keeper bots. Read full handoff for nuanced evidence and source links.
+
+---
 # Status (2026-10-11)
 
 **User goal:** grow a $10 budget toward $1,000 quickly without jobs, clients, promotions or referrals, ideally via legitimate permissionless crypto rewards.
