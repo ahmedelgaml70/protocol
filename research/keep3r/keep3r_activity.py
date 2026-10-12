@@ -58,7 +58,29 @@ def activity(url):
             problems.append({"tx":x.get("transactionHash"),"error":str(exc)[:200]})
     groups=defaultdict(list)
     for item in items:groups[item["job"].lower()].append(item)
+    stats=[]
+    for job,rows in groups.items():
+        recipients=defaultdict(int)
+        tokens=defaultdict(list)
+        gas_cost=[]
+        for row in rows:
+            recipients[row["keeper"].lower()]+=1
+            tokens[row["credit_token"].lower()].append(int(row["payment_raw"]))
+            if row.get("gas_cost_eth_units") is not None:
+                gas_cost.append(Decimal(row["gas_cost_eth_units"]))
+        stats.append({"job":job,"event_count":len(rows),
+                      "unique_keeper_addresses":len(recipients),
+                      "keepers_by_successes":dict(recipients),
+                      "per_token_payment_raw":{token:{"total_raw":str(sum(vals)),
+                                                "min_raw":str(min(vals)),
+                                                "max_raw":str(max(vals)),
+                                                "average_raw":str(sum(vals)//len(vals)),
+                                                "count":len(vals)} for token,vals in tokens.items()},
+                      "tx_gas_spent_eth_units_total_if_inspected":
+                        str(sum(gas_cost)) if gas_cost else None,
+                      "successful_receipts_checked":len(gas_cost)})
     return {"status":"sampled_historical_payments_not_current_availability",
+            "payment_statistics":stats,
             "provider":url,"utc":datetime.now(timezone.utc).isoformat(),
             "start_block":start,"end_block":tip,
             "matched_KeeperWork_events":len(logs),
@@ -83,7 +105,7 @@ def main():
     result["attempts"]=attempts
     with open("keep3r_reports/activity.json","w") as f:json.dump(result,f,indent=2)
     print(json.dumps({"status":result["status"],"total_keeperwork_events":result.get("matched_KeeperWork_events"),
-                      "jobs":[{"job":r["job"],"count":r["count"]} for r in result.get("jobs",[])],
+                      "payment_statistics":result.get("payment_statistics"),
                       "attempts":attempts},indent=2))
     return 0 if result["status"]!="incomplete" else 2
 
