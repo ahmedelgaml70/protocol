@@ -82,3 +82,5 @@ Primary source: https://github.com/beefyfinance/beefy-cowllector-v2/blob/main/ap
 
 ### Beefy Base STOP — 2026-10-12
 Actual on-chain read-only receipts for 7 latest Cowllector Base harvests (one operator wallet), all successful: 0.000011705879359994 WETH received vs 0.000056682286523025 ETH full gas; 0/7 positive under WETH≈ETH. Together with 645/645 recent operator simulations showing nonpositive gas-adjusted reward, this route fails the capital-limited expected-net screen. [Receipt evidence](../evidence/beefy-base-2026-10-12-receipt-proof.json). Not proof no future exceptions; defer expensive execution research.
+
+**Next research lead, Ripe:** Current Base deployment manifest provides Teller 0xae87deB25Bc5030991Aa5E27Cbab38f37a112C13, AuctionHouse 0xe9Dc24Ab1dC4746C7A43FAce3f895D9176D4C235 and GREEN 0xd1Eac76497D06Cf15475A5e3984D5bC03de7C707. These are source assertions until independently checked on-chain. Historical successful independent GREEN keeper payout is **unproven**; no execution. See https://github.com/Ripe-Foundation/ripe-protocol/blob/master/migration_history/base-mainnet/v1/current-manifest.json .

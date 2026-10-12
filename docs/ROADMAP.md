@@ -153,3 +153,7 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Distinguish failed receipt RPC (incomplete) from verified zero/negative payouts; fixed false-good handling and retried official Base RPC.
 - [x] Preserve exact seven hashes, observed WETH transfers and full gas in evidence file and CI artifact.
 - [ ] Stop adding Beefy execution code until credible outside-caller positive-net examples emerge; pivot to higher payout types.
+
+- [x] Extract Ripe current Base mainnet Teller/AuctionHouse/GREEN addresses and the LiquidateUser event ABI from canonical deployment manifest.
+- [ ] Check Ripe current deployment bytecode and successful recent LiquidateUser receipts independently, including GREEN mint to actual independent submitting wallet.
+- [ ] Verify GREEN token redeemability/realizable sale value and gas, then a current eligible account; no spend.
