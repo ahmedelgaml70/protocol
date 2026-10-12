@@ -51,7 +51,11 @@ def scan(name, filename, command, timeout, output_dir):
                     report = json.load(f)
                 if not isinstance(report, dict):
                     raise ValueError("report must be a JSON object")
-                entry["status"] = "ok"
+                if report.get("history_status") == "incomplete":
+                    entry["status"] = "incomplete"
+                    entry["error"] = "History sources unavailable; see diagnostic report"
+                else:
+                    entry["status"] = "ok"
             except (OSError, ValueError, json.JSONDecodeError) as exc:
                 entry["error"] = "invalid output: " + type(exc).__name__
                 outfile.unlink(missing_ok=True)

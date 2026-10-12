@@ -59,3 +59,5 @@ jobs:
 # Receipt scanner cannot interpret RPC errors as 0 payments; try official Base RPC.
 
 # First Ripe Base manifest-contract and event/receipt read-only smoke.
+
+# Smoke-test Ripe deployed configuration (liquidations_enabled, fee parameters, paused flags).

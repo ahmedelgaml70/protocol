@@ -52,7 +52,46 @@ def chain_state(rpc):
             raise ValueError(f"{name} has no deployed bytecode at manifest address")
         contracts[name]={"address":contract,"code_present":True,
                          "code_bytes":len(code[2:])//2}
+    runtime={}
+    for name,contract in (("Teller",TELLER),("AuctionHouse",AUCTION),("MissionControl",MISSION)):
+        try:
+            data=words(rpc.rpc("eth_call",[{"to":contract,"data":"0xb187bd26"},hex(tip)]))
+            if len(data)!=1 or data[0] not in (0,1):
+                raise ValueError("Invalid isPaused() response")
+            runtime[name+"_is_paused"]=bool(data[0])
+        except (RPCError,ValueError,TypeError):
+            runtime[name+"_is_paused"]=None
+    # getGenLiqConfig() is a dynamically encoded tuple containing array fields:
+    # word 0 = offset to tuple, tuple's first 5 fields are canLiquidate,
+    # keeperFeeRatio, minKeeperFee, maxKeeperFee, ltvPaybackBuffer.
+    try:
+        data=words(rpc.rpc("eth_call",[{"to":MISSION,"data":"0x10c7afae"},hex(tip)]))
+        if not data or data[0]%32 or data[0]<32 or data[0]//32+5>len(data):
+            raise ValueError("Invalid getGenLiqConfig ABI offset")
+        start=data[0]//32
+        if data[start] not in (0,1):
+            raise ValueError("Invalid canLiquidate boolean")
+        runtime.update({
+            "liquidations_enabled":bool(data[start]),
+            "keeper_fee_ratio_bps_config":str(data[start+1]),
+            "min_keeper_fee_green_raw_config":str(data[start+2]),
+            "max_keeper_fee_green_raw_config":str(data[start+3]),
+            "ltv_payback_buffer_bps_config":str(data[start+4]),
+            "config_source":"deployed MissionControl.getGenLiqConfig() at same block",
+        })
+    except (RPCError,ValueError,TypeError):
+        runtime["liquidations_enabled"]=None
+        runtime["config_source"]="unavailable_or_unrecognized_ABI"
+    for name,contract in (("GreenToken",GREEN),("SavingsGreen",SGREEN)):
+        try:
+            response=words(rpc.rpc("eth_call",[{"to":contract,"data":"0x313ce567"},hex(tip)]))
+            if len(response)!=1 or not 0<=response[0]<=36:
+                raise ValueError("Unexpected token decimals")
+            runtime[name+"_decimals"]=response[0]
+        except (RPCError,ValueError,TypeError):
+            runtime[name+"_decimals"]=None
     return {"chain_id":chain,"tip_block":tip,
+            "runtime":runtime,
             "contracts":contracts,"source":"Ripe official Base mainnet v1 current manifest",
             "source_url":"https://github.com/Ripe-Foundation/ripe-protocol/blob/master/migration_history/base-mainnet/v1/current-manifest.json",
             "bytecode_matches_source_verified":False,

@@ -46,6 +46,23 @@ class Tests(unittest.TestCase):
         r=transfer_rows({"logs":l},SENDER)
         self.assertEqual(r["green_received_raw"],"0")
 
+
+    def test_deployed_runtime_flags(self):
+        class ConfigRPC(FakeRPC):
+            def rpc(self,m,p):
+                if m=="eth_call":
+                    data=p[0]["data"]
+                    if data=="0xb187bd26":return abi(0)
+                    if data=="0x313ce567":return abi(18)
+                    if data=="0x10c7afae":
+                        return abi(32,1,100,0,10**20,150, 0,0,0,0,0, 352,352)
+                return super().rpc(m,p)
+        runtime=chain_state(ConfigRPC())["runtime"]
+        self.assertTrue(runtime["liquidations_enabled"])
+        self.assertFalse(runtime["AuctionHouse_is_paused"])
+        self.assertEqual(runtime["keeper_fee_ratio_bps_config"],"100")
+        self.assertEqual(runtime["SavingsGreen_decimals"],18)
+
     def test_all_current_manifest_contracts_have_bytecode(self):
         result=chain_state(FakeRPC())
         self.assertEqual(len(result["contracts"]),5)
