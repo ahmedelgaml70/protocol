@@ -7,7 +7,7 @@ NOW=datetime(2026,10,12,6,0,tzinfo=timezone.utc)
 def evt(day=12,raw="123",tx="a",who="2"):
     return {
       "type":"Liquidation","timestamp":str(int(datetime(2026,10,day,5,0,tzinfo=timezone.utc).timestamp())),
-      "txHash":"0x"+tx*64,"blockNumber":"52499000",
+      "txHash":"0x"+tx*64,"blockNumber":"52499000","logIndex":0,
       "market":{"marketId":"0x"+"b"*64},
       "data":{"repaidAssets":raw,"seizedAssets":"789","badDebtAssets":"0",
               "liquidator":"0x"+who*40}
@@ -22,6 +22,21 @@ class Tests(unittest.TestCase):
         self.assertEqual(summarize([evt(day=1)],NOW,7,100)["recent_liquidation_records"],0)
     def test_saturated_sample_warned(self):
         self.assertTrue(summarize([evt()],NOW,7,1)["query_may_be_truncated"])
+    def test_batched_events_in_same_tx_are_distinct(self):
+        a=evt()
+        b=evt()
+        b["logIndex"]=1
+        o=summarize([a,b],NOW,7,100)
+        self.assertEqual(o["recent_liquidation_records"],2)
+        self.assertEqual(o["unique_transaction_hashes"],1)
+        self.assertEqual(o["top_indexed_liquidator_event_count"][0][1],2)
+
+    def test_identical_log_event_deduplicated(self):
+        a=evt()
+        o=summarize([a,a],NOW,7,100)
+        self.assertEqual(o["recent_liquidation_records"],1)
+        self.assertEqual(o["top_indexed_liquidator_event_count"][0][1],1)
+
     def test_bad_hash_refused(self):
         r=evt();r["txHash"]="bad"
         with self.assertRaises(ValueError):summarize([r],NOW,7,100)

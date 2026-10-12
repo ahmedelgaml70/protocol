@@ -71,3 +71,5 @@ jobs:
 # Ripe longer history scan moved to dedicated daily, read-only workflow.
 
 # Smoke-test Morpho's official indexed Base liquidation feed (read-only, historical only).
+
+# Correct Morpho event-vs-transaction counting using logIndex (not tx-only).

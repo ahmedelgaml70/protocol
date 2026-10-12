@@ -193,3 +193,7 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Build one-shot read-only Morpho Base official GraphQL liquidation activity probe with offline input-validation tests.
 - [ ] Verify actual Morpho API query in GitHub Actions; if supported, evaluate freshness, liquidation volume and liquidator concentration.
 - [ ] Use recent verified receipts/DEX prices to test conservative net and flash-liquidity feasibility before considering any executor.
+
+- [x] Live-confirm Morpho free GraphQL endpoint returns recent Base Liquidation records, cap 100, without keys.
+- [x] Correct event/transaction aggregation with on-chain logIndex; two new offline regression tests.
+- [ ] Rerun GraphQL and analyze *true distinct events*, transaction batching, date coverage, caller diversity and economic viability (not raw token amounts).

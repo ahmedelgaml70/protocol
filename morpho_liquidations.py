@@ -21,7 +21,7 @@ QUERY = """query RecentBaseLiquidations($first:Int!){
  marketTransactions(first:$first,orderBy:Timestamp,orderDirection:Desc,
                     where:{chainId_in:[8453],type_in:[Liquidation]}){
    items {
-     txHash timestamp blockNumber type
+     txHash timestamp blockNumber logIndex type
      market { marketId }
      data { ... on MarketTransactionLiquidationData {
        repaidAssets seizedAssets badDebtAssets liquidator
@@ -81,13 +81,17 @@ def summarize(items, now, days, limit):
             values[k+"_raw"]=str(n)
         if stamp<cutoff:
             continue
-        counts[who.lower()]+=1
-        key=(tx.lower(),market_id.lower())
+        log_index=int(row["logIndex"])
+        if log_index<0 or log_index>100000:
+            raise ValueError("Unexpected event log index")
+        key=(tx.lower(),market_id.lower(),log_index)
         if key in seen:
             continue
         seen.add(key)
+        counts[who.lower()]+=1
         recents.append({
             "tx_hash":tx.lower(),"block_number":int(row["blockNumber"]),
+            "log_index":log_index,
             "timestamp_utc":datetime.fromtimestamp(stamp,timezone.utc).isoformat(),
             "market_id":market_id.lower(),
             "indexed_liquidator":who.lower(),**values,
@@ -103,9 +107,11 @@ def summarize(items, now, days, limit):
         "unique_indexed_liquidator_addresses":len(counts),
         "top_indexed_liquidator_event_count":counts.most_common(5),
         "latest_recent_transaction":recents[0]["tx_hash"] if recents else None,
+        "oldest_observed_event_utc":recents[-1]["timestamp_utc"] if recents else None,
+        "distinct_liquidation_event_identifiers":len(recents),
         "events":recents,
         "transactions_sent":0,"profit_usd_verified":False,
-        "warning":"Historical liquidation, not unclaimed. Repaid and seized raw amounts use different token decimals/prices. No complete liquidation PnL, flash loan access, gas or slippage verified."
+        "warning":"100-event returned sample may be truncated; distinct event IDs use tx+market+logIndex, and transactions may bundle several liquidations. Historical not unclaimed; repaid/seized raw units differ. No PnL, flash loan, gas or slippage verified."
     }
 
 
