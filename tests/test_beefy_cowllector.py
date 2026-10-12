@@ -38,6 +38,14 @@ class BeefyTests(unittest.TestCase):
                      row(eol=True)],NOW)
         self.assertEqual(o["estimated_positive_margin_rows"],0)
 
+
+    def test_missing_simulation_distinct_from_loss(self):
+        o=summarize([row(simulation_ok=False),row(simulation_gas_estimated_call_rewards_wei=None)],NOW)
+        stages=o["evidence_funnel"]
+        self.assertEqual(stages.get("simulation_not_ok"),1)
+        self.assertEqual(stages.get("simulation_reward_or_gas_missing"),1)
+        self.assertEqual(stages.get("simulated_nonpositive_margin",0),0)
+
     def test_bad_chain_rejected(self):
         with self.assertRaises(ValueError):
             summarize([],NOW,chains=["ethereum-classic"])

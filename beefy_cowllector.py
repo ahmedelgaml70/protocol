@@ -76,6 +76,7 @@ def summarize(records, now, hours=72, chains=None, top=20):
         raise ValueError("Unsupported chain requested")
     cutoff = now - timedelta(hours=hours)
     chain_counts = Counter()
+    stages = Counter()
     all_recent = 0
     candidates = []
     invalid_rows = 0
@@ -95,25 +96,45 @@ def summarize(records, now, hours=72, chains=None, top=20):
             continue
         all_recent += 1
         chain_counts[chain] += 1
-        if item.get("eol") is not False or not item.get("run_ok"):
+        if item.get("summary_harvested") is True:
+            stages["operator_reported_harvested"] += 1
+        if item.get("transaction_ok") is True:
+            stages["operator_reported_tx_ok"] += 1
+        if item.get("eol") is not False:
+            stages["end_of_life_or_unknown"] += 1
             continue
+        stages["active_vault"] += 1
+        if item.get("run_ok") is not True:
+            stages["operator_run_not_ok"] += 1
+            continue
+        stages["active_run_ok"] += 1
         if not isinstance(item.get("vault_id"), str) or not isinstance(item.get("strategy_address"), str):
             invalid_rows += 1
             continue
         values = {k: api_number(item.get(k)) for k in FIELDS}
         if item.get("simulation_ok") is not True:
+            stages["simulation_not_ok"] += 1
             continue
+        stages["simulation_ok"] += 1
         call_reward = values["simulation_gas_estimated_call_rewards_wei"]
         gas_cost = values["simulation_gas_transaction_cost_estimation_wei"]
         estimated_gain = values["simulation_gas_estimated_gain_wei"]
         if call_reward is None or gas_cost is None:
+            stages["simulation_reward_or_gas_missing"] += 1
             continue
+        stages["simulation_reward_and_gas_available"] += 1
         if call_reward < 0 or gas_cost < 0:
+            stages["invalid_negative_report_amount"] += 1
             continue
+        stages["simulation_nonnegative_reward_and_gas"] += 1
+        if call_reward > 0:
+            stages["simulated_positive_reward"] += 1
         # Conservative fixed-position comparison for the SAME published native-like unit.
         margin = call_reward - gas_cost
         if margin <= 0:
+            stages["simulated_nonpositive_margin"] += 1
             continue
+        stages["simulated_positive_margin"] += 1
         tx_hash = item.get("transaction_hash")
         if not isinstance(tx_hash, str) or len(tx_hash) != 66 or not tx_hash.startswith("0x"):
             tx_hash = None
@@ -147,6 +168,8 @@ def summarize(records, now, hours=72, chains=None, top=20):
         "recent_rows_selected_chains": all_recent,
         "recent_rows_by_chain": dict(chain_counts),
         "invalid_rows": invalid_rows,
+        "evidence_funnel": dict(stages),
+        "evidence_funnel_comment": "Values count recent latest-per-vault snapshots, not independent successful transactions. Missing fields and incomplete simulations must NEVER be treated as zero profitability.",
         "estimated_positive_margin_rows": len(candidates),
         "top_estimated_positive_margin_reports": candidates[:top],
         "report_truncated_to_top": len(candidates)>top,

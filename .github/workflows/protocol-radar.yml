@@ -49,3 +49,5 @@ jobs:
 # Validate post-run research alerts end-to-end on safe default-branch push smoke.
 
 # Smoke-test the Beefy Cowllector v2 public reports source.
+
+# Smoke-test reported economics coverage rather than confusing missing fields with zero.
