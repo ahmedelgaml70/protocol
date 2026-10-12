@@ -94,3 +94,12 @@ The older user-provided promotional summary about FLOP, PERPTools, Papertrade, P
 4. **Bounty programme vs available task**: Hashgraph Guardian's programme specifies quarterly accounting and Fastify's bounty terms require accepted PR and expense approval; no current open funded task from our narrow GitHub label queries. No immediate earnings established.
 
 **New universal gate:** Payment-platform badges, issue labels, "funded" UI cards and finance dashboards are treated as marketing until (a) a specific payer has demonstrably reserved/paid funds, (b) an accepted contribution and recent *cleared* payee transaction are verified, and (c) the current claimant's eligibility and cash timeline are documented. Never start unpaid PR work based on screenshots of a platform's demo feed.
+
+
+### E.2 Stripe Express and region-dependent payout traps (new check)
+
+- [Bountymin GitHub App](https://github.com/apps/bountymin-bot) self-advertises a seven-day Stripe Express escrow process and coverage in 115+ countries. **No specifically verified, currently open, funded issue, recent actual recipient payout or Egypt-supported onboardable account was established.** Marketing is not a positive G0–G4 verdict.
+- [Stripe published general country availability](https://stripe.com/global) does **not list Egypt**. However, standard merchant account availability and Stripe **Connect recipient** payout eligibility are NOT necessarily identical. An individual platform might have a permitted cross-border flow; verify the exact platform/Connect country settings rather than assuming universal rejection.
+- [Stripe Connect stablecoin payout supported-country list](https://docs.stripe.com/crypto/stablecoin-payouts) also omits Egypt in the published list, and currently only US Connect platforms can send stablecoin payouts. Do not propose a default "just take Stripe USDC" workaround.
+- [Stripe opening an account in another country](https://support.stripe.com/questions/requirements-to-open-a-stripe-account-in-another-country?locale=en-GB) ordinarily requires a genuinely registered entity, tax details, physical premises and supported bank account; no fictitious residence or identity workaround.
+- **Status:** Bountymin and generic Stripe-only bounty platforms are **NOT READY** for this user until the specific recipient onboarding and last successful payout are verified; do not treat location as an absolute prohibition on other payout channels.
