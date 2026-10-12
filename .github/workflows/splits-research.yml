@@ -1,0 +1,44 @@
+name: 0xSplits Read-Only Research
+
+on:
+  push:
+    branches:
+      - research/splits-100
+    paths:
+      - 'research/splits/**'
+      - '.github/workflows/splits-research.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  observe:
+    name: Unit tests and Base USDC scanner
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout without write credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install read-only ABI libraries
+        run: python -m pip install --disable-pip-version-check eth-abi==5.2.0 eth-utils==5.3.1
+      - name: Run offline safety and ABI tests
+        working-directory: research/splits
+        run: python -m unittest -v test_splits_observer.py
+      - name: Scan for configured incentives (read-only)
+        working-directory: research/splits
+        run: python splits_observer.py
+      - name: Upload JSON observations even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: splits-research-read-only
+          path: research/splits/splits_reports/*.json
+          if-no-files-found: warn
+          retention-days: 7
