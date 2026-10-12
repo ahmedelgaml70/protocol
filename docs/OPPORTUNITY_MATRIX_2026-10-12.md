@@ -1,3 +1,5 @@
+**CURRENT USER MANDATE OVERRIDE:** [2026-10-12 $10/no-jobs handoff](CURRENT_MANDATE_10_NO_JOBS_2026_10_12.md). The latest explicit user message supersedes the previous $100 capital goal: $10, $1,000 as quickly as possible, **NO jobs, services, sales, customers, referrals, promotions or discount methods**. Historic $100/Nov 12 research below is retained as evidence, not current operating authority. No verified paid reward yet, $0 spent/earned.
+
 # Opportunity matrix and decision ledger
 **Snapshot:** 2026-10-12. **Goal:** $100 operating capital → **$1,000 total available cash** by November 12, 2026, aspirational only. **User cash earned: $0. Money spent: $0.**
 
