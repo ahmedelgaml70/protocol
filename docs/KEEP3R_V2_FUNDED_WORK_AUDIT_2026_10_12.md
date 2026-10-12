@@ -59,3 +59,13 @@ https://vote.makerdao.com/sky-executive/template-executive-vote-rwa001-a-offboar
 The search has crossed **two significant evidence gates**: on-chain funding and **historical actual successful rewards**. It **has not** crossed the distinct gates of presently executable work, affordability for a fresh keeper with $100, winning ability, timely liquid payout, and repeatable $900 net.
 
 **Keep3r 0xf4... = best currently active paid-job research target, but not investment-ready.** Observe its verified contract source and permission checks; read-only simulate potential work. Do NOT claim a 'hidden $19,881' opportunity. Do NOT bond KP3R, buy ETH, send, or approve without user authorization. Leave the user capital untouched. If no affordable eligible work is verifiably open, stop development and rotate to other economic models.
+
+## Additional live eligibility check (Oct 12, ~14:39 UTC)
+
+- New no-wallet probe: `research/keep3r/keep3r_preflight.py`.
+- GitHub Actions: https://github.com/ahmedelgaml70/protocol/actions/runs/38264464096
+- Decoded **20** job-specific `KeeperWorked(address)` events in the recent historical block range, representing **19 distinct strategy contracts**.
+- Current-state `eth_call` to **`workable(address)`** succeeded for all 19, and **all returned `false`**.
+- The script therefore submitted **zero** dummy-caller `work(address)` simulations; there was nothing flagged workable at the observation block.
+- This is an actual block-specific negative finding for those 19 previously active strategies. It **does not** prove no new or previously unworked strategies could become eligible, or that they will not become workable in future.
+- **Current directly identified positive-net work: zero.** Continue to reject gas spends, staking or keeper registration before a realistically accessible positive-net call is observed. The existing record of 20 paid transactions is historical and cannot be collected retroactively.
