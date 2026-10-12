@@ -241,18 +241,36 @@ def inspect(rpc,hours=6,chunk=1500,max_pages=5,receipt_limit=8):
     tip=state["tip_block"]
     since=start_block_for_hours(rpc,tip,max(0,tip-60000),hours)
     source_error=None
+    alternate_errors=[]
     try:
         rows,truncated,coverage=rpc_logs(rpc,since,tip,chunk)
     except (OSError,RPCError,ValueError,TypeError) as e:
         source_error=type(e).__name__+": "+str(e)[:120]
-        try:
-            rows,truncated,coverage=explorer_logs(since,tip,max_pages)
-        except (OSError,ValueError,TypeError,KeyError) as ex:
-            return {**state,"from_block":since,
-                    "history_status":"incomplete","history_event_count":None,
-                    "primary_rpc_error":source_error,
-                    "fallback_explorer_error":type(ex).__name__+": "+str(ex)[:120],
-                    "verified_receipts":[],"no_activity_proven":False}
+        rows=None
+        # Both candidates are publicly documented Base endpoints; no keys,
+        # subscriptions or signed requests. Do not silently switch chains.
+        for endpoint in ("https://rpc.ankr.com/base",
+                         "https://base-mainnet.public.blastapi.io"):
+            try:
+                alt=JSONRPC(endpoint,timeout=8,retries=0)
+                if int(alt.rpc("eth_chainId",[]),16)!=CHAIN_ID:
+                    raise ValueError("Alternative RPC is not Base mainnet")
+                rows,truncated,coverage=rpc_logs(alt,since,tip,chunk)
+                coverage["rpc_endpoint"]=endpoint
+                break
+            except (OSError,RPCError,ValueError,TypeError) as failure:
+                alternate_errors.append({"provider":endpoint,
+                    "error":type(failure).__name__+": "+str(failure)[:100]})
+        if rows is None:
+            try:
+                rows,truncated,coverage=explorer_logs(since,tip,max_pages)
+            except (OSError,ValueError,TypeError,KeyError) as ex:
+                return {**state,"from_block":since,
+                        "history_status":"incomplete","history_event_count":None,
+                        "primary_rpc_error":source_error,
+                        "alternate_rpc_errors":alternate_errors,
+                        "fallback_explorer_error":type(ex).__name__+": "+str(ex)[:120],
+                        "verified_receipts":[],"no_activity_proven":False}
     dedup={}
     for item in rows:
         key=(item["tx_hash"],item["liquidated_user"])
@@ -275,6 +293,7 @@ def inspect(rpc,hours=6,chunk=1500,max_pages=5,receipt_limit=8):
             errors.append({"tx_hash":h,"error":type(e).__name__})
     return {**state,"from_block":since,"history_status":"partial" if truncated else "complete",
             "history_source":coverage,"initial_rpc_failure":source_error,
+            "alternate_rpc_errors":alternate_errors,
             "history_event_count":len(found),
             "positive_keeper_fee_event_count":totals["keeper_fee_positive"],
             "zero_keeper_fee_event_count":totals["keeper_fee_zero"],
