@@ -39,7 +39,9 @@ class PrefundTests(unittest.TestCase):
         x=p.screen_tasks({"tasks":rows},"open")
         self.assertEqual(x["visible_task_rows"],1)
         self.assertEqual(x["recorded_rows"][0]["escrow_status"],"funded")
-        self.assertEqual(x["recorded_rows"][0]["bounty_display_claim"],"35")
+        self.assertEqual(x["recorded_rows"][0]["interpreted_usdc"],"35")
+        self.assertEqual(x["funded_open_at_least_25_usdc_count"],1)
+        self.assertEqual(x["api_funded_open_declared_total_usdc"],"35")
 
 if __name__=="__main__":
     unittest.main()
