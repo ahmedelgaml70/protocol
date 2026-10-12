@@ -1,0 +1,45 @@
+name: 0xSplits Historical Cross-Chain Research
+
+on:
+  push:
+    branches: [research/splits-100]
+    paths:
+      - 'research/splits/**'
+      - '.github/workflows/splits-expanded.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  historical:
+    name: Bounded historical sample (${{ matrix.chain }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    strategy:
+      fail-fast: false
+      matrix:
+        chain: [base, optimism, arbitrum]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned ABI decoding libraries
+        run: python -m pip install --disable-pip-version-check eth-abi==5.2.0 eth-utils==5.3.1 pycryptodome==3.23.0
+      - name: Safety and ABI unit tests
+        working-directory: research/splits
+        run: python -m unittest -v test_splits_observer.py test_splits_expanded.py
+      - name: Bounded, read-only historical discovery
+        working-directory: research/splits
+        run: python splits_expanded.py --chain ${{ matrix.chain }}
+      - name: Upload results even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: splits-historical-${{ matrix.chain }}
+          path: research/splits/expanded_reports/*.json
+          if-no-files-found: warn
+          retention-days: 7
