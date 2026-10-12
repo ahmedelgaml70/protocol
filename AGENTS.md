@@ -49,3 +49,6 @@ Actions only run public read-only research scripts. PR workflows get read-only c
 ## Beefy automation guard
 
 Beefy's v2 Cowllector API last-harvest-reports are ONLY the incumbent operator's most recent report per vault; simulated call reward and gas estimates are not third-party net profit. Amounts are JS JSON numbers and might not be exact wei. Never open execution-ready alerts from these, nor submit/simulate actual transactions that spend gas without explicit authorization. Require independent success receipt, true reward transfer to tx sender, token exit liquidity and current permissionless eligibility before grading opportunity.
+
+## Morpho PnL data integrity (October 12)
+Official GraphQL `Liquidation` event count differs from unique tx count (100 events / 37 txs); uniquely identify logs using txHash + marketId + logIndex. Receipt-level `Liquidate.caller` may represent a contract and differ from submitting `tx.from`. Never price or subtract `seizedAssets` from `repaidAssets` directly without each market's correct token, decimals, credible exit liquidity and swap fees. A successful historical liquidation is already taken. Synthetic 70-test suite passed. No auto flash loan, liquidation, signing, spending or wallet secrets.

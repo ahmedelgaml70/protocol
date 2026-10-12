@@ -1,0 +1,66 @@
+{
+  "as_of_utc": "2026-10-12T06:55:14Z",
+  "network": "Base",
+  "chain_id": 8453,
+  "data_sources": {
+    "indexed_liquidations": "https://api.morpho.org/graphql",
+    "receipt_provider": "Base mainnet read-only eth_getTransactionByHash + eth_getTransactionReceipt",
+    "actions_run": "https://github.com/ahmedelgaml70/protocol/actions/runs/38214906472",
+    "original_seven_day_artifact": "https://github.com/ahmedelgaml70/protocol/actions/runs/38214906472/artifacts/11731186613",
+    "official_event_abi": "https://github.com/morpho-org/morpho-blue/blob/main/src/libraries/EventsLib.sol",
+    "github_tests": "https://github.com/ahmedelgaml70/protocol/actions/runs/38214972607"
+  },
+  "contract": "0xBBBBBbbBBb9cC5e90e3b3Af64bdAF62C37EEFFCb",
+  "liquidate_topic0": "0xa4946ede45d0c6f06a0f5ce92c9ad3b4751452d2fe0e25010783bcab57a67e41",
+  "indexed_sample": {
+    "query_lookback_days_requested": 7,
+    "returned_events": 100,
+    "reached_api_limit": true,
+    "sampled_oldest_event_utc": "2026-10-08T17:24:31Z",
+    "sampled_newest_event_utc": "2026-10-11T16:26:17Z",
+    "distinct_event_ids": 100,
+    "distinct_transactions": 37,
+    "indexed_liquidator_contract_addresses": 19,
+    "top_two_indexed_liquidator_event_counts": [
+      33,
+      25
+    ],
+    "sample_is_not_complete_seven_day_census": true
+  },
+  "independent_rpc_receipt_audit": {
+    "selected_transaction_count": 8,
+    "success_count": 8,
+    "matching_liquidation_receipts": 8,
+    "receipt_errors": 0,
+    "matched_receipt_event_count": 8,
+    "full_l1_l2_gas_total_wei": "550241901468437",
+    "full_l1_l2_gas_total_eth": "0.000550241901468437",
+    "distinct_transaction_submitter_wallets": 7,
+    "liquidator_contract_differs_from_tx_submitter": 8,
+    "tx_examples": [
+      {
+        "tx": "0x499c115206d697a16f2d6d43409ee5e5b81fc2a66d1e11266f0cda256c09b18a",
+        "full_gas_wei": "510631035813034",
+        "submitter": "0x028f8ea6106d902e771e6e418bff7c045a1770ff",
+        "onchain_liquidator": "0x844124693a429cb9ed04472a23d6aebfd1395dfe"
+      },
+      {
+        "tx": "0x3bf7ec1dcd06be42512472d7c72328781009f75ddc64b6dba515581caad2a9a3",
+        "full_gas_wei": "7923700634108",
+        "submitter": "0xd9fffdf0c4b18fb7e225da15b2af9f88e55676c3",
+        "onchain_liquidator": "0x5ac9bc14376bf2727c6211960cf3cec1e2f295bd"
+      }
+    ]
+  },
+  "important_limitations": [
+    "Gross seized collateral and repaid loan are different assets; raw units and decimals are incomparable",
+    "Liquidation contract may be transaction-level intermediary and is distinct from tx submitter",
+    "Gas total includes selected 8 historical successful calls only, not failed attempts",
+    "Token quotes, spreads, DEX sale, flash-loan capacity/cost, actual USD PnL, competition and live borrower eligibility all unverified",
+    "Historical successful liquidations already completed, cannot be collected again"
+  ],
+  "strategy_state": "RESEARCH_ONLY_NOT_EXECUTION_READY",
+  "user_profit_usd": 0,
+  "capital_spent_usd": 0,
+  "unit_tests_success_count": 70
+}

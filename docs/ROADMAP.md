@@ -201,3 +201,10 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Add read-only independent receipts for 8 sample Morpho liquidations, requiring exact event logIndex, market, indexed caller and raw repayment/collateral agreement.
 - [ ] Confirm external Morpho index and actual Base receipts agree on current submitted events, including true gas and caller routing.
 - [ ] Quantify realizable bonus, token liquidity and gas after receipts verified; do not extrapolate from raw event counts.
+
+- [x] Independently validate the 8 newest Morpho Base liquidation transaction receipts: 8/8 success, exact event logIndex/caller/raw debt and seizure match, fees accounted for.
+- [x] Fix mocked caller-topic mismatch, confirm 70/70 Python offline unit tests pass on GitHub.
+- [x] Archive bounded, biased Morpho events and independent receipt evidence with correct sample/truncation limitations.
+- [ ] Fetch Morpho market token metadata, decimal precision, debt repayment valuation, collateral liquidity and realizable swap price to compute conservative net per transaction.
+- [ ] Investigate flash-funded / delegated liquidation route and onchain operator competition before considering whether $10 gas budget is realistic.
+- [ ] Check current eligible unliquidated account only if historically proven conservatively profitable outsider route exists; no signing/spending without separate approval.
