@@ -79,6 +79,7 @@ def summarize(records, now, hours=72, chains=None, top=20):
     stages = Counter()
     all_recent = 0
     candidates = []
+    harvested_samples = []
     invalid_rows = 0
     for item in records:
         if not isinstance(item, dict):
@@ -98,6 +99,23 @@ def summarize(records, now, hours=72, chains=None, top=20):
         chain_counts[chain] += 1
         if item.get("summary_harvested") is True:
             stages["operator_reported_harvested"] += 1
+            tx = item.get("transaction_hash")
+            if (isinstance(tx, str) and len(tx) == 66 and tx.startswith("0x")
+                    and all(c in "0123456789abcdefABCDEF" for c in tx[2:])):
+                harvested_samples.append({
+                    "chain": chain,
+                    "vault_id": str(item.get("vault_id", ""))[:120],
+                    "strategy_address": str(item.get("strategy_address", ""))[:42],
+                    "operator_tx_hash_unverified": tx.lower(),
+                    "operator_report_time_utc": stamp.isoformat(),
+                    "operator_transaction_ok": item.get("transaction_ok") is True,
+                    "operator_simulation_margin_wei_approx": (
+                        str(api_number(item.get("simulation_gas_estimated_gain_wei")))
+                        if api_number(item.get("simulation_gas_estimated_gain_wei")) is not None else None
+                    ),
+                    "receipt_verified": False,
+                    "actual_third_party_reward_verified": False,
+                })
         if item.get("transaction_ok") is True:
             stages["operator_reported_tx_ok"] += 1
         if item.get("eol") is not False:
@@ -155,6 +173,7 @@ def summarize(records, now, hours=72, chains=None, top=20):
             "actual_caller_payout_verified": False,
             "currently_available": False,
         })
+    harvested_samples.sort(key=lambda x: x["operator_report_time_utc"], reverse=True)
     candidates.sort(
         key=lambda v: (Decimal(v["estimated_gas_margin_api_wei_approx"]), v["vault_id"]),
         reverse=True,
@@ -173,6 +192,8 @@ def summarize(records, now, hours=72, chains=None, top=20):
         "estimated_positive_margin_rows": len(candidates),
         "top_estimated_positive_margin_reports": candidates[:top],
         "report_truncated_to_top": len(candidates)>top,
+        "recent_operator_harvest_sample": harvested_samples[:20],
+        "harvest_sample_may_be_truncated": len(harvested_samples)>20,
         "transactions_sent": 0,
         "profit_usd_verified": False,
         "warning": "Cowllector v2 LAST per-vault report (not all transactions); upstream wei are JS numbers with potential precision loss. Profitability figures are operator simulation estimates, NOT verified net receipts; fee token may not equal gas token and reported amounts may refer to prior blocks. No unclaimed reward confirmed."

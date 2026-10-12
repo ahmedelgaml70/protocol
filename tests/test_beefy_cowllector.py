@@ -39,6 +39,15 @@ class BeefyTests(unittest.TestCase):
         self.assertEqual(o["estimated_positive_margin_rows"],0)
 
 
+
+    def test_harvest_receipt_reference_not_promoted_to_payment(self):
+        result=summarize([row()],NOW)
+        s=result["recent_operator_harvest_sample"]
+        self.assertEqual(len(s),1)
+        self.assertTrue(s[0]["operator_transaction_ok"])
+        self.assertFalse(s[0]["receipt_verified"])
+        self.assertFalse(s[0]["actual_third_party_reward_verified"])
+
     def test_missing_simulation_distinct_from_loss(self):
         o=summarize([row(simulation_ok=False),row(simulation_gas_estimated_call_rewards_wei=None)],NOW)
         stages=o["evidence_funnel"]

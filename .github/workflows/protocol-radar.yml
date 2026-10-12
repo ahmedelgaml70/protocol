@@ -51,3 +51,5 @@ jobs:
 # Smoke-test the Beefy Cowllector v2 public reports source.
 
 # Smoke-test reported economics coverage rather than confusing missing fields with zero.
+
+# Include up to 20 reported successful Cowllector tx hashes for independent receipt research.
