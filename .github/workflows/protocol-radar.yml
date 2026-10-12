@@ -47,3 +47,5 @@ jobs:
 # One-time smoke trigger: expanding PoolTogether indexed lookback from 3d to 30d.
 
 # Validate post-run research alerts end-to-end on safe default-branch push smoke.
+
+# Smoke-test the Beefy Cowllector v2 public reports source.

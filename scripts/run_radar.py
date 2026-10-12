@@ -15,6 +15,9 @@ CHECKS = (
     ("superfluid-base", "superfluid_activity.json",
      ["superfluid_activity.py", "--network", "base-mainnet",
       "--days", "3", "--limit", "300"], 90),
+    ("beefy-cowllector", "beefy_cowllector.json",
+     ["beefy_cowllector.py", "--hours", "72",
+      "--chains", "base,arbitrum,optimism", "--top", "20"], 90),
 )
 
 def utc_now():

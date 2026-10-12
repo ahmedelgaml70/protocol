@@ -32,3 +32,5 @@ superfluid_recent_receipts.json
 *.rpc-debug.log
 
 pooltogether_claim_history.json
+
+beefy_cowllector.json
