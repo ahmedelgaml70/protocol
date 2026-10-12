@@ -97,3 +97,12 @@ Recommended next read-only test(s), ordered:
 - **13/13 offline tests passed**; historical account step failed/incomplete correctly. Results and explicit failure reasons saved in [audit](https://github.com/ahmedelgaml70/protocol/blob/research/convex-earmark-100/docs/CONVEX_KEEPER_KICK_AUDIT_2026_10_12.md).
 - Official Aura app says sunset, Balancer governance passed wind-down. Separate Solana Dead Man's Vault project is documented as devnet, not mainnet.
 - **Status**: $100 available, $0 spent, $0 earned. Do not broadcast, bond or pay for RPC. Avoid making "no current bounties" statements from incomplete archive history.
+
+
+## Third payer-first continuation — verified mainnet burner balance and real USDC open-task inventory
+
+- Built strict no-sign/no-broadcast/no-POST Ethereum/RPC and BasedAgents API scanner on [draft PR #12](https://github.com/ahmedelgaml70/protocol/pull/12). Four unit tests passed on final [GitHub Action](https://github.com/ahmedelgaml70/protocol/actions/runs/38279897335). Corrected one test fixture ABI-padding error and a real 6-decimal USDC normalization issue; earlier failed workflow attempts documented in run history, not mistaken for economic evidence.
+- Permanent Collection deployed \`BuybackBurner\` on Ethereum block 26,177,686: \`remainingEth=0\`, reward 0.5% capped 0.01 ETH but max step=1 ETH; max current gross=0. Protocol live bid elsewhere is NOT fee liquidity for burner.
+- BasedAgents official unauthenticated task API: 20 open, only one marked funded, 1 USDC 'Test hire (please ignore)'; zero funded ≥$25. Ten past settled-task listings. Real payment service does not create enough money for target.
+- Aeterna (Base Sepolia) and PolyDispute (testnet/pre-audit) promoted marketing are NOT live cash; openbounty.app is unprefunded/illustrative/testnet in public description.
+- [Full detailed audit](https://github.com/ahmedelgaml70/protocol/blob/research/prefund-live-gates-100/docs/PREFUNDED_LIVE_GATE_AUDIT_2026_10_12.md). Money spent $0; earned $0.
