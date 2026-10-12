@@ -109,6 +109,19 @@ def inspect(url):
         except Exception as e:
             errors.append({"tx":txhash,"error":str(e)[:180]})
     matched=[x for x in records if x["direct_earmark_call"] and Decimal(x["direct_reward_to_sender_crv_units"])>0]
+    recipients={}
+    receiver_as_sender={}
+    selectors={}
+    destination_counts={}
+    for record in records:
+        selectors[record["input_selector"]]=selectors.get(record["input_selector"],0)+1
+        dest=(record["tx_to"] or "").lower()
+        destination_counts[dest]=destination_counts.get(dest,0)+1
+        for entry in record["transfers_from_booster"]:
+            to=entry["to"].lower()
+            recipients[to]=recipients.get(to,0)+int(entry["amount_crv_raw"])
+            if entry["is_transaction_sender"]:
+                receiver_as_sender[to]=receiver_as_sender.get(to,0)+int(entry["amount_crv_raw"])
     total_crv=sum((Decimal(x["direct_reward_to_sender_crv_units"]) for x in matched),Decimal(0))
     total_gas=sum((Decimal(x["gas_eth_units"]) for x in matched),Decimal(0))
     keepers={}
@@ -126,6 +139,13 @@ def inspect(url):
         "direct_paid_crv_total_units":str(total_crv),
         "gas_eth_total_for_paid_direct_calls":str(total_gas),
         "successful_direct_keepers":keepers,
+        "total_transfers_to_transaction_submitters_crv_units":
+            str(Decimal(sum(receiver_as_sender.values()))/Decimal(10**18)),
+        "transfer_recipients_by_total_crv_units": {
+            a:str(Decimal(v)/Decimal(10**18)) for a,v in
+            sorted(recipients.items(),key=lambda x:-x[1])[:15]},
+        "transaction_selectors_seen":selectors,
+        "transaction_destinations_seen":destination_counts,
         "transfers":records,"errors":errors,
         "scope_warning":"Historical ~800 Ethereum blocks of only CRV Transfers originating from official Booster. This does not enumerate all pools, indirect contracts or current unswept rewards. No current payable action found.",
         "capital_spent_usd":0,"cash_user_received_usd":0}
@@ -152,6 +172,10 @@ def main():
       "paid_crv":data.get("direct_paid_crv_total_units"),
       "gas_eth":data.get("gas_eth_total_for_paid_direct_calls"),
       "keepers":data.get("successful_direct_keepers"),
+      "crv_to_tx_senders_all_methods":data.get("total_transfers_to_transaction_submitters_crv_units"),
+      "top_transfer_recipients":data.get("transfer_recipients_by_total_crv_units"),
+      "transaction_selectors":data.get("transaction_selectors_seen"),
+      "destinations":data.get("transaction_destinations_seen"),
       "attempts":attempts},indent=2))
     return 0 if data["status"]!="incomplete" else 2
 if __name__=="__main__":sys.exit(main())
