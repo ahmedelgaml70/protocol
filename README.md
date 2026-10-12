@@ -11,7 +11,7 @@
 - [Detailed dated session log and next-action checkpoint](docs/SESSION_LOG_2026_10_12.md)
 - [Original user instructions, including the initial $10 goal](docs/ORIGINAL_PROMPTS.md)
 
-**Five 2026-10-12 investigation branches remain DRAFT/UNMERGED**, not part of main: [PR #8 0xSplits](https://github.com/ahmedelgaml70/protocol/pull/8), [PR #9 Liquity + Sovryn](https://github.com/ahmedelgaml70/protocol/pull/9), [PR #10 Keep3r](https://github.com/ahmedelgaml70/protocol/pull/10), [PR #11 Convex](https://github.com/ahmedelgaml70/protocol/pull/11), [PR #12 funded live gates](https://github.com/ahmedelgaml70/protocol/pull/12). Their read-only workflows and JSON scan results are described in their audit notes. Do not merge or spend funds without explicit approval.
+**Six 2026-10-12 investigation branches remain DRAFT/UNMERGED**, not part of main: [PR #8 0xSplits](https://github.com/ahmedelgaml70/protocol/pull/8), [PR #9 Liquity + Sovryn](https://github.com/ahmedelgaml70/protocol/pull/9), [PR #10 Keep3r](https://github.com/ahmedelgaml70/protocol/pull/10), [PR #11 Convex](https://github.com/ahmedelgaml70/protocol/pull/11), [PR #12 funded live gates](https://github.com/ahmedelgaml70/protocol/pull/12), [PR #13 Arc/Base bounty boards](https://github.com/ahmedelgaml70/protocol/pull/13). Their read-only workflows and JSON scan results are described in their audit notes. Do not merge or spend funds without explicit approval.
 
 > **Historical archive begins below.** The original README and research notes preserve the earlier **$10 / seven-day** objective for provenance, but its initial status line, budget, and other old objectives are **superseded**. Do not use old targets as new operating instructions. See the canonical documents above.
 
