@@ -64,7 +64,7 @@ def event_info(key,log):
     raw=bytes.fromhex(log["data"][2:])
     if len(raw)!=32*scope["field_count"]:raise ValueError("Event data length mismatch")
     nums=decode(["uint256"]*scope["field_count"],raw)
-    if key=="v1_eth":
+    if scope["field_count"]==4:
         fee_amount=nums[3]
         collateral_comp=nums[2]
     else:
@@ -100,7 +100,7 @@ def receipt_check(url,item):
     item["receipt"]={
         "transaction_sender":tx["from"],
         "transaction_destination":tx.get("to"),
-        "gas_paid_eth":str(Decimal(gas)/Decimal(10**18)),
+        "gas_paid_native_token_units":str(Decimal(gas)/Decimal(10**18)),
         "direct_fee_token_to_sender_units":str(Decimal(direct_sender_fee)/Decimal(10**18)),
         "fee_token_transfer_count":len(matching_token_transfers),
         "token_transfers":matching_token_transfers[:16],
