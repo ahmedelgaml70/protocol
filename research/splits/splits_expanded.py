@@ -41,13 +41,21 @@ def get_block(url, number):
     return int(item["timestamp"], 16)
 
 def timestamp_block(url, tip, target):
-    low, high = 0, tip
+    # Search recent history backwards first; don't demand genesis from pruned RPCs.
+    step = min(tip, 200000)
+    low = max(0, tip - step)
+    while low > 0 and get_block(url, low) > target:
+        step = min(tip, step * 2)
+        low = max(0, tip - step)
+    if get_block(url, low) > target:
+        raise RuntimeError("Historical target predates provider history")
+    high = tip
     while low < high:
-        mid = (low+high+1)//2
+        mid = (low + high + 1) // 2
         if get_block(url, mid) <= target:
             low = mid
         else:
-            high = mid-1
+            high = mid - 1
     return low
 
 def windows(url, tip):
