@@ -228,3 +228,7 @@ Following a successful [official Base Morpho GraphQL sample](https://github.com/
 ## Worldwide pivot — beyond on-chain keepers (October 12, 2026)
 
 Cross-domain research now evaluates sources of money **before** building automation: prefunded public payments, owner-entitled claims, bandwidth/compute resale, agent-to-agent payments, exchange arbitrage and real withdrawal schedules. [Full decision ledger](docs/WORLDWIDE_RAPID_CASH_2026_10_12.md). No verified $10→$1,000 in days without customers/work/speculation has passed the payout gate; preserving the $10 budget is preferable to funding implausible arbitrage bots. **Conditional exception:** genuinely pre-existing unclaimed entitlements tied to user-owned accounts or wallets may be checked read-only if ownership/eligibility exists. Do not assume the user has any. No additional execution tools authorized.
+
+## Worldwide income pivot (Oct 12, 2026)
+
+The user clarified that Egypt is **not** a default exclusion and added **Binance Pay** as a payout option. Future research must check each provider's actual acceptance/payout policy and distinguish Binance Pay internal payments, supported Binance on-chain **deposit addresses**, and self-custody wallets for signing; none is interchangeable. Keeper research remains historical/evidence-only because no accessible positive-net source met the rapid-income target. See [global income pivot, first provider-verified options and payout rules](docs/GLOBAL_INCOME_PIVOT_2026_10_12.md). No application, financial action, or wallet connection has been initiated.
