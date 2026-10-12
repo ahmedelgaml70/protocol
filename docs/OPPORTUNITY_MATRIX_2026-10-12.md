@@ -103,3 +103,19 @@ The older user-provided promotional summary about FLOP, PERPTools, Papertrade, P
 - [Stripe Connect stablecoin payout supported-country list](https://docs.stripe.com/crypto/stablecoin-payouts) also omits Egypt in the published list, and currently only US Connect platforms can send stablecoin payouts. Do not propose a default "just take Stripe USDC" workaround.
 - [Stripe opening an account in another country](https://support.stripe.com/questions/requirements-to-open-a-stripe-account-in-another-country?locale=en-GB) ordinarily requires a genuinely registered entity, tax details, physical premises and supported bank account; no fictitious residence or identity workaround.
 - **Status:** Bountymin and generic Stripe-only bounty platforms are **NOT READY** for this user until the specific recipient onboarding and last successful payout are verified; do not treat location as an absolute prohibition on other payout channels.
+
+
+## F. Four more models falsified or gated (October 12, second research round)
+
+Full contract/read-only primary source + dated independent market measurements: [RESEARCH_ROUND2_RELAYER_AGENT_MARKETS_2026_10_12.md](RESEARCH_ROUND2_RELAYER_AGENT_MARKETS_2026_10_12.md).
+
+| Mechanism | What actually transfers value | What a new participant could receive | Status |
+|---|---|---|---|
+| Hyperlane `InterchainGasPaymaster.claim()` | All contract fees → **configured beneficiary**, NOT `msg.sender`; `setBeneficiary` owner-only | **$0 merely calling `claim`**. Relaying for own registered paying routes requires demand, infrastructure and gas | **REJECT public-claim hypothesis** [mainline source](https://github.com/hyperlane-xyz/hyperlane-monorepo/blob/main/solidity/contracts/hooks/igp/InterchainGasPaymaster.sol) |
+| Archr.fun new Robinhood Chain 1% cranks | 1% of actual *processed* protocol fee leg for pool fee collection, reward conversion, holder delivery | Unknown; primary docs indicate existing platform bot, small app-level cached history and no current measured outstanding fees | **WATCH only, no bot** [official rewards docs](https://archr.fun/docs/rewards) |
+| TaskMarket USDC escrow tasks | Worker receives **92.5% of reward only if accepted/awarded** under default 7.5% fee | Unknown currently; external Oct 10 audit sampled 7 open / 84 new in prior 30d and ~$0.025 expected reward per attempt, cost estimate larger for normal models; no direct user task claim verified | **CONDITIONAL but scale fails** [official fees](https://docs.taskmarket.dev/concepts/fees-payments), [dated independent audit](https://shaduf.ai/p/agentic-freelance/opportunities/) |
+| x402 pay-per-call API | Only actual unrelated buyer requests pay USDC to hosted endpoint | No guaranteed requests; September x402stats threshold filtered to 78/19,015 organic sellers and ChainWard traced self-funded buyer loops | **CONDITIONAL service model, not client-free money** [Sep market audit](https://x402stats.io/reports/2026-09), [loop evidence](https://chainward.ai/decodes/x402-on-base) |
+
+**Critical math check:** Independent Shaduf Oct 7 sampled ~$212 in *combined agent-worker payouts* over 30 days in its surveyed board set; a new participant making $900 would have to earn **>4× that entire observed sample**, before any task-work model cost, acceptance or market growth. This is a **comparative scale warning, not a ceiling on the future agent economy**. Current TaskMarket API was not directly accessible via the external research environment; no independent live open-task count established.
+
+**Core source check:** Hyperlane IGP contract explicitly transfers fee balance to `beneficiary` on public `claim()`. This is a decisive counterexample to the false heuristic "public claim method + funded contract = anyone earns the balance". The caller may spend gas without receiving funds.
