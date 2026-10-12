@@ -124,3 +124,13 @@ Compared ordinary client hunting with customer-funded order fulfilment. Official
 
 
 - Additional late check: Claudelance's own 2026 mainnet README states all recorded payout activity is **self-operated dogfooding by one poster**, despite advertised four-digit task category ranges. Hive Stellar deployment is explicitly Testnet with mocked signing/mainnet postponed. Findings added to PR #13 audit and canonical handoff; no external work.
+
+
+## Latest 2026-10-12 17:55 UTC research: actual funded Harbor reward, but gas exceeds payout
+
+- Prior mandate clarified from original $100 experiment to $10/no jobs, see current override.
+- Verified directly in Harbor first-party Solidity \`StabilityPoolManager_v1\`: \`harvest(address bountyReceiver,minBounty)\` pays authorized arbitrary recipient from unharvested wrapped collateral; no owner permission.
+- Open-source official address book has 5 onchain complete live Ethereum managers, sampled chain 1 at block 26,178,021 via **read-only GitHub Action** [38287408674](https://github.com/ahmedelgaml70/protocol/actions/runs/38287408674). Four offline tests passed.
+- Three actually FUNDED direct harvest bounties, all \`eth_call\` SUCCESS, but reference USD gross-minus-network-fee: ~$-0.057, -0.161, -0.066 before any conversion. All net negative. Remaining two report \`rebalanceable=true\` but their actual rebalance calls revert, harvestable zero.
+- Confirmed 5 separate other mechanism classes: Velocity fills 1–11 cents in typical docs (not a high-dollar repeatable path), fillr Solana protocol currently devnet despite headline, Caliper on Robinhood Chain mainnet TOKEN but only TESTNET reward vault, GBLIN prior Base keeper was tied to superseded deployment/verification unresolved, ADAM 0.5% caller share of 0.0056 ETH fee pool ~7c gross.
+- Preserved as DRAFT [PR #14](https://github.com/ahmedelgaml70/protocol/pull/14), full [Harbor and new leads audit](https://github.com/ahmedelgaml70/protocol/blob/research/harbor-bounties-10/docs/HARBOR_REAL_FUNDED_BOUNTY_NEGATIVE_NET_2026_10_12.md). No funds used or user cash earned.
