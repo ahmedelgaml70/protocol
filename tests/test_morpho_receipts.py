@@ -18,7 +18,7 @@ class FakeRPC:
         if m=="eth_getTransactionReceipt":
             return {"status":"0x1","gasUsed":"0x64","effectiveGasPrice":"0x4",
                     "l1Fee":"0x5","logs":[{"logIndex":"0x6","address":MORPHO,
-                    "topics":[TOPIC,MKT,abi(2),abi(4)],
+                    "topics":[TOPIC,MKT,abi(int(CALLER,16)),abi(4)],
                     "data":abi(200,201,240,0,0)}]}
         raise AssertionError(m)
 class Tests(unittest.TestCase):
