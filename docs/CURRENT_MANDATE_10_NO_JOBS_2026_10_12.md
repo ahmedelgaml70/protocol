@@ -78,3 +78,14 @@ Do NOT recommend old excluded Kerf/PoolTogether/Beefy/Superfluid/Ripe/Morpho/0xS
 Additional first-party checks: Velocity Solana keeper fills mostly **cents per fill**, 1-cent cancels/trigger and $1,000 staked TWAP crank that pays $0; fillr technical docs contradict homepage and say DEVNET; Caliper's token is mainnet but harvest vaults TESTNET; GBLIN old named keeper tool appears linked to superseded v1 and cannot be used as current contract evidence; ADAM current displayed unsplit pool 0.0056 ETH at 0.5% keeper share implies ~$0.071 gross, and no verified profitable call. Source links and caveats in PR #14.
 
 **No actionable positive-net reward verified**. Reject any gas spend here. Future focus: low-fee chains, currently funded caller bounty >=$25 with independently verifiable source/bytecode and real present state. Stop re-creating generalized bot scanners without pre-flight economics.
+
+
+## Later 2026-10-12 research — Moto.fun, Omora and Kairos
+
+**Latest evidence:** [draft PR #15](https://github.com/ahmedelgaml70/protocol/pull/15) / [detailed audit](https://github.com/ahmedelgaml70/protocol/blob/research/motofun-keeper-10/docs/MOTOFUN_OMORA_KAIROS_AUDIT_2026_10_12.md) / [successfully completed live scan](https://github.com/ahmedelgaml70/protocol/actions/runs/38289424666).
+
+- Moto.fun Ethereum launchpad does have real **permissionless \`graduate(token)\` caller ETH bounty** (documented starting parameter 0.015 ETH, actual payout depends on current pot and settings). However first-party live API venue-wide **75 coins, 69 bonding, 6 already graduated, ZERO frozen** at ~18:13 UTC; contract-level chain ID 1 and bytecode for official curve & lens verified at Ethereum block **26,178,111**. First page individually 23 bonding/2 graduated. Official API \`GET /config\` unexpectedly 404, first unsuccessful scan was marked incomplete, successful retry used first-party published addresses as fallbacks. **No currently open ready-to-graduate coin found**; no ether spent or transaction sent.
+- Omora Base-mainnet \`FeeManager.collect\` public function directs 70% to creator and 30% protocol, **zero to unrelated caller**. \`claimFees\` only for creator's own entitlement; no public maintenance bounty. Source verified in GitHub.
+- Kairos main website documents **2% USDC-equivalent liquidation bounty of collateral**, suggesting $25 bounty needs $1,250 of actually qualifying liquidatable buyer collateral, but accessible current deployed source/market list is **NOT** verified (connected GitHub original source repo 404); no profitable callable transaction shown. Do not trade, deposit, or exploit audited vulnerabilities. Historical Base beta is NOT evidence that the current Ethereum main app has no positions.
+
+**Decision:** all new routes remain unproved as PRESENT paid opportunities. $10 untouched, $0 earned. No jobs/clients/marketing, no transaction approved.
