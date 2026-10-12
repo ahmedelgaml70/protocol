@@ -5,6 +5,8 @@
 
 **Canonical status (2026-10-12):** aspire to turn **up to $100 initial capital into $1,000 net-withdrawable total by November 12, 2026**, legally and online. **$0 spent, $0 earned, no execution-ready reward currently verified.** A 10× total is an aggressive aspiration, not a supported forecast. No private keys, automatic transactions, external applications or spend are enabled.
 
+**Newest 2026-10-12 live checks:** [Moto.fun / Omora / Kairos PR #15](https://github.com/ahmedelgaml70/protocol/pull/15) — 75 moto.fun coins, **zero frozen/currently payable graduations**, Omora collector gets no reward, Kairos 2% liquidation not verified open. All experiments read-only; $10 untouched.
+
 **Latest verified onchain outcome:** [Harbor keeper snapshot PR #14](https://github.com/ahmedelgaml70/protocol/pull/14) found 3 real funded and successfully simulated independent bounty payments on Ethereum, but **all 3 lose money after measured gas**. No transactions were sent. No currently profitable cash path found.
 
 **START HERE FOR ANY NEW AGENT:**
