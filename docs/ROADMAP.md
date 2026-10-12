@@ -184,3 +184,8 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Distinguish unrelated GREEN/sGREEN transfers from supported keeper rewards using positive keeperFee and mint/provenance conditions.
 - [ ] Inspect first daily 24h audit result and verified tx receipts, if any.
 - [ ] Audit GREEN/sGREEN sale/redemption economics only when a real positive payout appears.
+
+- [x] Validate daily 24-hour Ripe history on real Base chain: 43,201 consecutive blocks with zero liquidation events, complete source.
+- [x] Mark Ripe Base low-priority for rapid recurring payouts; maintain only low-volume historical monitoring.
+- [ ] Audit permissionless **Morpho Blue Base** liquidation history with official GraphQL query before any automation/executor proposals.
+- [ ] Match actual repay/seize token receipts, gas, token pricing, caller concentration and capital/flash-loan requirements if sufficient recent activity is observed.

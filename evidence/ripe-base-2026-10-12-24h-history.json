@@ -1,0 +1,27 @@
+{
+  "as_of_utc": "2026-10-12T06:42:10Z",
+  "source": "GitHub Actions complete 24-hour Base filtered eth_getLogs on Ripe official current AuctionHouse",
+  "run_url": "https://github.com/ahmedelgaml70/protocol/actions/runs/38213678949",
+  "artifact_url": "https://github.com/ahmedelgaml70/protocol/actions/runs/38213678949/artifacts/11729584978",
+  "chain_id": 8453,
+  "auctionhouse": "0xe9Dc24Ab1dC4746C7A43FAce3f895D9176D4C235",
+  "topic0": "0x2ad3b92c465bc7ea1f27bef4120c0dee3b47cb039ba2af1c17061d831a465d2b",
+  "first_block": 52455744,
+  "last_block": 52498944,
+  "blocks_covered": 43201,
+  "history_status": "complete",
+  "event_count": 0,
+  "unique_liquidation_transactions": 0,
+  "verified_keeper_payout_receipts": 0,
+  "query_errors": 0,
+  "runtime": {
+    "liquidations_enabled": true,
+    "paused": false,
+    "keeper_fee_ratio_bps": 100,
+    "minimum_green_fee_raw": "1000000000000000000",
+    "maximum_green_fee_raw": "25000000000000000000000"
+  },
+  "interpretation": "No LIQUIDATE_USER logs emitted by CURRENT Base AuctionHouse in requested bounded 24h. Does not prove no positions currently eligible or no payouts on other networks/dates.",
+  "capital_spent_usd": 0,
+  "verified_user_income_usd": 0
+}
