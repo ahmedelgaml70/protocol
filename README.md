@@ -198,3 +198,7 @@ Beefy's maintained Cowllector v2 publicly documents a last-harvest-reports API. 
 API source: https://github.com/beefyfinance/beefy-cowllector-v2/blob/main/apps/api/README.md . Use docs/GITHUB_ACTIONS.md for limitations.
 
 **Actual Beefy receipts (Oct 12):** 7/7 recent existing Cowllector Base harvest transactions succeeded but ALL paid less WETH to the submitting bot than its receipt-reported gas cost. Totals: 0.000011705879359994 WETH received, 0.000056682286523025 ETH gas, conditional −0.000044976407163031 ETH-equivalent after gas. All sent by one existing bot. This directly verified negative example **reinforces not deploying a harvest bot**. See [evidence](evidence/beefy-base-2026-10-12-receipt-proof.json) and [decision](docs/RESEARCH_LEDGER.md). No third-party profit and no user spend.
+
+## Read-only Ripe Base deployment and keeper receipt checks
+
+The repository now runs `ripe_base.py` in two separate GitHub Actions stages: **deployment code presence** (Ripe official Base v1 manifest Teller, AuctionHouse, GREEN, sGREEN, MissionControl) and **6-hour historical LiquidateUser event + receipt audit**. Payout verification accounts for **both GREEN and default sGREEN**, and only treats positive ERC-20 incoming transfers/minted shares to the real tx sender as historical credit evidence. KeeperFee event values, transaction gas (ETH) and GREEN/sGREEN reward amounts are **not directly comparable** without market-value conversion and redemption. Explorer/RPC failures are marked incomplete, not zero payouts. No keys, no transactions, no execution bot.

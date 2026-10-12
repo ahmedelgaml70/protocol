@@ -57,3 +57,5 @@ jobs:
 # Smoke-test read-only independent Base receipts for the most recent Cowllector harvest transactions.
 
 # Receipt scanner cannot interpret RPC errors as 0 payments; try official Base RPC.
+
+# First Ripe Base manifest-contract and event/receipt read-only smoke.

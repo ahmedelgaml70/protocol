@@ -21,6 +21,13 @@ CHECKS = (
     ("beefy-base-receipts", "beefy_base_receipts.json",
      ["beefy_receipts.py", "--activity", "__BEEFY_ACTIVITY__",
       "--rpc", "https://mainnet.base.org", "--limit", "10"], 120),
+    ("ripe-base-deployment", "ripe_base_deployment.json",
+     ["ripe_base.py", "--rpc", "https://mainnet.base.org",
+      "--check", "deployment"], 75),
+    ("ripe-base-history", "ripe_base_history.json",
+     ["ripe_base.py", "--rpc", "https://mainnet.base.org",
+      "--check", "history", "--hours", "6", "--chunk", "1500", "--pages", "5",
+      "--receipt-limit", "8"], 155),
 )
 
 def utc_now():
@@ -68,7 +75,7 @@ def build_manifest(output_dir):
     return {"schema_version": 1, "generated_at_utc": utc_now(),
             "purpose": "READ_ONLY_RESEARCH",
             "checks": entries,
-            "not_implemented": ["ripe-live-payout"],
+            "not_implemented": ["ripe-current-eligible-liquidation"],
             "transactions_sent": 0, "funds_spent_usd": 0,
             "warning": "Inactivity and scanner errors are different. No live eligibility or profits are established."}
 

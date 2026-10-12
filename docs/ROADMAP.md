@@ -157,3 +157,10 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Extract Ripe current Base mainnet Teller/AuctionHouse/GREEN addresses and the LiquidateUser event ABI from canonical deployment manifest.
 - [ ] Check Ripe current deployment bytecode and successful recent LiquidateUser receipts independently, including GREEN mint to actual independent submitting wallet.
 - [ ] Verify GREEN token redeemability/realizable sale value and gas, then a current eligible account; no spend.
+
+- [x] Identify Ripe official Base Teller/AuctionHouse/GREEN/sGREEN/MissionControl manifest contracts.
+- [x] Validate Ripe event ABI and account for default sGREEN share mint, not just GREEN direct reward.
+- [x] Add read-only code-presence and 6-hour historical event/receipt checks to GitHub Radar; no wallet.
+- [ ] Verify live contract code and event index access, especially whether free RPC permits Ripe eth_getLogs.
+- [ ] If history can be retrieved, assess nonzero keeperFee and actual GREEN/sGREEN to tx.from with gas and fee recipient.
+- [ ] Do not send any transaction or assume token redeems at $1 without verified liquidity; current eligibility unproven.
