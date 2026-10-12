@@ -85,3 +85,15 @@ Recommended next read-only test(s), ordered:
 - Update committed to main in `docs/OPPORTUNITY_MATRIX_2026-10-12.md`, `docs/HANDOFF_2026-10-12.md`, `docs/RESEARCH_ROUND2_RELAYER_AGENT_MARKETS_2026_10_12.md`. No third-party PRs, wallet calls or capital use.
 
 **State:** $100 available, $0 user received, $0 spent, no verified actionable $900 cash gap mechanism.
+
+
+## Further continuation — live Convex on-chain bounty testing
+
+- Examined Convex Booster V1 and CVX Locker V2 **direct source with official address registry**, plus Aura/Balancer current lifecycle.
+- Built read-only scripts and tests on draft [PR #11](https://github.com/ahmedelgaml70/protocol/pull/11) (not merged to main).
+- Mainnet Booster: 583 pools, 0.5% caller reward setting, not shut down. Valid last-800-block sample contained 30 CRV transfers from Booster / four transactions. None directly to top-level transaction sender; outer transactions used intermediary helpers. No interpretable net claimant payout or current unharvested opportunity.
+- CVX locker live 25 basis points per overdue week, 4-week grace, 0 \`KickReward\` events in successfully scanned ~7,400-block window.
+- Historical 160d/205d/270d staker event sampler **failed due archive RPC HTTP 400**; no conclusion about number of currently kickable accounts.
+- **13/13 offline tests passed**; historical account step failed/incomplete correctly. Results and explicit failure reasons saved in [audit](https://github.com/ahmedelgaml70/protocol/blob/research/convex-earmark-100/docs/CONVEX_KEEPER_KICK_AUDIT_2026_10_12.md).
+- Official Aura app says sunset, Balancer governance passed wind-down. Separate Solana Dead Man's Vault project is documented as devnet, not mainnet.
+- **Status**: $100 available, $0 spent, $0 earned. Do not broadcast, bond or pay for RPC. Avoid making "no current bounties" statements from incomplete archive history.
