@@ -6,6 +6,7 @@
 
 ## READ THESE FIRST, IN THIS ORDER
 1. **[LATEST MANDATE: $10, NO JOBS, fast legitimate money harvesting](docs/CURRENT_MANDATE_10_NO_JOBS_2026_10_12.md)**
+   - **[NEW: Harbor current, real funded but NET-NEGATIVE caller reward audit (PR #14)](https://github.com/ahmedelgaml70/protocol/blob/research/harbor-bounties-10/docs/HARBOR_REAL_FUNDED_BOUNTY_NEGATIVE_NET_2026_10_12.md)**
 2. [Complete handoff and timeline](docs/HANDOFF_2026-10-12.md)
 2. [Opportunity / rejection / evidence matrix](docs/OPPORTUNITY_MATRIX_2026-10-12.md)
 3. [Payer-first evidence playbook and candidate schema](docs/RESEARCH_PLAYBOOK.md)
