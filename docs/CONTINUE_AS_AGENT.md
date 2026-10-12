@@ -4,13 +4,13 @@ You are continuing an existing evidence-first online-income investigation, NOT s
 
 ## Before doing anything
 
-1. Fetch \`https://github.com/ahmedelgaml70/protocol\` **main** and read these files fully:
-   - \`AGENTS.md\`
-   - \`docs/HANDOFF_2026-10-12.md\`
-   - \`docs/OPPORTUNITY_MATRIX_2026-10-12.md\`
-   - \`docs/RESEARCH_PLAYBOOK.md\`
-   - \`docs/ORIGINAL_PROMPTS.md\`
-2. Inspect all existing **DRAFT / UNMERGED** investigation PRs and corresponding individual evidence reports: #8 0xSplits, #9 Liquity/Sovryn, #10 Keep3r. Their code is NOT on main; do not say it is. Inspect \`main/evidence\` for earlier Ripe, Beefy, Morpho, Superfluid, Kerf and PoolTogether historical results.
+1. Fetch `https://github.com/ahmedelgaml70/protocol` **main** and read these files fully:
+   - `AGENTS.md`
+   - `docs/HANDOFF_2026-10-12.md`
+   - `docs/OPPORTUNITY_MATRIX_2026-10-12.md`
+   - `docs/RESEARCH_PLAYBOOK.md`
+   - `docs/ORIGINAL_PROMPTS.md`
+2. Inspect all existing **DRAFT / UNMERGED** investigation PRs and corresponding individual evidence reports: #8 0xSplits, #9 Liquity/Sovryn, #10 Keep3r. Their code is NOT on main; do not say it is. Inspect `main/evidence` for earlier Ripe, Beefy, Morpho, Superfluid, Kerf and PoolTogether historical results.
 3. Distinguish what is proved, sampled negative, partially inaccessible, historic only, promotional and truly claimable right now. The historical $10/seven-day target is superseded by **capital up to $100 / total withdrawable target $1,000 by November 12, 2026**.
 
 ## Mission
@@ -25,10 +25,10 @@ Search **first for currently funded, open, unclaimed and transferable payment**,
 
 ### Fresh research checkpoints
 
-- Current GitHub open issue scans found \`SUSU-LABS/susu-indexer#46\` with offered $40 for a config fix, but escrow and fast country-compatible payout NOT verified. It is not a recommendation.
-- Another \`NSPG13/agent-bounties#1262\` explicitly declares itself UNFUNDED precommit; it is not money.
-- Old Algora/BountyBook marketed offerings were criticised in an independent May 2026 \`ir272/autonomous-earning-experiment\` report; these historic criticisms are hypotheses to reverify, not unquestionable October facts.
-- A large **19,881 DAI** Keep3r job belongs to a retired MakerDAOUpkeep executor; not public withdrawable money. An active job had 20 historic paid calls but 19 recently active strategies all \`workable=false\` on current read-only simulation. Do not propose staking or running these on the user's money.
+- Current GitHub open issue scans found `SUSU-LABS/susu-indexer#46` with offered $40 for a config fix, but escrow and fast country-compatible payout NOT verified. It is not a recommendation.
+- Another `NSPG13/agent-bounties#1262` explicitly declares itself UNFUNDED precommit; it is not money.
+- Old Algora/BountyBook marketed offerings were criticised in an independent May 2026 `ir272/autonomous-earning-experiment` report; these historic criticisms are hypotheses to reverify, not unquestionable October facts.
+- A large **19,881 DAI** Keep3r job belongs to a retired MakerDAOUpkeep executor; not public withdrawable money. An active job had 20 historic paid calls but 19 recently active strategies all `workable=false` on current read-only simulation. Do not propose staking or running these on the user's money.
 - Published FLOP/PERPTools token schemes do not produce verified withdrawable rewards within November window. Do not deposit $100 on points/speculation.
 
 ## Guardrails
@@ -40,7 +40,12 @@ No private keys, public user wallet/account handles, registrations, sign-in acti
 1. Search at least **two meaningfully unrelated opportunity mechanisms**, not only the last favourite protocol.
 2. For each surviving lead: specific payer/funding proof, exact currently open task, entrant eligibility and Egypt policy, actual last successful payout, method/timing, net after all costs and competition, and direct links. If a field is unknown, label it UNKNOWN, not proved.
 3. Determine **one next falsifiable test** instead of starting a large implementation. Execute this test read-only if feasible and worthwhile.
-4. Update the relevant \`docs/OPPORTUNITY_MATRIX_2026-10-12.md\`, \`docs/HANDOFF_2026-10-12.md\`, and any new dated evidence note. Use own-code branches only if code was truly necessary; run offline tests and workflow logs. Explain which paths/PRs changed and exact observed outcomes.
+4. Update the relevant `docs/OPPORTUNITY_MATRIX_2026-10-12.md`, `docs/HANDOFF_2026-10-12.md`, and any new dated evidence note. Use own-code branches only if code was truly necessary; run offline tests and workflow logs. Explain which paths/PRs changed and exact observed outcomes.
 5. Report independently useful results immediately; if no viable funded result, say clearly: **$0 earned, $0 spent, no confirmed $1,000 path**. Never invent paying offers, dates, wallet balances, transaction profitability or sources.
 
 This research is not a game of finding a persuasive argument. Actively disprove each proposed money-making route and only advance the ones that survive.
+
+
+### Newly falsified payout rails (Oct 12, 2026)
+
+Do NOT recommend Opire simply because an issue says "rewarded": [official Opire terms](https://docs.opire.dev/rewards/pricing) state payouts are **arranged directly by the sponsor after PR review**, not automatically triggered or platform-escrow-guaranteed. Do NOT recommend [openbounty.ai](https://openbounty.ai/) listed apparently funded demo issues: homepage explicitly says **mock-payments mode, no real funds**. An Open Collective `Pending` expense isn't a paid receipt. Verify actual cleared transfers.
