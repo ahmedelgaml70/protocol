@@ -11,7 +11,9 @@ USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
 SPLIT = "(address[],uint256[],uint256,uint16)"
 SOURCES = (("drpc", "https://base.drpc.org"),
            ("base", "https://mainnet.base.org"),
-           ("publicnode", "https://base-rpc.publicnode.com"))
+           ("publicnode", "https://base-rpc.publicnode.com"),
+           ("llamarpc", "https://base.llamarpc.com"),
+           ("blastapi", "https://base-mainnet.public.blastapi.io"))
 FROM = "0x1111111111111111111111111111111111111111"
 ALLOWED = {"eth_chainId", "eth_blockNumber", "eth_getCode", "eth_getLogs",
            "eth_call", "eth_estimateGas", "eth_gasPrice"}
@@ -26,9 +28,13 @@ def rpc(url, method, params=()):
     if method not in ALLOWED:
         raise ValueError("Transaction/unsupported RPC blocked: " + method)
     body = json.dumps({"jsonrpc":"2.0","id":1,"method":method,"params":list(params)}).encode()
-    req = urllib.request.Request(url, data=body, headers={"Content-Type":"application/json"})
-    with urllib.request.urlopen(req, timeout=16) as res:
-        obj = json.load(res)
+    req = urllib.request.Request(url, data=body, headers={"Content-Type":"application/json","Accept":"application/json",
+        "User-Agent":"ProtocolReadOnlyObserver/1.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=16) as res:
+            obj = json.load(res)
+    except Exception as exc:
+        raise RuntimeError(method + ": " + str(exc)) from exc
     if "error" in obj or "result" not in obj:
         raise RuntimeError(str(obj.get("error", "missing result")))
     return obj["result"]
