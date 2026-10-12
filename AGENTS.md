@@ -45,3 +45,7 @@ Do not assume same-named event across old repositories uses same ABI. Legacy Poo
 
 ## Automated GitHub Actions safety policy
 Actions only run public read-only research scripts. PR workflows get read-only contents permission, and only the post-radar workflow has issues:write. The alert stage consumes untrusted workflow artifacts as **data only** and must never execute downloaded code. Alerts mean historical research evidence, not current executable opportunity or profit; wallet execution must remain separately and explicitly user-approved. Ripe integration is not yet implemented. See docs/GITHUB_ACTIONS.md.
+
+## Beefy automation guard
+
+Beefy's v2 Cowllector API last-harvest-reports are ONLY the incumbent operator's most recent report per vault; simulated call reward and gas estimates are not third-party net profit. Amounts are JS JSON numbers and might not be exact wei. Never open execution-ready alerts from these, nor submit/simulate actual transactions that spend gas without explicit authorization. Require independent success receipt, true reward transfer to tx sender, token exit liquidity and current permissionless eligibility before grading opportunity.

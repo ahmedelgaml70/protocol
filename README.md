@@ -190,3 +190,9 @@ Read [automation operations and limitations](docs/GITHUB_ACTIONS.md). To run now
 **Candidate update, October 12:** A fresh [30-day PoolTogether Base index](evidence/pooltogether-base-30day-2026-10-11.json) returned no `prizeClaims`, so the Base claimer is a passive watch, not a demonstrated recurring income source. Next researcher lead is Beefy public harvest caller incentives, but its own Cowllector bot already competes and a historical Base example had gas greater than the illustrated receiver payout. No money actions are enabled.
 
 **Verified alert pipeline smoke:** GitHub Actions successfully downloaded a real radar report, evaluated 0 qualifying signals and created 0 issues ([run](https://github.com/ahmedelgaml70/protocol/actions/runs/38177999974)). The production issue-writing branch remains untested until a genuine positive research signal appears. PoolTogether Base was deprioritized after zero indexed claims in 30d; [Beefy harvest research #6](https://github.com/ahmedelgaml70/protocol/issues/6) is a fresh read-only candidate, not verified income.
+
+## Beefy operator economics added to automated Radar
+
+Beefy's maintained Cowllector v2 publicly documents a last-harvest-reports API. Radar now uses beefy_cowllector.py to screen the LAST report per vault for Base, Arbitrum, and Optimism, retaining estimated caller-fee, gas-cost and reported outcome fields as a third transient artifact. These are the incumbent bot's own simulated estimates, not independent wallet earnings or live opportunities. No Beefy alert/execute path was added.
+
+API source: https://github.com/beefyfinance/beefy-cowllector-v2/blob/main/apps/api/README.md . Use docs/GITHUB_ACTIONS.md for limitations.

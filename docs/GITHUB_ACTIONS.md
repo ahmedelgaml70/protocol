@@ -65,3 +65,11 @@ The post-radar `workflow_run` alert pipeline now also reviews **trusted default-
 
 ## End-to-end alert workflow smoke, verified
 On trusted default-branch radar push, [alert workflow run #38177999974](https://github.com/ahmedelgaml70/protocol/actions/runs/38177999974) downloaded the real report artifact, assessed 0 signals and made **zero** issue changes, passing all steps. [Python Tests #38177985661](https://github.com/ahmedelgaml70/protocol/actions/runs/38177985661) passed 41/41. The alert publisher's **true issue-create branch is not yet tested against GitHub**—it requires a real qualifying historical fee receipt, which none of the 30-day PoolTogether Base scans found. Production never injects synthetic profit evidence to force an alert.
+
+## Beefy Cowllector v2 — third read-only scanner
+
+Protocol Radar now includes a 72-hour screen of Base, Arbitrum, Optimism latest-per-vault Cowllector operator reports through the publicly documented GET https://cowllector.beefy.com/api/v1/last-harvest-reports. The operator provides simulated reward and gas amount fields, success/skip status, and most recent transaction hash. The resulting beefy_cowllector.json is a transient artifact, not a trade recommendation, and DOES NOT trigger opportunity alerts.
+
+The API provides only the last report for each vault, not all transactions; it encodes wei as JSON numbers which may not retain exact integer precision. Its estimated gains do not prove economic realizability or that an outside caller can win them. Network/server errors are explicitly marked incomplete. The maintained Cowllector v2 bot prioritizes at least daily harvesting, even when not profitable (see official README).
+
+Source: https://github.com/beefyfinance/beefy-cowllector-v2/blob/main/apps/api/README.md and https://github.com/beefyfinance/beefy-cowllector-v2/blob/main/apps/api/src/routes/last-harvest-reports.ts .

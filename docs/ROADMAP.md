@@ -142,3 +142,9 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Wait for actual qualifying on-chain evidence before verifying positive issue-create path; **do not fabricate evidence** for production alert testing.
 - [x] Close idle PoolTogether Base Claiming issue #4 and shift research priority to Beefy public harvest issue #6.
 - [ ] Investigate whether Beefy has actual current independent caller net-positive harvest receipts and a practical native-token payout versus gas.
+
+- [x] Find maintained Beefy Cowllector v2 public last-harvest-reports API and inspect reward, gas and transaction output schema.
+- [x] Add strict, read-only Beefy economic screen with 5 offline tests and integrate into Radar.
+- [ ] Inspect real GitHub Actions Beefy API smoke result; retry only if endpoint or schema fails.
+- [ ] Confirm recent example operator tx by live blockchain receipt and fee recipient; distinguish Cowllector-paid payouts from outside callers.
+- [ ] Identify actual positive-net external caller payout and currently claimable harvest if evidence warrants; no auto execution.

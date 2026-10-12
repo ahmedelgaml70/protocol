@@ -129,3 +129,11 @@ Added a safe end-to-end alert pipeline smoke gate for trusted default-branch pus
 
 ## 2026-10-11 21:50 UTC — Alert workflow smoke passed
 The end-to-end no-signal branch of the issue alert workflow passed: [run #38177999974](https://github.com/ahmedelgaml70/protocol/actions/runs/38177999974) successfully downloaded the read-only radar artifact, ran the strict assessment (`Research signals: 0; execution-ready: NO`) and exited without creating an issue (`No research signals. No issues written.`). [Tests #38177985661](https://github.com/ahmedelgaml70/protocol/actions/runs/38177985661) passed **41/41**; [Radar #38177985561](https://github.com/ahmedelgaml70/protocol/actions/runs/38177985561) succeeded. The **positive issue-creation path is still UNTESTED** because there is no genuine qualifying fee event; do not claim otherwise. PoolTogether Base issue #4 closed after 30d no claims; Beefy evidence-first research issue #6 opened. Evidence: `evidence/github-actions-alert-smoke-2026-10-11.json`.
+
+## 2026-10-12 Cowllector v2 discovery
+
+The maintained Cowllector v2 README states the bot is focused on consistent harvests (one per day per strategy), NOT necessarily operator profitability. Its public API at https://cowllector.beefy.com/api/v1/last-harvest-reports exposes the latest per-vault simulation and transaction report, including operator estimated native-like call reward, transaction gas, estimated profit and transaction hash. This is a richer research source than unverified strategy incentive marketing, but is **neither a complete historical census nor independently verified receipts**. Amounts may be approximate JS numbers, and operator reward asset may not be identical to gas asset.
+
+Committed beefy_cowllector.py and five offline tests; Radar now attempts Base/Arbitrum/Optimism 72-hour reports. API availability in GitHub Actions was unconfirmed at commit time. The Beefy data cannot generate financial alerts. No transaction, wallet key or spend.
+
+Scheduled-radar cadence caveat: between initial setup and 2026-10-12 05:03 UTC there was one recorded GitHub schedule run (at 00:44 UTC), successfully followed by a zero-signal alert run. The desired :17/:47 cron does not ensure real-time 30-minute starts.
