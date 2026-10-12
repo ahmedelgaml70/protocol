@@ -1,0 +1,41 @@
+{
+  "date_utc": "2026-10-12T12:07:31Z",
+  "provenance": {
+    "source": "GitHub Actions read-only run",
+    "run_url": "https://github.com/ahmedelgaml70/protocol/actions/runs/38247031691",
+    "artifact_id": 11746597215,
+    "branch": "research/splits-100"
+  },
+  "scope": {
+    "chain": "Base",
+    "chain_id": 8453,
+    "token": "USDC",
+    "token_address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "factory": "0x8E8eB0cC6AE34A38B67D5Cf91ACa38f60bc3Ecf4",
+    "type": "new 0xSplits V2o2 Push Split creations in bounded recent window",
+    "from_block": 52504752,
+    "to_block": 52508751
+  },
+  "result": {
+    "status": "observation_not_profit",
+    "created_events": 0,
+    "positive_reward_screens": 0,
+    "provider": "publicnode",
+    "unit_tests_passed": 4
+  },
+  "provider_errors": [
+    {
+      "provider": "drpc",
+      "status": "incomplete",
+      "error": "eth_getLogs HTTP 400"
+    },
+    {
+      "provider": "base_official",
+      "status": "incomplete",
+      "error": "eth_getLogs HTTP 429"
+    }
+  ],
+  "limitations": "Zero new factory events in this sampled 4000-block window does NOT establish no older funded Push Splits, older factory versions, other tokens or chains, or current rewards. The scan does not prove income, profits or executable payouts.",
+  "money_spent_usd": 0,
+  "verified_income_usd": 0
+}
