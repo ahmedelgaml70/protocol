@@ -7,6 +7,7 @@ gross spreads do not prove profits, flash-liquidity access or open targets.
 """
 import argparse
 from collections import Counter
+from decimal import Decimal, InvalidOperation, localcontext
 from datetime import datetime, timedelta, timezone
 import json
 from pathlib import Path
@@ -22,7 +23,7 @@ QUERY = """query RecentBaseLiquidations($first:Int!){
                     where:{chainId_in:[8453],type_in:[Liquidation]}){
    items {
      txHash timestamp blockNumber logIndex type
-     market { marketId }
+     market { marketId loanAsset { address symbol decimals priceUsd } collateralAsset { address symbol decimals priceUsd } }
      data { ... on MarketTransactionLiquidationData {
        repaidAssets seizedAssets badDebtAssets liquidator
      } }
@@ -47,6 +48,45 @@ def fetch(limit):
     return results
 
 
+
+def asset_info(value):
+    """PriceUsd is a CURRENT reference, never historic realized proceeds."""
+    if not isinstance(value, dict) or not ADDRESS.fullmatch(str(value.get("address", ""))):
+        return None
+    try:
+        decimals = int(value["decimals"])
+        price = Decimal(str(value["priceUsd"]))
+        if not 0 <= decimals <= 36 or not price.is_finite() or not 0 < price < Decimal("1e12"):
+            return None
+    except (KeyError, ValueError, TypeError, InvalidOperation):
+        return None
+    return {
+        "address": value["address"].lower(),
+        "symbol": str(value.get("symbol") or "")[:32],
+        "decimals": decimals,
+        "current_reference_price_usd": str(price)
+    }
+
+
+def illustrative_valuation(debt, collateral, loan, collateral_token):
+    """Potential gross spread at current reference prices, NOT historic profit."""
+    if loan is None or collateral_token is None:
+        return None
+    with localcontext() as ctx:
+        ctx.prec = 90
+        debt_usd = (Decimal(debt) / (Decimal(10) ** loan["decimals"])
+                    * Decimal(loan["current_reference_price_usd"]))
+        seized_usd = (Decimal(collateral) / (Decimal(10) ** collateral_token["decimals"])
+                      * Decimal(collateral_token["current_reference_price_usd"]))
+    return {
+        "repaid_debt_current_reference_usd": str(debt_usd),
+        "seized_collateral_current_reference_usd": str(seized_usd),
+        "gross_current_reference_spread_usd": str(seized_usd - debt_usd),
+        "is_historical_realized_profit": False,
+        "exit_price_and_liquidity_verified": False,
+    }
+
+
 def summarize(items, now, days, limit):
     if not isinstance(items,list) or not 1<=days<=30 or not 1<=limit<=500:
         raise ValueError("Invalid query boundaries")
@@ -54,6 +94,8 @@ def summarize(items, now, days, limit):
     recents=[]
     seen=set()
     counts=Counter()
+    valued_count=0
+    positive_reference_spread=0
     for row in items:
         if not isinstance(row,dict) or row.get("type")!="Liquidation":
             raise ValueError("Unexpected non-liquidation record")
@@ -81,6 +123,16 @@ def summarize(items, now, days, limit):
             values[k+"_raw"]=str(n)
         if stamp<cutoff:
             continue
+        loan = asset_info(market.get("loanAsset"))
+        collateral_asset = asset_info(market.get("collateralAsset"))
+        current_reference = illustrative_valuation(
+            int(values["repaidAssets_raw"]),
+            int(values["seizedAssets_raw"]), loan, collateral_asset
+        )
+        if current_reference is not None:
+            valued_count += 1
+            if Decimal(current_reference["gross_current_reference_spread_usd"]) > 0:
+                positive_reference_spread += 1
         log_index=int(row["logIndex"])
         if log_index<0 or log_index>100000:
             raise ValueError("Unexpected event log index")
@@ -95,6 +147,8 @@ def summarize(items, now, days, limit):
             "timestamp_utc":datetime.fromtimestamp(stamp,timezone.utc).isoformat(),
             "market_id":market_id.lower(),
             "indexed_liquidator":who.lower(),**values,
+            "loan_asset_reference":loan,"collateral_asset_reference":collateral_asset,
+            "indicative_current_reference_valuation":current_reference,
             "receipt_verified":False,"wallet_net_profit_verified":False,
         })
     return {
@@ -109,9 +163,11 @@ def summarize(items, now, days, limit):
         "latest_recent_transaction":recents[0]["tx_hash"] if recents else None,
         "oldest_observed_event_utc":recents[-1]["timestamp_utc"] if recents else None,
         "distinct_liquidation_event_identifiers":len(recents),
+        "current_reference_valued_event_count":valued_count,
+        "current_reference_positive_gross_spread_event_count":positive_reference_spread,
         "events":recents,
         "transactions_sent":0,"profit_usd_verified":False,
-        "warning":"100-event returned sample may be truncated; distinct event IDs use tx+market+logIndex, and transactions may bundle several liquidations. Historical not unclaimed; repaid/seized raw units differ. No PnL, flash loan, gas or slippage verified."
+        "warning":"Gross spread uses CURRENT Morpho API reference prices, not transaction-time execution proceeds. No swap exit quotes, slippage, flash liquidity, failed-call gas, or historic realized PnL. Query may be capped."
     }
 
 

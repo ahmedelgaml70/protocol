@@ -75,3 +75,5 @@ jobs:
 # Correct Morpho event-vs-transaction counting using logIndex (not tx-only).
 
 # Independently read-only verify 8 Morpho Base indexed liquidation tx receipts and gas.
+
+# Probe API current token reference prices, not historical realized execution profits.
