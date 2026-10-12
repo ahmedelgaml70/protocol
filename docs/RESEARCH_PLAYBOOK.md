@@ -8,7 +8,7 @@ Previously the project started from a technically fascinating protocol and built
 1. **Identify a distinct payer and already-funded payment pathway.** Examples: a job's token credits locked in a published contract; an approved invoiceable bounty issued by a verified organization; a platform with actual approved task supply. A headline programme award, DEX TVL or marketing claim is not funding evidence.
 2. **Determine exactly why they pay:** a specific unfinished contractual task, an objective deliverable, a time-gated service, real unused business capacity, or a publicly callable maintenance action. A theoretical "public good" is not a payout mechanism.
 3. **Prove the proposed claimant can participate.** Does the task permit an arbitrary new wallet or account? Does it require a bond, deposit, private authorization, programming proof, KYC, residency, a buyer or collateral? Is the action still open and not already assigned?
-4. **Look for recent actual settlement.** Confirm payee, reward denomination, clearing date, receipt/bank/payment rail; distinguish on-chain \`Payment\` event from transferable tokens delivered to a wallet, and from token market valuation. For bounties, actual merged PR plus sponsor-paid settlement is stronger than an issue label.
+4. **Look for recent actual settlement.** Confirm payee, reward denomination, clearing date, receipt/bank/payment rail; distinguish on-chain `Payment` event from transferable tokens delivered to a wallet, and from token market valuation. For bounties, actual merged PR plus sponsor-paid settlement is stronger than an issue label.
 5. **Test a particular current action at a timestamp** (read-only contract simulation, exact open issue with unassigned state, accepted task inventory, confirmed offer). Record expiration and competitor pressure.
 6. **Calculate the entire economic path:** reward × expected successful tasks − transaction fees − source/hosting costs − failed attempts − conversion/slippage − taxes/refunds − capital lock. Determine first-to-final-cleared-payment delay. Project $900 net only from demonstrated task/reward capacity, not APY or extrapolated one unusual receipt.
 7. **Only with explicit user approval**, carry out a limited, real action (registration, PR, application, signature, spending). Verify cleared funds before scaling. No unattended financial execution.
@@ -55,22 +55,22 @@ Reject early if under 60 or mandatory hard exclusion breached. >80 means worth d
 3. Community experience (Reddit/other discussion): use as a hypothesis/risk signal, **not** proof of payment or sufficient demand.
 4. Promotional claims, agent-written bounty postings, reported yields, anonymous screenshots, rumors: NOT verified.
 
-For every fresh claim record \`as_of_utc\`, URL, publication date vs actual event date, chain/block if applicable, asset decimals, payment beneficiary and status. Watch for testnet/mainnet mix-ups, deprecated code versions, source-vs-bytecode drift, expired bounty deadlines, self-payments, fake TVL and tokens without volume.
+For every fresh claim record `as_of_utc`, URL, publication date vs actual event date, chain/block if applicable, asset decimals, payment beneficiary and status. Watch for testnet/mainnet mix-ups, deprecated code versions, source-vs-bytecode drift, expired bounty deadlines, self-payments, fake TVL and tokens without volume.
 
 ## Branch, code and data policy
 
-- **Main:** \`AGENTS.md\` + current canonical docs are research direction. Historic \`README.md\` / \`docs/CHARTER.md\` retain prior $10 wording for provenance, marked superseded. Primary old evidence is in \`evidence/\`.
+- **Main:** `AGENTS.md` + current canonical docs are research direction. Historic `README.md` / `docs/CHARTER.md` retain prior $10 wording for provenance, marked superseded. Primary old evidence is in `evidence/`.
 - **Draft code:** PR [#8 0xSplits](https://github.com/ahmedelgaml70/protocol/pull/8), [#9 Liquity/Sovryn](https://github.com/ahmedelgaml70/protocol/pull/9), [#10 Keep3r](https://github.com/ahmedelgaml70/protocol/pull/10). Do not merge or execute without explicit approval; no need to rebuild their scanners.
 - **New candidate experiment:** minimal new branch from main, no secrets or personal wallets, read-only operations, offline tests, manual CI, bounded rate limits, compressed sanitized JSON with evidence dates; only create a PR when substantive.
 - **Github Actions:** do not reinstate original paused cron; scheduled jobs are unsuitable for speed races anyway. Manual tests and small public read-only scans preferred. Do not pay for new RPC/API service.
-- **Data labeling:** \`confirmed\`, \`historical\`, \`sampled_negative\`, \`partial\`, \`unverified\`, \`rejected\`; use \`partial\` not zero for RPC failures. Report all limits and caveats.
+- **Data labeling:** `confirmed`, `historical`, `sampled_negative`, `partial`, `unverified`, `rejected`; use `partial` not zero for RPC failures. Report all limits and caveats.
 - No private keys, API tokens, user wallet/address, account IDs, payment handles, government IDs, secret URLs, or customer data in public repo. No finance, wallet, signup, proposal submission or deployment without permission.
 
 ## Candidate record template
 
 Copy and fill the following when a prospect survives primary source checking:
 
-\`\`\`yaml
+```yaml
 id: 2026-10-12-NNN
 name: "..."
 date_seen_utc: "..."
@@ -103,7 +103,7 @@ projected_30day_net_usd: null  # never fill from conjecture
 verdict_reason: "..."
 next_falsification_test: "..."
 user_permission_required_before_action: true
-\`\`\`
+```
 
 ## Reporting after every meaningful iteration
 
