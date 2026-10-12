@@ -67,11 +67,16 @@ def main():
     errors=[]; result=None
     for url in PROVIDERS:
         try:
-            result=audit(url)
-            if result["status"]!="incomplete":break
+            candidate=audit(url)
+            if result is None or (
+                candidate.get("historical",{}).get("successful_branches",0) >
+                result.get("historical",{}).get("successful_branches",0)):
+                result=candidate
+            if candidate.get("historical",{}).get("successful_branches",0)>0:
+                break
+            errors.append({"url":url,"error":"Historical eth_getLogs unavailable; current-state data retained"})
         except Exception as exc:
             errors.append({"url":url,"error":str(exc)[:220]})
-            result=None
     if result is None:result={"status":"incomplete"}
     result["provider_errors"]=errors
     with open("sovryn_reports/report.json","w") as f:json.dump(result,f,indent=2)
