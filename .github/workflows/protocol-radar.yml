@@ -61,3 +61,5 @@ jobs:
 # First Ripe Base manifest-contract and event/receipt read-only smoke.
 
 # Smoke-test Ripe deployed configuration (liquidations_enabled, fee parameters, paused flags).
+
+# Smoke-test unkeyed alternative Base RPC log providers after positive Ripe live configuration check.

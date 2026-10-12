@@ -164,3 +164,8 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Verify live contract code and event index access, especially whether free RPC permits Ripe eth_getLogs.
 - [ ] If history can be retrieved, assess nonzero keeperFee and actual GREEN/sGREEN to tx.from with gas and fee recipient.
 - [ ] Do not send any transaction or assume token redeems at $1 without verified liquidity; current eligibility unproven.
+
+- [x] Query deployed Ripe MissionControl `getGenLiqConfig()` and live pause flags: enabled, configured 1% keeper fee.
+- [x] Correct GitHub Radar to classify Ripe unavailable history as incomplete, preserving proof of code and live config separately.
+- [ ] Test alternate keyless Base RPC event-history providers without spending and retain provider failure states.
+- [ ] Independently verify a positive GREEN/sGREEN mint receipt to external Teller caller; fee config is not a payout.

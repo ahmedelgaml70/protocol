@@ -1,0 +1,43 @@
+{
+  "observed_at_utc": "2026-10-12T06:19:55Z",
+  "provenance": "GitHub Actions live read-only Base RPC and official Ripe Foundation manifest",
+  "action_run": "https://github.com/ahmedelgaml70/protocol/actions/runs/38211967821",
+  "artifact": "https://github.com/ahmedelgaml70/protocol/actions/runs/38211967821/artifacts/11728544778",
+  "chain_id": 8453,
+  "official_manifest": "https://github.com/Ripe-Foundation/ripe-protocol/blob/master/migration_history/base-mainnet/v1/current-manifest.json",
+  "live_contract_code_present": true,
+  "contracts": {
+    "Teller": "0xae87deB25Bc5030991Aa5E27Cbab38f37a112C13",
+    "AuctionHouse": "0xe9Dc24Ab1dC4746C7A43FAce3f895D9176D4C235",
+    "GreenToken": "0xd1Eac76497D06Cf15475A5e3984D5bC03de7C707",
+    "SavingsGreen": "0xaa0f13488CE069A7B5a099457c753A7CFBE04d36",
+    "MissionControl": "0x559E53F42b68b4995732Dba4aF300796761DBC19"
+  },
+  "observed_runtime": {
+    "Teller_is_paused": false,
+    "AuctionHouse_is_paused": false,
+    "MissionControl_is_paused": false,
+    "liquidations_enabled": true,
+    "configured_keeper_fee_ratio_bps": 100,
+    "minimum_keeper_fee_green_raw": "1000000000000000000",
+    "maximum_keeper_fee_green_raw": "25000000000000000000000",
+    "ltv_payback_buffer_bps": 1000,
+    "green_decimals": 18,
+    "savings_green_decimals": 18
+  },
+  "current_fees_are_observed_config_not_paid_rewards": true,
+  "bytecode_source_exact_match_verified": false,
+  "history": {
+    "status": "INCOMPLETE_NOT_ZERO",
+    "hours_requested": 6,
+    "primary_provider": "Base official RPC",
+    "primary_error": "eth_getLogs rejected (HTTPError)",
+    "fallback_provider": "free base.blockscout.com v2",
+    "fallback_error": "HTTP 403",
+    "number_of_liquidation_events": null,
+    "positive_external_caller_green_or_sgreen_receipt_confirmed": false
+  },
+  "realized_user_profit_usd": 0,
+  "capital_spent_usd": 0,
+  "next_step": "Try documented keyless Base RPC alternatives, then receipt-audit genuinely positive fee events; do not build/exe keeper without actual rewards and current eligible action."
+}
