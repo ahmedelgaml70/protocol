@@ -9,7 +9,7 @@ class Keep3rTests(unittest.TestCase):
 
     def test_no_wallet_or_mutating_methods(self):
         for method in ("eth_sendTransaction","eth_sendRawTransaction",
-                       "personal_sign","eth_sign","eth_getLogs"):
+                       "personal_sign","eth_sign","eth_signTypedData_v4"):
             with self.subTest(method=method):
                 with self.assertRaisesRegex(ValueError,"Unauthorized"):
                     p.rpc("https://example.invalid",method,[])
