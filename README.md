@@ -1,4 +1,7 @@
-# Protocol — evidence-first income research, current $100 challenge
+# Protocol — $10 no-jobs, permissionless-income investigation
+
+**CURRENT USER MANDATE OVERRIDE — 2026-10-12:** [Read the $10/no-jobs hard reset](docs/CURRENT_MANDATE_10_NO_JOBS_2026_10_12.md). The latest user message explicitly sets **$10**, not $100, and rejects ALL jobs, paid tasks, client services, promotions, discounts, referral schemes and waiting for customers. Goal: lawful, online, already-funded permissionless rewards as fast as possible, with $1,000 total aspirational; no present income verified, no spending permitted. **Do not suggest Upwork or work-for-hire again.** Earlier $100/Nov 12 documents remain historical research only, not current instructions.
+
 
 **Canonical status (2026-10-12):** aspire to turn **up to $100 initial capital into $1,000 net-withdrawable total by November 12, 2026**, legally and online. **$0 spent, $0 earned, no execution-ready reward currently verified.** A 10× total is an aggressive aspiration, not a supported forecast. No private keys, automatic transactions, external applications or spend are enabled.
 
