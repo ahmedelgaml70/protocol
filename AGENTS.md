@@ -8,7 +8,8 @@
 4. [Copyable new-agent continuation prompt](docs/CONTINUE_AS_AGENT.md)
 5. [New study: Hyperlane, Archr, TaskMarket and x402](docs/RESEARCH_ROUND2_RELAYER_AGENT_MARKETS_2026_10_12.md)
 6. [Latest study: Convex live harvest and kick bounty audit (PR #11)](https://github.com/ahmedelgaml70/protocol/blob/research/convex-earmark-100/docs/CONVEX_KEEPER_KICK_AUDIT_2026_10_12.md)
-7. [Original user prompts](docs/ORIGINAL_PROMPTS.md) and [historical research log](docs/RESEARCH_LEDGER.md)
+7. [Newest live funded-task and burn-bounty audit (PR #12)](https://github.com/ahmedelgaml70/protocol/blob/research/prefund-live-gates-100/docs/PREFUNDED_LIVE_GATE_AUDIT_2026_10_12.md)
+8. [Original user prompts](docs/ORIGINAL_PROMPTS.md) and [historical research log](docs/RESEARCH_LEDGER.md)
 
 **The previous complete version of this AGENTS.md is preserved at [docs/archive/AGENTS_BEFORE_2026_10_12_HANDOFF.md](docs/archive/AGENTS_BEFORE_2026_10_12_HANDOFF.md)**. It remains useful for historic technical failure details but has outdated constraints.
 
@@ -21,7 +22,7 @@ Strong user preferences: no cold clients, sales calls, paid freelancer bids, ref
 ## Guardrails — REQUIRED
 - Do not submit transactions, sign, connect funded wallets, spend, open user accounts, apply for third-party work, submit outside PRs, send messages, purchase API access, configure subscriptions, or merge research-code branches without **user approval for the specific action**.
 - Research, read-only GitHub checks and requested documentation updates are allowed. No wallet keys, user addresses, personal identifiers, payment handles or secrets in this **public repository**. Scrub all JSON artifacts and logs.
-- Source-of-truth: `main` for charter, handoff, methodology, outcome ledger, older `evidence/`. Experimental branches **PR #8 (0xSplits)**, **PR #9 (Liquity/Sovryn)**, **PR #10 (Keep3r)** are draft/unmerged and should not be mistakenly described as merged. Preserve all previous factual evidence and user prompts.
+- Source-of-truth: `main` for charter, handoff, methodology, outcome ledger, older `evidence/`. Experimental branches **PR #8 (0xSplits)**, **PR #9 (Liquity/Sovryn)**, **PR #10 (Keep3r)**, **PR #11 (Convex)** and **PR #12 (funded live gates)** are draft/unmerged and should not be mistakenly described as merged. Preserve all previous factual evidence and user prompts.
 - **No bot before current payout proof.** Find who has escrowed funds, the exact current unclaimed action, recent actual payees, any keeper bond, country rules, deadline and net economics first. Only then build the smallest read-only simulation needed.
 - A transaction history or budget balance is not an open income opportunity. `eth_call` success is not a guaranteed winning transaction. A payable formula, treasury TVL, APY, points or future airdrop is not bankable cash.
 - Explicitly separate `ZERO_IN_BOUNDED_SUCCESSFUL_SCAN` and `INCOMPLETE_RPC`. Stop if blocked; do not state no opportunity exists system-wide. Timestamp on-chain scans in UTC and include block/address/chain.
