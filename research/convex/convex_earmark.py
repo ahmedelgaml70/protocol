@@ -20,7 +20,8 @@ PROVIDERS=("https://ethereum-rpc.publicnode.com",
 TRANSFER="0x"+keccak(text="Transfer(address,address,uint256)").hex()
 EARMARK="0x"+keccak(text="earmarkRewards(uint256)")[:4].hex()
 ALLOW={"eth_chainId","eth_blockNumber","eth_getCode","eth_call","eth_getLogs",
-       "eth_getTransactionReceipt","eth_getTransactionByHash"}
+       "eth_getTransactionReceipt","eth_getTransactionByHash",
+       "eth_getBlockByNumber","eth_estimateGas"}
 WINDOW_BLOCKS=800
 CHUNK=200
 MAX_LOGS=140
