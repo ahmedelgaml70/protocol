@@ -6,6 +6,7 @@ Only eth_call + eth_estimateGas, no signing or transaction is supported.
 """
 import json,os,sys
 from datetime import datetime,timezone
+from decimal import Decimal
 from eth_abi import decode,encode
 from eth_utils import keccak
 import convex_earmark as ev
@@ -69,12 +70,12 @@ def get_candidates(url):
         try:
             bal=decode(["uint112","uint112","uint32"],call(url,"balances(address)",["address"],[address]))
             locked=int(bal[0]);nxt=int(bal[2])
-            item={"address":address,"locked_cvx_units":str(locked/10**18),
+            item={"address":address,"locked_cvx_units":str(Decimal(locked)/Decimal(10**18)),
                   "next_unlock_index":nxt,"status":"no_pending_lock"}
             if locked:
                 raw=call(url,"userLocks(address,uint256)",["address","uint256"],[address,nxt])
                 amount,boosted,unlock=decode(["uint112","uint112","uint32"],raw)
-                item["first_unprocessed_lock_cvx_units"]=str(amount/10**18)
+                item["first_unprocessed_lock_cvx_units"]=str(Decimal(amount)/Decimal(10**18))
                 item["first_unprocessed_unlock_unix"]=unlock
                 eligible=unlock+grace_epochs*epoch<=now and amount>0
                 item["maturity_gate_open"]=eligible
