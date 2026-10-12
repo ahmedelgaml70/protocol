@@ -33,6 +33,9 @@ jobs:
       - name: Sample verified on-chain keeper payments without transactions
         working-directory: research/keep3r
         run: python keep3r_activity.py
+      - name: Preflight current workability of recently worked strategy addresses (read-only)
+        working-directory: research/keep3r
+        run: python keep3r_preflight.py
       - name: Retain JSON report even if RPC unavailable
         if: always()
         uses: actions/upload-artifact@v4
