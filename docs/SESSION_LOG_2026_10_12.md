@@ -121,3 +121,6 @@ Compared ordinary client hunting with customer-funded order fulfilment. Official
 - Bountic: first-party current homepage claims $55 total funded/5 issues but 0 payouts, one $10 open GitHub issue and 19 PRs publicly listed as competing; maintainer manual approval gate after merging code; no confirmed paid worker or low-competition task.
 - AgentPay and Legwork are testnet demonstrations and Aither queued $100 audit is unlaunched/excluded security. No actions taken to register, claim, fund, apply, sign, post or merge.
 - Full source evidence: [Arc/Base/Bountic audit](https://github.com/ahmedelgaml70/protocol/blob/research/arc-base-escrow-100/docs/ARC_BASE_BOUNTIC_AUDIT_2026_10_12.md). $100 intact; $0 spent, $0 earned.
+
+
+- Additional late check: Claudelance's own 2026 mainnet README states all recorded payout activity is **self-operated dogfooding by one poster**, despite advertised four-digit task category ranges. Hive Stellar deployment is explicitly Testnet with mocked signing/mainnet postponed. Findings added to PR #13 audit and canonical handoff; no external work.
