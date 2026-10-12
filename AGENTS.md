@@ -1,3 +1,13 @@
+# New project direction (2026-10-12)
+
+**Read [docs/INCOME_PIVOT_2026_10_12.md](docs/INCOME_PIVOT_2026_10_12.md) before pursuing further leads.** The historical on-chain keeper mission below is superseded for active research, not erased. User's constraints: $10 maximum initial cash exposure, online/computer-based, worldwide but from Egypt, no clients/cold outreach, no call-based jobs, no AI training or security bounties, no referral/affiliate campaigns, no contests, no speculative trades, no signing or wallet transactions, no account/profile changes without explicit user approval. The user also ruled out routine freelance job hunting; platform-assigned compensated work should be labeled **constraint exception**, not a direct fit.
+
+**Current protocol-radar cron is intentionally paused.** It remains manually runnable. Do not restore scheduled runs or write financial alerts based on phantom opportunities without new evidence and permission.
+
+**Priority:** show a real, open route with eligibility from Egypt, payout rail/time, access to current work/buyers, reward after fees, and likelihood of reaching money within seven days. Do not build another automation for unverified supply/demand. $1,000 in seven days remains an aspirational target, not a guarantee. Explicit user approval required before spending, registering an account, listing products or applying to platforms.
+
+---
+
 # Operating instructions for AI agents and human collaborators
 
 ## Mission

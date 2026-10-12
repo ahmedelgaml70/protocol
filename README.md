@@ -1,6 +1,10 @@
-# Protocol — permissionless opportunity research
+# Protocol — archived keeper research and broader income opportunity validation
 
-**Status:** research only · **Budget:** $10 reserved · **Verified collectible net profit:** none · **Real transactions:** disabled.
+**Status (2026-10-12): strategic pivot** · **Budget:** $10 reserved · **Verified collectible net profit:** none · **Wallet transactions:** disabled · **Keeper GitHub cron:** paused, manual only.
+
+**CURRENT DIRECTION:** [Income pivot evidence and decision](docs/INCOME_PIVOT_2026_10_12.md) | [Opportunity verification gates](docs/NEW_INCOME_GATES.md).
+
+The original on-chain keeper radar was investigated and found to have poor practical economics or unverified current eligible payouts; keep the full evidence and read-only scripts as an archive. Do not interpret this repository as an active profitable bot.
 
 This repository is the working source of truth for the $10 → $1,000 challenge: finding lawful, permissionless rewards that can be captured through on-chain operations **without clients, jobs, promotional campaigns, or airdrop speculation**.
 

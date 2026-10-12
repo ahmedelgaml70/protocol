@@ -214,3 +214,15 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Reconstruct largest Morpho Base liquidation batch transaction full token flows (including swaps and flash loan) and historical execution-time exchange quotes; distinguish market oracle/reference valuation from realizable cash.
 - [ ] Verify liquid collateral exit and conservative expected net AFTER gas/flash/DEX/slippage, failed-call loss, and any capital requirements for a newcomer.
 - [ ] Independently check open, unliquidated borrower only after robust positive historic realized-dollar test; never sign or spend without separate explicit approval.
+
+
+## Pivot (effective 2026-10-12)
+
+- [x] Reassess keeper route based on read-only actual payouts; discontinue as primary plan.
+- [x] Stop twice-hourly automatic on-chain scans but preserve manual dispatch and all tests.
+- [x] Verify new platforms' country eligibility, payout speed, fees and contradictions from official documents.
+- [x] Evaluate potential reusable digital products against observed marketplace listings and payment rails.
+- [ ] Before spending $10 or making storefront: verify upfront Etsy setup fee quoted to Egyptian seller and Payoneer onboarding, or use a strictly free platform if plausible exposure exists.
+- [ ] Verify product-specific **recent buyer evidence**, not generic template marketplace popularity, and develop one original premium interactive lecture/motion asset only when the niche passes the demand gate.
+- [ ] If user explicitly permits platform-assigned contractor work despite no-freelancing preference: check open entry flow for GoTranscript Arabic, BetaTesting, PlaytestCloud and uTest; do not apply without approval.
+- [ ] Do not claim payout accessibility until there is current inventory and a verified supported Egypt payout option.
