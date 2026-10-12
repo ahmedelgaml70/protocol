@@ -30,11 +30,14 @@ jobs:
       - name: Read funding balances only, never submit work
         working-directory: research/keep3r
         run: python keep3r_funding.py
+      - name: Sample verified on-chain keeper payments without transactions
+        working-directory: research/keep3r
+        run: python keep3r_activity.py
       - name: Retain JSON report even if RPC unavailable
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: keep3r-funding-readonly
-          path: research/keep3r/keep3r_reports/report.json
+          path: research/keep3r/keep3r_reports/*.json
           if-no-files-found: warn
           retention-days: 7
