@@ -134,3 +134,11 @@ Compared ordinary client hunting with customer-funded order fulfilment. Official
 - Three actually FUNDED direct harvest bounties, all \`eth_call\` SUCCESS, but reference USD gross-minus-network-fee: ~$-0.057, -0.161, -0.066 before any conversion. All net negative. Remaining two report \`rebalanceable=true\` but their actual rebalance calls revert, harvestable zero.
 - Confirmed 5 separate other mechanism classes: Velocity fills 1–11 cents in typical docs (not a high-dollar repeatable path), fillr Solana protocol currently devnet despite headline, Caliper on Robinhood Chain mainnet TOKEN but only TESTNET reward vault, GBLIN prior Base keeper was tied to superseded deployment/verification unresolved, ADAM 0.5% caller share of 0.0056 ETH fee pool ~7c gross.
 - Preserved as DRAFT [PR #14](https://github.com/ahmedelgaml70/protocol/pull/14), full [Harbor and new leads audit](https://github.com/ahmedelgaml70/protocol/blob/research/harbor-bounties-10/docs/HARBOR_REAL_FUNDED_BOUNTY_NEGATIVE_NET_2026_10_12.md). No funds used or user cash earned.
+
+
+## Latest evening research: Moto.fun graduated reward, Omora caller rights, Kairos collateral — Oct 12 18:13 UTC
+
+- First-party moto.fun docs confirm public Ethereum graduate ETH bounty and no-credential coin list. Built safety-tested [draft PR #15](https://github.com/ahmedelgaml70/protocol/pull/15); [successful CI](https://github.com/ahmedelgaml70/protocol/actions/runs/38289424666) shows first-party live API 75 total coins, 69 bonding, **0 frozen**, six graduated. 25 latest individually read, 23 bonding/two graduated. Curve/lens contracts verified as code on Ethereum at block 26,178,111 using first-party address fallback because \`GET /config\` unexpectedly 404. All requests read-only.
+- Inspected connected GitHub Solidity of Omora V4 FeeManager on Base: public collect -> creator 70%, protocol 30%; no keeper payment to arbitrary caller. Reject.
+- Kairos first-party docs mention 2% liquidator reward on buyer posted collateral, but Github \`kairosswap/protocol\` source 404, no demonstrably active mainnet liquidation; keep unverified.
+- Detailed audit committed to PR #15 and linked in canonical docs. $0 spent, $0 user received. No transactions, jobs or customers.
