@@ -8,6 +8,7 @@
 - [Opportunity matrix: proven, partial, rejected, conditional](docs/OPPORTUNITY_MATRIX_2026-10-12.md)
 - [Payer-first research methodology and audit gates](docs/RESEARCH_PLAYBOOK.md)
 - [Copyable prompt to resume as a new agent](docs/CONTINUE_AS_AGENT.md)
+- [Detailed dated session log and next-action checkpoint](docs/SESSION_LOG_2026_10_12.md)
 - [Original user instructions, including the initial $10 goal](docs/ORIGINAL_PROMPTS.md)
 
 **Three 2026-10-12 investigation branches remain DRAFT/UNMERGED**, not part of main: [PR #8 0xSplits](https://github.com/ahmedelgaml70/protocol/pull/8), [PR #9 Liquity + Sovryn](https://github.com/ahmedelgaml70/protocol/pull/9), [PR #10 Keep3r](https://github.com/ahmedelgaml70/protocol/pull/10). Their read-only workflows and JSON scan results are described in their audit notes. Do not merge or spend funds without explicit approval.
