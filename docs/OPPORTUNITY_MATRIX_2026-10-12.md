@@ -197,3 +197,16 @@ Current available worker income in two live mainnet task escrows was **0 USDC**,
 | ADAM ETH fee splitting | UI shows 0.0056 ETH unprocessed and 0.5% caller share (~$0.071 gross), no gas simulation | **LOW PRIORITY**, below $25 and uncertain net |
 
 **New lesson:** Passing all of deployment, funded contract, payable caller and successful \`eth_call\` STILL leaves economic viability; Harbor genuine payouts lose money from gas. Token reward USD conversion is **NOT** same denomination as native ETH gas, and even 'very low' gas may defeat tiny harvests.
+
+
+## L. Moto.fun ETH, Omora Base fee, Kairos USDC liquidation — Oct 12 ~18:13 UTC
+
+[New read-only audit PR #15](https://github.com/ahmedelgaml70/protocol/blob/research/motofun-keeper-10/docs/MOTOFUN_OMORA_KAIROS_AUDIT_2026_10_12.md) / [successful scan](https://github.com/ahmedelgaml70/protocol/actions/runs/38289424666). Latest capital $10, no jobs.
+
+| Candidate | Live first-party or verifiable contract evidence | Verdict |
+|---|---|---|
+| Moto.fun Ethereum launchpad \`graduate(token)\` | Genuine ETH bounty payable to public independent caller; Lens offers exact \`bountyNow\`. First-party venue states **75 total, 69 bonding, 0 frozen, 6 graduated**. Chain1 official curve/lens code exists block 26,178,111; \`/config\` 404, addresses from first-party docs fallback. | **WATCH, ZERO eligible coins at official API snapshot**, no present reward; no simulation or gas attempt. |
+| Omora Base FeeManager V4 \`collect()\` | Public call splits accrued value **70% creator / 30% protocol**, caller NOT a recipient; creator \`claimFees\` only for self. | **STOP** public call is not public payout. |
+| Kairos Ethereum interest rate swap liquidations | First-party terms document **2% of buyer collateral** reward for actual third-party \`liquidateSwap\`; $25 gross implies qualifying >=$1,250 currently collateralized position. Original source connector 404; active addresses, ready positions and successful receipt unproven. | **RESEARCH/UNVERIFIED**, do not spend or exploit audit bugs. |
+
+**Lesson**: A meaningful ~$35 advertised one-time ETH bounty is not currently payable if lifecycle state has zero READY/FROZEN assets; a public collector might send 100% to other beneficiaries. Even paid 2% liquidation needs actual eligible specific positions, not total collateral across platform.
