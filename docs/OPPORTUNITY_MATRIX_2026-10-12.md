@@ -150,3 +150,8 @@ Detailed evidence [PR #12](https://github.com/ahmedelgaml70/protocol/pull/12) / 
 | **openbounty.app** | Publisher pays after quorum acceptance; not prefunded; explanatory payment flow on **Base Sepolia** and example tasks explicitly illustrative. | **STOP** pending real escrow and mainnet payouts [site](https://openbounty.app/) |
 
 **Technical details**: registered \`claimable\` API tasks ≠ confirmed escrow; \`payment_status=pending\` ≠ paid; \`250000\` six-decimal USDC = **$0.25** (NOT $250 or $250,000). Older Burner documentation claims maximum **0.05 ETH**, whereas actual source/live getter caps at **0.01 ETH**. Read code and deployed getters. Low/current-zero funding defeats grander announced reward rates.
+
+
+## I. Flight fulfilment from already funded orders — direct public settlement census
+
+**BRIJ Travel:** [Full Oct 12 audit](BOOKING_FULFILLMENT_BRIJ_AUDIT_2026_10_12.md) / [official order explorer](https://docs.brij.fi/bounties) / [public fulfiller metrics](https://docs.brij.fi/fulfillers). The bounty explorer shows historical on-chain escrow purchases, including 732.47 USDC customer ticket order settled Sep 29. But public supplier-network records show **zero orders actually captured in last 30 days across either of two named partner/domain categories** (each four assigned, all refunded), and both require **whitelisted wallet + taker deposit + separate card-fronting of the actual airline fare**. Customer ticket price is not solver profit; the platform's external contributor fee and funding availability remain unclear. **STOP** for <$100/$900 net November goal. Do not double-count overlapping supplier domains. Not an open booking/refund faucet; no calls or applications made.
