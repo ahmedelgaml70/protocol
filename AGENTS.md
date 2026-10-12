@@ -1,67 +1,45 @@
-# New project direction (2026-10-12)
+# Instructions for any agent continuing the Protocol research project
+**Canonical current version:** 2026-10-12, supersedes older $10 / one-week directives.
 
-**Read [docs/INCOME_PIVOT_2026_10_12.md](docs/INCOME_PIVOT_2026_10_12.md) before pursuing further leads.** The historical on-chain keeper mission below is superseded for active research, not erased. User's constraints: $10 maximum initial cash exposure, online/computer-based, worldwide but from Egypt, no clients/cold outreach, no call-based jobs, no AI training or security bounties, no referral/affiliate campaigns, no contests, no speculative trades, no signing or wallet transactions, no account/profile changes without explicit user approval. The user also ruled out routine freelance job hunting; platform-assigned compensated work should be labeled **constraint exception**, not a direct fit.
+## READ THESE FIRST, IN THIS ORDER
+1. [Complete handoff and timeline](docs/HANDOFF_2026-10-12.md)
+2. [Opportunity / rejection / evidence matrix](docs/OPPORTUNITY_MATRIX_2026-10-12.md)
+3. [Payer-first evidence playbook and candidate schema](docs/RESEARCH_PLAYBOOK.md)
+4. [Copyable new-agent continuation prompt](docs/CONTINUE_AS_AGENT.md)
+5. [Original user prompts](docs/ORIGINAL_PROMPTS.md) and [historical research log](docs/RESEARCH_LEDGER.md)
 
-**Current protocol-radar cron is intentionally paused.** It remains manually runnable. Do not restore scheduled runs or write financial alerts based on phantom opportunities without new evidence and permission.
+**The previous complete version of this AGENTS.md is preserved at [docs/archive/AGENTS_BEFORE_2026_10_12_HANDOFF.md](docs/archive/AGENTS_BEFORE_2026_10_12_HANDOFF.md)**. It remains useful for historic technical failure details but has outdated constraints.
 
-**Priority:** show a real, open route with eligibility from Egypt, payout rail/time, access to current work/buyers, reward after fees, and likelihood of reaching money within seven days. Do not build another automation for unverified supply/demand. $1,000 in seven days remains an aspirational target, not a guarantee. Explicit user approval required before spending, registering an account, listing products or applying to platforms.
+## Mission and hard truth
 
----
+User goal: **Starting capital up to $100, pursue $1,000 total net-withdrawable proceeds before November 12, 2026**, online and global. Real cash needed above starting funds: $900. **This is aspirational, not an expected 900% monthly ROI.** Last verified result: **$0 spent, $0 user-earned, zero current execution-ready opportunities**. No invented rewards, guaranteed income, promises or theoretical APY projections.
 
-# Operating instructions for AI agents and human collaborators
+Strong user preferences: no cold clients, sales calls, paid freelancer bids, referral marketing, promotional funnels, AI-training work, security bug bounties/hacks, contests, speculative crypto deposits, or long lockups. Platform-assigned work or coding/documentation bounties are *conditional exceptions*, not automatically approved. Research worldwide; user's Egyptian residence is not a blanket exclusion. Verify actual service country/payment eligibility. Prior supported or available pay routes may include PayPal, Airtm, RedotPay, Binance/Binance Pay and others, but each individual payer's explicit supported method must be checked. Binance Pay is not a substitute for an EVM signing wallet.
 
-## Mission
-Find legitimate, permissionless, on-chain actions that pay an external caller. Work toward the user's aspirational $10 → $1,000 goal without clients, service work, promotion, airdrop guessing, gambling, or requiring substantial upfront capital.
+## Guardrails — REQUIRED
+- Do not submit transactions, sign, connect funded wallets, spend, open user accounts, apply for third-party work, submit outside PRs, send messages, purchase API access, configure subscriptions, or merge research-code branches without **user approval for the specific action**.
+- Research, read-only GitHub checks and requested documentation updates are allowed. No wallet keys, user addresses, personal identifiers, payment handles or secrets in this **public repository**. Scrub all JSON artifacts and logs.
+- Source-of-truth: \`main\` for charter, handoff, methodology, outcome ledger, older \`evidence/\`. Experimental branches **PR #8 (0xSplits)**, **PR #9 (Liquity/Sovryn)**, **PR #10 (Keep3r)** are draft/unmerged and should not be mistakenly described as merged. Preserve all previous factual evidence and user prompts.
+- **No bot before current payout proof.** Find who has escrowed funds, the exact current unclaimed action, recent actual payees, any keeper bond, country rules, deadline and net economics first. Only then build the smallest read-only simulation needed.
+- A transaction history or budget balance is not an open income opportunity. \`eth_call\` success is not a guaranteed winning transaction. A payable formula, treasury TVL, APY, points or future airdrop is not bankable cash.
+- Explicitly separate \`ZERO_IN_BOUNDED_SUCCESSFUL_SCAN\` and \`INCOMPLETE_RPC\`. Stop if blocked; do not state no opportunity exists system-wide. Timestamp on-chain scans in UTC and include block/address/chain.
+- Price assets at independently grounded contemporaneous executable rates and check exit slippage; treat token rewards separately from USDC/DAI/actual settled fiat.
+- Research security/legality: no exploits, oracle manipulation, unauthorized claims, third-party refunds, nonconsensual wallet recovery, market manipulation or evasion of KYC.
 
-## Non-negotiable rules
-1. **Evidence before claims.** Distinguish protocol-documentation facts, observed blockchain events, inferred possibilities, and executed net profits. Never fabricate an open bounty.
-2. **Read-only by default.** No private keys, wallet connections, signed transactions, transfers, approvals, funded infrastructure, or contracts deployed without explicit transaction-specific user approval.
-3. **Never put credentials or identifying wallet/account data in the public repository.** Use environment variables for RPC URLs; never log URLs with API keys.
-4. **Budget: $10 total risk capital.** No opportunity is approved just because the headline bonus is large. Exclude all input costs, fee costs, token exit/market impact, failed-call risk and capital locking first.
-5. **Audit deployed contracts.** Published GitHub source is not proof it matches the deployment. Check chain ID, code, protocol status, upgradeability and contract address.
-6. **Stay legitimate.** No exploitation of security vulnerabilities, stolen funds, oracle manipulation, unauthorized transactions, or terms violations. Only documented, contract-authorized public actions.
-7. **Confront competition.** A fillable view at one block does not reserve the transaction. Account for keeper priority rules, gas auctions, private order flow, transaction ordering and reverted transaction fees.
-8. **Fail closed.** Unknown price or gas means NOT_VERIFIED, never 'execution ready'. If RPC is unavailable, output an error—not zero opportunities.
-9. **Keep provenance.** Save block number, chain, address, RPC method, URL/source, observation timestamp and version for reproducibility. Never commit generated data with personal info.
-10. **Maintain a decision log.** Each rejected approach must record the blocker so research doesn't circle back without new evidence.
-11. **No guarantees.** 100× quickly is not an expected outcome. A successful observation test doesn't imply financial success.
-12. **Prefer small, verifiable experiments.** Work across many protocols and choose based on expected net value, evidence, and competition—not hype.
+## Working loop
 
-## Default research loop
-Discover candidate → verify primary source/deployed address → inspect historical payout events → observe open opportunities → check executor permissions → estimate conservative net amount → check fill/call simulation → produce evidence-backed recommendation. Never auto-execute.
+**Real funded payer → specific publicly eligible action → recent payment/receipt → still open now → full net/settlement by deadline → only then user-approved attempt.** Explore multiple unrelated mechanisms, including non-crypto. Criticize each lead; record why it failed. Favor proving/disproving an opportunity over coding another general-purpose crawler.
 
-## What to update after each session
-- `docs/RESEARCH_LEDGER.md`: sourced facts and rejected hypotheses;
-- `docs/STATUS.md`: current blockers, next action and actual measured results;
-- tests if any parser or calculation changes;
-- `docs/ROADMAP.md` when process changes.
+Review and update [OPPORTUNITY_MATRIX_2026-10-12.md](docs/OPPORTUNITY_MATRIX_2026-10-12.md) for real new evidence; update [HANDOFF](docs/HANDOFF_2026-10-12.md) for important status/plan changes. Don't duplicate old conclusions as new discoveries. Keep historical detail in the archive. Do not re-enable the paused on-chain scheduled radar or introduce unattended spend.
 
-## Explicit permission policy
-The user authorizes commits of the requested repository project. This does **not** constitute approval to transfer crypto, expose secrets, purchase services, enable unattended financial execution, or spend funds. Ask before any such action.
+## The strongest lessons so far
 
-## Learned failure — unused contract
+- Kerf RangeOrders counter showed zero orders; building a filler was pointless.
+- Superfluid ETHx had some real historic paid keeper calls, but many positive-looking rewards were priority-designated or negative after gas; historical liquidation cannot be reclaimed.
+- Beefy incumbents, Morpho MEV competition, and insufficient Ripe/PoolTogether activity defeated advertised incentives.
+- 0xSplits scans were narrow; 7-day Liquity and Rootstock historical RPC attempts were incomplete; no universal-negative claims.
+- Keep3r's ~19,881 DAI job-credit balance belonged to an already-retired MakerDAOUpkeep; a different active Keep3r job paid 20 historic calls to **two** keepers, and its 19 recently worked strategies all returned **workable=false** at the latest preflight. DO NOT claim large funding ≡ free reward.
+- FLOP testnet rewards locked until future mainnet, PERPTools points and Papertrade loss-for-token mechanics cannot substantiate near-term withdrawable dollars.
+- Public Github \`bounty\` labels can be unbacked, expired or synthetic. The Oct 12 candidate \`SUSU-LABS/susu-indexer#46\` offers $40 for a precise nonsecurity code task but escrow/payout pathway is unproven, and the \`NSPG13/agent-bounties#1262\` explicitly says unfunded. No approved applicant activity.
 
-The first user-supplied live scan of Kerf RangeOrders showed `nextOrderId=1` (contract's initial ID), zero orders and no errors. Do not create another full bot just because documentation mentions a caller bounty. **Gate 0: find a recent successful on-chain payout first.** Evidence: `evidence/kerf-rangeorders-4663-block-86104491.json`. User-provided reports are labeled as such, not represented as independently reproduced.
-
-## Learned lesson — read event types and deduplicate by transaction
-
-The October 11 Superfluid subgraph returns **300 liquidation events but only 270 unique tx hashes**. Some transactions batch multiple stream liquidations. Period codes are 0 Patrician, 1 Pleb, 2 Pirate. Patrician reward receiver is priority-designated; 1/2 have permissionless rewards but recorded historical events are already collected. Do **not** treat the Batch Liquidator intermediate address as an actual distinct bot, or price arbitrary raw token amounts as USD. Match `tx.from` to actual ERC20 `Transfer` recipients, calculate Base L1+L2 gas, and deduplicate. Count attempts that fail in any realistic profitability model.
-
-## New stop rule (Superfluid audit, October 12)
-A high event count does not imply a valuable/public reward pool. Superfluid Base activity yielded priority-locked USDCx payouts and ETHx rewards concentrated in one successful keeper. Six of 12 **successful** selected ETHx calls were economically negative versus gas under parity. Do NOT automate live liquidation on the user's budget until we verify a current eligibility window, realistic competitive fill probability, and conservative expected net that accounts for failed calls. Document decisions before adding bots. Original user receipts and full report must remain in `evidence/`.
-
-## Source-version trap
-Do not assume same-named event across old repositories uses same ABI. Legacy PoolTogether/v5-prize-pool defines ClaimedPrize with uint16 drawId whereas the newer docs-pinned GenerationSoftware/pt-v5-prize-pool defines uint24 drawId, changing topic0. Only count current deployed contract reward and validated recipient; never call aggregate protocol fee revenue keeper income.
-
-## Automated GitHub Actions safety policy
-Actions only run public read-only research scripts. PR workflows get read-only contents permission, and only the post-radar workflow has issues:write. The alert stage consumes untrusted workflow artifacts as **data only** and must never execute downloaded code. Alerts mean historical research evidence, not current executable opportunity or profit; wallet execution must remain separately and explicitly user-approved. Ripe integration is not yet implemented. See docs/GITHUB_ACTIONS.md.
-
-## Beefy automation guard
-
-Beefy's v2 Cowllector API last-harvest-reports are ONLY the incumbent operator's most recent report per vault; simulated call reward and gas estimates are not third-party net profit. Amounts are JS JSON numbers and might not be exact wei. Never open execution-ready alerts from these, nor submit/simulate actual transactions that spend gas without explicit authorization. Require independent success receipt, true reward transfer to tx sender, token exit liquidity and current permissionless eligibility before grading opportunity.
-
-## Morpho PnL data integrity (October 12)
-Official GraphQL `Liquidation` event count differs from unique tx count (100 events / 37 txs); uniquely identify logs using txHash + marketId + logIndex. Receipt-level `Liquidate.caller` may represent a contract and differ from submitting `tx.from`. Never price or subtract `seizedAssets` from `repaidAssets` directly without each market's correct token, decimals, credible exit liquidity and swap fees. A successful historical liquidation is already taken. Synthetic 70-test suite passed. No auto flash loan, liquidation, signing, spending or wallet secrets.
-
-## Morpho reference-price false-positive rule
-NEVER label `indicative_current_reference_valuation.gross_current_reference_spread_usd` as realized PnL or accessible profit. It reprices historical collateral/repaid token raw quantities at current API priceUsd, without executable sale, flash loan, DEX gas, fees, slippage or failures. Even $64K summed across capped events is not a user's opportunity. Require whole transaction cashflow plus live eligible target and conservative net before considering execution; no auto trade/wallet.
+At the end of every session report: **time-scoped verified claims**, active/refuted leads, direct source links, capital spent, cash actually received, files/branches updated and smallest next falsification test. Zero income is a valid result; fabricated optimism is not.
