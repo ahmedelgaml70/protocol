@@ -155,3 +155,18 @@ Detailed evidence [PR #12](https://github.com/ahmedelgaml70/protocol/pull/12) / 
 ## I. Flight fulfilment from already funded orders — direct public settlement census
 
 **BRIJ Travel:** [Full Oct 12 audit](BOOKING_FULFILLMENT_BRIJ_AUDIT_2026_10_12.md) / [official order explorer](https://docs.brij.fi/bounties) / [public fulfiller metrics](https://docs.brij.fi/fulfillers). The bounty explorer shows historical on-chain escrow purchases, including 732.47 USDC customer ticket order settled Sep 29. But public supplier-network records show **zero orders actually captured in last 30 days across either of two named partner/domain categories** (each four assigned, all refunded), and both require **whitelisted wallet + taker deposit + separate card-fronting of the actual airline fare**. Customer ticket price is not solver profit; the platform's external contributor fee and funding availability remain unclear. **STOP** for <$100/$900 net November goal. Do not double-count overlapping supplier domains. Not an open booking/refund faucet; no calls or applications made.
+
+
+## J. Arc / Base / Bountic current open-task census — Oct 12 17:16 UTC
+
+[Primary code and audit PR #13](https://github.com/ahmedelgaml70/protocol/pull/13) / [full report](https://github.com/ahmedelgaml70/protocol/blob/research/arc-base-escrow-100/docs/ARC_BASE_BOUNTIC_AUDIT_2026_10_12.md) / [passed CI and live evidence](https://github.com/ahmedelgaml70/protocol/actions/runs/38283082911).
+
+| Platform | Actual observed inventory and payment evidence | Verdict |
+|---|---|---|
+| ArcBounty, Arc mainnet chain 5042 | Official chain-storage API: 16 posted, 12 historically paid, **22.77 USDC total worker payments**, **0 open tasks** | STOP NOW: zero unclaimed current payout |
+| BaseBounty, Base mainnet chain 8453 | Distinct deployed chain and escrow, 9 posted, 3 paid, **2.97 USDC total worker payments**, **0 open tasks** | STOP NOW: zero unclaimed current payout |
+| Bountic Locus escrow site | Advertises **55 USDC total funded / 5 bounties / 0 payouts**. One $10 open issue #12 shows **19 competing PRs**, optional source material mismatched with issue headline; payment requires maintainer approval after winning PR merger | REJECT: user avoids competing for low-value coding bounties, no verified worker payout proof |
+| AgentPay; Legwork | Base Sepolia/USDC testnet demonstrations, Legwork has in-person World ID physical errand element | STOP: not suitable online withdrawable income |
+| Aither queued Q4 100 USDC contract audit | Not open payment; listed task is security-oriented | STOP: security bounty excluded |
+
+Current available worker income in two live mainnet task escrows was **0 USDC**, despite 25.74 USDC aggregate past worker payouts. Do not count publisher budgets, marketing figures or old transactions as today's available cash. Need a concrete open unreserved task ≥25 net USD with timely authorized payout BEFORE integrating SDKs or signing transactions. Sample was timestamped 17:16 UTC; future jobs could appear.
