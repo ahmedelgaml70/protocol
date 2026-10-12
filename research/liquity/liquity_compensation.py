@@ -25,8 +25,8 @@ SCOPE={
 }
 TRANSFER_TOPIC="0x"+keccak(text="Transfer(address,address,uint256)").hex()
 MAX_RECEIPTS=16
-WINDOW_BLOCKS=7400  # approximate one day; actual timestamps reported
-CHUNK=500
+WINDOW_BLOCKS=52000  # approximately seven days; block range is recorded
+CHUNK=2000
 
 def sig(text):
     return "0x"+keccak(text=text)[:4].hex()
