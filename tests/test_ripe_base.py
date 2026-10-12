@@ -18,6 +18,7 @@ class FakeRPC:
         if m=="eth_chainId":return hex(8453)
         if m=="eth_blockNumber":return hex(1000)
         if m=="eth_getCode":return "0x6001"
+        if m=="eth_call":raise ValueError("Simulated older provider without eth_call")
         if m=="eth_getTransactionByHash":return {"hash":HASH,"from":SENDER,"to":TELLER}
         if m=="eth_getTransactionReceipt":
             return {"status":"0x1","gasUsed":"0x64","effectiveGasPrice":"0x2","l1Fee":"0x5",
