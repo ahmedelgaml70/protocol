@@ -1,0 +1,38 @@
+name: Arc and Base Mainnet Escrow Board Read-Only
+
+on:
+  push:
+    branches: [research/arc-base-escrow-100]
+    paths:
+      - 'research/arc_bounty/**'
+      - '.github/workflows/arc-base-readonly.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Enforce read-only and correct money accounting in tests
+        working-directory: research/arc_bounty
+        run: python -m unittest -v test_board_probe.py
+      - name: Read official chain-storage-backed mainnet open boards and payout history
+        working-directory: research/arc_bounty
+        run: python board_probe.py
+      - name: Save machine-readable observations even if unavailable
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arc-base-mainnet-readonly
+          path: research/arc_bounty/reports/*.json
+          if-no-files-found: warn
+          retention-days: 7
