@@ -49,3 +49,8 @@ This research is not a game of finding a persuasive argument. Actively disprove 
 ### Newly falsified payout rails (Oct 12, 2026)
 
 Do NOT recommend Opire simply because an issue says "rewarded": [official Opire terms](https://docs.opire.dev/rewards/pricing) state payouts are **arranged directly by the sponsor after PR review**, not automatically triggered or platform-escrow-guaranteed. Do NOT recommend [openbounty.ai](https://openbounty.ai/) listed apparently funded demo issues: homepage explicitly says **mock-payments mode, no real funds**. An Open Collective `Pending` expense isn't a paid receipt. Verify actual cleared transfers.
+
+
+### Latest research round (Oct 12, additional models)
+
+Before making a new relayer/agent earning bot, read [round-2 audit](RESEARCH_ROUND2_RELAYER_AGENT_MARKETS_2026_10_12.md). Hyperlane's permissionless `claim()` pays the configured beneficiary **not the caller**. Archr.fun claims 1% keeper fees but no currently funded payable call has been proven and its own keeper competes. The 27-venue Shaduf Oct 10 independent agent-market survey reports tiny/contested historic payouts, and TaskMarket's release depends on requester acceptance despite escrow; default fee 7.5%. x402 settlements are real but self-funded loops inflate headline buyer/seller demand. Need independent buyers or a positive-current-caller-reward, not "volume". No new execution-ready opportunity.
