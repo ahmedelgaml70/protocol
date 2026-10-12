@@ -1,3 +1,7 @@
+> **HISTORICAL CHARTER — SUPERSEDED AS OF 2026-10-12.** The user increased operating capital to **up to $100** and the time horizon to **one month, target November 12, 2026**. Search now includes cross-domain already-funded public opportunities, not only on-chain keepers. Still no user funds spent and no verified earnings. Current charter is [HANDOFF_2026-10-12.md](HANDOFF_2026-10-12.md) and [RESEARCH_PLAYBOOK.md](RESEARCH_PLAYBOOK.md). Preserve this original document as the initial project's decision history.
+
+---
+
 # Project charter
 
 **Name:** Protocol / Permissionless Bounty Radar
