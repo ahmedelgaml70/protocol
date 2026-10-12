@@ -208,3 +208,9 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Fetch Morpho market token metadata, decimal precision, debt repayment valuation, collateral liquidity and realizable swap price to compute conservative net per transaction.
 - [ ] Investigate flash-funded / delegated liquidation route and onchain operator competition before considering whether $10 gas budget is realistic.
 - [ ] Check current eligible unliquidated account only if historically proven conservatively profitable outsider route exists; no signing/spending without separate approval.
+
+- [x] Obtain correct market loan/collateral token addresses, decimals and current API reference USD prices for 98/100 indexed events.
+- [x] Calculate strictly **illustrative gross** current-reference spreads without falsely labeling them historic realized profit.
+- [ ] Reconstruct largest Morpho Base liquidation batch transaction full token flows (including swaps and flash loan) and historical execution-time exchange quotes; distinguish market oracle/reference valuation from realizable cash.
+- [ ] Verify liquid collateral exit and conservative expected net AFTER gas/flash/DEX/slippage, failed-call loss, and any capital requirements for a newcomer.
+- [ ] Independently check open, unliquidated borrower only after robust positive historic realized-dollar test; never sign or spend without separate explicit approval.

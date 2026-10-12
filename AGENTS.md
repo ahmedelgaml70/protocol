@@ -52,3 +52,6 @@ Beefy's v2 Cowllector API last-harvest-reports are ONLY the incumbent operator's
 
 ## Morpho PnL data integrity (October 12)
 Official GraphQL `Liquidation` event count differs from unique tx count (100 events / 37 txs); uniquely identify logs using txHash + marketId + logIndex. Receipt-level `Liquidate.caller` may represent a contract and differ from submitting `tx.from`. Never price or subtract `seizedAssets` from `repaidAssets` directly without each market's correct token, decimals, credible exit liquidity and swap fees. A successful historical liquidation is already taken. Synthetic 70-test suite passed. No auto flash loan, liquidation, signing, spending or wallet secrets.
+
+## Morpho reference-price false-positive rule
+NEVER label `indicative_current_reference_valuation.gross_current_reference_spread_usd` as realized PnL or accessible profit. It reprices historical collateral/repaid token raw quantities at current API priceUsd, without executable sale, flash loan, DEX gas, fees, slippage or failures. Even $64K summed across capped events is not a user's opportunity. Require whole transaction cashflow plus live eligible target and conservative net before considering execution; no auto trade/wallet.

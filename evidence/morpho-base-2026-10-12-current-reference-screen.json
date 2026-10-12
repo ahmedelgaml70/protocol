@@ -1,0 +1,94 @@
+{
+  "observed_at_utc": "2026-10-12T07:04:19Z",
+  "sources": {
+    "official_api": "https://api.morpho.org/graphql",
+    "read_only_2026_october_smoke": "https://github.com/ahmedelgaml70/protocol/actions/runs/38215715533",
+    "original_artifact": "https://github.com/ahmedelgaml70/protocol/actions/runs/38215715533/artifacts/11732252183",
+    "original_receipt_evidence": "https://github.com/ahmedelgaml70/protocol/actions/runs/38214906472/artifacts/11731186613",
+    "api_documentation": "https://docs.morpho.org/developers/api/morpho/"
+  },
+  "scope": "Historical Base 8453 indexed Morpho Blue Liquidate events, newest 100 returned records and current API market token reference prices",
+  "sample_capped": true,
+  "events_indexed": 100,
+  "distinct_transactions": 37,
+  "sample_time_utc": [
+    "2026-10-08T17:24:31Z",
+    "2026-10-11T16:26:17Z"
+  ],
+  "asset_metadata_complete": 98,
+  "asset_metadata_missing_or_unpriced": 2,
+  "illustrative_positive_gross_current_reference_price_event_count": 98,
+  "illustrative_current_reference_gross_spread_usd": "64292.83850643467743262053359",
+  "summed_historical_cash_pnl_verified": false,
+  "illustrative_gross_spread_by_symbol_group": [
+    {
+      "loan": "USDC",
+      "collateral": "cbXRP",
+      "events": 41,
+      "current_reference_gross_spread_usd_rounded": "33214.44"
+    },
+    {
+      "loan": "USDC",
+      "collateral": "cbLTC",
+      "events": 3,
+      "current_reference_gross_spread_usd_rounded": "15119.54"
+    },
+    {
+      "loan": "USDC",
+      "collateral": "SOL",
+      "events": 26,
+      "current_reference_gross_spread_usd_rounded": "14912.21"
+    },
+    {
+      "loan": "USDC",
+      "collateral": "JitoSOL",
+      "events": 10,
+      "current_reference_gross_spread_usd_rounded": "397.89"
+    },
+    {
+      "loan": "USDC",
+      "collateral": "WETH",
+      "events": 6,
+      "current_reference_gross_spread_usd_rounded": "378.29"
+    },
+    {
+      "loan": "USDC",
+      "collateral": "cbADA",
+      "events": 2,
+      "current_reference_gross_spread_usd_rounded": "262.27"
+    }
+  ],
+  "three_largest_batched_transactions_by_current_reference_spread": [
+    {
+      "hash": "0xd48e1b3a1ebc009dec368dcf1abed3fa9be329792f0d871a66bc05097e1007e1",
+      "events": 10,
+      "illustrative_current_gross_spread_usd_rounded": "31078.30"
+    },
+    {
+      "hash": "0xbc503b6bc46ca1f2fe2d9488c27833d4867c160bc0a72ce9b3e438293ee22d9c",
+      "events": 3,
+      "illustrative_current_gross_spread_usd_rounded": "15119.54"
+    },
+    {
+      "hash": "0xd961ee0f5ba376fed29a3e46b1be3cc28cf5744538e534c8b12661609341fae0",
+      "events": 10,
+      "illustrative_current_gross_spread_usd_rounded": "13589.89"
+    }
+  ],
+  "receipt_validation_prior_run": {
+    "sample_transaction_count": 8,
+    "successfully_matched": 8,
+    "proven_full_gas_eth": "0.000550241901468437"
+  },
+  "financial_warning": [
+    "CURRENT API reference token prices applied to HISTORICAL transaction quantities, never transaction-time executable quotes",
+    "Collateral proceeds and loan repayment per Liquidate event are NOT complete cashflows of the batching/executor transaction",
+    "Flash loan repayment, flash fee, DEX swaps, slippage, failed-call losses, gas and token transfers not deducted",
+    "Wrapped tokens may trade with liquidity/peg/transfer risks; assets grouped by symbol are not necessarily interchangeable contracts",
+    "Not a complete seven-day census and not an opportunity available in the present block",
+    "No user money spent or realized, no wallet or execution scripts"
+  ],
+  "no_realized_profit_usd_verified": true,
+  "capital_spent_usd": 0,
+  "decision": "Escalate ONLY to transaction-level realized cashflow and historical price/DEX sale/liquidity verification. No funded executor, no wallet."
+}
