@@ -69,3 +69,11 @@ The mere fact an outsider was paid or an official smart escrow exists does NOT i
 **New research gate:** Do not implement keeper/agent integration unless a *specific present, unreserved reward* is verified at **≥$25 net**, and aggregate payout velocity can support ~$900 net before deadline without spending material capital. If all externally accessible current reward venues fail that gate, do not force a speculative 10× return. Preserve the original $100.
 
 **Current state:** $100 available, $0 spent, $0 earned, zero discovered currently executable positive-net $25+ earning opportunities.
+
+
+### Additional late-round stop checks: Claudelance and Hive
+
+- **Claudelance, Celo mainnet**, [official source](https://github.com/yeheskieltame/claudelance): advertises an extensive menu of possible jobs and nominal "typical rewards" up to $2,000–$3,000 for certain categories, and has deployed real mainnet escrow code. Crucially, its **own README explicitly calls the product PRE-ADOPTION** and clarifies that **every on-chain bounty and payout counted is protocol-operated validation by ONE unique poster and their own controlled agent wallet swarm**, NOT genuine third-party customer demand. A large task-size table is **sample capability/specification**, not available jobs. Don't portray the headline payout ranges or 80/96 V2 historical settlements as authentic outsider revenue. **STOP** as an income prospect absent actual new unrelated funded posted tasks.
+- **Hive "Internet of Agent Labor", Stellar**, [official repo](https://github.com/Alouzious/hive): claims autonomous USDC escrow jobs but prominently labels deployment **Stellar Testnet** and schedules mainnet deployment *post hackathon*. Its Stellar transaction signing limitation is also admitted as mocked. **STOP** as a real-money 30-day option.
+
+This follows the exact same principle as Arc/BaseBounty: genuine technical completion, escrow deployment or source test traffic do NOT establish paying independent buyer demand. Source owner disclosing self-funded tests is decisive evidence, not an embarrassment to ignore.
