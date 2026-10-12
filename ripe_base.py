@@ -13,6 +13,7 @@ import json
 from pathlib import Path
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 
@@ -31,6 +32,15 @@ TOPIC="0x2ad3b92c465bc7ea1f27bef4120c0dee3b47cb039ba2af1c17061d831a465d2b"
 ZERO="0x"+"0"*40
 EXPLORER="https://base.blockscout.com/api/v2/addresses/"+AUCTION+"/logs"
 TXHASH=re.compile(r"^0x[0-9a-fA-F]{64}$")
+
+# SolidRPC public Base uses at most 20 calls per ten seconds per IP.
+# This wrapper remains restricted to the same allowlisted read-only methods.
+class ConservativeRPC(JSONRPC):
+    def rpc(self, method, params):
+        if self.url == "https://rpc.solidrpc.io/public/evm/8453":
+            time.sleep(0.85)
+        return super().rpc(method, params)
+
 
 
 def address(n):
@@ -318,7 +328,7 @@ def main(argv=None):
     if not (0<a.hours<=72 and 100<=a.chunk<=5000 and 1<=a.pages<=10 and 0<=a.receipt_limit<=30):
         p.error("Invalid window/chunk/pages/receipt-limit")
     try:
-        rpc=JSONRPC(a.rpc)
+        rpc=ConservativeRPC(a.rpc)
         out=chain_state(rpc) if a.check=="deployment" else inspect(rpc,a.hours,a.chunk,a.pages,a.receipt_limit)
         path=Path(a.output)
         path.parent.mkdir(parents=True,exist_ok=True)

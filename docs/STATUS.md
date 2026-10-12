@@ -162,3 +162,7 @@ The history observer's 6h `eth_getLogs` request failed with HTTPError and the ke
 
 ### Ripe keyless history provider decision (Oct 12)
 Primary official Base RPC `eth_getLogs` rejected; independent keyless Ankr rejected eth_chainId as unauthorized; Blast Base RPC rejected eth_getLogs; public Blockscout REST returned HTTP 403. All tested in actual GitHub Actions (#38212232932), and `history_event_count=null` is **unknown, not zero**. The 6-hour `ripe-base-history` scan is **removed from recurring twice-hourly checks** to avoid useless provider retry/spam. Ripe **deployment/config remains monitored**; the historical scanner is preserved as opt-in `make ripe-history` or `python3 ripe_base.py --check history` for future working providers. No paid subscription, keys or signing.
+
+## Ripe historical provider experiment — 2026-10-12
+
+A candidate keyless Base endpoint `https://rpc.solidrpc.io/public/evm/8453` advertises filtered `eth_getLogs` up to 2,000 blocks per request in its published documentation. Re-enabling Ripe historical discovery **as a bounded six-hour experiment**, 1,500-block chunks, explicitly paced to <=~1.2 RPC requests/sec for this endpoint. Source https://solidrpc.io/docs/public-rpc . It has NOT yet returned verified payout receipts; first live Actions smoke will determine viability. The provider says public routes are for lightweight queries, not indexing or production backfills.

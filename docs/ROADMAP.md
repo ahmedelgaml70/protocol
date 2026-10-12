@@ -173,3 +173,7 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Try two additional documented keyless Base history RPC endpoints in real GitHub Actions; record authentication/HTTP failures exactly.
 - [x] Disable repeat scheduled Ripe history requests after four independent free sources failed; retain manual history command.
 - [ ] Find a verified working keyless historical event index or independent recent caller receipt; otherwise hold Ripe and pursue larger viable public bounty pools.
+
+- [x] Find a documented keyless Base provider explicitly supporting filtered eth_getLogs within 2,000-block ranges (SolidRPC), rather than relying on paid Blockscout PRO.
+- [ ] Run bounded 6-hour Ripe AuctionHouse log test with paced SolidRPC and inspect actual on-chain event/receipt result.
+- [ ] If event history is accessible, extend one-time lookback carefully; only gate on verified actual GREEN/sGREEN to independent submitter and net after gas.
