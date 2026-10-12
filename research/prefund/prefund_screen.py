@@ -124,21 +124,34 @@ def screen_tasks(data, kind):
         bounty=t.get("bounty") if isinstance(t.get("bounty"),dict) else {}
         escrow=t.get("escrow") if isinstance(t.get("escrow"),dict) else {}
         payment=t.get("payment") if isinstance(t.get("payment"),dict) else {}
-        b=t.get("bounty_amount") or bounty.get("amount_display") or t.get("reward_usdc") or t.get("reward")
+        amount_atomic = bounty.get("amount_atomic") or bounty.get("amount") or t.get("bounty_amount")
+        amount_usdc = None
+        if isinstance(amount_atomic, (int,str)) and str(amount_atomic).isdigit():
+            amount_usdc = str(Decimal(str(amount_atomic)) / Decimal(10**6))
+        elif bounty.get("amount_display") is not None:
+            amount_usdc = str(bounty["amount_display"])[:40]
         status=t.get("status")
         output.append({
             "task_id":str(t.get("id") or t.get("task_id") or "")[:100],
             "title":str(t.get("title") or "")[:160],
             "status":str(status or "")[:65],
             "category":str(t.get("category") or "")[:65],
-            "bounty_display_claim":str(b or "")[:50],
-            "bounty_amount_atomic":str(bounty.get("amount_atomic") or bounty.get("amount") or "")[:60],
+            "interpreted_usdc":amount_usdc,
+            "bounty_amount_atomic":str(amount_atomic or "")[:60],
             "escrow_status":str(escrow.get("status") or t.get("escrow_status") or "")[:65],
             "payment_status":str(payment.get("status") or t.get("payment_status") or "")[:65],
             "claimable_flag":t.get("claimable") if isinstance(t.get("claimable"),bool) else None,
         })
+    funded=[t for t in output if t["status"]=="open" and t["escrow_status"]=="funded"]
+    funded_amount=sum((Decimal(t["interpreted_usdc"]) for t in funded
+                       if t["interpreted_usdc"] is not None),Decimal(0))
     return {"status":"read_only_market_snapshot","kind":kind,
             "visible_task_rows":len(rows), "recorded_rows":output,
+            "verified_in_api_funded_open_count":len(funded),
+            "api_funded_open_declared_total_usdc":str(funded_amount),
+            "funded_open_at_least_25_usdc_count":
+                sum(1 for t in funded if t["interpreted_usdc"] is not None
+                    and Decimal(t["interpreted_usdc"])>=25),
             "is_truncated":len(rows)>MAX_TASK_ROWS,
             "warning":"API responses are not independently verified on-chain escrow; public task title may be untrusted. Task appearance alone is not payability."}
 
