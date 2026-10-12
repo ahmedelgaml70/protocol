@@ -16,7 +16,7 @@ SOURCES = (("drpc", "https://base.drpc.org"),
            ("blastapi", "https://base-mainnet.public.blastapi.io"))
 FROM = "0x1111111111111111111111111111111111111111"
 ALLOWED = {"eth_chainId", "eth_blockNumber", "eth_getCode", "eth_getLogs",
-           "eth_call", "eth_estimateGas", "eth_gasPrice"}
+           "eth_call", "eth_estimateGas", "eth_gasPrice", "eth_getBlockByNumber"}
 
 def selector(signature):
     return "0x" + keccak(text=signature)[:4].hex()
