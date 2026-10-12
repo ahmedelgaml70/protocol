@@ -77,3 +77,14 @@
 **Next falsifiable research test (preferred):** find a *specific* reward ≥$25 with verifiable current funding, first-come or objective uncontested eligibility, and payout to the **caller** (not beneficiary) on a low-fee chain; confirm current claimable amount and recent third-party payout receipts **before** coding a watcher. For non-crypto alternatives, demand a specific pre-funded independent-payer task with guaranteed assignment, compatible payout and actual approval under the one-month deadline. Do not build first and hope money appears.
 
 **Result:** We have improved the exclusion logic and documented four distinct economic structures. **No verifiable executable positive-net reward, $0 realized, $0 spent.**
+
+## Operational scale sanity checks (scenarios, NOT observed earnings)
+
+Our financial gap is **$900 net** over 30 days, or **$30 net/day**, excluding any desire to protect the original $100.
+
+- If an Archr-style caller earns **1% of eligible processed fees**, it needs **$90,000 in fees actually processed by that caller** to collect $900 *gross before any gas*. The percentage is not of trading volume and applies to the specific eligible fee-processing step. Three potential distinct cranks do not prove three times the same accessible dollars. The project's cached small public history is not evidence such an unprocessed backlog exists.
+- If a contested task paid a hypothetical **$1.85 net** per winning accepted submission, a new entrant would need **487 winning paid tasks** in 30 days, versus independent Shaduf's historical observation of only **84 newly posted TaskMarket tasks over 30 days** (snapshot Oct 10). This arithmetic is *illustrative* and does not assume the market remains unchanged, nor that $1.85 is every job's reward. There are no 487 presently verified awarded jobs accessible to the user.
+- An x402 service earning a hypothetical $0.05 *net* per independent user request needs **18,000 real external paid requests** in 30 days. This is a demand/customer-acquisition challenge, not a payment integration trick; a zero-buyer API earns $0.
+- Hyperlane IGP public `claim()`: **no amount of balance creates caller reward** without beneficiary rights; cost of executing the public method could make the caller poorer.
+
+**Technical lesson:** ROI fantasy is often defeated by denominator confusion: fee volume vs gross swaps; number of advertised tasks vs approved/won tasks; protocol credit vs per-call payout; recipient vs caller; website reported buyers vs unaffiliated actual paying buyers.
