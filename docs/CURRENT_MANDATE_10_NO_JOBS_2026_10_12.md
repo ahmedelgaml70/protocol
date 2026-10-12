@@ -63,3 +63,18 @@ A search-indexed [GitHub README](https://github.com/lordbasilaiassistant-sudo/de
 Do NOT recommend old excluded Kerf/PoolTogether/Beefy/Superfluid/Ripe/Morpho/0xSplits/Liquity/Sovryn/Keep3r/Convex/ArcBounty/BaseBounty etc without **new material exact live evidence**. Source-of-truth historic $100/Nov12 records remain for context; this hard-reset addendum governs **latest user preference and $10 capital ceiling**.
 
 **Verdict this research turn:** possible overlooked *structural* source classes found but **zero actual available positive-net caller payouts verified**; $10 principal untouched, $0 user earnings. Research must distinguish creative hypothesis from withdrawable money. No repo bots/transactions created during this turn; documentation only.
+
+
+## 2026-10-12 17:55 UTC — real mainnet bounty census (LATEST COMPLETED EXPERIMENT)
+
+[Draft PR #14](https://github.com/ahmedelgaml70/protocol/pull/14) / [detailed Harbor+other mechanism audit](https://github.com/ahmedelgaml70/protocol/blob/research/harbor-bounties-10/docs/HARBOR_REAL_FUNDED_BOUNTY_NEGATIVE_NET_2026_10_12.md) / [successful mainnet GitHub Actions run](https://github.com/ahmedelgaml70/protocol/actions/runs/38287408674). Latest $10 limit respected; **no spend/sign/transfer**. Harbor's Ethereum mainnet official actual contract state shows FIVE managers, THREE funded and successfully simulated independent caller harvests. **All three are negative net at Oct 12 market prices and measured gas.**
+
+- ETH/fxUSD: 0.1033828689 fxSAVE gross (~$0.1158) vs ~$0.1727 Ethereum gas = ~**-$0.0569** before selling token.
+- BTC/fxUSD: 0.0103006452 fxSAVE gross (~$0.0115) vs ~$0.1727 gas = ~**-$0.1612**.
+- BTC/stETH: 0.00003630945 wstETH gross (~$0.1136) vs ~$0.1791 gas = ~**-$0.0655**.
+- USD/stETH and USD/WBTC harvestable 0, rebalance state flagged true yet actual rebalance simulations REVERT; no valid caller reward. Payout recipient verified from source \`harvest(address bountyReceiver, uint256 minBounty)\`; ratios read live (1%); no token held by user.
+- This is a **genuine real funded onchain bounty** that still fails economics, unlike historical receipts. Gas at sample ~0.2283 gwei, very cheap; token USD values are cited approximation, not executable token swaps.
+
+Additional first-party checks: Velocity Solana keeper fills mostly **cents per fill**, 1-cent cancels/trigger and $1,000 staked TWAP crank that pays $0; fillr technical docs contradict homepage and say DEVNET; Caliper's token is mainnet but harvest vaults TESTNET; GBLIN old named keeper tool appears linked to superseded v1 and cannot be used as current contract evidence; ADAM current displayed unsplit pool 0.0056 ETH at 0.5% keeper share implies ~$0.071 gross, and no verified profitable call. Source links and caveats in PR #14.
+
+**No actionable positive-net reward verified**. Reject any gas spend here. Future focus: low-fee chains, currently funded caller bounty >=$25 with independently verifiable source/bytecode and real present state. Stop re-creating generalized bot scanners without pre-flight economics.
