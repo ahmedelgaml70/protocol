@@ -169,3 +169,7 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Correct GitHub Radar to classify Ripe unavailable history as incomplete, preserving proof of code and live config separately.
 - [ ] Test alternate keyless Base RPC event-history providers without spending and retain provider failure states.
 - [ ] Independently verify a positive GREEN/sGREEN mint receipt to external Teller caller; fee config is not a payout.
+
+- [x] Try two additional documented keyless Base history RPC endpoints in real GitHub Actions; record authentication/HTTP failures exactly.
+- [x] Disable repeat scheduled Ripe history requests after four independent free sources failed; retain manual history command.
+- [ ] Find a verified working keyless historical event index or independent recent caller receipt; otherwise hold Ripe and pursue larger viable public bounty pools.

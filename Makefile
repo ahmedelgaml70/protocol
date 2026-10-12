@@ -50,3 +50,9 @@ superfluid-all:
 .PHONY: pooltogether-check
 pooltogether-check:
 	$(PYTHON) pooltogether_claim_history.py --lookback-hours 6 --max-sample-receipts 10 --output pooltogether_claim_history.json
+
+.PHONY: ripe-state ripe-history
+ripe-state:
+	$(PYTHON) ripe_base.py --check deployment --output ripe_base_deployment.json
+ripe-history:
+	$(PYTHON) ripe_base.py --check history --hours 6 --output ripe_base_history.json

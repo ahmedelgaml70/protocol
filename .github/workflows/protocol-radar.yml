@@ -63,3 +63,5 @@ jobs:
 # Smoke-test Ripe deployed configuration (liquidations_enabled, fee parameters, paused flags).
 
 # Smoke-test unkeyed alternative Base RPC log providers after positive Ripe live configuration check.
+
+# Drop recurring failed Ripe eth_getLogs sources; keep deployed liquidation-state monitor.

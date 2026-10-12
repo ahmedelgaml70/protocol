@@ -24,10 +24,6 @@ CHECKS = (
     ("ripe-base-deployment", "ripe_base_deployment.json",
      ["ripe_base.py", "--rpc", "https://mainnet.base.org",
       "--check", "deployment"], 75),
-    ("ripe-base-history", "ripe_base_history.json",
-     ["ripe_base.py", "--rpc", "https://mainnet.base.org",
-      "--check", "history", "--hours", "6", "--chunk", "1500", "--pages", "5",
-      "--receipt-limit", "8"], 155),
 )
 
 def utc_now():

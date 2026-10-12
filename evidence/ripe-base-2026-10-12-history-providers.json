@@ -1,0 +1,44 @@
+{
+  "observed_at_utc": "2026-10-12T06:23:00Z",
+  "live_run": "https://github.com/ahmedelgaml70/protocol/actions/runs/38212232932",
+  "artifact": "https://github.com/ahmedelgaml70/protocol/actions/runs/38212232932/artifacts/11730275792",
+  "chain": "Base 8453",
+  "event": "AuctionHouse.LiquidateUser",
+  "history_status": "incomplete",
+  "history_event_count": null,
+  "sources_attempted": [
+    {
+      "url": "https://mainnet.base.org",
+      "method": "eth_getLogs",
+      "result": "HTTP error rejected"
+    },
+    {
+      "url": "https://rpc.ankr.com/base",
+      "method": "eth_chainId",
+      "result": "Unauthorized: must authenticate"
+    },
+    {
+      "url": "https://base-mainnet.public.blastapi.io",
+      "method": "eth_getLogs",
+      "result": "HTTP error rejected"
+    },
+    {
+      "url": "https://base.blockscout.com/api/v2/addresses/0xe9Dc24Ab1dC4746C7A43FAce3f895D9176D4C235/logs",
+      "method": "GET",
+      "result": "HTTP 403 Forbidden"
+    }
+  ],
+  "deployed_state": {
+    "liquidations_enabled": true,
+    "teller_paused": false,
+    "auctionhouse_paused": false,
+    "missioncontrol_paused": false,
+    "fee_ratio_bps": 100,
+    "minimum_green_fee_raw": "1000000000000000000",
+    "maximum_green_fee_raw": "25000000000000000000000",
+    "rewards_transferred_to_outside_caller_verified": false
+  },
+  "actions_result": "Disable repetitive six-hour history requests pending a viable permissionless index; preserve state monitor and on-demand script.",
+  "fees_or_funds_spent_usd": 0,
+  "profit_verified_usd": 0
+}
