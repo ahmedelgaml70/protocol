@@ -32,6 +32,19 @@ class ReceiptTests(unittest.TestCase):
         self.assertFalse(o["actual_realized_usd_profit_verified"])
     def test_negative_when_gas_larger(self):
         self.assertEqual(scan(FakeRPC(100),activity())["conditional_positive_wnative_after_gas_count"],0)
+
+    def test_rpc_errors_never_count_as_negative_economics(self):
+        class BrokenRPC:
+            def rpc(self, method, args):
+                if method=="eth_chainId":
+                    return hex(8453)
+                raise ValueError("RPC lookup failed")
+        output=scan(BrokenRPC(),activity())
+        self.assertEqual(output["reported_base_harvest_txs_selected"],1)
+        self.assertEqual(len(output["receipt_errors"]),1)
+        self.assertEqual(len(output["receipt_rows"]),0)
+        self.assertEqual(output["receipt_errors"][0]["error"],"ValueError")
+
     def test_duplicates_are_deduplicated(self):
         a=activity()
         a["recent_operator_harvest_sample"]*=2

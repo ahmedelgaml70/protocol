@@ -55,3 +55,5 @@ jobs:
 # Include up to 20 reported successful Cowllector tx hashes for independent receipt research.
 
 # Smoke-test read-only independent Base receipts for the most recent Cowllector harvest transactions.
+
+# Receipt scanner cannot interpret RPC errors as 0 payments; try official Base RPC.

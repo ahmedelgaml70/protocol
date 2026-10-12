@@ -102,7 +102,7 @@ def scan(rpc, source, limit=12):
         try:
             result.append(inspect_one(rpc,item))
         except (RPCError,ValueError,KeyError,TypeError) as exc:
-            errors.append({"tx":item.get("operator_tx_hash_unverified"),"error":type(exc).__name__})
+            errors.append({"tx":item.get("operator_tx_hash_unverified"),"error":type(exc).__name__,"detail":str(exc)[:180]})
     return {"chain_id":BASE_CHAIN_ID,
             "evidence":"public Beefy Cowllector-v2 reports plus independently read-only Base receipts",
             "reported_base_harvest_txs_selected":len(chosen),
@@ -128,6 +128,9 @@ def main(argv=None):
     try:
         report=json.loads(Path(a.activity).read_text(encoding="utf-8"))
         audited=scan(RPC(a.rpc),report,a.limit)
+        if audited["receipt_errors"]:
+            print("BEEFY RECEIPTS INCOMPLETE:",json.dumps(audited["receipt_errors"][:3]),file=sys.stderr)
+            return 2
     except (OSError,ValueError,KeyError,RPCError) as exc:
         print("BEEFY RECEIPTS FAILED:",type(exc).__name__,str(exc)[:130],file=sys.stderr)
         return 2

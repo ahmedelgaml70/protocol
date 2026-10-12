@@ -20,7 +20,7 @@ CHECKS = (
       "--chains", "base,arbitrum,optimism", "--top", "20"], 90),
     ("beefy-base-receipts", "beefy_base_receipts.json",
      ["beefy_receipts.py", "--activity", "__BEEFY_ACTIVITY__",
-      "--rpc", "https://base-rpc.publicnode.com", "--limit", "10"], 120),
+      "--rpc", "https://mainnet.base.org", "--limit", "10"], 120),
 )
 
 def utc_now():
