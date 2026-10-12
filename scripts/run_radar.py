@@ -18,6 +18,9 @@ CHECKS = (
     ("beefy-cowllector", "beefy_cowllector.json",
      ["beefy_cowllector.py", "--hours", "72",
       "--chains", "base,arbitrum,optimism", "--top", "20"], 90),
+    ("beefy-base-receipts", "beefy_base_receipts.json",
+     ["beefy_receipts.py", "--activity", "__BEEFY_ACTIVITY__",
+      "--rpc", "https://base-rpc.publicnode.com", "--limit", "10"], 120),
 )
 
 def utc_now():
@@ -29,6 +32,8 @@ def scan(name, filename, command, timeout, output_dir):
     entry = {"scanner": name, "report_file": filename, "started_at_utc": utc_now(),
              "status": "incomplete", "exit_code": None}
     try:
+        command = [str(output_dir / "beefy_cowllector.json") if arg == "__BEEFY_ACTIVITY__"
+                   else arg for arg in command]
         result = subprocess.run([sys.executable, *command, "--output", str(outfile)],
                                 cwd=ROOT, capture_output=True, text=True,
                                 timeout=timeout, check=False)
