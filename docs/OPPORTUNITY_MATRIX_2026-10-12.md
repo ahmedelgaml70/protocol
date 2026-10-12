@@ -135,3 +135,18 @@ Full contract/read-only primary source + dated independent market measurements: 
 **Important new anti-error rule:** historical Github source may initialize a reward at **100 bps**, while the **deployed contract now returns 25 bps**. Always read current chain-state configuration. Also, outbound \`Transfer\` logs from a vault are not caller earnings unless the actual *beneficiary/recipient* is verified, including any intermediate helper's downstream transfers.
 
 At Oct 12 spot indications ([CVX ~$2.12](https://www.investing.com/crypto/convex-finance/cvx-usd-historical-data), [CRV ~$0.366](https://metamask.io/en-GB/price/curve-dao-token)), $25 gross from *one overdue 0.25% epoch* requires ~4,717 eligible CVX; $25 gross from 0.5% earmark requires **$5,000 of currently unharvested CRV**. Neither eligible unclaimed condition has been demonstrated and both exclude gas, failure and conversion. **Current verdict: no ready payment.**
+
+
+## H. Latest direct real-time funding tests, Ethereum + Base (2026-10-12)
+
+Detailed evidence [PR #12](https://github.com/ahmedelgaml70/protocol/pull/12) / [complete audit](https://github.com/ahmedelgaml70/protocol/blob/research/prefund-live-gates-100/docs/PREFUNDED_LIVE_GATE_AUDIT_2026_10_12.md) / [successful GitHub Actions run](https://github.com/ahmedelgaml70/protocol/actions/runs/38279897335).
+
+| Candidate | Exact live/current evidence | Verdict |
+| --- | --- | --- |
+| **Permanent Collection Ethereum \`BuybackBurner.executeStep(uint256)\`** | Public deployed ETH caller reward = min(0.5% of executed step, 0.01 ETH); deployed \`maxStep=1 ETH\` so **≤0.005 ETH per full-size step** with present params. **Block 26,177,686 \`remainingEth=0 ETH\`**, so maximum presently funded reward = **0 ETH**. | **STOP until burner accrues new ETH**, despite separate Patron live bid balance. [Primary contract source](https://github.com/ripe0x/permanent-collection/blob/master/contracts/src/BuybackBurner.sol) |
+| **BasedAgents Base USDC agent tasks** | HTTP GET 20 open tasks, **one API-tagged funded**, **1 USDC** test hire 'please ignore'; **zero funded open ≥25 USDC**. Ten historical settled feed entries; small amounts, not individually chain-receipt matched. Explicitly unescrowed/unknown $0.25 and $2 items cannot count as prefunded. | **STOP for $900 scale** without much larger independently funded new inventory. [Source repo](https://github.com/maxfain/basedagents), [platform](https://basedagents.ai/docs/getting-started) |
+| **Aeterna inheritance 1% keeper** | Solidity bounty source integrates **Base Sepolia** Aave pool and repo demo accelerates time. No user-paid live mainnet deploy or claims verified. | **STOP testnet** [source](https://github.com/ch2llgao/Aeterna) |
+| **PolyDispute 10 USDC \`arm()\`** | Site advertises bounty if dispute pool fills, but markets/testnet and planned external audit; no supported payable mainnet pool; dispute/Polymarket dependence also misaligned. | **STOP** [official](https://polydispute.finance/how-it-works) |
+| **openbounty.app** | Publisher pays after quorum acceptance; not prefunded; explanatory payment flow on **Base Sepolia** and example tasks explicitly illustrative. | **STOP** pending real escrow and mainnet payouts [site](https://openbounty.app/) |
+
+**Technical details**: registered \`claimable\` API tasks ≠ confirmed escrow; \`payment_status=pending\` ≠ paid; \`250000\` six-decimal USDC = **$0.25** (NOT $250 or $250,000). Older Burner documentation claims maximum **0.05 ETH**, whereas actual source/live getter caps at **0.01 ETH**. Read code and deployed getters. Low/current-zero funding defeats grander announced reward rates.
