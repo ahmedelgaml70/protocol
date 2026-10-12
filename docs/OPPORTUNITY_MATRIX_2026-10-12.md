@@ -170,3 +170,9 @@ Detailed evidence [PR #12](https://github.com/ahmedelgaml70/protocol/pull/12) / 
 | Aither queued Q4 100 USDC contract audit | Not open payment; listed task is security-oriented | STOP: security bounty excluded |
 
 Current available worker income in two live mainnet task escrows was **0 USDC**, despite 25.74 USDC aggregate past worker payouts. Do not count publisher budgets, marketing figures or old transactions as today's available cash. Need a concrete open unreserved task ≥25 net USD with timely authorized payout BEFORE integrating SDKs or signing transactions. Sample was timestamped 17:16 UTC; future jobs could appear.
+
+
+### Additional mainnet/self-dealing gate
+
+- **Claudelance Celo:** [official README](https://github.com/yeheskieltame/claudelance) says pre-adoption, **one unique poster**, all 80/96 historic V2 settlements and agent payments are **operator-owned swarm self-tests**, not third-party economic demand. Tables suggesting $500–$3,000 bounties describe task capacity, not actual paid open offers. **STOP pending independent users**.
+- **Hive Stellar:** [source](https://github.com/Alouzious/hive) badge/deployment say **testnet**, with mainnet after hackathon and mocked transaction signing. **STOP, no real current withdrawable income**.
