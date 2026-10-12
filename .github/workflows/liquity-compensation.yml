@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install ABI decoding libraries
-        run: python -m pip install --disable-pip-version-check eth-abi==5.2.0 eth-utils==5.3.1
+        run: python -m pip install --disable-pip-version-check eth-abi==5.2.0 eth-utils==5.3.1 pycryptodome==3.23.0
       - name: Verify event decoding and read-only safety
         working-directory: research/liquity
         run: python -m unittest -v test_liquity_compensation.py
