@@ -25,7 +25,7 @@ class PrefundTests(unittest.TestCase):
             if method=="eth_call":
                 fn=args[0]["data"]
                 for key,val in state.items():
-                    if fn==p.selector(key):return hex(val)
+                    if fn==p.selector(key):return '0x' + format(val,'064x')
                 raise AssertionError("Should never call executeStep on zero funds")
             raise AssertionError(method)
         with patch.object(p,"rpc",side_effect=fake_rpc):
