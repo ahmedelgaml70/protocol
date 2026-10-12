@@ -21,8 +21,8 @@ TRANSFER="0x"+keccak(text="Transfer(address,address,uint256)").hex()
 EARMARK="0x"+keccak(text="earmarkRewards(uint256)")[:4].hex()
 ALLOW={"eth_chainId","eth_blockNumber","eth_getCode","eth_call","eth_getLogs",
        "eth_getTransactionReceipt","eth_getTransactionByHash"}
-WINDOW_BLOCKS=7400
-CHUNK=250
+WINDOW_BLOCKS=800
+CHUNK=200
 MAX_LOGS=140
 MAX_RECEIPTS=80
 
@@ -127,7 +127,7 @@ def inspect(url):
         "gas_eth_total_for_paid_direct_calls":str(total_gas),
         "successful_direct_keepers":keepers,
         "transfers":records,"errors":errors,
-        "scope_warning":"Historical ~7400 Ethereum blocks of only CRV Transfers originating from official Booster. This does not enumerate all pools, indirect contracts or current unswept rewards. No current payable action found.",
+        "scope_warning":"Historical ~800 Ethereum blocks of only CRV Transfers originating from official Booster. This does not enumerate all pools, indirect contracts or current unswept rewards. No current payable action found.",
         "capital_spent_usd":0,"cash_user_received_usd":0}
 
 def main():
