@@ -1,0 +1,40 @@
+name: Prefunded Current Rewards and USDC Tasks (Read Only)
+
+on:
+  push:
+    branches: [research/prefund-live-gates-100]
+    paths:
+      - 'research/prefund/**'
+      - '.github/workflows/prefund-live-gates.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned decoding dependencies
+        run: python -m pip install --disable-pip-version-check eth-abi==5.2.0 eth-utils==5.3.1 pycryptodome==3.23.0
+      - name: Unit tests for read-only safeguards
+        working-directory: research/prefund
+        run: python -m unittest -v test_prefund_screen.py
+      - name: Check actual Ethereum contract funds and public USDC task list
+        working-directory: research/prefund
+        run: python prefund_screen.py
+      - name: Preserve findings even when providers unavailable
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prefund-live-research
+          path: research/prefund/reports/*.json
+          if-no-files-found: warn
+          retention-days: 7
