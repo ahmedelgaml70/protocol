@@ -106,3 +106,8 @@ Recommended next read-only test(s), ordered:
 - BasedAgents official unauthenticated task API: 20 open, only one marked funded, 1 USDC 'Test hire (please ignore)'; zero funded ≥$25. Ten past settled-task listings. Real payment service does not create enough money for target.
 - Aeterna (Base Sepolia) and PolyDispute (testnet/pre-audit) promoted marketing are NOT live cash; openbounty.app is unprefunded/illustrative/testnet in public description.
 - [Full detailed audit](https://github.com/ahmedelgaml70/protocol/blob/research/prefund-live-gates-100/docs/PREFUNDED_LIVE_GATE_AUDIT_2026_10_12.md). Money spent $0; earned $0.
+
+
+## Booking fulfillment investigation (same date, continued)
+
+Compared ordinary client hunting with customer-funded order fulfilment. Official BRIJ escrow flight booker and Solana USDC settlement evidence exists, but new operators need whitelisted partner wallet, stake and *front the airfare by own card* before being repaid. Public report: last 30 days each displayed trip.com/us.trip.com supplier category shows four assigned, **zero tickets confirmed**, all-time 18 assigned and two captured; domains are potentially overlapping. Onchain 732.47 USDC is a settled customer ticket purchase, **not a solver payout amount**. No current eligible order demonstrated. Saved [BRIJ audit](BOOKING_FULFILLMENT_BRIJ_AUDIT_2026_10_12.md) on main. Money spent/earned $0.
