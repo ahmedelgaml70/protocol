@@ -6,7 +6,7 @@ import liquity_compensation as base
 
 class SovrynSafetyTests(unittest.TestCase):
     def test_verified_source_addresses(self):
-        self.assertEqual(p.ZUSD.lower(),"0xdb107fa69e33f05180a4c2e9c2e7cb481645c2d")
+        self.assertEqual(p.ZUSD.lower(),"0xdb107fa69e33f05180a4c2ce9c2e7cb481645c2d")
         self.assertEqual(len(p.TM),42)
         self.assertEqual(p.EVENT,"Liquidation(uint256,uint256,uint256,uint256)")
     def test_20_zusd_event_decoding(self):
