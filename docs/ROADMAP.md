@@ -197,3 +197,7 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Live-confirm Morpho free GraphQL endpoint returns recent Base Liquidation records, cap 100, without keys.
 - [x] Correct event/transaction aggregation with on-chain logIndex; two new offline regression tests.
 - [ ] Rerun GraphQL and analyze *true distinct events*, transaction batching, date coverage, caller diversity and economic viability (not raw token amounts).
+
+- [x] Add read-only independent receipts for 8 sample Morpho liquidations, requiring exact event logIndex, market, indexed caller and raw repayment/collateral agreement.
+- [ ] Confirm external Morpho index and actual Base receipts agree on current submitted events, including true gas and caller routing.
+- [ ] Quantify realizable bonus, token liquidity and gas after receipts verified; do not extrapolate from raw event counts.

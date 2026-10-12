@@ -73,3 +73,5 @@ jobs:
 # Smoke-test Morpho's official indexed Base liquidation feed (read-only, historical only).
 
 # Correct Morpho event-vs-transaction counting using logIndex (not tx-only).
+
+# Independently read-only verify 8 Morpho Base indexed liquidation tx receipts and gas.

@@ -26,6 +26,9 @@ CHECKS = (
       "--check", "deployment"], 75),
     ("morpho-base-liquidations", "morpho_base_activity.json",
      ["morpho_liquidations.py", "--days", "7", "--limit", "100"], 75),
+    ("morpho-base-receipts", "morpho_base_receipts.json",
+     ["morpho_receipts.py", "--activity", "__MORPHO_ACTIVITY__",
+      "--rpc", "https://mainnet.base.org", "--limit", "8"], 120),
 )
 
 def utc_now():
@@ -38,6 +41,7 @@ def scan(name, filename, command, timeout, output_dir):
              "status": "incomplete", "exit_code": None}
     try:
         command = [str(output_dir / "beefy_cowllector.json") if arg == "__BEEFY_ACTIVITY__"
+                   else str(output_dir / "morpho_base_activity.json") if arg == "__MORPHO_ACTIVITY__"
                    else arg for arg in command]
         result = subprocess.run([sys.executable, *command, "--output", str(outfile)],
                                 cwd=ROOT, capture_output=True, text=True,
