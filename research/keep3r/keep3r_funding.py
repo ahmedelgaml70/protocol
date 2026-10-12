@@ -15,7 +15,8 @@ TOKENS={
     "DAI": ("0x6B175474E89094C44Da98b954EedeAC495271d0F",18),
     "WETH":("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",18),
 }
-ALLOWED={"eth_chainId","eth_getCode","eth_blockNumber","eth_call"}
+ALLOWED={"eth_chainId","eth_getCode","eth_blockNumber","eth_call",
+         "eth_getLogs","eth_getTransactionReceipt","eth_getTransactionByHash"}
 MAX_JOBS=120
 
 def selector(signature):
