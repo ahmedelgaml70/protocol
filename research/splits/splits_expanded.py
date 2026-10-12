@@ -62,11 +62,15 @@ def windows(url, tip):
     timestamp = get_block(url, tip)
     result = []
     for days in AGES_DAYS:
-        end = tip if not days else timestamp_block(url, tip, timestamp-days*86400)
-        start = max(0, end-WINDOW+1)
-        result.append({"anchor_days_ago": days, "from_block": start,
-                       "to_block": end, "from_timestamp": get_block(url,start),
-                       "to_timestamp": get_block(url,end)})
+        try:
+            end = tip if not days else timestamp_block(url, tip, timestamp-days*86400)
+            start = max(0, end-WINDOW+1)
+            result.append({"anchor_days_ago": days, "from_block": start,
+                           "to_block": end, "from_timestamp": get_block(url,start),
+                           "to_timestamp": get_block(url,end), "status":"sampled"})
+        except Exception as exc:
+            result.append({"anchor_days_ago": days, "status":"incomplete",
+                           "error":str(exc)[:220]})
     return result
 
 def parse_created(log):
@@ -145,12 +149,25 @@ def scan(url, name):
     if not any(enabled.values()):
         raise RuntimeError("No factory bytecode found")
     samples=[]; rejected=[]; candidates=[]; seen=set(); total=0
+    completed=0; incomplete=0
     for version,address in FACTORIES.items():
         if not enabled[version]:
             samples.append({"version":version,"status":"no_code"})
             continue
         for period in periods:
-            logs=base.events(url,address,period["from_block"],period["to_block"],[CREATED],200)
+            if period.get("status")=="incomplete":
+                incomplete+=1
+                samples.append({"version":version,"anchor_days_ago":period["anchor_days_ago"],
+                                "status":"incomplete","error":period["error"]})
+                continue
+            try:
+                logs=base.events(url,address,period["from_block"],period["to_block"],[CREATED],200)
+                completed+=1
+            except Exception as exc:
+                incomplete+=1
+                samples.append({"version":version,"anchor_days_ago":period["anchor_days_ago"],
+                                "status":"incomplete","error":str(exc)[:220]})
+                continue
             total+=len(logs)
             if total>120:
                 raise RuntimeError("Event safety cap hit; narrow sample")
@@ -181,7 +198,11 @@ def scan(url, name):
                 except Exception as exc:
                     rejected.append({"version":version,"tx":log.get("transactionHash"),
                                      "error":str(exc)[:220]})
-    return {"status":"sampled_observation_not_profit","chain":name,"chain_id":cfg[0],
+    if completed==0:
+        raise RuntimeError("All factory time-window scans incomplete; no zero-opportunity inference")
+    status="partial_observation_not_profit" if incomplete else "sampled_observation_not_profit"
+    return {"status":status,"chain":name,"chain_id":cfg[0],
+            "completed_factory_windows":completed,"incomplete_factory_windows":incomplete,
             "provider":url,"observed_at_utc":datetime.now(timezone.utc).isoformat(),
             "sampled_windows":periods,"factory_bytecode_present":enabled,
             "factory_window_counts":samples,"sampled_creation_events":total,
@@ -199,7 +220,7 @@ def main():
     for provider in CHAINS[opt.chain][3]:
         try:
             result=scan(provider,opt.chain)
-            attempts.append({"provider":provider,"status":"sampled_observation_not_profit"})
+            attempts.append({"provider":provider,"status":result["status"]})
             break
         except Exception as exc:
             attempts.append({"provider":provider,"status":"incomplete","error":str(exc)[:280]})
@@ -213,7 +234,7 @@ def main():
                       "events":result.get("sampled_creation_events"),
                       "reward_screens":result.get("positive_reward_screens"),
                       "attempts":attempts},indent=2))
-    return 0 if result["status"]=="sampled_observation_not_profit" else 2
+    return 0 if result["status"] in ("sampled_observation_not_profit","partial_observation_not_profit") else 2
 
 if __name__=="__main__":
     sys.exit(main())
