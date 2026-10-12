@@ -1,8 +1,12 @@
 # Instructions for any agent continuing the Protocol research project
+
+**CURRENT USER MANDATE OVERRIDE — 2026-10-12:** [Read the $10/no-jobs hard reset](docs/CURRENT_MANDATE_10_NO_JOBS_2026_10_12.md). The latest user message explicitly sets **$10**, not $100, and rejects ALL jobs, paid tasks, client services, promotions, discounts, referral schemes and waiting for customers. Goal: lawful, online, already-funded permissionless rewards as fast as possible, with $1,000 total aspirational; no present income verified, no spending permitted. **Do not suggest Upwork or work-for-hire again.** Earlier $100/Nov 12 documents remain historical research only, not current instructions.
+
 **Canonical current version:** 2026-10-12, supersedes older $10 / one-week directives.
 
 ## READ THESE FIRST, IN THIS ORDER
-1. [Complete handoff and timeline](docs/HANDOFF_2026-10-12.md)
+1. **[LATEST MANDATE: $10, NO JOBS, fast legitimate money harvesting](docs/CURRENT_MANDATE_10_NO_JOBS_2026_10_12.md)**
+2. [Complete handoff and timeline](docs/HANDOFF_2026-10-12.md)
 2. [Opportunity / rejection / evidence matrix](docs/OPPORTUNITY_MATRIX_2026-10-12.md)
 3. [Payer-first evidence playbook and candidate schema](docs/RESEARCH_PLAYBOOK.md)
 4. [Copyable new-agent continuation prompt](docs/CONTINUE_AS_AGENT.md)
