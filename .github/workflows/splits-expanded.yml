@@ -31,15 +31,20 @@ jobs:
         run: python -m pip install --disable-pip-version-check eth-abi==5.2.0 eth-utils==5.3.1 pycryptodome==3.23.0
       - name: Safety and ABI unit tests
         working-directory: research/splits
-        run: python -m unittest -v test_splits_observer.py test_splits_expanded.py
+        run: python -m unittest -v test_splits_observer.py test_splits_expanded.py test_splits_activity.py
       - name: Bounded, read-only historical discovery
         working-directory: research/splits
         run: python splits_expanded.py --chain ${{ matrix.chain }}
+      - name: Sample existing PushSplit distribution activity (read-only)
+        working-directory: research/splits
+        run: python splits_activity.py --chain ${{ matrix.chain }}
       - name: Upload results even on failure
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: splits-historical-${{ matrix.chain }}
-          path: research/splits/expanded_reports/*.json
+          path: |
+            research/splits/expanded_reports/*.json
+            research/splits/activity_reports/*.json
           if-no-files-found: warn
           retention-days: 7
