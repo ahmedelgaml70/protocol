@@ -1,0 +1,40 @@
+name: Liquity Compensation Research
+
+on:
+  push:
+    branches: [research/liquity-compensation-100]
+    paths:
+      - 'research/liquity/**'
+      - '.github/workflows/liquity-compensation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install ABI decoding libraries
+        run: python -m pip install --disable-pip-version-check eth-abi==5.2.0 eth-utils==5.3.1
+      - name: Verify event decoding and read-only safety
+        working-directory: research/liquity
+        run: python -m unittest -v test_liquity_compensation.py
+      - name: Observe deployed liquidation incentives and V1 live tail
+        working-directory: research/liquity
+        run: python liquity_compensation.py
+      - name: Preserve machine-readable results regardless of failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: liquity-compensation-readonly
+          path: research/liquity/liquity_reports/*.json
+          if-no-files-found: warn
+          retention-days: 7
