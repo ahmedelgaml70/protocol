@@ -6,6 +6,9 @@ from datetime import datetime,timezone
 from Crypto.Hash import keccak
 
 API="https://api.motoswap.org"
+# Fallback ONLY after /config fails; first-party https://docs.motoswap.org/dev/addresses
+DOCUMENTED_ADDRESSES={"launchpadCurve":"0xb65b67e986d7B097652920d72202F2c78319BC2C",
+  "launchpadLens":"0xb631697124c8e6Bb6C221Cc017e47D4168bd3411"}
 RPCLIST=("https://ethereum-rpc.publicnode.com","https://eth.drpc.org")
 ALLOW_PATHS={"/config","/motofun/stats","/motofun/coins?limit=100"}
 READ_METHODS={"eth_chainId","eth_blockNumber","eth_getCode","eth_call","eth_estimateGas","eth_gasPrice"}
@@ -107,6 +110,9 @@ def main():
   report["pagination_warning"]="first page only; additional pages require opaque signed cursor" if report["has_more"] else None
  except Exception as e:
   coins=[];report["coins_status"]="incomplete";report["coins_error"]=str(e)[:200]
+ if cfg is None and report["stats_status"]=="ok":
+  cfg={"addresses":DOCUMENTED_ADDRESSES,"motofunEnabled":True,"launchPhase":"unknown_due_config_404"}
+  report["config_fallback"]="first_party_docs_address_static_and_verifies_live_bytecode"
  if cfg is not None:
   tries=[]
   for url in RPCLIST:
