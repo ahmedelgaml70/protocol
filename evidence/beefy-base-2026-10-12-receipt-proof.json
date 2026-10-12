@@ -1,0 +1,102 @@
+{
+  "as_of_utc": "2026-10-12T05:16:40Z",
+  "source": "Actual GitHub Actions v2 API feed, Base eth_getTransactionByHash + eth_getTransactionReceipt; on-chain transaction logs",
+  "run": "https://github.com/ahmedelgaml70/protocol/actions/runs/38207227507",
+  "artifact": "https://github.com/ahmedelgaml70/protocol/actions/runs/38207227507/artifacts/11727832575",
+  "test_run": "https://github.com/ahmedelgaml70/protocol/actions/runs/38207227503",
+  "test_count": 52,
+  "beefy_operator_api": {
+    "source": "https://cowllector.beefy.com/api/v1/last-harvest-reports",
+    "type": "LAST_PER_VAULT_NOT_FULL_HISTORY",
+    "total_per_vault_reports": 1085,
+    "recent_72h_base_arbitrum_optimism": 645,
+    "valid_successful_simulations_with_reward_and_gas_estimates": 645,
+    "estimated_positive_reward": 514,
+    "estimated_positive_reward_minus_gas": 0,
+    "latest_harvested_report_count": 8,
+    "caution": "Cowllector source explicitly harvests for consistency even when unprofitable, estimates are not on-chain reward proofs and wei JSON numbers may lack precision."
+  },
+  "base_weth_receipt_audit": {
+    "chain_id": 8453,
+    "success_count": 7,
+    "matched_strategy_destinations": 7,
+    "receipt_rpc_errors": 0,
+    "unique_submitting_wallets": [
+      "0x03d9964f4d93a24b58c0fc3a8df3474b59ba8557"
+    ],
+    "weth_token": "0x4200000000000000000000000000000000000006",
+    "total_weth_received_raw": "11705879359994",
+    "total_receipt_gas_raw": "56682286523025",
+    "conditional_eth_parity_net_raw": "-44976407163031",
+    "num_positive_after_gas": 0,
+    "rows": [
+      {
+        "tx_hash": "0x6f3dc30950d83570ffc2507dd0e6429c37bc0c3b47dfc3b9ffe16e39ece20fa7",
+        "tx_url": "https://basescan.org/tx/0x6f3dc30950d83570ffc2507dd0e6429c37bc0c3b47dfc3b9ffe16e39ece20fa7",
+        "receipt_success": true,
+        "destination_matches_strategy": true,
+        "base_weth_received_by_submitter_wei": "2798251183287",
+        "full_receipt_gas_wei": "3733574454783",
+        "conditional_weth_minus_gas_wei": "-935323271496"
+      },
+      {
+        "tx_hash": "0x9a90aec84967c30a13a1d8b66e59acb40649c093f485ef941f9b8d9827858ec3",
+        "tx_url": "https://basescan.org/tx/0x9a90aec84967c30a13a1d8b66e59acb40649c093f485ef941f9b8d9827858ec3",
+        "receipt_success": true,
+        "destination_matches_strategy": true,
+        "base_weth_received_by_submitter_wei": "3497552584797",
+        "full_receipt_gas_wei": "15154084361351",
+        "conditional_weth_minus_gas_wei": "-11656531776554"
+      },
+      {
+        "tx_hash": "0xd1ad893a54ab1ab5001ba065f5f7cf7b3b873ba1f073f6965cb950e32ee9dfe0",
+        "tx_url": "https://basescan.org/tx/0xd1ad893a54ab1ab5001ba065f5f7cf7b3b873ba1f073f6965cb950e32ee9dfe0",
+        "receipt_success": true,
+        "destination_matches_strategy": true,
+        "base_weth_received_by_submitter_wei": "198286481694",
+        "full_receipt_gas_wei": "11660988162795",
+        "conditional_weth_minus_gas_wei": "-11462701681101"
+      },
+      {
+        "tx_hash": "0xb82d5a858d1940633b690f53f57816e0a2a308b053a0e16187f5ec563ba3ef50",
+        "tx_url": "https://basescan.org/tx/0xb82d5a858d1940633b690f53f57816e0a2a308b053a0e16187f5ec563ba3ef50",
+        "receipt_success": true,
+        "destination_matches_strategy": true,
+        "base_weth_received_by_submitter_wei": "30894862195",
+        "full_receipt_gas_wei": "3801513680022",
+        "conditional_weth_minus_gas_wei": "-3770618817827"
+      },
+      {
+        "tx_hash": "0x6fc5f8fdd092739a16f403879ebfce28a592444a6aaef0fb8dda32183ea3b1ec",
+        "tx_url": "https://basescan.org/tx/0x6fc5f8fdd092739a16f403879ebfce28a592444a6aaef0fb8dda32183ea3b1ec",
+        "receipt_success": true,
+        "destination_matches_strategy": true,
+        "base_weth_received_by_submitter_wei": "4044978364457",
+        "full_receipt_gas_wei": "4092343516250",
+        "conditional_weth_minus_gas_wei": "-47365151793"
+      },
+      {
+        "tx_hash": "0x49369dd4685505888c3af5b1b6a55177985bd5642944f9993f166bafc4742b32",
+        "tx_url": "https://basescan.org/tx/0x49369dd4685505888c3af5b1b6a55177985bd5642944f9993f166bafc4742b32",
+        "receipt_success": true,
+        "destination_matches_strategy": true,
+        "base_weth_received_by_submitter_wei": "422978078941",
+        "full_receipt_gas_wei": "4729755118583",
+        "conditional_weth_minus_gas_wei": "-4306777039642"
+      },
+      {
+        "tx_hash": "0x45f0ba8c3c051bf389d43f464909e59bb5a1addfe59c9823b81919adce623c49",
+        "tx_url": "https://basescan.org/tx/0x45f0ba8c3c051bf389d43f464909e59bb5a1addfe59c9823b81919adce623c49",
+        "receipt_success": true,
+        "destination_matches_strategy": true,
+        "base_weth_received_by_submitter_wei": "712937804623",
+        "full_receipt_gas_wei": "13510027229241",
+        "conditional_weth_minus_gas_wei": "-12797089424618"
+      }
+    ],
+    "warning": "Only WETH ERC20 transfers to submitting wallet and full receipt L1+L2 fees counted, WETH≈ETH conditional. Other assets, internal transfers, conversion and opportunity costs unverified. This is the incumbent operator's historical transactions and not an independent outsider profit sample."
+  },
+  "new_user_revenue_usd": 0,
+  "user_capital_spent_usd": 0,
+  "decision": "STOP developing Beefy harvest executors; keep passive observation for future evidence, focus on a demonstrably larger independent native/stable caller bounty."
+}

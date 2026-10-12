@@ -137,3 +137,14 @@ The maintained Cowllector v2 README states the bot is focused on consistent harv
 Committed beefy_cowllector.py and five offline tests; Radar now attempts Base/Arbitrum/Optimism 72-hour reports. API availability in GitHub Actions was unconfirmed at commit time. The Beefy data cannot generate financial alerts. No transaction, wallet key or spend.
 
 Scheduled-radar cadence caveat: between initial setup and 2026-10-12 05:03 UTC there was one recorded GitHub schedule run (at 00:44 UTC), successfully followed by a zero-signal alert run. The desired :17/:47 cron does not ensure real-time 30-minute starts.
+## 2026-10-12 — Receipt-verified Beefy Base harvest economics
+
+**First live data:** Cowllector v2 returned 1,085 LAST-per-vault reports. In Base/Arbitrum/Optimism over 72h, 645 latest reports had valid reward and gas simulation fields; 514 showed a *positive gross* caller reward but **zero showed a positive estimated reward-minus-gas margin**. Eight records were marked harvested, seven from Base and one from Arbitrum. This was an operator-report economics screen, not actual payouts.
+
+**Independent read-only Base receipts:** GitHub Actions [run #38207227507](https://github.com/ahmedelgaml70/protocol/actions/runs/38207227507) verified the seven Base reported harvests, all successful transactions to the declared strategies. In aggregate the SAME existing Cowllector wallet `0x03d9964f4d93a24b58c0fc3a8df3474b59ba8557` received **0.000011705879359994 WETH** and paid **0.000056682286523025 ETH** in full reported Base receipt gas. **Conditional deficit = −0.000044976407163031 ETH-equivalent** on WETH≈ETH assumption. **0/7** were positive after gas by this limited token flow measure. This is direct chain movement evidence for the incumbent, not proof about an outsider's access/earnings.
+
+Source data artifact and exact transaction links in [receipt evidence](../evidence/beefy-base-2026-10-12-receipt-proof.json). In-house bot explicitly does NOT require every harvest to be profitable; it prioritizes frequent compounding per [maintained Cowllector v2 README](https://github.com/beefyfinance/beefy-cowllector-v2). Hence actual gas-negative calls are consistent with stated operating policy.
+
+**Strict status: STOP** building a Beefy execution bot for the user's $10 risk capital. The 72h snapshot does not prove profitable external calls never exist, and the single Arbitrum receipt was not independently checked. But the observed reward density fails the project’s priority gate; other native/stablecoin public-bounty mechanisms deserve attention before more Beefy coding.
+
+Full project suite [passed 52 offline tests](https://github.com/ahmedelgaml70/protocol/actions/runs/38207227503). No wallet key, signature, transaction or spend has been made.

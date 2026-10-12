@@ -148,3 +148,8 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [ ] Inspect real GitHub Actions Beefy API smoke result; retry only if endpoint or schema fails.
 - [ ] Confirm recent example operator tx by live blockchain receipt and fee recipient; distinguish Cowllector-paid payouts from outside callers.
 - [ ] Identify actual positive-net external caller payout and currently claimable harvest if evidence warrants; no auto execution.
+
+- [x] Run independent RPC receipt verification for seven Base Beefy incumbent harvests; all successful, none WETH-positive vs gas.
+- [x] Distinguish failed receipt RPC (incomplete) from verified zero/negative payouts; fixed false-good handling and retried official Base RPC.
+- [x] Preserve exact seven hashes, observed WETH transfers and full gas in evidence file and CI artifact.
+- [ ] Stop adding Beefy execution code until credible outside-caller positive-net examples emerge; pivot to higher payout types.
