@@ -1,3 +1,21 @@
+# Protocol — evidence-first income research, current $100 challenge
+
+**Canonical status (2026-10-12):** aspire to turn **up to $100 initial capital into $1,000 net-withdrawable total by November 12, 2026**, legally and online. **$0 spent, $0 earned, no execution-ready reward currently verified.** A 10× total is an aggressive aspiration, not a supported forecast. No private keys, automatic transactions, external applications or spend are enabled.
+
+**START HERE FOR ANY NEW AGENT:**
+- [Instructions for agents](AGENTS.md)
+- [Complete handoff, objectives, history and branch map](docs/HANDOFF_2026-10-12.md)
+- [Opportunity matrix: proven, partial, rejected, conditional](docs/OPPORTUNITY_MATRIX_2026-10-12.md)
+- [Payer-first research methodology and audit gates](docs/RESEARCH_PLAYBOOK.md)
+- [Copyable prompt to resume as a new agent](docs/CONTINUE_AS_AGENT.md)
+- [Original user instructions, including the initial $10 goal](docs/ORIGINAL_PROMPTS.md)
+
+**Three 2026-10-12 investigation branches remain DRAFT/UNMERGED**, not part of main: [PR #8 0xSplits](https://github.com/ahmedelgaml70/protocol/pull/8), [PR #9 Liquity + Sovryn](https://github.com/ahmedelgaml70/protocol/pull/9), [PR #10 Keep3r](https://github.com/ahmedelgaml70/protocol/pull/10). Their read-only workflows and JSON scan results are described in their audit notes. Do not merge or spend funds without explicit approval.
+
+> **Historical archive begins below.** The original README and research notes preserve the earlier **$10 / seven-day** objective for provenance, but its initial status line, budget, and other old objectives are **superseded**. Do not use old targets as new operating instructions. See the canonical documents above.
+
+---
+
 # Protocol — archived keeper research and broader income opportunity validation
 
 **Status (2026-10-12): strategic pivot** · **Budget:** $10 reserved · **Verified collectible net profit:** none · **Wallet transactions:** disabled · **Keeper GitHub cron:** paused, manual only.
