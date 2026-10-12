@@ -6,7 +6,8 @@
 2. [Opportunity / rejection / evidence matrix](docs/OPPORTUNITY_MATRIX_2026-10-12.md)
 3. [Payer-first evidence playbook and candidate schema](docs/RESEARCH_PLAYBOOK.md)
 4. [Copyable new-agent continuation prompt](docs/CONTINUE_AS_AGENT.md)
-5. [Original user prompts](docs/ORIGINAL_PROMPTS.md) and [historical research log](docs/RESEARCH_LEDGER.md)
+5. [New study: Hyperlane, Archr, TaskMarket and x402](docs/RESEARCH_ROUND2_RELAYER_AGENT_MARKETS_2026_10_12.md)
+6. [Original user prompts](docs/ORIGINAL_PROMPTS.md) and [historical research log](docs/RESEARCH_LEDGER.md)
 
 **The previous complete version of this AGENTS.md is preserved at [docs/archive/AGENTS_BEFORE_2026_10_12_HANDOFF.md](docs/archive/AGENTS_BEFORE_2026_10_12_HANDOFF.md)**. It remains useful for historic technical failure details but has outdated constraints.
 
