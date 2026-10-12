@@ -177,3 +177,10 @@ Read-only code doesn't make money; contracts don't reserve public rewards; the p
 - [x] Find a documented keyless Base provider explicitly supporting filtered eth_getLogs within 2,000-block ranges (SolidRPC), rather than relying on paid Blockscout PRO.
 - [ ] Run bounded 6-hour Ripe AuctionHouse log test with paced SolidRPC and inspect actual on-chain event/receipt result.
 - [ ] If event history is accessible, extend one-time lookback carefully; only gate on verified actual GREEN/sGREEN to independent submitter and net after gas.
+
+- [x] Prove filtered LiquidateUser eth_getLogs is available through paced keyless SolidRPC; 6h complete 10,801 blocks, zero events.
+- [x] Independently hash the current manifest LiquidateUser ABI to validate its topic selector.
+- [x] Avoid frequent free-provider backfills; add daily 24h Ripe history workflow with explicit completeness assertions.
+- [x] Distinguish unrelated GREEN/sGREEN transfers from supported keeper rewards using positive keeperFee and mint/provenance conditions.
+- [ ] Inspect first daily 24h audit result and verified tx receipts, if any.
+- [ ] Audit GREEN/sGREEN sale/redemption economics only when a real positive payout appears.

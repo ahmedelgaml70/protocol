@@ -67,3 +67,5 @@ jobs:
 # Drop recurring failed Ripe eth_getLogs sources; keep deployed liquidation-state monitor.
 
 # Temporary Ripe history read-only keyless SolidRPC capability smoke (bounded 6h).
+
+# Ripe longer history scan moved to dedicated daily, read-only workflow.

@@ -1,0 +1,51 @@
+name: Ripe Keeper Evidence
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/ripe-history.yml'
+  schedule:
+    - cron: '13 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ripe-daily-evidence
+  cancel-in-progress: false
+
+jobs:
+  read-only-history:
+    name: Verify Ripe keeper history
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - name: Checkout without credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Read-only 24-hour Ripe logs and receipts
+        run: |
+          mkdir -p reports
+          python ripe_base.py \
+            --rpc https://rpc.solidrpc.io/public/evm/8453 \
+            --check history --hours 24 --chunk 1500 \
+            --pages 1 --receipt-limit 10 \
+            --output reports/ripe_base_history.json
+      - name: Require complete bounded event history
+        run: |
+          python -c 'import json; d=json.load(open("reports/ripe_base_history.json")); assert d.get("history_status")=="complete", "Ripe history incomplete"; assert not d.get("receipt_errors"), "Ripe sample receipts incomplete"; print("Complete Ripe history:",d["history_event_count"],"events /",d["unique_liquidation_transactions"],"transactions")'
+      - name: Retain public read-only evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ripe-keeper-history
+          path: reports/
+          retention-days: 7
+          if-no-files-found: warn

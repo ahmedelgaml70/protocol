@@ -39,8 +39,34 @@ class Tests(unittest.TestCase):
         r=verify_transaction(FakeRPC(),HASH,[])
         self.assertEqual(r["savings_green_shares_direct_mint_raw"],"77")
         self.assertTrue(r["actual_payout_to_submitter_observed"])
+        self.assertTrue(r["keeper_reward_receipt_supported"])
         self.assertEqual(r["full_receipt_fee_wei"],"205")
         self.assertTrue(r["sent_directly_to_teller"])
+
+    def test_unrelated_token_transfer_not_keeper_bounty(self):
+        class DifferentReceipt(FakeRPC):
+            def rpc(self,m,p):
+                if m=="eth_getTransactionReceipt":
+                    base=super().rpc(m,p)
+                    base["logs"]=[{**LOG,"data":abi(100,200,50,1,70,20,0,0)},
+                                  erc20(GREEN,"0x"+"3"*40,SENDER,77)]
+                    return base
+                return super().rpc(m,p)
+        r=verify_transaction(DifferentReceipt(),HASH,[])
+        self.assertEqual(r["green_received_raw"],"77")
+        self.assertFalse(r["keeper_reward_receipt_supported"])
+
+    def test_positive_fee_without_transfer_not_keeper_credit(self):
+        class MissingCredit(FakeRPC):
+            def rpc(self,m,p):
+                if m=="eth_getTransactionReceipt":
+                    base=super().rpc(m,p)
+                    base["logs"]=[LOG]
+                    return base
+                return super().rpc(m,p)
+        r=verify_transaction(MissingCredit(),HASH,[])
+        self.assertEqual(r["indexed_positive_keeper_fee_raw"],"10")
+        self.assertFalse(r["keeper_reward_receipt_supported"])
 
     def test_transfer_not_to_submitter_ignored(self):
         l=[erc20(GREEN,ZERO,"0x"+"3"*40,15)]

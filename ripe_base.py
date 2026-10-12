@@ -186,6 +186,7 @@ def explorer_logs(start,end,max_pages=5):
 def transfer_rows(receipt,sender):
     incoming_green,incoming_sgreen=0,0
     green_mint,sgreen_mint=0,0
+    green_from_auction=0
     for log in receipt.get("logs",[]):
         token=str(log.get("address","")).lower()
         if token not in (GREEN.lower(),SGREEN.lower()):
@@ -205,6 +206,8 @@ def transfer_rows(receipt,sender):
             incoming_green+=raw
             if from_addr==ZERO:
                 green_mint+=raw
+            if from_addr.lower()==AUCTION.lower():
+                green_from_auction+=raw
         else:
             incoming_sgreen+=raw
             if from_addr==ZERO:
@@ -212,6 +215,7 @@ def transfer_rows(receipt,sender):
     return {"green_received_raw":str(incoming_green),
             "savings_green_shares_received_raw":str(incoming_sgreen),
             "green_direct_mint_raw":str(green_mint),
+            "green_transferred_from_auction_raw":str(green_from_auction),
             "savings_green_shares_direct_mint_raw":str(sgreen_mint)}
 
 
@@ -235,15 +239,19 @@ def verify_transaction(rpc,hash_value,events):
     l1fee=int(receipt["l1Fee"],16) if receipt.get("l1Fee") is not None else None
     direct=tx.get("to","").lower()==TELLER.lower() if tx.get("to") else False
     positive=sum(int(x["keeper_fee_raw"]) for x in receipt_events)
+    minted_or_provenance=(int(amounts["green_direct_mint_raw"])>0 or
+                          int(amounts["savings_green_shares_direct_mint_raw"])>0 or
+                          int(amounts["green_transferred_from_auction_raw"])>0)
     return {"tx_hash":hash_value,"submitter":sender,
             "tx_to":(tx.get("to") or "").lower(),
             "sent_directly_to_teller":direct,
             "successful":True,"liquidation_event_count":len(receipt_events),
             "indexed_positive_keeper_fee_raw":str(positive),
+            "keeper_reward_receipt_supported":positive>0 and minted_or_provenance,
             "full_receipt_fee_wei":str(l2fee+l1fee) if l1fee is not None else None,
             **amounts,
             "actual_payout_to_submitter_observed":int(amounts["green_received_raw"])>0 or int(amounts["savings_green_shares_received_raw"])>0,
-            "warning":"GREEN and sGREEN ERC4626 share units are NOT interchangeable or USD; fees are ETH, exits and gas losses unverified."}
+            "warning":"Only a positive keeperFee PLUS minted sGREEN/GREEN or GREEN from AuctionHouse to tx.from supports keeper credit. GREEN and sGREEN ERC4626 shares are not interchangeable or USD; fees are ETH, exits unverified."}
 
 
 def inspect(rpc,hours=6,chunk=1500,max_pages=5,receipt_limit=8):
@@ -309,6 +317,7 @@ def inspect(rpc,hours=6,chunk=1500,max_pages=5,receipt_limit=8):
             "zero_keeper_fee_event_count":totals["keeper_fee_zero"],
             "unique_liquidation_transactions":len(txgroups),
             "receipt_samples":receipts,"receipt_errors":errors,
+            "verified_keeper_payout_receipt_count":sum(x["keeper_reward_receipt_supported"] for x in receipts),
             "all_positive_payouts_proven":False,
             "current_eligible_liquidations_verified":False,
             "realized_usd_profit_verified":False,
