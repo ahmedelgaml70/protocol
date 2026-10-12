@@ -32,3 +32,26 @@ Official upstream references:
 - https://github.com/0xSplits/splits-sdk/blob/main/packages/splits-sdk/src/constants/index.ts
 
 **Money spent:** $0. **Income realized:** $0.
+
+## Extended cross-chain historical sampling (research branch)
+
+The separate `splits_expanded.py` scanner extends the original near-tip Base probe without adding wallet or transaction capabilities. Run it from `research/splits`:
+
+```sh
+python splits_expanded.py --chain base
+python splits_expanded.py --chain optimism
+python splits_expanded.py --chain arbitrum
+```
+
+Or inspect **0xSplits Historical Cross-Chain Research** GitHub Actions; the matrix scans these chains separately. It samples only four **noncontiguous 1,600-block creation windows**, anchored at latest, 7 days, 30 days and 90 days ago using actual on-chain timestamps, across three officially published V2 PushSplit factory generations. It checks only native USDC, WETH and native coin balances. This is **not** a complete historical index. There is no scheduler and no money-moving path.
+
+The scanner records `status: incomplete` for inaccessible historical blocks or failed per-factory windows. `partial_observation_not_profit` indicates that *some* windows succeeded, not that older contracts were exhaustively checked. A configuration is accepted only when its creation or bounded update event matches the live `splitHash()`. Historical records that do not match are rejected rather than guessed.
+
+If the RPC endpoint prunes older blocks or rejects large historical log ranges, it is unsafe to infer that no deployments exist. The retired upstream `0xSplits/splits-subgraph` repository is deprecated; the official SDK's `https://api.splits.org/graphql` client currently configures an API-key Bearer header. Historical full-index access through that service has **not** been verified without credentials. No paid data plan is configured.
+
+USDC references:
+- https://developers.circle.com/stablecoins/usdc-contract-addresses
+- https://github.com/0xSplits/splits-sdk/blob/main/packages/splits-sdk/src/constants/index.ts
+- https://github.com/0xSplits/splits-sdk/blob/main/packages/splits-sdk/src/subgraph/index.ts
+
+**Stop gate:** if sampled historical factories show no meaningful distributor rewards, do not extrapolate an economic opportunity. Require a directly evidenced, present, successfully simulated positive-net reward before any transaction or further expensive automation.
