@@ -111,3 +111,13 @@ Recommended next read-only test(s), ordered:
 ## Booking fulfillment investigation (same date, continued)
 
 Compared ordinary client hunting with customer-funded order fulfilment. Official BRIJ escrow flight booker and Solana USDC settlement evidence exists, but new operators need whitelisted partner wallet, stake and *front the airfare by own card* before being repaid. Public report: last 30 days each displayed trip.com/us.trip.com supplier category shows four assigned, **zero tickets confirmed**, all-time 18 assigned and two captured; domains are potentially overlapping. Onchain 732.47 USDC is a settled customer ticket purchase, **not a solver payout amount**. No current eligible order demonstrated. Saved [BRIJ audit](BOOKING_FULFILLMENT_BRIJ_AUDIT_2026_10_12.md) on main. Money spent/earned $0.
+
+
+## New round — open mainnet task escrow, competitor density, payout scale (Oct 12 17:16 UTC)
+
+- Examined ArcBounty/BaseBounty official first-party source/API and deployment registry; distinguished Arc mainnet chain 5042, Base mainnet 8453 and excluded testnet, reserved, paid or non-open work. Implemented safe GET-only read-only observer with 4 tests in draft [PR #13](https://github.com/ahmedelgaml70/protocol/pull/13), [CI success and read evidence](https://github.com/ahmedelgaml70/protocol/actions/runs/38283082911).
+- Arc: 16 cumulatively posted, 12 historically paid, 22.77 USDC paid net to workers; **zero open jobs**.
+- Base: 9 posted, 3 paid, 2.97 USDC paid; **zero open jobs**. Historical payouts were platform chain-storage projections, not separately reconstructed explorer receipts.
+- Bountic: first-party current homepage claims $55 total funded/5 issues but 0 payouts, one $10 open GitHub issue and 19 PRs publicly listed as competing; maintainer manual approval gate after merging code; no confirmed paid worker or low-competition task.
+- AgentPay and Legwork are testnet demonstrations and Aither queued $100 audit is unlaunched/excluded security. No actions taken to register, claim, fund, apply, sign, post or merge.
+- Full source evidence: [Arc/Base/Bountic audit](https://github.com/ahmedelgaml70/protocol/blob/research/arc-base-escrow-100/docs/ARC_BASE_BOUNTIC_AUDIT_2026_10_12.md). $100 intact; $0 spent, $0 earned.
