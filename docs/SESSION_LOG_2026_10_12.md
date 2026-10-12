@@ -72,3 +72,16 @@ Recommended next read-only test(s), ordered:
 5. Never use another person's abandoned funds/airdrops/royalties, spoof KYC, exploit vulnerabilities, or spend on unknown points.
 
 **Future agent action:** start at [AGENTS.md](../AGENTS.md), then handoff/matrix/playbook and read the draft PR audits. Make a new dated incremental evidence note only for new facts. Preserve this record as an immutable snapshot of work already completed.
+
+
+## Later research continuation — four independent payout mechanisms (Oct 12)
+
+**Read-only inspection:** Hyperlane fee ownership, Archr permissionless fee processing, TaskMarket agent USDC escrow, x402 per-call payments. Detail in [round-2 audit](RESEARCH_ROUND2_RELAYER_AGENT_MARKETS_2026_10_12.md).
+
+- Inspected canonical Hyperlane IGP Solidity in linked GitHub repository. `claim()` always sends to configured beneficiary, `claimToken()` too. Public method is not a payout to calling bot. Deprioritized.
+- Verified Archr first-party docs describing 1% callable keeper steps; site has its own bot and direct live fee balances are unverified. No bot built.
+- Verified TaskMarket first-party fee/acceptance rules (7.5%, worker approval), attempted open task API but external browser blocked it. Independent date-stamped Shaduf Oct 10 survey measures very small payout and low task availability across agent-first boards; its modeled economics are not independently reproduced. Deprioritized for $900 but keep as explicit potential conventional-work exception only.
+- Read independently sourced Sept x402 volume audits showing enormous concentration and self-funded buyer loops; no established independent demand for brand-new x402 service. Do not build without identified buyers.
+- Update committed to main in `docs/OPPORTUNITY_MATRIX_2026-10-12.md`, `docs/HANDOFF_2026-10-12.md`, `docs/RESEARCH_ROUND2_RELAYER_AGENT_MARKETS_2026_10_12.md`. No third-party PRs, wallet calls or capital use.
+
+**State:** $100 available, $0 user received, $0 spent, no verified actionable $900 cash gap mechanism.
