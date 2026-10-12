@@ -79,3 +79,8 @@ Read [the Arc/BaseBounty/Bountic audit](https://github.com/ahmedelgaml70/protoco
 
 
 Claudelance Celo mainnet is not an externally validated buyer base despite real paid on-chain receipts: its own README states **uniquePosterCount=1** and all previous bounties were funded/completed by its own controlled agents during testing. Do not interpret "up to $3,000 per task" catalog examples as real funded work. Hive Stellar is a testnet deployment with mainnet slated post-hackathon. Details [PR #13 audit](https://github.com/ahmedelgaml70/protocol/blob/research/arc-base-escrow-100/docs/ARC_BASE_BOUNTIC_AUDIT_2026_10_12.md).
+
+
+### Newest verified $10 no-job funded caller reward (Oct 12 17:55 UTC)
+
+[PR #14 Harbor live audit](https://github.com/ahmedelgaml70/protocol/blob/research/harbor-bounties-10/docs/HARBOR_REAL_FUNDED_BOUNTY_NEGATIVE_NET_2026_10_12.md), [successful CI and live on-chain run](https://github.com/ahmedelgaml70/protocol/actions/runs/38287408674). At block 26,178,021 in Ethereum, five Harbor StabilityPoolManager mainnet proxies examined. THREE genuinely funded 1% harvest caller rewards, all successfully \`eth_call\` simulated, **all indicative USD net negative after estimated gas** (gross ~$0.116 vs $0.173 gas; $0.0115 vs $0.173; $0.114 vs $0.179). Other two rebalanceable true but actual call REVERT, harvestable 0. No onchain tx signed/spent. Additional discovered Solidity kicker leads Velocity (mostly cents), fillr devnet, Caliper reward vault TESTNET, GBLIN deprecated/superseded claims, ADAM ~$0.071 gross fee bounty. Do NOT call these profitable merely because ETH gas price was low. User latest limit $10, NO jobs, services, clients, promotion, discounts. Nothing available to earn $1k fast has been proved.
