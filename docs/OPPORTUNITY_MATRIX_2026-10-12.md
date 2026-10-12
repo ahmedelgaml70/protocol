@@ -178,3 +178,22 @@ Current available worker income in two live mainnet task escrows was **0 USDC**,
 
 - **Claudelance Celo:** [official README](https://github.com/yeheskieltame/claudelance) says pre-adoption, **one unique poster**, all 80/96 historic V2 settlements and agent payments are **operator-owned swarm self-tests**, not third-party economic demand. Tables suggesting $500–$3,000 bounties describe task capacity, not actual paid open offers. **STOP pending independent users**.
 - **Hive Stellar:** [source](https://github.com/Alouzious/hive) badge/deployment say **testnet**, with mainnet after hackathon and mocked transaction signing. **STOP, no real current withdrawable income**.
+
+
+## K. Latest $10 no-jobs direct bounty discovery (October 12, 17:55 UTC)
+
+[Read-only Harbor live PR #14 and audit](https://github.com/ahmedelgaml70/protocol/blob/research/harbor-bounties-10/docs/HARBOR_REAL_FUNDED_BOUNTY_NEGATIVE_NET_2026_10_12.md); [successful run](https://github.com/ahmedelgaml70/protocol/actions/runs/38287408674).
+
+| Novel caller-reward lane | Primary actually checked outcome | Verdict |
+|---|---|---|
+| Harbor Ethereum fxSAVE harvest ETH/fxUSD | Correct independent caller receives 1% of actual current wrapped yield; \`eth_call\` success and **0.1033828689 fxSAVE funded**. Expected ~$0.1158 gross vs ~$0.1727 gas | **STOP CURRENT ECONOMICS**: ~$0.057 loss before swapping |
+| Harbor Ethereum fxSAVE harvest BTC/fxUSD | \`eth_call\` success; 0.0103006452 fxSAVE = ~$0.0115 vs ~$0.1727 gas | **STOP**, ~$0.161 loss |
+| Harbor Ethereum wstETH harvest BTC/stETH | \`eth_call\` success; 0.00003630945 wstETH = ~$0.1136 vs ~$0.1791 gas | **STOP**, ~$0.066 loss |
+| Harbor USD/stETH and USD/WBTC rebalance | \`rebalanceable=true\`, but on-chain direct \`eth_call(rebalance)\` **REVERTS**, and current \`harvestable=0\` | **STOP**; boolean isn't proof of earnings |
+| Velocity Solana keepers | Official 0.01 USDC trigger/cancel, order fills pay lesser of fee share and age; TWAP keeper requires **$1,000 stake but gets $0** | **STOP** for no-capital 100× goal |
+| fillr Solana | Homepage mainnet marketing vs **technical docs explicitly DEVNET-only** pre-audit protocol, no verified payable mainnet order | **STOP** |
+| Caliper Robinhood Chain | MAINNET token, **TESTNET Vault/Factory/FeeRouter (chain 46630)**; 3% fee bounty not mainnet yet | **STOP** |
+| GBLIN Base prior reward mechanism | Docs refer to superseded vault and stale \`find_keeper_bounty\`; current live deployed bounty source not verified | **RESEARCH only on new source validation**, not execution |
+| ADAM ETH fee splitting | UI shows 0.0056 ETH unprocessed and 0.5% caller share (~$0.071 gross), no gas simulation | **LOW PRIORITY**, below $25 and uncertain net |
+
+**New lesson:** Passing all of deployment, funded contract, payable caller and successful \`eth_call\` STILL leaves economic viability; Harbor genuine payouts lose money from gas. Token reward USD conversion is **NOT** same denomination as native ETH gas, and even 'very low' gas may defeat tiny harvests.
