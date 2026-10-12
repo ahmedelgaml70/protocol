@@ -64,3 +64,8 @@ Read [the PR #11 detailed audit](https://github.com/ahmedelgaml70/protocol/blob/
 ### Latest live funding gates (PR #12, after Convex)
 
 Read [the PR #12 audit](https://github.com/ahmedelgaml70/protocol/blob/research/prefund-live-gates-100/docs/PREFUNDED_LIVE_GATE_AUDIT_2026_10_12.md). At Ethereum block 26,177,686, Permanent Collection's official BuybackBurner had **0 ETH to spend**, so \`executeStep\` caller bounty gross = 0; a separate Patron live bid of >10 ETH is NOT caller bounty cash. Deployed cap 0.01 ETH, maxStep 1 ETH limits full-size call to 0.005 ETH gross. BasedAgents public API on same day: 20 open tasks, only one \`escrow.status=funded\` of **1 USDC**, titled 'Test hire (please ignore)', **zero currently funded ≥$25**; ten historic settled-task entries but no independent tx matching. USDC 6 decimals: 250000 is $0.25. Aeterna demo, PolyDispute pre-mainnet/testnet and openbounty.app Base Sepolia are not real available cash. Never rebuild scanners for these current-empty lanes without new funded evidence.
+
+
+### Pre-funded booking work also checked
+
+[BRIJ Travel fulfiller audit](BOOKING_FULFILLMENT_BRIJ_AUDIT_2026_10_12.md) shows real Solana USDC customer flight-ticket escrows, but new participant is **not permissionless**: partner wallet whitelist, taker deposit risk, and **own card fronts airline ticket cost** before oracle settlement. Recent public 30d fulfilment stats show 0 captured/ticket-issued for the two shown supplier domains (possibly overlapping), and customer order totals are NOT fees earned by the worker. Reject under $100 cap absent wholly different credit-backed, no-fronting fulfilment path.
