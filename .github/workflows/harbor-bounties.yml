@@ -1,0 +1,40 @@
+name: Harbor Mainnet Caller Bounty Research (Read Only)
+
+on:
+  push:
+    branches: [research/harbor-bounties-10]
+    paths:
+      - 'research/harbor/**'
+      - '.github/workflows/harbor-bounties.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Keccak implementation
+        run: python -m pip install --disable-pip-version-check pycryptodome==3.23.0
+      - name: Run offline tests and block signing/broadcast
+        working-directory: research/harbor
+        run: python -m unittest -v test_harbor_live.py
+      - name: Query on-chain Ethereum Harbor caller-bounty state
+        working-directory: research/harbor
+        run: python harbor_live.py
+      - name: Preserve evidence even when RPC unavailable
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: harbor-bounty-readonly
+          path: research/harbor/reports/*.json
+          if-no-files-found: warn
+          retention-days: 7
